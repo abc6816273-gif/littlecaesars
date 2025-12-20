@@ -63,6 +63,19 @@ const breadcrumbSchema = {
 // Featured blog posts - real content only  
 const featuredBlogs = [
   {
+    id: 'happy-christmas-2025',
+    category: 'Holiday Special',
+    title: 'Happy Christmas 2025 - Little Caesars Holiday Deals & Festive Pizza Guide',
+    excerpt: 'Celebrate Christmas 2025 with Little Caesars! Discover exclusive holiday pizza deals, Christmas party planning tips, festive menu ideas, family meal combos, and make your holiday celebration delicious and stress-free.',
+    image: '/menu/happy-christmas-2025-little-caesars.png',
+    imageAlt: 'Happy Christmas 2025 - Little Caesars Holiday Pizza Celebration with festive decorations',
+    date: 'December 20, 2025',
+    readTime: '8 min read',
+    slug: 'happy-christmas-2025',
+    isNew: true,
+    featured: true
+  },
+  {
     id: 'menu-prices-calories-guide',
     category: 'Menu Guide',
     title: 'Little Caesars Menu Prices & Calories Guide 2025 - Complete Pizza Menu',
@@ -72,7 +85,7 @@ const featuredBlogs = [
     date: 'January 20, 2025',
     readTime: '12 min read',
     slug: 'little-caesars-menu',
-    isNew: true,
+    isNew: false,
     featured: true
   }
 ]
@@ -159,7 +172,7 @@ export default function ImportantBlogs() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
-      
+
       <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
         {/* Breadcrumb Navigation */}
         <nav className="bg-white border-b border-gray-200" aria-label="Breadcrumb">
@@ -217,7 +230,7 @@ export default function ImportantBlogs() {
 
         {/* Main Content */}
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          
+
           {/* Featured Blogs Section */}
           <section className="mb-16">
             <div className="text-center mb-12">
@@ -228,10 +241,10 @@ export default function ImportantBlogs() {
                 Our most popular and comprehensive guides to help you get the most out of your Little Caesars experience
               </p>
             </div>
-            
+
             <div className="grid lg:grid-cols-3 gap-8">
               {featuredBlogs.map((blog, index) => (
-                <BlogCard 
+                <BlogCard
                   key={blog.id}
                   blog={blog}
                   featured={true}
@@ -242,7 +255,7 @@ export default function ImportantBlogs() {
           </section>
 
           {/* Category Sections - Only show if blogs exist */}
-          {Object.entries(categoryBlogs).map(([category, blogs]) => 
+          {Object.entries(categoryBlogs).map(([category, blogs]) =>
             blogs.length > 0 ? (
               <section key={category} className="mb-12">
                 <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -251,7 +264,7 @@ export default function ImportantBlogs() {
                       <div className="w-2 h-8 bg-little-caesars-orange rounded-full mr-4"></div>
                       {category}
                     </h2>
-                    <Link 
+                    <Link
                       href="/posts"
                       className="text-little-caesars-orange hover:text-red-600 font-semibold flex items-center group"
                     >
@@ -259,7 +272,7 @@ export default function ImportantBlogs() {
                       <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </div>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     {blogs.map((blog) => (
                       <div key={blog.id} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
@@ -311,7 +324,7 @@ export default function ImportantBlogs() {
 
           {/* Quick Links */}
           <section className="mt-12 grid md:grid-cols-3 gap-6">
-            <Link 
+            <Link
               href="/menu"
               className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow group"
             >
@@ -321,8 +334,8 @@ export default function ImportantBlogs() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Full Menu</h3>
               <p className="text-gray-600">Explore our complete menu with prices and calories</p>
             </Link>
-            
-            <Link 
+
+            <Link
               href="/coupons"
               className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow group"
             >
@@ -332,8 +345,8 @@ export default function ImportantBlogs() {
               <h3 className="text-xl font-bold text-gray-900 mb-2">Latest Deals</h3>
               <p className="text-gray-600">Find current coupons and special offers</p>
             </Link>
-            
-            <Link 
+
+            <Link
               href="/store-locator"
               className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-shadow group"
             >
