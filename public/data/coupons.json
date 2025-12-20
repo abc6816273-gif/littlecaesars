@@ -1,0 +1,105 @@
+{
+  "coupons": [
+    {
+      "code": "TXRHAUGUST25",
+      "title": "25% Off Your Bill",
+      "description": "Enjoy 25% off your entire bill at Texas Roadhouse this August!",
+      "discount": "25% OFF",
+      "expiryDate": "August 31, 2025",
+      "terms": "Valid on dine-in orders only. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified August 2025",
+      "validUntil": "August 31, 2025"
+    },
+    {
+      "code": "VIPSUMMER",
+      "title": "VIP 15% Off",
+      "description": "Texas Roadhouse VIP members get 15% off their entire bill this August.",
+      "discount": "15% OFF",
+      "expiryDate": "August 15, 2025",
+      "terms": "Valid for VIP members only. Show your VIP card or app at checkout. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified August 2025",
+      "validUntil": "August 15, 2025"
+    },
+    {
+      "title": "Free Cactus Blossom",
+      "description": "Get a free Cactus Blossom appetizer with any entree purchase.",
+      "discount": "Free Appetizer",
+      "expiryDate": "August 31, 2025",
+      "terms": "Valid for dine-in only. One free appetizer per table. Cannot be combined with other offers.",
+      "type": "deal",
+      "verified": "Verified August 2025",
+      "validUntil": "August 31, 2025"
+    },
+    {
+      "code": "MILITARYAPPRECIATION",
+      "title": "10% Off for Military",
+      "description": "Show your military ID and get 10% off your entire bill.",
+      "discount": "10% OFF",
+      "expiryDate": "August 31, 2025",
+      "terms": "Valid for active and retired military personnel. Must show valid military ID. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified August 2025",
+      "validUntil": "August 31, 2025"
+    },
+    {
+      "title": "Kids Eat Free",
+      "description": "Kids eat free every Tuesday in August!",
+      "discount": "Free Kids Meal",
+      "expiryDate": "August 31, 2025",
+      "terms": "Valid on Tuesdays only. Dine-in only. One free kids meal per adult entree purchased.",
+      "type": "deal",
+      "verified": "Verified August 2025",
+      "validUntil": "August 31, 2025"
+    },
+    {
+      "code": "ROADRHOUSE50",
+      "title": "50% off your first online order!",
+      "description": "New to Texas Roadhouse online ordering? Enjoy 50% off your first order!",
+      "discount": "50% OFF",
+      "expiryDate": "August 10, 2025",
+      "terms": "First online order only. Minimum order value of $20 required. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified August 2025",
+      "validUntil": "August 10, 2025"
+    },
+    {
+      "title": "Early Bird Special",
+      "description": "Enjoy 20% off your bill when you dine in before 6pm.",
+      "discount": "20% OFF",
+      "expiryDate": "August 31, 2025",
+      "terms": "Valid Sunday-Thursday before 6pm. Dine-in only. Cannot be combined with other offers.",
+      "type": "discount",
+      "verified": "Verified August 2025",
+      "validUntil": "August 31, 2025"
+    },
+    {
+      "code": "WEEKENDDEAL",
+      "title": "Weekend Treat 10% Off",
+      "description": "Enjoy 10% off your entire bill on weekends this August.",
+      "discount": "10% OFF",
+      "expiryDate": "August 31, 2025",
+      "terms": "Valid Friday-Sunday only. Dine-in only. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified August 2025",
+      "validUntil": "August 31, 2025"
+    },
+    {
+      "title": "Free Dessert",
+      "description": "Get a free dessert with purchase of two entrees.",
+      "discount": "Free Dessert",
+      "expiryDate": "August 18, 2025",
+      "terms": "Valid for dine-in only.  One free dessert per table. Cannot be combined with other offers.",
+      "type": "deal",
+      "verified": "Verified August 2025",
+      "validUntil": "August 18, 2025"
+    }
+  ],
+  "metadata": {
+    "total_count": 9,
+    "last_updated": "2025-09-24T02:38:14.389Z",
+    "source": "Live Data",
+    "version": "1.0.0"
+  }
+}

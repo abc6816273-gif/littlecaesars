@@ -1,0 +1,28 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# OAI-SearchBot
+User-agent: OAI-SearchBot
+Allow: /
+
+# GPTBot
+User-agent: GPTBot
+Allow: /
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+
+# Host
+Host: https://littlecaesarsmenu.us
+
+# Sitemaps
+Sitemap: https://littlecaesarsmenu.us/sitemap.xml

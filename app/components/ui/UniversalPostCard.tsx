@@ -1,0 +1,167 @@
+import Link from 'next/link'
+import { Badge } from './Badge'
+import { formatDate, createExcerpt } from '@/lib/format'
+
+// Universal Post interface that works with all post types
+interface UniversalPost {
+  id: string
+  title: string
+  slug: string
+  excerpt?: string
+  date: string
+  featuredImage?: {
+    node?: {
+      sourceUrl?: string
+      altText?: string
+    }
+  } | {
+    sourceUrl?: string
+    altText?: string
+  }
+  categories?: {
+    nodes?: Array<{
+      name: string
+      slug: string
+    }>
+  } | {
+    nodes: Array<{
+      name: string
+      slug: string
+    }>
+  }
+  author?: {
+    node?: {
+      name?: string
+    }
+  }
+}
+
+interface UniversalPostCardProps {
+  post: UniversalPost
+  featured?: boolean
+}
+
+export function UniversalPostCard({ post, featured = false }: UniversalPostCardProps) {
+  // FORCE CACHE CLEAR - Build: ${Date.now()}
+  const excerpt = post.excerpt ? createExcerpt(post.excerpt, 120) : ''
+  
+  // Handle different image structures
+  const getImageUrl = () => {
+    if (!post.featuredImage) return null
+    
+    // Check for node structure (blog page format)
+    if ('node' in post.featuredImage && post.featuredImage.node?.sourceUrl) {
+      return post.featuredImage.node.sourceUrl
+    }
+    
+    // Check for direct structure (lib/types format)
+    if ('sourceUrl' in post.featuredImage && post.featuredImage.sourceUrl) {
+      return post.featuredImage.sourceUrl
+    }
+    
+    return null
+  }
+  
+  // Handle different image alt text structures  
+  const getImageAlt = () => {
+    if (!post.featuredImage) return post.title
+    
+    // Check for node structure (blog page format)
+    if ('node' in post.featuredImage && post.featuredImage.node?.altText) {
+      return post.featuredImage.node.altText
+    }
+    
+    // Check for direct structure (lib/types format)
+    if ('altText' in post.featuredImage && post.featuredImage.altText) {
+      return post.featuredImage.altText
+    }
+    
+    return post.title
+  }
+  
+  // Handle different category structures
+  const getCategories = () => {
+    if (!post.categories) return []
+    
+    if ('nodes' in post.categories) {
+      return post.categories.nodes || []
+    }
+    
+    return []
+  }
+  
+  const imageUrl = getImageUrl()
+  const imageAlt = getImageAlt()
+  const categories = getCategories()
+  
+  return (
+    <article className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${featured ? 'lg:flex' : ''}`}>
+      {imageUrl && (
+        <div 
+          className={`relative bg-gray-100 ${featured ? 'lg:w-1/2' : 'w-full'}`}
+          style={{ height: featured ? '256px' : '192px' }}
+        >
+          <Link href={`/${post.slug}`}>
+            <img
+              src={imageUrl}
+              alt={imageAlt}
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                display: 'block'
+              }}
+            />
+          </Link>
+        </div>
+      )}
+      
+      <div className={`p-6 ${featured ? 'lg:w-1/2 lg:flex lg:flex-col lg:justify-between' : ''}`}>
+        <div>
+          {categories.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-3">
+              {categories.slice(0, 2).map((category) => (
+                <Badge key={category.slug} variant="category" size="sm">
+                  {category.name}
+                </Badge>
+              ))}
+            </div>
+          )}
+          
+          <h2 className={`font-slab font-slab-bold text-stone mb-3 line-clamp-2 ${featured ? 'text-2xl lg:text-3xl' : 'text-xl'}`}>
+            <Link 
+              href={`/${post.slug}`}
+              className="hover:text-orange transition-colors duration-200"
+            >
+              {post.title}
+            </Link>
+          </h2>
+          
+          {excerpt && (
+            <p className="text-stone/70 mb-4 line-clamp-3">
+              {excerpt}
+            </p>
+          )}
+        </div>
+        
+        <div className="flex items-center justify-between text-sm text-stone/60">
+          <time dateTime={post.date}>
+            {formatDate(post.date)}
+          </time>
+          
+          <Link 
+            href={`/${post.slug}`}
+            className="font-medium text-orange hover:text-orange/80 transition-colors duration-200"
+          >
+            Read More →
+          </Link>
+        </div>
+      </div>
+    </article>
+  )
+}
+
+export function UniversalFeaturedPostCard({ post }: { post: UniversalPost }) {
+  return <UniversalPostCard post={post} featured />
+}

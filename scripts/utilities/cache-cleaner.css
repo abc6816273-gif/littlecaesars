@@ -1,0 +1,217 @@
+/* Texas Roadhouse Cache Cleaner Admin Styles */
+
+.tr-cache-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.tr-cache-actions {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid #dc3545;
+}
+
+.tr-cache-settings {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid #007cba;
+}
+
+.tr-button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.tr-button-grid .button {
+    padding: 15px 20px;
+    font-size: 16px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.tr-button-grid .button-hero {
+    grid-column: 1 / -1;
+    font-size: 18px;
+    padding: 20px;
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border: none;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.tr-button-grid .button-hero:hover {
+    background: linear-gradient(135deg, #c82333, #a71e2a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+.tr-button-grid .button-secondary {
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    color: #495057;
+}
+
+.tr-button-grid .button-secondary:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+    transform: translateY(-1px);
+}
+
+.tr-status-area {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    display: none;
+}
+
+.tr-status-success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.tr-status-error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.tr-status-loading {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    color: #0c5460;
+    display: block !important;
+}
+
+.tr-cache-info {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tr-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tr-info-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 4px solid #6c757d;
+    transition: all 0.3s ease;
+}
+
+.tr-info-card:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tr-info-card h3 {
+    margin: 0 0 10px 0;
+    color: #495057;
+    font-size: 16px;
+}
+
+.tr-info-card p {
+    margin: 5px 0;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Admin Bar Styles */
+#wp-admin-bar-tr-cache-cleaner .ab-item:before {
+    content: '🧹';
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tr-cache-dashboard {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .tr-button-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tr-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Loading Animation */
+.tr-status-loading p:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #0c5460;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Texas Roadhouse Theme Colors */
+.tr-cache-actions {
+    border-left-color: #dc3545; /* Texas Red */
+}
+
+.tr-cache-settings {
+    border-left-color: #ffc107; /* Texas Yellow */
+}
+
+.tr-info-card:nth-child(1) {
+    border-left-color: #28a745; /* Success Green */
+}
+
+.tr-info-card:nth-child(2) {
+    border-left-color: #007bff; /* Primary Blue */
+}
+
+.tr-info-card:nth-child(3) {
+    border-left-color: #ffc107; /* Warning Yellow */
+}
+
+/* Form Styling */
+.form-table th {
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-table .description {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Button Disabled State */
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}

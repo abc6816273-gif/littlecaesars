@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "homepageAccessible": true,
+    "title": "https://texasroadhouse-menus.us",
+    "description": "Texas Roadhouse Menu with Prices",
+    "h1": "🥩 Texas Roadhouse Menu &amp; Prices 2025",
+    "hasStructuredData": true,
+    "hasOpenGraph": true,
+    "hasMobileViewport": true,
+    "storeLocatorAccessible": true
+  },
+  "performance": {},
+  "indexing": {},
+  "sitemap": {
+    "accessible": true,
+    "urlCount": 12
+  },
+  "robots": {
+    "accessible": true,
+    "hasSitemap": true,
+    "hasUserAgent": true
+  },
+  "security": {
+    "https": true
+  },
+  "accessibility": {},
+  "issues": [],
+  "recommendations": [
+    "Ensure map functionality is working"
+  ]
+}
