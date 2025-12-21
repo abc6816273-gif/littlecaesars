@@ -255,6 +255,57 @@ export default function HappyChristmas2025() {
           </div>
 
           <article className="prose prose-lg max-w-none">
+            {/* Table of Contents - SEO Boost */}
+            <nav className="bg-white rounded-2xl shadow-lg p-6 mb-10 border border-gray-200">
+              <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                📋 Table of Contents - Quick Navigation
+              </h2>
+              <ul className="space-y-2 text-gray-700">
+                <li>
+                  <a href="#why-little-caesars" className="text-little-caesars-orange hover:underline flex items-center">
+                    🍕 Why Choose Little Caesars for Christmas 2025
+                  </a>
+                </li>
+                <li>
+                  <a href="#party-planning" className="text-little-caesars-orange hover:underline flex items-center">
+                    🎄 Christmas Party Planning Guide
+                  </a>
+                </li>
+                <li>
+                  <a href="#top-pizzas" className="text-little-caesars-orange hover:underline flex items-center">
+                    ⭐ Top Pizza Picks for Christmas
+                  </a>
+                </li>
+                <li>
+                  <a href="#holiday-hours" className="text-little-caesars-orange hover:underline flex items-center">
+                    🕐 Little Caesars Holiday Hours 2025
+                  </a>
+                </li>
+                <li>
+                  <a href="#christmas-deals" className="text-little-caesars-orange hover:underline flex items-center">
+                    💰 Christmas Deals & Coupons
+                  </a>
+                </li>
+                <li>
+                  <a href="#faq" className="text-little-caesars-orange hover:underline flex items-center">
+                    ❓ Frequently Asked Questions
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            {/* Key Takeaways - Featured Snippet Optimization */}
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-xl p-6 mb-10">
+              <h2 className="text-xl font-bold text-gray-900 mb-3">🔑 Key Takeaways</h2>
+              <ul className="space-y-2 text-gray-700">
+                <li>✅ Little Caesars offers affordable pizza options perfect for Christmas parties</li>
+                <li>✅ Hot-N-Ready pizzas available for quick pickup during the holiday rush</li>
+                <li>✅ Order 2-3 slices per person for your Christmas gathering</li>
+                <li>✅ Check local store for Christmas Eve and Christmas Day hours</li>
+                <li>✅ ExtraMostBestest and Detroit-Style are top picks for holiday celebrations</li>
+              </ul>
+            </div>
+
             {/* Introduction */}
             <div className="bg-gradient-to-r from-red-100 to-green-100 rounded-2xl p-8 mb-10 border-l-4 border-red-500">
               <div className="flex items-start">
