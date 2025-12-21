@@ -80,7 +80,7 @@ const featuredBlogs = [
     category: 'Menu Guide',
     title: 'Little Caesars Menu Prices & Calories Guide 2025 - Complete Pizza Menu',
     excerpt: 'Your ultimate comprehensive guide to Little Caesars menu with prices, calories, money-saving tips, nutrition information, and everything you need to know. From Hot-N-Ready pizzas to Crazy Bread, this complete guide covers menu items, deals, ordering tips, and much more.',
-    image: '/menu/hot-n-ready-pepperoni.webp',
+    image: '/menu/little-caesars-menu-prices-calories-guide-2025.png',
     imageAlt: 'Little Caesars Hot-N-Ready Pepperoni Pizza with prices and calories - complete menu guide',
     date: 'January 20, 2025',
     readTime: '12 min read',
