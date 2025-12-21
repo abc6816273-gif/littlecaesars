@@ -206,7 +206,7 @@ export default function HappyChristmas2025() {
             <div className="absolute top-1/3 right-10 text-white/25 text-3xl">✨</div>
             <div className="absolute bottom-20 right-1/3 text-white/20 text-4xl">🎄</div>
           </div>
-          
+
           <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="flex items-center justify-center mb-6 space-x-2">
               <Gift className="w-8 h-8 text-yellow-300" />
@@ -215,14 +215,14 @@ export default function HappyChristmas2025() {
               </span>
               <Gift className="w-8 h-8 text-yellow-300" />
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
               🎅 Happy Christmas 2025! 🎄
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
               Celebrate the holidays with delicious Little Caesars pizza! Discover festive deals, party planning tips, and make your Christmas celebration unforgettable.
             </p>
-            
+
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Calendar className="w-4 h-4 mr-2" />
@@ -264,8 +264,8 @@ export default function HappyChristmas2025() {
                     🎁 Make This Christmas Extra Special with Pizza!
                   </h2>
                   <p className="text-gray-700 text-lg leading-relaxed mb-0">
-                    Christmas 2025 is here, and what better way to celebrate than with hot, delicious pizza from Little Caesars? 
-                    Whether you're hosting a family gathering, planning a holiday party, or just want a stress-free Christmas dinner, 
+                    Christmas 2025 is here, and what better way to celebrate than with hot, delicious pizza from Little Caesars?
+                    Whether you're hosting a family gathering, planning a holiday party, or just want a stress-free Christmas dinner,
                     we've got you covered with everything you need to know about Little Caesars holiday offerings, deals, and party planning tips!
                   </p>
                 </div>
@@ -278,7 +278,7 @@ export default function HappyChristmas2025() {
                 <Pizza className="w-8 h-8 text-little-caesars-orange mr-3" />
                 Why Choose Little Caesars for Christmas 2025?
               </h2>
-              
+
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-white rounded-xl shadow-lg p-6 border-t-4 border-red-500 hover:shadow-xl transition-shadow">
                   <div className="flex items-center mb-4">
@@ -288,7 +288,7 @@ export default function HappyChristmas2025() {
                     <h3 className="text-xl font-bold text-gray-900">Hot-N-Ready Convenience</h3>
                   </div>
                   <p className="text-gray-600">
-                    No waiting, no stress! Grab your pizzas and get back to celebrating with your loved ones. 
+                    No waiting, no stress! Grab your pizzas and get back to celebrating with your loved ones.
                     Perfect for busy holiday schedules when you don't have time to cook.
                   </p>
                 </div>
@@ -301,7 +301,7 @@ export default function HappyChristmas2025() {
                     <h3 className="text-xl font-bold text-gray-900">Budget-Friendly Feasts</h3>
                   </div>
                   <p className="text-gray-600">
-                    Feed your entire family without breaking the bank. Christmas can be expensive, 
+                    Feed your entire family without breaking the bank. Christmas can be expensive,
                     but Little Caesars makes it affordable to enjoy delicious pizza together.
                   </p>
                 </div>
@@ -314,7 +314,7 @@ export default function HappyChristmas2025() {
                     <h3 className="text-xl font-bold text-gray-900">Something for Everyone</h3>
                   </div>
                   <p className="text-gray-600">
-                    From classic pepperoni to veggie options, cheese lovers to meat enthusiasts - 
+                    From classic pepperoni to veggie options, cheese lovers to meat enthusiasts -
                     there's a pizza for every family member at your Christmas gathering.
                   </p>
                 </div>
@@ -327,7 +327,7 @@ export default function HappyChristmas2025() {
                     <h3 className="text-xl font-bold text-gray-900">Party-Ready Options</h3>
                   </div>
                   <p className="text-gray-600">
-                    Bundle deals, Crazy Bread, wings, and more! Little Caesars has everything 
+                    Bundle deals, Crazy Bread, wings, and more! Little Caesars has everything
                     you need to throw an amazing Christmas party without the kitchen stress.
                   </p>
                 </div>
@@ -343,7 +343,7 @@ export default function HappyChristmas2025() {
 
               <div className="bg-gradient-to-br from-green-50 to-red-50 rounded-2xl p-8 mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">🍕 How Much Pizza to Order</h3>
-                
+
                 <div className="overflow-x-auto">
                   <table className="w-full bg-white rounded-xl shadow">
                     <thead className="bg-gradient-to-r from-red-500 to-green-500 text-white">
@@ -395,7 +395,7 @@ export default function HappyChristmas2025() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">ExtraMostBestest Pepperoni</h3>
                     <p className="text-gray-600 mb-4">
-                      The crowd favorite! 80% more pepperoni and 25% more cheese than the classic. 
+                      The crowd favorite! 80% more pepperoni and 25% more cheese than the classic.
                       Perfect for pepperoni lovers at your Christmas party.
                     </p>
                     <div className="flex items-center text-little-caesars-orange font-bold">
@@ -411,7 +411,7 @@ export default function HappyChristmas2025() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Detroit-Style Deep Dish</h3>
                     <p className="text-gray-600 mb-4">
-                      Crispy, cheesy edges with a thick, airy crust. A premium option that's perfect 
+                      Crispy, cheesy edges with a thick, airy crust. A premium option that's perfect
                       for making Christmas dinner feel extra special.
                     </p>
                     <div className="flex items-center text-little-caesars-orange font-bold">
@@ -427,7 +427,7 @@ export default function HappyChristmas2025() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">3 Meat Treat Pizza</h3>
                     <p className="text-gray-600 mb-4">
-                      Loaded with pepperoni, Italian sausage, and bacon. Satisfies the meat lovers 
+                      Loaded with pepperoni, Italian sausage, and bacon. Satisfies the meat lovers
                       in your family this Christmas.
                     </p>
                     <div className="flex items-center text-little-caesars-orange font-bold">
@@ -453,8 +453,8 @@ export default function HappyChristmas2025() {
                   </summary>
                   <div className="px-6 py-4 bg-gray-50 border-t">
                     <p className="text-gray-600">
-                      Little Caesars holiday hours vary by location. Most stores have modified hours on Christmas Eve 
-                      and may be closed on Christmas Day. We recommend checking with your local store or using our 
+                      Little Caesars holiday hours vary by location. Most stores have modified hours on Christmas Eve
+                      and may be closed on Christmas Day. We recommend checking with your local store or using our
                       <Link href="/store-locator" className="text-little-caesars-orange hover:underline ml-1">store locator</Link> for specific holiday hours.
                     </p>
                   </div>
@@ -467,7 +467,7 @@ export default function HappyChristmas2025() {
                   </summary>
                   <div className="px-6 py-4 bg-gray-50 border-t">
                     <p className="text-gray-600">
-                      For Christmas parties, we recommend a mix of Hot-N-Ready Pepperoni, Detroit-Style Deep Dish, 
+                      For Christmas parties, we recommend a mix of Hot-N-Ready Pepperoni, Detroit-Style Deep Dish,
                       and ExtraMostBestest pizzas. Add Crazy Bread and wings for the complete party experience!
                     </p>
                   </div>
@@ -480,7 +480,7 @@ export default function HappyChristmas2025() {
                   </summary>
                   <div className="px-6 py-4 bg-gray-50 border-t">
                     <p className="text-gray-600">
-                      Yes! Check our <Link href="/coupons" className="text-little-caesars-orange hover:underline">coupons page</Link> for 
+                      Yes! Check our <Link href="/coupons" className="text-little-caesars-orange hover:underline">coupons page</Link> for
                       the latest holiday deals and bundle offers perfect for Christmas celebrations.
                     </p>
                   </div>
@@ -493,7 +493,8 @@ export default function HappyChristmas2025() {
                   </summary>
                   <div className="px-6 py-4 bg-gray-50 border-t">
                     <p className="text-gray-600">
-                      Yes! You can place orders through the Little Caesars app or website for pickup. 
+                      Yes! You can place orders through the <a href="https://littlecaesars.com" target="_blank" rel="noopener noreferrer" className="text-little-caesars-orange hover:underline">Little Caesars official website</a> or
+                      <a href="https://www.littlecaesars.com/en-us/order/pickup" target="_blank" rel="noopener noreferrer" className="text-little-caesars-orange hover:underline">mobile app</a> for pickup.
                       For large party orders, we recommend calling your local store in advance.
                     </p>
                   </div>
@@ -508,16 +509,27 @@ export default function HappyChristmas2025() {
                   🎄 Merry Christmas 2025! 🎅
                 </h2>
                 <p className="text-xl text-white/90 mb-6 max-w-2xl mx-auto">
-                  From our Little Caesars family to yours, we wish you a wonderful holiday season 
+                  From our Little Caesars family to yours, we wish you a wonderful holiday season
                   filled with joy, love, and delicious pizza! May your Christmas be merry and bright!
                 </p>
                 <div className="text-6xl mb-4">🎁 🍕 ❄️ 🎄 ⭐</div>
+                <div className="flex flex-wrap justify-center gap-4 mt-6">
+                  <a href="https://littlecaesars.com" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 px-6 py-2 rounded-full text-sm font-medium transition-colors">
+                    🌐 Official Website
+                  </a>
+                  <a href="https://www.facebook.com/LittleCaesars" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 px-6 py-2 rounded-full text-sm font-medium transition-colors">
+                    📘 Facebook
+                  </a>
+                  <a href="https://www.instagram.com/littlecaesars" target="_blank" rel="noopener noreferrer" className="bg-white/20 hover:bg-white/30 px-6 py-2 rounded-full text-sm font-medium transition-colors">
+                    📸 Instagram
+                  </a>
+                </div>
               </div>
             </section>
 
             {/* CTA Section */}
             <section className="grid md:grid-cols-3 gap-6 mb-12">
-              <Link 
+              <Link
                 href="/menu"
                 className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-transparent hover:border-little-caesars-orange"
               >
@@ -528,7 +540,7 @@ export default function HappyChristmas2025() {
                 <p className="text-gray-600 text-sm">Explore all pizza options for your Christmas celebration</p>
               </Link>
 
-              <Link 
+              <Link
                 href="/coupons"
                 className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-transparent hover:border-green-500"
               >
@@ -539,7 +551,7 @@ export default function HappyChristmas2025() {
                 <p className="text-gray-600 text-sm">Find the best Christmas coupons and special offers</p>
               </Link>
 
-              <Link 
+              <Link
                 href="/store-locator"
                 className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:scale-105 border-2 border-transparent hover:border-red-500"
               >
@@ -554,7 +566,7 @@ export default function HappyChristmas2025() {
 
           {/* Back to Blogs */}
           <div className="border-t pt-8">
-            <Link 
+            <Link
               href="/important-blogs"
               className="inline-flex items-center text-little-caesars-orange hover:text-red-600 font-semibold group"
             >
