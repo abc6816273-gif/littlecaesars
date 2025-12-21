@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { Calendar, Clock, ArrowRight } from 'lucide-react'
 import { useState } from 'react'
 
 interface BlogCardProps {
@@ -79,19 +80,26 @@ export default function BlogCard({ blog, featured = false, priority = false }: B
           {blog.excerpt}
         </p>
 
-        {/* Footer - Date & Read More */}
-        <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-          <span className="text-gray-400 text-sm">
+        {/* Date & Read Time */}
+        <div className="flex items-center justify-between mb-4 text-sm text-gray-500">
+          <div className="flex items-center">
+            <Calendar className="w-4 h-4 mr-1" />
             {blog.date}
-          </span>
-          <Link
-            href={`/${blog.slug}`}
-            className="text-red-500 hover:text-red-600 text-sm font-medium transition-colors inline-flex items-center group"
-          >
-            Read More
-            <span className="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-          </Link>
+          </div>
+          <div className="flex items-center">
+            <Clock className="w-4 h-4 mr-1" />
+            {blog.readTime}
+          </div>
         </div>
+
+        {/* Read Full Guide Button */}
+        <Link
+          href={`/${blog.slug}`}
+          className="inline-flex items-center w-full justify-center bg-gradient-to-r from-little-caesars-orange to-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-red-600 hover:to-little-caesars-orange transition-all duration-200 group"
+        >
+          Read Full Guide
+          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+        </Link>
       </div>
     </article>
   )
