@@ -40,7 +40,7 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
   } | null>(null)
   const [timeUntilUpdate, setTimeUntilUpdate] = useState<string>('Calculating...')
   const [isLoading, setIsLoading] = useState(true)
-  
+
   const today = getFormattedDate()
   const structuredDate = getStructuredDate()
   const updateTime = lastUpdated || today
@@ -49,102 +49,102 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
   const fetchRealTimeCoupons = async () => {
     if (!dynamicCoupons) {
       setIsLoading(true)
-        try {
-          console.log('🎫 Homepage fetching real-time coupons...')
-          
-          // Try to force fresh coupons from Gemini API with retry logic
-          let response = await fetch('/api/update-coupons?force=true', {
+      try {
+        console.log('🎫 Homepage fetching real-time coupons...')
+
+        // Try to force fresh coupons from Gemini API with retry logic
+        let response = await fetch('/api/update-coupons?force=true', {
+          cache: 'no-store',
+          headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache'
+          }
+        })
+
+        console.log('🔍 API Response Status:', response.status, response.ok)
+
+        // If force failed, try without force parameter
+        if (!response.ok) {
+          console.log('🔄 Force update failed, trying regular fetch...')
+          response = await fetch('/api/update-coupons', {
             cache: 'no-store',
             headers: {
               'Cache-Control': 'no-cache',
               'Pragma': 'no-cache'
             }
           })
-          
-          console.log('🔍 API Response Status:', response.status, response.ok)
-          
-          // If force failed, try without force parameter
-          if (!response.ok) {
-            console.log('🔄 Force update failed, trying regular fetch...')
-            response = await fetch('/api/update-coupons', {
-              cache: 'no-store',
-              headers: {
-                'Cache-Control': 'no-cache',
-                'Pragma': 'no-cache'
-              }
-            })
-          }
-          
-          if (response.ok) {
-            const data = await response.json()
-            console.log('🔍 API Response Data:', {
-              success: data.success,
-              coupons_count: data.data?.coupons?.length || 0,
-              source: data.data?.source || 'unknown',
-              error: data.error || 'none'
-            })
-            
-            if (data.success && data.data?.coupons) {
-              setLoadedCoupons(data.data.coupons)
-              setCouponMetadata({
-                total_count: data.data.coupons.length,
-                last_updated: data.data.lastUpdated || data.data.metadata?.last_updated || new Date().toISOString(),
-                source: "Live Data",
-                version: "2.0.0"
-              })
-              console.log('✅ Homepage real-time coupons loaded:', data.data.coupons.length)
-              console.log('📊 Coupon source:', data.data.metadata?.source || 'Unknown')
-              console.log('🕐 Last updated:', data.data.lastUpdated || data.data.metadata?.last_updated)
-              setIsLoading(false)
-              return
-            } else {
-              console.log('⚠️ API response invalid format:', data)
-            }
-          } else {
-            console.log('⚠️ API request failed with status:', response.status)
-            const errorText = await response.text()
-            console.log('⚠️ Error response:', errorText)
-          }
-          
-          console.log('⚠️ API failed, falling back to JSON file...')
-          
-          // Fallback to JSON file
-          const fallbackResponse = await fetch('/data/coupons.json', {
-            cache: 'no-store'
-          })
-          console.log('🔍 Fallback Response Status:', fallbackResponse.status, fallbackResponse.ok)
-          
-          if (!fallbackResponse.ok) {
-            throw new Error(`HTTP error! status: ${fallbackResponse.status}`)
-          }
-          
-          const fallbackData = await fallbackResponse.json()
-          console.log('🔍 Fallback Data:', {
-            has_coupons: !!fallbackData.coupons,
-            coupons_count: fallbackData.coupons?.length || 0,
-            metadata_source: fallbackData.metadata?.source || 'unknown'
-          })
-          
-          if (fallbackData && fallbackData.coupons && Array.isArray(fallbackData.coupons) && fallbackData.coupons.length > 0) {
-            setLoadedCoupons(fallbackData.coupons) // Show all fallback coupons too
-            if (fallbackData.metadata) {
-              setCouponMetadata({
-                ...fallbackData.metadata,
-                source: "Fallback Data"
-              })
-            }
-            console.log('✅ Homepage fallback coupons loaded:', fallbackData.coupons.length)
-          } else {
-            console.warn('No valid coupon data found in JSON file')
-            setLoadedCoupons([])
-          }
-          
-        } catch (err) {
-          console.error('Error loading coupons:', err)
-          setLoadedCoupons([])
-        } finally {
-          setIsLoading(false)
         }
+
+        if (response.ok) {
+          const data = await response.json()
+          console.log('🔍 API Response Data:', {
+            success: data.success,
+            coupons_count: data.data?.coupons?.length || 0,
+            source: data.data?.source || 'unknown',
+            error: data.error || 'none'
+          })
+
+          if (data.success && data.data?.coupons) {
+            setLoadedCoupons(data.data.coupons)
+            setCouponMetadata({
+              total_count: data.data.coupons.length,
+              last_updated: data.data.lastUpdated || data.data.metadata?.last_updated || new Date().toISOString(),
+              source: "Live Data",
+              version: "2.0.0"
+            })
+            console.log('✅ Homepage real-time coupons loaded:', data.data.coupons.length)
+            console.log('📊 Coupon source:', data.data.metadata?.source || 'Unknown')
+            console.log('🕐 Last updated:', data.data.lastUpdated || data.data.metadata?.last_updated)
+            setIsLoading(false)
+            return
+          } else {
+            console.log('⚠️ API response invalid format:', data)
+          }
+        } else {
+          console.log('⚠️ API request failed with status:', response.status)
+          const errorText = await response.text()
+          console.log('⚠️ Error response:', errorText)
+        }
+
+        console.log('⚠️ API failed, falling back to JSON file...')
+
+        // Fallback to JSON file
+        const fallbackResponse = await fetch('/data/coupons.json', {
+          cache: 'no-store'
+        })
+        console.log('🔍 Fallback Response Status:', fallbackResponse.status, fallbackResponse.ok)
+
+        if (!fallbackResponse.ok) {
+          throw new Error(`HTTP error! status: ${fallbackResponse.status}`)
+        }
+
+        const fallbackData = await fallbackResponse.json()
+        console.log('🔍 Fallback Data:', {
+          has_coupons: !!fallbackData.coupons,
+          coupons_count: fallbackData.coupons?.length || 0,
+          metadata_source: fallbackData.metadata?.source || 'unknown'
+        })
+
+        if (fallbackData && fallbackData.coupons && Array.isArray(fallbackData.coupons) && fallbackData.coupons.length > 0) {
+          setLoadedCoupons(fallbackData.coupons) // Show all fallback coupons too
+          if (fallbackData.metadata) {
+            setCouponMetadata({
+              ...fallbackData.metadata,
+              source: "Fallback Data"
+            })
+          }
+          console.log('✅ Homepage fallback coupons loaded:', fallbackData.coupons.length)
+        } else {
+          console.warn('No valid coupon data found in JSON file')
+          setLoadedCoupons([])
+        }
+
+      } catch (err) {
+        console.error('Error loading coupons:', err)
+        setLoadedCoupons([])
+      } finally {
+        setIsLoading(false)
+      }
     } else {
       setIsLoading(false)
     }
@@ -153,7 +153,7 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
   // Load real-time coupons on component mount and setup refresh
   useEffect(() => {
     fetchRealTimeCoupons()
-    
+
     // Set up periodic refresh every 2 minutes to ensure real-time updates
     const refreshInterval = setInterval(() => {
       console.log('🔄 Periodic refresh of coupons...')
@@ -169,16 +169,16 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
       const now = new Date()
       const nextUpdate = new Date()
       nextUpdate.setUTCHours(13, 0, 0, 0) // 1 PM UTC = 8 AM EST
-      
+
       if (nextUpdate <= now) {
         nextUpdate.setUTCDate(nextUpdate.getUTCDate() + 1)
       }
-      
+
       const timeDiff = nextUpdate.getTime() - now.getTime()
       const hours = Math.floor(timeDiff / (1000 * 60 * 60))
       const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60))
       const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000)
-      
+
       return `${hours}h ${minutes}m ${seconds}s`
     }
 
@@ -193,9 +193,9 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
 
   // Use loaded coupons from API (dynamicCoupons is null on homepage to trigger fetch)
   const activeCoupons = loadedCoupons
-  
-  
-    const couponCodes: CouponCode[] = activeCoupons && activeCoupons.length > 0 ? activeCoupons.map((coupon, index) => ({
+
+
+  const couponCodes: CouponCode[] = activeCoupons && activeCoupons.length > 0 ? activeCoupons.map((coupon, index) => ({
     code: coupon.code || 'NO CODE',
     discount: coupon.discount || 'Discount Available',
     description: coupon.description || 'Special offer available',
@@ -204,36 +204,36 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
 
     validUntil: coupon.validUntil || (coupon as any).valid_until || 'Valid until further notice'
   })) : [
-         {
+    {
       code: "STATIC1",
       discount: "OLD DATA",
       description: "These are old static coupons - API failed to load",
       verified: "Fallback Only",
-       type: "code",
-   
-       validUntil: "December 31, 2025"
-     },
+      type: "code",
+
+      validUntil: "December 31, 2025"
+    },
     {
       code: "NEWCUSTOMER",
       discount: "$5 OFF",
       description: "First-time Little Caesars app users",
       verified: "Verified December 2024",
       type: "code",
-  
+
       validUntil: "Ongoing"
     },
-       {
+    {
       code: "PIZZA30",
-       discount: "30% OFF",
-       description: "Savings on family combo meals and large pizzas",
-       verified: "Verified December 2024",
-       type: "code",
-   
-       validUntil: "December 31, 2024"
-     }
+      discount: "30% OFF",
+      description: "Savings on family combo meals and large pizzas",
+      verified: "Verified December 2024",
+      type: "code",
+
+      validUntil: "December 31, 2024"
+    }
   ]
 
-          const otherSavings: CouponCode[] = activeCoupons && activeCoupons.length > 3 ? activeCoupons.slice(3, 6).map((coupon, index) => ({
+  const otherSavings: CouponCode[] = activeCoupons && activeCoupons.length > 3 ? activeCoupons.slice(3, 6).map((coupon, index) => ({
     code: coupon.code || 'NO CODE',
     discount: coupon.discount || 'Special Offer',
     description: coupon.description || 'Additional savings available',
@@ -242,33 +242,33 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
 
     validUntil: coupon.validUntil || (coupon as any).valid_until || 'Valid until further notice'
   })) : [
-         {
-       code: "CAESAR REWARDS",
-       discount: "FREE CRAZY BREAD",
-       description: "Join Caesar Rewards & get free Crazy Bread on first order",
-       verified: "Verified December 2024",
-       type: "deal",
-   
-       validUntil: "Ongoing"
-     },
-     {
-       code: "MILITARY ID",
-       discount: "10% OFF",
-       description: "Active & retired military with valid ID",
-       verified: "Verified December 2024",
-       type: "discount",
-   
-       validUntil: "Always Available"
-     },
-     {
-       code: "FAMILY DEAL",
-       discount: "$10 OFF",
-       description: "Family combo meals with 2+ large pizzas",
-       verified: "Verified December 2024",
-       type: "deal",
-   
-       validUntil: "Daily Special"
-     }
+    {
+      code: "CAESAR REWARDS",
+      discount: "FREE CRAZY BREAD",
+      description: "Join Caesar Rewards & get free Crazy Bread on first order",
+      verified: "Verified December 2024",
+      type: "deal",
+
+      validUntil: "Ongoing"
+    },
+    {
+      code: "MILITARY ID",
+      discount: "10% OFF",
+      description: "Active & retired military with valid ID",
+      verified: "Verified December 2024",
+      type: "discount",
+
+      validUntil: "Always Available"
+    },
+    {
+      code: "FAMILY DEAL",
+      discount: "$10 OFF",
+      description: "Family combo meals with 2+ large pizzas",
+      verified: "Verified December 2024",
+      type: "deal",
+
+      validUntil: "Daily Special"
+    }
   ]
 
   const faqItems: FAQItem[] = [
@@ -346,7 +346,7 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
               </span>
             </div>
           </div>
-          
+
           {/* Description */}
           <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
             {coupon.description}
@@ -485,7 +485,7 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
           })
         }}
       />
-      
+
       {/* Additional Schema for Coupon Offers */}
       <script
         type="application/ld+json"
@@ -514,22 +514,22 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
       />
 
       <section id="coupons" className="pt-24 pb-20 bg-white relative overflow-hidden">
-        
+
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           {/* Header */}
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-6 py-3 rounded-full bg-little-caesars-orange text-white text-sm font-bold mb-6 shadow-lg">
               🍕 EXCLUSIVE PIZZA DEALS
             </div>
-            <h1 className="font-slab font-slab-extra text-4xl sm:text-5xl lg:text-6xl text-little-caesars-black mb-6 leading-tight">
-              Little Caesars Coupons & 
+            <h2 className="font-slab font-slab-extra text-4xl sm:text-5xl lg:text-6xl text-little-caesars-black mb-6 leading-tight">
+              Little Caesars Coupons &
               <span className="block text-little-caesars-orange">Discount Codes 2025</span>
-            </h1>
+            </h2>
             <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Verified coupon codes and smart savings strategies for Hot-N-Ready® pizza deals. 
+              Verified coupon codes and smart savings strategies for Hot-N-Ready® pizza deals.
               <time dateTime={structuredDate} className="font-bold text-little-caesars-orange mx-2">Updated {updateTime}</time>
             </p>
-            
+
             {/* SEO Keywords Display */}
             <div className="mt-8 flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
               {['Pizza Coupons', 'Family Combos', 'Hot-N-Ready', 'Crazy Bread', 'App Deals', 'Deep Dish'].map((keyword, index) => (
@@ -547,117 +547,117 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
                 <img src="/orange-background-6859059_1280.webp" alt="" className="w-full h-full object-cover" />
               </div>
               <div className="relative z-10">
-              <div className="flex items-center justify-center mb-4">
-                <h3 className="text-2xl font-bold text-white">🍕 AI-Powered Daily Updates</h3>
-              </div>
-              <p className="text-white text-lg leading-relaxed mb-6 max-w-3xl mx-auto">
-                <strong className="text-little-caesars-orange font-bold">This site automatically updates pizza coupons daily</strong> using advanced AI technology. 
-                Fresh Little Caesars discount codes are fetched every morning at 8 AM Eastern Time and verified for accuracy.
-              </p>
-              
-              {/* Countdown Timer */}
-              <div className="bg-white rounded-xl p-6 mb-6 border-2 border-little-caesars-orange shadow-lg">
-                <div className="flex items-center justify-center mb-3">
-                  <span className="text-base font-bold text-little-caesars-black">Next Update In:</span>
+                <div className="flex items-center justify-center mb-4">
+                  <h3 className="text-2xl font-bold text-white">🍕 AI-Powered Daily Updates</h3>
                 </div>
-                <div className="text-3xl font-bold text-little-caesars-orange font-mono bg-little-caesars-yellow px-6 py-3 rounded-lg border border-little-caesars-orange">
-                  {timeUntilUpdate}
+                <p className="text-white text-lg leading-relaxed mb-6 max-w-3xl mx-auto">
+                  <strong className="text-little-caesars-orange font-bold">This site automatically updates pizza coupons daily</strong> using advanced AI technology.
+                  Fresh Little Caesars discount codes are fetched every morning at 8 AM Eastern Time and verified for accuracy.
+                </p>
+
+                {/* Countdown Timer */}
+                <div className="bg-white rounded-xl p-6 mb-6 border-2 border-little-caesars-orange shadow-lg">
+                  <div className="flex items-center justify-center mb-3">
+                    <span className="text-base font-bold text-little-caesars-black">Next Update In:</span>
+                  </div>
+                  <div className="text-3xl font-bold text-little-caesars-orange font-mono bg-little-caesars-yellow px-6 py-3 rounded-lg border border-little-caesars-orange">
+                    {timeUntilUpdate}
+                  </div>
                 </div>
-              </div>
-              
-              {couponMetadata && (
-                <div className="text-base text-little-caesars-black bg-white rounded-lg p-4 border border-little-caesars-orange">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                    <p>
-                      <span className="font-semibold text-little-caesars-black">Last updated:</span> 
-                      <span className="font-bold text-little-caesars-orange mx-2">
-                        {new Date(couponMetadata.last_updated).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long', 
-                          day: 'numeric',
-                          hour: '2-digit',
-                          minute: '2-digit'
-                        })}
-                      </span> 
-                      <span className="mx-2">•</span>
-                      <span className="font-semibold text-little-caesars-black">Total active coupons:</span> 
-                      <span className="font-bold text-little-caesars-orange mx-2">{activeCoupons.length}</span>
-                    </p>
-                    <div className="flex items-center gap-2">
-                      <span className="text-xs font-medium px-2 py-1 rounded-full border">
-                        {couponMetadata.source.includes('Gemini') || couponMetadata.source.includes('Live') ? (
-                          <span className="text-green-700 bg-green-100 border-green-300 px-2 py-1 rounded-full">
-                            🔄 Live Data
-                          </span>
-                        ) : couponMetadata.source.includes('Fallback') ? (
-                          <span className="text-orange-700 bg-orange-100 border-orange-300 px-2 py-1 rounded-full">
-                            📄 Fallback Data
-                          </span>
-                        ) : (
-                          <span className="text-blue-700 bg-blue-100 border-blue-300 px-2 py-1 rounded-full">
-                            📊 Live Data
-                          </span>
-                        )}
-                      </span>
-                      <button
-                        onClick={() => {
-                          console.log('🔄 Manual refresh triggered')
-                          setIsLoading(true)
-                          fetchRealTimeCoupons()
-                        }}
-                        disabled={isLoading}
-                        className="text-xs bg-little-caesars-orange text-white px-3 py-1 rounded-full hover:bg-orange-600 disabled:opacity-50 transition-colors"
-                      >
-                        {isLoading ? '🔄' : '🔄 Refresh'}
-                      </button>
+
+                {couponMetadata && (
+                  <div className="text-base text-little-caesars-black bg-white rounded-lg p-4 border border-little-caesars-orange">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                      <p>
+                        <span className="font-semibold text-little-caesars-black">Last updated:</span>
+                        <span className="font-bold text-little-caesars-orange mx-2">
+                          {new Date(couponMetadata.last_updated).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                            hour: '2-digit',
+                            minute: '2-digit'
+                          })}
+                        </span>
+                        <span className="mx-2">•</span>
+                        <span className="font-semibold text-little-caesars-black">Total active coupons:</span>
+                        <span className="font-bold text-little-caesars-orange mx-2">{activeCoupons.length}</span>
+                      </p>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-medium px-2 py-1 rounded-full border">
+                          {couponMetadata.source.includes('Gemini') || couponMetadata.source.includes('Live') ? (
+                            <span className="text-green-700 bg-green-100 border-green-300 px-2 py-1 rounded-full">
+                              🔄 Live Data
+                            </span>
+                          ) : couponMetadata.source.includes('Fallback') ? (
+                            <span className="text-orange-700 bg-orange-100 border-orange-300 px-2 py-1 rounded-full">
+                              📄 Fallback Data
+                            </span>
+                          ) : (
+                            <span className="text-blue-700 bg-blue-100 border-blue-300 px-2 py-1 rounded-full">
+                              📊 Live Data
+                            </span>
+                          )}
+                        </span>
+                        <button
+                          onClick={() => {
+                            console.log('🔄 Manual refresh triggered')
+                            setIsLoading(true)
+                            fetchRealTimeCoupons()
+                          }}
+                          disabled={isLoading}
+                          className="text-xs bg-little-caesars-orange text-white px-3 py-1 rounded-full hover:bg-orange-600 disabled:opacity-50 transition-colors"
+                        >
+                          {isLoading ? '🔄' : '🔄 Refresh'}
+                        </button>
+                      </div>
                     </div>
                   </div>
+                )}
+              </div>
+            </div>
+
+            {/* Coupon Codes Grid */}
+            <div className="mb-20">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl sm:text-4xl font-slab font-bold text-little-caesars-black mb-4">
+                  Active Coupon Codes
+                </h2>
+                <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                  Verified discount codes for maximum savings on pizza, family combos, and more Little Caesars favorites
+                </p>
+              </div>
+              {isLoading ? (
+                // Loading skeleton while fetching real-time coupons
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8">
+                  {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
+                    <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden animate-pulse">
+                      <div className="bg-gray-300 h-16"></div>
+                      <div className="p-6">
+                        <div className="h-4 bg-gray-300 rounded mb-2"></div>
+                        <div className="h-8 bg-gray-300 rounded w-3/4 mb-4"></div>
+                        <div className="h-4 bg-gray-300 rounded w-1/2 mb-4"></div>
+                        <div className="h-12 bg-gray-300 rounded"></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8">
+                  {couponCodes.map((coupon, index) => renderCouponCard(coupon, index))}
                 </div>
               )}
             </div>
-          </div>
 
-          {/* Coupon Codes Grid */}
-          <div className="mb-20">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl sm:text-4xl font-slab font-bold text-little-caesars-black mb-4">
-                Active Coupon Codes
-              </h2>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Verified discount codes for maximum savings on pizza, family combos, and more Little Caesars favorites
-              </p>
-            </div>
-            {isLoading ? (
-              // Loading skeleton while fetching real-time coupons
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8">
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((i) => (
-                  <div key={i} className="bg-white rounded-2xl shadow-lg overflow-hidden animate-pulse">
-                    <div className="bg-gray-300 h-16"></div>
-                    <div className="p-6">
-                      <div className="h-4 bg-gray-300 rounded mb-2"></div>
-                      <div className="h-8 bg-gray-300 rounded w-3/4 mb-4"></div>
-                      <div className="h-4 bg-gray-300 rounded w-1/2 mb-4"></div>
-                      <div className="h-12 bg-gray-300 rounded"></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8">
-              {couponCodes.map((coupon, index) => renderCouponCard(coupon, index))}
-            </div>
-            )}
-          </div>
-
-          {/* Other Savings Methods */}
-          <div className="mb-20">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl sm:text-4xl font-slab font-bold text-little-caesars-black mb-4">
-                Additional Savings Methods
-              </h2>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Smart strategies and exclusive offers for even more value
-              </p>
+            {/* Other Savings Methods */}
+            <div className="mb-20">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl sm:text-4xl font-slab font-bold text-little-caesars-black mb-4">
+                  Additional Savings Methods
+                </h2>
+                <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                  Smart strategies and exclusive offers for even more value
+                </p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
