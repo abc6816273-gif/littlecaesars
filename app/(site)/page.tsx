@@ -17,60 +17,60 @@ export function generateMetadata(): Metadata {
   // Ultra SEO-optimized metadata
   const title = `Little Caesars Menu Prices and Pictures [September 2025]`
   const description = `Complete Little Caesars menu guide with current prices, pictures, calories & nutrition info. Hot-N-Ready pizzas, Crazy Bread, wings, and exclusive deals. Updated September 2025.`
-  
+
   // Fast static metadata - no API dependencies
-    return {
-      title,
-      description,
-      keywords: [
-        'Little Caesars menu 2025',
-        `Little Caesars prices ${getFormattedDate()}`, 
-        'Little Caesars calories nutrition',
-        'Little Caesars Hot-N-Ready pizza deals',
-        'Little Caesars coupons 2025',
-        'Little Caesars USA menu updated'
-      ].join(', '),
-      openGraph: {
-        title: `Little Caesars Menu with Prices 2025 | Complete Guide - Updated ${getFormattedDate()}`,
-        description: `Latest Little Caesars menu with prices, calories & nutrition. Updated ${getFormattedDate()}. Find pizza, breadsticks, wings & exclusive Hot-N-Ready deals.`,
-        url: 'https://littlecaesarsmenu.us',
-        siteName: 'Little Caesars Menu',
-        images: [
-          {
-            url: 'https://littlecaesarsmenu.us/menu/Little%20Caesars%20Menu/little-caesars-menu.jpg',
-            width: 1200,
-            height: 630,
-            alt: `Little Caesars Menu with Prices 2025 - Complete Guide - Updated ${getFormattedDate()}`
-          }
-        ],
-        locale: 'en_US',
-        type: 'website',
-      },
-      twitter: {
-        card: 'summary_large_image',
-        title: `Little Caesars Menu with Prices 2025 | Updated ${getFormattedDate()}`,
-        description: `Complete Little Caesars menu with current prices, calories & nutrition. Updated ${getFormattedDate()}. Find pizza, breadsticks, wings & Hot-N-Ready deals.`,
-        images: ['https://littlecaesarsmenu.us/menu/Little%20Caesars%20Menu/little-caesars-menu.jpg'],
-      },
-      alternates: {
-        canonical: 'https://littlecaesarsmenu.us',
-      },
-      robots: {
+  return {
+    title,
+    description,
+    keywords: [
+      'Little Caesars menu 2025',
+      `Little Caesars prices ${getFormattedDate()}`,
+      'Little Caesars calories nutrition',
+      'Little Caesars Hot-N-Ready pizza deals',
+      'Little Caesars coupons 2025',
+      'Little Caesars USA menu updated'
+    ].join(', '),
+    openGraph: {
+      title: `Little Caesars Menu with Prices 2025 | Complete Guide - Updated ${getFormattedDate()}`,
+      description: `Latest Little Caesars menu with prices, calories & nutrition. Updated ${getFormattedDate()}. Find pizza, breadsticks, wings & exclusive Hot-N-Ready deals.`,
+      url: 'https://littlecaesarsmenu.us',
+      siteName: 'Little Caesars Menu',
+      images: [
+        {
+          url: 'https://littlecaesarsmenu.us/menu/Little%20Caesars%20Menu/little-caesars-menu.jpg',
+          width: 1200,
+          height: 630,
+          alt: `Little Caesars Menu with Prices 2025 - Complete Guide - Updated ${getFormattedDate()}`
+        }
+      ],
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `Little Caesars Menu with Prices 2025 | Updated ${getFormattedDate()}`,
+      description: `Complete Little Caesars menu with current prices, calories & nutrition. Updated ${getFormattedDate()}. Find pizza, breadsticks, wings & Hot-N-Ready deals.`,
+      images: ['https://littlecaesarsmenu.us/menu/Little%20Caesars%20Menu/little-caesars-menu.jpg'],
+    },
+    alternates: {
+      canonical: 'https://littlecaesarsmenu.us',
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
         index: true,
         follow: true,
-        googleBot: {
-          index: true,
-          follow: true,
-          'max-video-preview': -1,
-          'max-image-preview': 'large',
-          'max-snippet': -1,
-        },
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
       },
-      other: {
-        'article:published_time': '2025-08-22T00:00:00Z',
-        'article:modified_time': '2025-08-22T12:00:00Z',
-      }
+    },
+    other: {
+      'article:published_time': '2025-08-22T00:00:00Z',
+      'article:modified_time': '2025-08-22T12:00:00Z',
     }
+  }
 }
 
 // Enhanced Menu Schema with new images
@@ -102,7 +102,7 @@ const enhancedMenuSchema = {
       "description": "Fresh, hot pizza ready when you are with classic pepperoni and cheese"
     },
     {
-      "@type": "MenuSection", 
+      "@type": "MenuSection",
       "name": "Specialty Pizza",
       "description": "Premium specialty pizzas including Meat Lovers, Supreme, and Deep Deep Dish"
     },
@@ -130,18 +130,18 @@ const enhancedMenuSchema = {
 }
 
 // ULTIMATE SEO SCHEMA for #1 Google Ranking
-const { 
-  localBusinessSchema, 
-  menuSchema, 
-  websiteSchema, 
-  breadcrumbSchema 
+const {
+  localBusinessSchema,
+  menuSchema,
+  websiteSchema,
+  breadcrumbSchema
 } = generateUltimateSchema()
 
 // Real-time coupons now handled by CouponSection component via Gemini API
 
 function FeaturedContent() {
   // Ultra SEO-optimized content structure mimicking competitor's success
-  
+
   const menuHighlights = [
     { name: "Hot-N-Ready Pepperoni", price: "$5.55", category: "Large Round Pizzas" },
     { name: "Hot-N-Ready Cheese", price: "$5.55", category: "Large Round Pizzas" },
@@ -160,7 +160,7 @@ function FeaturedContent() {
       items: ['Pepperoni Pizza - $5.55', 'Cheese Pizza - $5.55', 'Sausage Pizza - $6.00']
     },
     {
-      title: 'Large Round Pizzas', 
+      title: 'Large Round Pizzas',
       description: 'Classic round pizzas in large size perfect for families and groups. Choose from pepperoni, cheese, sausage, and specialty combinations with fresh toppings.',
       icon: '🍕',
       href: '/menus-prices#large-round',
@@ -170,7 +170,7 @@ function FeaturedContent() {
       title: 'Detroit-Style Deep Dish Pizzas',
       description: 'Our signature Deep Deep Dish pizzas with thick, buttery crust and cheese baked to perfection. A Detroit original that delivers incredible flavor and value.',
       icon: '🍰',
-      href: '/menus-prices#deep-dish', 
+      href: '/menus-prices#deep-dish',
       items: ['Deep Deep Dish Pepperoni - $8.49', 'Deep Deep Dish Combo - $10.99']
     },
     {
@@ -202,21 +202,21 @@ function FeaturedContent() {
       <section id="little-caesars-menu" className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-white via-orange-50/30 to-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="font-slab text-4xl sm:text-5xl lg:text-6xl font-bold text-little-caesars-black mb-6">
+            <h2 className="font-slab text-4xl sm:text-5xl lg:text-6xl font-bold text-little-caesars-black mb-6">
               Little Caesars Menu With Prices [2025]
-            </h1>
+            </h2>
             <div className="text-xl text-gray-700 max-w-5xl mx-auto leading-relaxed mb-8">
               <p className="text-lg sm:text-xl">
                 Discover the complete <strong>Little Caesars menu</strong> featuring <strong>Hot-N-Ready® pizzas</strong>, famous <strong>Crazy Bread®</strong>, and unbeatable value. Our <strong>Little Caesars prices</strong> deliver the best value in pizza with fresh, hot food ready when you are. From our signature <strong>pepperoni pizza</strong> to specialty <strong>Deep!Deep!™ Dish</strong>, every item is made with quality ingredients.
               </p>
             </div>
-            
+
             {/* Value Proposition */}
             <div className="inline-flex items-center px-8 py-4 bg-little-caesars-orange text-white rounded-full text-lg font-bold mb-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
               🔥 HOT-N-READY® AVAILABLE ALL DAY!
             </div>
           </div>
-          
+
           {/* Detailed Menu Sections - Little Caesars Style */}
           <DetailedMenuSections />
 
@@ -228,7 +228,7 @@ function FeaturedContent() {
                 Browse specific menu categories for detailed information and current pricing on all your <strong>Little Caesars favorites</strong>.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <Link href="/menus-prices#pizza" className="bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center hover:bg-white/30 transition-all duration-200 border border-white/30">
                 <span className="font-bold text-white">🍕 Pizza</span>
@@ -269,18 +269,18 @@ function FeaturedContent() {
 
 export default function HomePage() {
   // Real-time coupons now loaded client-side via CouponSection component
-  
+
   // Skip SEO fetching for ultra-fast loading
   const homePageSEO = { hasYoastSEO: false, seoData: null }
-  
+
   return (
     <>
       {/* Yoast SEO Integration */}
-      <ConditionalYoastSEOHead 
-        seoData={homePageSEO.seoData} 
+      <ConditionalYoastSEOHead
+        seoData={homePageSEO.seoData}
         fallbackSchema={JSON.stringify(websiteSchema)}
       />
-      
+
       {/* Fallback JSON-LD Schemas for Rich Snippets (when no Yoast) */}
       {!homePageSEO.hasYoastSEO && (
         <>
@@ -314,13 +314,90 @@ export default function HomePage() {
           href: "/menus-prices"
         }}
         secondaryCta={{
-          text: "🎉 View Current Deals", 
+          text: "🎉 View Current Deals",
           href: "/coupons"
         }}
       />
 
       {/* Featured Content - Main Menu Section RIGHT AFTER HERO */}
-        <FeaturedContent />
+      <FeaturedContent />
+
+      {/* Latest Blogs Section - SEO Internal Linking */}
+      <section className="py-12 bg-gradient-to-br from-red-50 via-white to-green-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="font-slab text-3xl sm:text-4xl font-bold text-little-caesars-black mb-4">
+              📰 Latest Blog Posts
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Stay updated with the latest Little Caesars news, deals, and holiday specials
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Christmas Blog Card */}
+            <Link
+              href="/happy-christmas-2025"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-red-500"
+            >
+              <div className="relative h-48 bg-gradient-to-r from-red-600 to-green-600">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-6xl">🎄</span>
+                </div>
+                <div className="absolute top-3 right-3 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold">
+                  🔥 NEW
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-red-500 uppercase tracking-wide">Holiday Special</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
+                  Happy Christmas 2025 - Holiday Deals & Party Ideas
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Celebrate Christmas with Little Caesars! Exclusive holiday deals, party planning tips, and festive pizza ideas.
+                </p>
+                <div className="mt-4 text-little-caesars-orange font-semibold text-sm flex items-center">
+                  Read More →
+                </div>
+              </div>
+            </Link>
+
+            {/* Menu Guide Card */}
+            <Link
+              href="/little-caesars-menu"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
+            >
+              <div className="relative h-48 bg-gradient-to-r from-little-caesars-orange to-yellow-500">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-6xl">🍕</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Complete Guide</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
+                  Little Caesars Menu Prices & Calories 2025
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Your ultimate guide to Little Caesars menu with prices, calories, nutrition info, and money-saving tips.
+                </p>
+                <div className="mt-4 text-little-caesars-orange font-semibold text-sm flex items-center">
+                  Read More →
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          {/* View All Blogs Link */}
+          <div className="text-center mt-8">
+            <Link
+              href="/important-blogs"
+              className="inline-flex items-center px-6 py-3 bg-little-caesars-orange text-white rounded-full font-bold hover:bg-orange-600 transition-colors shadow-lg hover:shadow-xl"
+            >
+              View All Blogs →
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Real-Time Coupons Section (Gemini AI integration) */}
       <CouponSection />
