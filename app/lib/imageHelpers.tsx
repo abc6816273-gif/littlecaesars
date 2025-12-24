@@ -43,10 +43,10 @@ export const toBase64 = (str: string): string => {
  */
 const isWordPressMedia = (src: string): boolean => {
   const wordpressDomains = [
-    'admin.texasroadhouse-menus.us',
-    'texasroadhouse-menus.us'
+    'admin.littlecaesarsmenu.us',
+    'littlecaesarsmenu.us'
   ]
-  
+
   try {
     const url = new URL(src)
     return wordpressDomains.some(domain => url.hostname.includes(domain))
@@ -68,16 +68,16 @@ export function parseHtmlToNextImage(html: string): ReactNode {
       // Check if it's an img element
       if (domNode instanceof Element && domNode.name === 'img') {
         const { attribs } = domNode
-        
+
         // Extract image attributes
         const src = attribs.src
         const alt = attribs.alt || ''
         const width = parseInt(attribs.width) || 1200
         const height = parseInt(attribs.height) || 800
-        
+
         // Skip if no src
         if (!src) return domNode
-        
+
         // Debug logging for content images
         console.log('Content Image Debug:', {
           src,
@@ -86,7 +86,7 @@ export function parseHtmlToNextImage(html: string): ReactNode {
           height,
           isWordPressMedia: isWordPressMedia(src)
         })
-        
+
         // If it's WordPress media, use Next.js Image for optimization
         if (isWordPressMedia(src)) {
           return (
@@ -100,8 +100,8 @@ export function parseHtmlToNextImage(html: string): ReactNode {
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(16, 10))}`}
                 loading="lazy"
-                style={{ 
-                  height: 'auto', 
+                style={{
+                  height: 'auto',
                   width: '100%',
                   maxWidth: '100%',
                   display: 'block',
@@ -131,12 +131,12 @@ export function parseHtmlToNextImage(html: string): ReactNode {
           )
         }
       }
-      
+
       // Return original node if not an img
       return domNode
     }
   }
-  
+
   return parse(html, options)
 }
 

@@ -30,7 +30,7 @@ export interface IndexingResponse {
  * Note: This requires Google Search Console setup and proper authentication
  */
 export async function notifyGoogleIndexing(
-  url: string, 
+  url: string,
   type: 'URL_UPDATED' | 'URL_DELETED' = 'URL_UPDATED'
 ): Promise<IndexingResponse> {
   try {
@@ -58,7 +58,7 @@ export async function notifyGoogleIndexing(
     if (!response.ok) {
       const errorText = await response.text();
       console.error('❌ Google Indexing API error:', errorText);
-      
+
       return {
         success: false,
         message: `Google Indexing API error: ${response.status} ${response.statusText}`
@@ -66,7 +66,7 @@ export async function notifyGoogleIndexing(
     }
 
     const data = await response.json();
-    
+
     return {
       success: true,
       message: 'URL submitted to Google for indexing',
@@ -75,7 +75,7 @@ export async function notifyGoogleIndexing(
 
   } catch (error) {
     console.error('❌ Error notifying Google Indexing API:', error);
-    
+
     return {
       success: false,
       message: error instanceof Error ? error.message : 'Unknown error occurred'
@@ -87,7 +87,7 @@ export async function notifyGoogleIndexing(
  * Notify Google about homepage updates
  */
 export async function notifyHomepageUpdate(): Promise<IndexingResponse> {
-  const homepageUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://texasroadhouse-menus.us';
+  const homepageUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://littlecaesarsmenu.us';
   return notifyGoogleIndexing(homepageUrl, 'URL_UPDATED');
 }
 
@@ -95,7 +95,7 @@ export async function notifyHomepageUpdate(): Promise<IndexingResponse> {
  * Notify Google about coupon page updates
  */
 export async function notifyCouponPageUpdate(): Promise<IndexingResponse> {
-  const couponUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://texasroadhouse-menus.us'}/coupons`;
+  const couponUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'https://littlecaesarsmenu.us'}/coupons`;
   return notifyGoogleIndexing(couponUrl, 'URL_UPDATED');
 }
 

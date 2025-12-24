@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
     // Optional: Add authentication for security
     const authHeader = request.headers.get('authorization')
     const expectedToken = process.env.REVALIDATION_TOKEN
-    
+
     if (expectedToken && authHeader !== `Bearer ${expectedToken}`) {
       return NextResponse.json(
         { error: 'Unauthorized' },
@@ -38,10 +38,10 @@ export async function POST(request: NextRequest) {
     revalidateTag('menus')
     revalidateTag('site-seo')
     revalidateTag('general-settings')
-    
+
     // Revalidate specific paths for immediate content updates
     const pathsToRevalidate = ['/posts', '/', '/menus-prices', '/coupons']
-    
+
     // Add specific post/page path if provided
     if (post_slug) {
       if (post_type === 'post') {
@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Prepare URLs for Google Indexing API
-    const baseUrl = process.env.SITE_URL || 'https://texasroadhouse-menus.us'
+    const baseUrl = process.env.SITE_URL || 'https://littlecaesarsmenu.us'
     const urlsToIndex: string[] = []
 
     // Always reindex sitemap and homepage
@@ -87,10 +87,10 @@ export async function POST(request: NextRequest) {
     try {
       console.log('🔍 Triggering Google Indexing API for URLs:', urlsToIndex)
       indexingResults = await batchNotifyUrls(urlsToIndex)
-      
+
       const successCount = indexingResults.filter(result => result.success).length
       console.log(`✅ Google Indexing API: ${successCount}/${urlsToIndex.length} URLs submitted successfully`)
-      
+
     } catch (error) {
       console.error('❌ Google Indexing API failed:', error)
       // Continue execution even if indexing fails
@@ -110,9 +110,9 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('❌ Error revalidating sitemap:', error)
-    
+
     return NextResponse.json(
-      { 
+      {
         error: 'Failed to revalidate sitemap',
         details: error instanceof Error ? error.message : 'Unknown error'
       },

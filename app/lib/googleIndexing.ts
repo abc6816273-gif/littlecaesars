@@ -94,9 +94,9 @@ export async function notifyGoogle(url: string): Promise<GoogleIndexingResponse>
 
   } catch (error) {
     console.error('❌ Google Indexing API error:', error);
-    
+
     const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
-    
+
     return {
       success: false,
       message: 'Failed to notify Google Indexing API',
@@ -109,9 +109,9 @@ export async function notifyGoogle(url: string): Promise<GoogleIndexingResponse>
  * Notify Google about homepage updates
  */
 export async function notifyHomepageUpdate(): Promise<GoogleIndexingResponse> {
-  const siteUrl = process.env.SITE_URL || 'https://texasroadhouse-menus.us';
+  const siteUrl = process.env.SITE_URL || 'https://littlecaesarsmenu.us';
   const homepageUrl = siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`;
-  
+
   console.log('🏠 Notifying Google about homepage update:', homepageUrl);
   return notifyGoogle(homepageUrl);
 }
@@ -122,7 +122,7 @@ export async function notifyHomepageUpdate(): Promise<GoogleIndexingResponse> {
 export async function notifyCouponPageUpdate(): Promise<GoogleIndexingResponse> {
   const siteUrl = process.env.SITE_URL || 'https://texasroadhouse-menus.us';
   const couponUrl = `${siteUrl}/coupons`;
-  
+
   console.log('🎫 Notifying Google about coupon page update:', couponUrl);
   return notifyGoogle(couponUrl);
 }
@@ -132,13 +132,13 @@ export async function notifyCouponPageUpdate(): Promise<GoogleIndexingResponse> 
  */
 export async function batchNotifyUrls(urls: string[]): Promise<GoogleIndexingResponse[]> {
   console.log('📦 Batch notifying Google for URLs:', urls);
-  
+
   const promises = urls.map(url => notifyGoogle(url));
   const results = await Promise.all(promises);
-  
+
   const successCount = results.filter(result => result.success).length;
   console.log(`✅ Batch notification complete: ${successCount}/${urls.length} successful`);
-  
+
   return results;
 }
 
@@ -150,7 +150,7 @@ export async function notifyCouponUpdates(): Promise<{
   couponPage: GoogleIndexingResponse;
 }> {
   console.log('🔄 Notifying Google about coupon updates...');
-  
+
   const [homepageResult, couponPageResult] = await Promise.all([
     notifyHomepageUpdate(),
     notifyCouponPageUpdate(),
