@@ -29,7 +29,7 @@ interface SitemapResponse {
 async function fetchWordPressContent(): Promise<SitemapResponse | null> {
   try {
     console.log('🗺️ Fetching WordPress content for sitemap...')
-    
+
     const query = `
       query SitemapQuery {
         posts(first: 1000, where: { status: PUBLISH }) {
@@ -56,16 +56,16 @@ async function fetchWordPressContent(): Promise<SitemapResponse | null> {
     `
 
     const graphqlEndpoint = process.env.WORDPRESS_GRAPHQL_ENDPOINT || 'https://admin.littlecaesarsmenu.us/graphql'
-    
+
     const response = await fetch(graphqlEndpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ query }),
-      next: { 
+      next: {
         revalidate: 3600, // Cache for 1 hour
-        tags: ['sitemap', 'posts', 'pages', 'categories'] 
+        tags: ['sitemap', 'posts', 'pages', 'categories']
       }
     })
 
@@ -75,7 +75,7 @@ async function fetchWordPressContent(): Promise<SitemapResponse | null> {
     }
 
     const result = await response.json()
-    
+
     if (result.errors) {
       console.error('❌ GraphQL errors:', result.errors)
       return null
@@ -83,7 +83,7 @@ async function fetchWordPressContent(): Promise<SitemapResponse | null> {
 
     console.log('✅ WordPress content fetched for sitemap')
     return result.data
-    
+
   } catch (error) {
     console.error('❌ Error fetching WordPress content for sitemap:', error)
     return null
@@ -95,16 +95,16 @@ function formatSitemapDate(dateString: string | null | undefined): string {
   if (!dateString) {
     return new Date().toISOString()
   }
-  
+
   try {
     const date = new Date(dateString)
-    
+
     // Check if date is valid
     if (isNaN(date.getTime())) {
       console.warn(`⚠️ Invalid date format: ${dateString}, using current date`)
       return new Date().toISOString()
     }
-    
+
     return date.toISOString()
   } catch (error) {
     console.warn(`⚠️ Date parsing error for: ${dateString}, using current date`)
@@ -116,9 +116,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   try {
     const baseUrl = 'https://littlecaesarsmenu.us'
     const currentDate = new Date().toISOString()
-    
+
     console.log('🗺️ Generating sitemap...')
-    
+
     // Static pages with high priority (always included)
     const staticPages: MetadataRoute.Sitemap = [
       {
@@ -187,6 +187,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'weekly',
         priority: 0.8,
       },
+      // Christmas 2025 Blog - High Priority for SEO
+      {
+        url: `${baseUrl}/happy-christmas-2025`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      },
       {
         url: `${baseUrl}/store-locator`,
         lastModified: currentDate,
@@ -224,7 +231,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Try to fetch WordPress content (non-blocking)
     try {
       const wordpressContent = await fetchWordPressContent()
-      
+
       if (wordpressContent) {
         // Add blog posts (without /blog/ prefix for clean URLs)
         const blogPosts = wordpressContent.posts?.nodes
@@ -257,7 +264,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           })) || []
 
         dynamicPages = [...blogPosts, ...wpPages, ...categoryPages]
-        
+
         console.log(`📝 Added ${blogPosts.length} blog posts to sitemap`)
         console.log(`📄 Added ${wpPages.length} WordPress pages to sitemap`)
         console.log(`🏷️ Added ${categoryPages.length} category pages to sitemap`)
@@ -267,18 +274,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     const allPages = [...staticPages, ...dynamicPages]
-    
+
     console.log(`✅ Generated sitemap with ${allPages.length} total URLs`)
-    
+
     return allPages
-    
+
   } catch (error) {
     console.error('❌ Critical error generating sitemap:', error)
-    
+
     // Fallback: Return minimal static sitemap
     const baseUrl = 'https://littlecaesarsmenu.us'
     const currentDate = new Date().toISOString()
-    
+
     return [
       {
         url: baseUrl,

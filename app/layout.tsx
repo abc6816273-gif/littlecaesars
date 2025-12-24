@@ -18,7 +18,7 @@ import { Analytics } from '@vercel/analytics/react'
 // AdSense Auto Ads only - no manual components needed
 import './globals.css'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   weight: ['400', '500', '600'],
@@ -26,7 +26,7 @@ const inter = Inter({
   preload: true,
 })
 
-const robotoSlab = Roboto_Slab({ 
+const robotoSlab = Roboto_Slab({
   subsets: ['latin'],
   variable: '--font-roboto-slab',
   weight: ['700', '800'],
@@ -44,7 +44,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
     const siteTitle = wpTitle || 'Little Caesars Menu & Prices 2025 - Official Menu'
     const siteDescription = wpDescription || 'Official Little Caesars Menu with Prices 2025. View complete menu, pizza, breadsticks, wings & find locations near you.'
-    
+
     return {
       ...defaultSEO,
       title: {
@@ -82,10 +82,10 @@ export default async function RootLayout({
 }) {
   const organizationSchema = generateOrganizationSchema()
   const websiteSchema = generateWebSiteSchema()
-  
+
   // Fetch site-wide Yoast SEO settings
   const siteSEOResponse = await getSiteSEOSettings()
-  
+
   // Check if we should exclude FAQ schema (for pages with custom FAQ schema)
   // Note: This is a server-side component, so we can't access pathname directly
   // We'll handle FAQ exclusion at the page level instead
@@ -94,7 +94,7 @@ export default async function RootLayout({
     <html lang="en" className={`${inter.variable} ${robotoSlab.variable}`}>
       <head>
         {/* Titles and descriptions are handled by Next.js Metadata API above */}
-        
+
         {/* Your Local Favicon - Always Used */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -102,20 +102,23 @@ export default async function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <meta name="msapplication-TileImage" content="/android-chrome-192x192.png" />
         <meta name="theme-color" content="#FF5A1F" />
-        
+
         {/* PWA Manifest */}
         <link rel="manifest" href="/manifest.json" />
-        
+
         {/* Google AdSense Verification */}
         <meta name="google-adsense-account" content="ca-pub-2413532455913207" />
-        
+
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="6jRrylCqyrDY6mUhnuz7cfhb9ealFRDwpRVw8QsRUPM" />
+
         {/* Performance-optimized preconnects */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="dns-prefetch" href="https://www.littlecaesars.com" />
-        
+
         {/* Google Analytics - Deferred */}
-        
+
         {/* Google AdSense Auto Ads - FIXED Implementation */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2413532455913207" crossOrigin="anonymous"></script>
         <script
@@ -137,7 +140,7 @@ export default async function RootLayout({
             `
           }}
         />
-        
+
         {/* OneSignal Push Notifications - Performance Optimized */}
         <script
           dangerouslySetInnerHTML={{
@@ -231,7 +234,7 @@ export default async function RootLayout({
           }}
         />
 
-        
+
         {/* Preconnect to critical domains for faster loading */}
         {pageSpeedOptimizations.preconnect.map((url) => (
           <link key={url} rel="preconnect" href={url} />
@@ -239,7 +242,7 @@ export default async function RootLayout({
         {pageSpeedOptimizations.dnsPrefetch.map((url) => (
           <link key={url} rel="dns-prefetch" href={url} />
         ))}
-        
+
         {/* Site-wide Yoast SEO Integration (FAQ schemas excluded - managed per page) */}
         <YoastSEOHead
           siteSEO={siteSEOResponse?.seo}
@@ -249,7 +252,7 @@ export default async function RootLayout({
           fallbackFavicon="/favicon.ico"
           fallbackSchema={JSON.stringify(organizationSchema)}
         />
-        
+
         {/* Fallback Structured Data (when no Yoast schema) */}
         {!siteSEOResponse?.seo && (
           <>
@@ -271,7 +274,7 @@ export default async function RootLayout({
             />
           </>
         )}
-        
+
         {/* RSS Feed */}
         <link
           rel="alternate"
@@ -279,7 +282,7 @@ export default async function RootLayout({
           title="Little Caesars Menu RSS Feed"
           href="/api/rss"
         />
-        
+
         {/* Critical CSS for faster loading */}
         <style dangerouslySetInnerHTML={{
           __html: `
@@ -545,21 +548,21 @@ export default async function RootLayout({
         <MobileOptimizer>
           {children}
         </MobileOptimizer>
-        
-        
+
+
         {/* Performance Optimization */}
         <AutoCacheCleaner />
-        
-                {/* Realtime Ad Blocker Detection */}
-                <RealtimeAdBlockerDetector />
-                
-                {/* Vercel Speed Insights - FORCE CACHE CLEAR: ${Date.now()} */}
-                <SpeedInsights />
-                
-                {/* Vercel Analytics - Track Page Views & Visitors */}
-                <Analytics />
-                
-              </body>
-            </html>
-          )
-        }
+
+        {/* Realtime Ad Blocker Detection */}
+        <RealtimeAdBlockerDetector />
+
+        {/* Vercel Speed Insights - FORCE CACHE CLEAR: ${Date.now()} */}
+        <SpeedInsights />
+
+        {/* Vercel Analytics - Track Page Views & Visitors */}
+        <Analytics />
+
+      </body>
+    </html>
+  )
+}
