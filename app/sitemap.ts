@@ -194,6 +194,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'weekly',
         priority: 0.9,
       },
+      // Christmas Hours Page - Seasonal High Traffic
+      {
+        url: `${baseUrl}/little-caesars-christmas-hours`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.95,
+      },
+      // Comparison Blog - Evergreen High Traffic
+      {
+        url: `${baseUrl}/little-caesars-vs-dominos`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.9,
+      },
       {
         url: `${baseUrl}/store-locator`,
         lastModified: currentDate,
