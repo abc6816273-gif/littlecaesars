@@ -27,7 +27,7 @@ export default function ImprovedStoreLocator() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [mapLoaded, setMapLoaded] = useState(false)
-  
+
   const mapRef = useRef<HTMLDivElement>(null)
   const mapInstanceRef = useRef<any>(null)
   const markersRef = useRef<any[]>([])
@@ -138,7 +138,7 @@ export default function ImprovedStoreLocator() {
     try {
       // Search for Texas Roadhouse locations using TomTom Search API
       const searchResponse = await fetch(
-        `https://api.tomtom.com/search/2/search/Texas%20Roadhouse%20near%20${encodeURIComponent(searchQuery)}.json?key=${apiKey}&limit=20&radius=50000`
+        `https://api.tomtom.com/search/2/search/Little%20Caesars%20near%20${encodeURIComponent(searchQuery)}.json?key=${apiKey}&limit=20&radius=50000`
       )
 
       if (!searchResponse.ok) {
@@ -229,7 +229,7 @@ export default function ImprovedStoreLocator() {
                 )}
               </button>
             </div>
-            
+
             {error && (
               <div className="mt-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
                 <strong>Error:</strong> {error}
@@ -243,8 +243,8 @@ export default function ImprovedStoreLocator() {
           <div
             ref={mapRef}
             className="w-full rounded-xl"
-            style={{ 
-              height: '500px', 
+            style={{
+              height: '500px',
               minHeight: '500px',
               backgroundColor: '#f3f4f6'
             }}
@@ -266,20 +266,20 @@ export default function ImprovedStoreLocator() {
             <h2 className="text-2xl font-bold mb-6 text-gray-800">
               Found {locations.length} location{locations.length !== 1 ? 's' : ''} near "{searchQuery}"
             </h2>
-            
+
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {locations.map((location, index) => (
                 <div key={location.id || `location-${index}`} className="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow bg-white">
                   <h3 className="text-xl font-semibold mb-3 text-red-600">
                     {location.name}
                   </h3>
-                  
+
                   <div className="space-y-3 text-gray-600 mb-6">
                     <p className="flex items-start">
                       <span className="mr-3 mt-1">📍</span>
                       <span className="flex-1">{location.address}</span>
                     </p>
-                    
+
                     {location.phone && (
                       <p className="flex items-center">
                         <span className="mr-3">📞</span>
@@ -288,7 +288,7 @@ export default function ImprovedStoreLocator() {
                         </a>
                       </p>
                     )}
-                    
+
                     {location.distance && (
                       <p className="flex items-center">
                         <span className="mr-3">📏</span>
@@ -296,7 +296,7 @@ export default function ImprovedStoreLocator() {
                       </p>
                     )}
                   </div>
-                  
+
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a
                       href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`}
@@ -306,7 +306,7 @@ export default function ImprovedStoreLocator() {
                     >
                       Get Directions
                     </a>
-                    
+
                     {location.phone && (
                       <a
                         href={`tel:${location.phone}`}
@@ -328,7 +328,7 @@ export default function ImprovedStoreLocator() {
             <div className="text-6xl mb-4">🔍</div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">No locations found</h2>
             <p className="text-gray-600 mb-6">
-              We couldn't find any Texas Roadhouse restaurants near "{searchQuery}". 
+              We couldn't find any Texas Roadhouse restaurants near "{searchQuery}".
               Try searching for a different location or check your spelling.
             </p>
             <button

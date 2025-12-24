@@ -41,7 +41,7 @@ function TomTomStoreLocator() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [mapLoaded, setMapLoaded] = useState(false)
-  
+
   const mapRef = useRef<HTMLDivElement>(null)
   const mapInstanceRef = useRef<any>(null)
   const markersRef = useRef<any[]>([])
@@ -124,7 +124,7 @@ function TomTomStoreLocator() {
     locations.forEach(location => {
       bounds.extend([location.position.lng, location.position.lat])
     })
-    
+
     mapInstanceRef.current.fitBounds(bounds, { padding: 50 })
   }
 
@@ -143,13 +143,13 @@ function TomTomStoreLocator() {
       const geocodeResponse = await fetch(
         `https://api.tomtom.com/search/2/geocode/${encodeURIComponent(searchQuery)}.json?key=${apiKey}&limit=1`
       )
-      
+
       if (!geocodeResponse.ok) {
         throw new Error('Geocoding failed')
       }
 
       const geocodeData = await geocodeResponse.json()
-      
+
       if (!geocodeData.results || geocodeData.results.length === 0) {
         setError('Location not found. Please try a different search term.')
         setLoading(false)
@@ -164,7 +164,7 @@ function TomTomStoreLocator() {
 
       // Search for Texas Roadhouse locations using TomTom POI Search
       const poiResponse = await fetch(
-        `https://api.tomtom.com/search/2/poiSearch/Texas%20Roadhouse.json?key=${apiKey}&lat=${searchLocation.lat}&lon=${searchLocation.lng}&radius=50000&limit=20`
+        `https://api.tomtom.com/search/2/poiSearch/Little%20Caesars.json?key=${apiKey}&lat=${searchLocation.lat}&lon=${searchLocation.lng}&radius=50000&limit=20`
       )
 
       if (!poiResponse.ok) {
@@ -185,12 +185,12 @@ function TomTomStoreLocator() {
       // Transform TomTom results to our format
       const locations: Location[] = poiData.results.map((result: any, index: number) => {
         console.log('Processing result:', result)
-        
+
         return {
           id: result.id || `location-${index}`,
           name: result.poi?.name || result.poi?.names?.brandName || 'Texas Roadhouse',
-          address: result.address?.freeformAddress || 
-                   `${result.address?.streetNumber || ''} ${result.address?.streetName || ''}, ${result.address?.municipality || ''}, ${result.address?.countrySubdivision || ''}`.trim(),
+          address: result.address?.freeformAddress ||
+            `${result.address?.streetNumber || ''} ${result.address?.streetName || ''}, ${result.address?.municipality || ''}, ${result.address?.countrySubdivision || ''}`.trim(),
           phone: result.poi?.phone || result.poi?.phoneNumbers?.[0]?.phoneNumber,
           rating: result.score ? Math.round(result.score * 5 * 10) / 10 : 4.2, // Default rating if not available
           position: {
@@ -313,7 +313,7 @@ function TomTomStoreLocator() {
             <h2 className="text-2xl font-bold text-center mb-6 text-stone-800">
               Find Texas Roadhouse Near You
             </h2>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
               <input
                 type="text"
@@ -338,7 +338,7 @@ function TomTomStoreLocator() {
                 )}
               </button>
             </div>
-            
+
             {error && (
               <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
                 {error}
@@ -368,20 +368,20 @@ function TomTomStoreLocator() {
             <h3 className="text-2xl font-bold mb-6 text-stone-800">
               Found {searchResults.locations.length} location{searchResults.locations.length !== 1 ? 's' : ''} near "{searchResults.searchLocation.address}"
             </h3>
-            
+
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {searchResults.locations.map((location, index) => (
                 <div key={location.id || `location-${index}`} className="border border-stone-200 rounded-lg p-6 hover:shadow-md transition-shadow bg-white">
                   <h4 className="text-xl font-semibold mb-3 text-red-600">
                     {location.name || 'Texas Roadhouse'}
                   </h4>
-                  
+
                   <div className="space-y-2 text-stone-600 mb-4">
                     <p className="flex items-start">
                       <span className="mr-2">📍</span>
                       <span className="flex-1">{location.address || 'Address not available'}</span>
                     </p>
-                    
+
                     {location.phone && (
                       <p className="flex items-center">
                         <span className="mr-2">📞</span>
@@ -390,19 +390,19 @@ function TomTomStoreLocator() {
                         </a>
                       </p>
                     )}
-                    
+
                     <p className="flex items-center">
                       <span className="mr-2">⭐</span>
                       {location.rating || 4.2}/5 rating
                     </p>
-                    
+
                     {location.distance && (
                       <p className="flex items-center">
                         <span className="mr-2">📏</span>
                         {location.distance} km away
                       </p>
                     )}
-                    
+
                     <p className="flex items-center">
                       <span className="mr-2">🕒</span>
                       <span className={location.openingHours?.isOpen !== false ? 'text-green-600' : 'text-red-600'}>
@@ -410,7 +410,7 @@ function TomTomStoreLocator() {
                       </span>
                     </p>
                   </div>
-                  
+
                   <div className="flex flex-col sm:flex-row gap-2">
                     <a
                       href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address || location.name)}`}
@@ -420,7 +420,7 @@ function TomTomStoreLocator() {
                     >
                       Get Directions
                     </a>
-                    
+
                     {location.phone ? (
                       <a
                         href={`tel:${location.phone}`}

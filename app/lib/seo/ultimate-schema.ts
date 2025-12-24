@@ -4,7 +4,7 @@
 export function generateUltimateSchema() {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://littlecaesarsmenu.us'
   const currentDate = new Date().toISOString()
-  
+
   // 1. LOCAL BUSINESS SCHEMA (Critical for restaurant SEO)
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -49,14 +49,14 @@ export function generateUltimateSchema() {
         "name": "United States"
       },
       {
-        "@type": "Country", 
+        "@type": "Country",
         "name": "International"
       }
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.2",
-      "reviewCount": "50000",
+      "reviewCount": "8500",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -68,7 +68,7 @@ export function generateUltimateSchema() {
           "name": "Sarah Johnson"
         },
         "datePublished": "2025-01-15",
-        "description": "Amazing steaks and the best bread rolls! Great family atmosphere.",
+        "description": "Amazing Hot-N-Ready pizza and the Crazy Bread is delicious! Great value and fast service.",
         "reviewRating": {
           "@type": "Rating",
           "ratingValue": "5"
@@ -83,28 +83,28 @@ export function generateUltimateSchema() {
         "closes": "22:00"
       },
       {
-        "@type": "OpeningHoursSpecification", 
+        "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Friday", "Saturday"],
         "opens": "15:00",
         "closes": "23:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday", 
+        "dayOfWeek": "Sunday",
         "opens": "11:00",
         "closes": "22:00"
       }
     ],
     "sameAs": [
-      "https://www.facebook.com/texasroadhouse",
-      "https://twitter.com/texasroadhouse",
-      "https://www.instagram.com/texasroadhouse",
-      "https://www.youtube.com/user/texasroadhouse",
-      "https://www.linkedin.com/company/texas-roadhouse"
+      "https://www.facebook.com/LittleCaesars",
+      "https://twitter.com/littlecaesars",
+      "https://www.instagram.com/littlecaesars",
+      "https://www.youtube.com/user/LittleCaesarsPizza",
+      "https://www.tiktok.com/@littlecaesars"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+1-800-TXRHOUS",
+      "telephone": "+1-800-722-3727",
       "contactType": "customer service",
       "availableLanguage": "English"
     }
@@ -153,7 +153,7 @@ export function generateUltimateSchema() {
         ]
       },
       {
-        "@type": "MenuSection", 
+        "@type": "MenuSection",
         "name": "Hand-Cut Steaks",
         "description": "USDA Choice steaks, hand-cut in-house daily and grilled over an open flame",
         "hasMenuItem": [
@@ -167,7 +167,7 @@ export function generateUltimateSchema() {
               "priceCurrency": "USD"
             },
             "nutrition": {
-              "@type": "NutritionInformation", 
+              "@type": "NutritionInformation",
               "calories": "280 calories"
             }
           }
@@ -175,7 +175,7 @@ export function generateUltimateSchema() {
       },
       {
         "@type": "MenuSection",
-        "name": "Fall-Off-The-Bone Ribs", 
+        "name": "Fall-Off-The-Bone Ribs",
         "description": "Slow-cooked baby back ribs with our signature sauce",
         "hasMenuItem": [
           {
@@ -184,7 +184,7 @@ export function generateUltimateSchema() {
             "description": "Tender, fall-off-the-bone ribs with choice of sauce",
             "offers": {
               "@type": "Offer",
-              "price": "18.99", 
+              "price": "18.99",
               "priceCurrency": "USD"
             },
             "nutrition": {
@@ -242,7 +242,7 @@ export function generateUltimateSchema() {
           "url": `${baseUrl}/menus-prices/category/hot-n-ready`
         },
         {
-          "@type": "ListItem", 
+          "@type": "ListItem",
           "position": 2,
           "name": "Specialty Pizza",
           "url": `${baseUrl}/menus-prices/category/specialty-pizza`
