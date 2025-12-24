@@ -3,7 +3,7 @@ import { getPosts } from '@/lib/data'
 import { formatDate } from '@/lib/format'
 
 const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'Texas Roadhouse Menu'
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://texasroadhouse-menus.us'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://littlecaesarsmenu.us'
 
 export async function GET() {
   try {
@@ -53,7 +53,7 @@ ${posts.map(post => `
     })
   } catch (error) {
     console.error('Error generating RSS feed:', error)
-    
+
     // Return a basic RSS feed with just the site info
     const basicRssFeed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

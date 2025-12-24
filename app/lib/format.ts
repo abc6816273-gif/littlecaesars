@@ -79,14 +79,14 @@ export function createSlug(text: string): string {
 }
 
 export function getAbsoluteUrl(path: string): string {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://texasroadhouse-menus.us'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://littlecaesarsmenu.us'
   return `${baseUrl}${path.startsWith('/') ? '' : '/'}${path}`
 }
 
 // Search utilities
 export function highlightSearchTerm(text: string, searchTerm: string): string {
   if (!searchTerm) return text
-  
+
   const regex = new RegExp(`(${searchTerm})`, 'gi')
   return text.replace(regex, '<mark class="bg-yellow-200">$1</mark>')
 }
@@ -108,7 +108,7 @@ export function isValidUrl(url: string): boolean {
 
 // Array utilities
 export function groupBy<T>(
-  array: T[], 
+  array: T[],
   key: keyof T
 ): Record<string, T[]> {
   return array.reduce((groups, item) => {
@@ -122,14 +122,14 @@ export function groupBy<T>(
 }
 
 export function sortBy<T>(
-  array: T[], 
-  key: keyof T, 
+  array: T[],
+  key: keyof T,
   direction: 'asc' | 'desc' = 'asc'
 ): T[] {
   return [...array].sort((a, b) => {
     const aVal = a[key]
     const bVal = b[key]
-    
+
     if (aVal < bVal) return direction === 'asc' ? -1 : 1
     if (aVal > bVal) return direction === 'asc' ? 1 : -1
     return 0

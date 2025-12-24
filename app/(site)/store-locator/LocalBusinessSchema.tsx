@@ -12,15 +12,17 @@ interface LocalBusinessSchemaProps {
 }
 
 export function LocalBusinessSchema({ locations, searchLocation }: LocalBusinessSchemaProps) {
+  const baseUrl = 'https://littlecaesarsmenu.us'
+
   // Generate enhanced local business schema for each location
   const generateLocationSchema = (location: Location) => ({
     "@context": "https://schema.org",
     "@type": ["Restaurant", "LocalBusiness"],
-    "@id": `https://texasroadhouse-menus.us/store-locator#location-${location.id}`,
+    "@id": `${baseUrl}/store-locator#location-${location.id}`,
     "name": location.name,
-    "alternateName": "Texas Roadhouse",
-    "description": "Hand-cut steaks, fall-off-the-bone ribs, made-from-scratch sides and fresh-baked bread served up in a lively atmosphere.",
-    "url": "https://texasroadhouse-menus.us/store-locator",
+    "alternateName": "Little Caesars Pizza",
+    "description": "Hot-N-Ready pizza, Crazy Bread, and delicious sides at unbeatable prices. America's best value pizza chain.",
+    "url": `${baseUrl}/store-locator`,
     "telephone": location.phone,
     "address": {
       "@type": "PostalAddress",
@@ -38,50 +40,45 @@ export function LocalBusinessSchema({ locations, searchLocation }: LocalBusiness
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": location.rating || 4.2,
-      "reviewCount": Math.floor(Math.random() * 500) + 100, // Realistic review count
+      "reviewCount": Math.floor(Math.random() * 300) + 50,
       "bestRating": 5,
       "worstRating": 1
     },
-    "priceRange": "$$",
+    "priceRange": "$",
     "currenciesAccepted": "USD",
     "paymentAccepted": ["Cash", "Credit Card", "Debit Card"],
-    "servesCuisine": ["American", "Steakhouse", "BBQ"],
-    "hasMenu": "https://texasroadhouse-menus.us/menus-prices",
+    "servesCuisine": ["Pizza", "Italian-American", "Fast Food"],
+    "hasMenu": `${baseUrl}/menus-prices`,
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
-        "opens": "16:00",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "10:30",
         "closes": "22:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Friday", "Saturday"],
-        "opens": "16:00",
-        "closes": "23:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "15:00",
-        "closes": "21:00"
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "22:00"
       }
     ],
     "image": [
-      "https://texasroadhouse-menus.us/images/texas-roadhouse-restaurant.jpg",
-      "https://texasroadhouse-menus.us/images/texas-roadhouse-steaks.jpg",
-      "https://texasroadhouse-menus.us/images/texas-roadhouse-ribs.jpg"
+      `${baseUrl}/images/little-caesars-restaurant.jpg`,
+      `${baseUrl}/images/little-caesars-pizza.jpg`,
+      `${baseUrl}/images/little-caesars-crazy-bread.jpg`
     ],
     "logo": {
       "@type": "ImageObject",
-      "url": "https://texasroadhouse-menus.us/Our Own Logo.png",
+      "url": `${baseUrl}/logo.png`,
       "width": 300,
       "height": 100
     },
     "sameAs": [
-      "https://www.facebook.com/texasroadhouse",
-      "https://www.instagram.com/texasroadhouse",
-      "https://twitter.com/texasroadhouse"
+      "https://www.facebook.com/LittleCaesars",
+      "https://www.instagram.com/littlecaesars",
+      "https://twitter.com/littlecaesars",
+      "https://www.tiktok.com/@littlecaesars"
     ],
     "amenityFeature": [
       {
@@ -90,7 +87,7 @@ export function LocalBusinessSchema({ locations, searchLocation }: LocalBusiness
         "value": true
       },
       {
-        "@type": "LocationFeatureSpecification", 
+        "@type": "LocationFeatureSpecification",
         "name": "Parking Available",
         "value": true
       },
@@ -103,19 +100,23 @@ export function LocalBusinessSchema({ locations, searchLocation }: LocalBusiness
         "@type": "LocationFeatureSpecification",
         "name": "Takeout Available",
         "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Hot-N-Ready Available",
+        "value": true
       }
     ],
     "knowsAbout": [
-      "Hand-cut steaks",
-      "Fall-off-the-bone ribs",
-      "Fresh-baked bread",
-      "Cinnamon butter",
-      "Legendary margaritas",
-      "Made-from-scratch sides",
-      "Family dining",
-      "Steakhouse",
-      "American cuisine",
-      "BBQ ribs"
+      "Hot-N-Ready pizza",
+      "Crazy Bread",
+      "ExtraMostBestest",
+      "Buffalo wings",
+      "Deep Dish pizza",
+      "Pepperoni pizza",
+      "Fast pizza pickup",
+      "Affordable pizza",
+      "Family combos"
     ]
   })
 
@@ -123,9 +124,9 @@ export function LocalBusinessSchema({ locations, searchLocation }: LocalBusiness
   const searchResultsSchema = {
     "@context": "https://schema.org",
     "@type": "SearchResultsPage",
-    "url": `https://texasroadhouse-menus.us/store-locator?search=${encodeURIComponent(searchLocation.address)}`,
-    "name": `Texas Roadhouse Near ${searchLocation.address}`,
-    "description": `Find Texas Roadhouse restaurants near ${searchLocation.address}. ${locations.length} locations found.`,
+    "url": `${baseUrl}/store-locator?search=${encodeURIComponent(searchLocation.address)}`,
+    "name": `Little Caesars Near ${searchLocation.address}`,
+    "description": `Find Little Caesars pizza restaurants near ${searchLocation.address}. ${locations.length} locations found.`,
     "mainEntity": {
       "@type": "ItemList",
       "numberOfItems": locations.length,
@@ -134,7 +135,7 @@ export function LocalBusinessSchema({ locations, searchLocation }: LocalBusiness
         "position": index + 1,
         "item": {
           "@type": "Restaurant",
-          "@id": `https://texasroadhouse-menus.us/store-locator#location-${location.id}`,
+          "@id": `${baseUrl}/store-locator#location-${location.id}`,
           "name": location.name,
           "address": location.address,
           "telephone": location.phone,
@@ -157,19 +158,19 @@ export function LocalBusinessSchema({ locations, searchLocation }: LocalBusiness
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://texasroadhouse-menus.us"
+          "item": baseUrl
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Store Locator",
-          "item": "https://texasroadhouse-menus.us/store-locator"
+          "item": `${baseUrl}/store-locator`
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": `Near ${searchLocation.address}`,
-          "item": `https://texasroadhouse-menus.us/store-locator?search=${encodeURIComponent(searchLocation.address)}`
+          "item": `${baseUrl}/store-locator?search=${encodeURIComponent(searchLocation.address)}`
         }
       ]
     }
@@ -184,7 +185,7 @@ export function LocalBusinessSchema({ locations, searchLocation }: LocalBusiness
           __html: JSON.stringify(searchResultsSchema)
         }}
       />
-      
+
       {/* Individual Location Schemas - Only first 5 for performance */}
       {locations.slice(0, 5).map((location) => (
         <script

@@ -31,7 +31,7 @@ interface BlogSEOEnhancerProps {
 }
 
 export function BlogSEOEnhancer({ post, posts, category }: BlogSEOEnhancerProps) {
-  const baseUrl = 'https://texasroadhouse-menus.us'
+  const baseUrl = 'https://littlecaesarsmenu.us'
 
   // Individual blog post schema
   const generateBlogPostSchema = (post: BlogPost) => ({
@@ -43,55 +43,55 @@ export function BlogSEOEnhancer({ post, posts, category }: BlogSEOEnhancerProps)
       "@id": `${baseUrl}/blog/${post.slug}`
     },
     "headline": post.title,
-    "description": post.excerpt || `Read about ${post.title} at Texas Roadhouse`,
+    "description": post.excerpt || `Read about ${post.title} at Little Caesars`,
     "datePublished": post.date,
     "dateModified": post.date,
     "author": {
       "@type": "Person",
-      "name": post.author?.name || "Texas Roadhouse Menu Team",
+      "name": post.author?.name || "Little Caesars Menu Team",
       "url": `${baseUrl}/about`
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Texas Roadhouse Menu",
+      "name": "Little Caesars Menu Guide",
       "url": baseUrl,
       "logo": {
         "@type": "ImageObject",
-        "url": `${baseUrl}/Our Own Logo.png`,
+        "url": `${baseUrl}/logo.png`,
         "width": 300,
         "height": 100
       }
     },
     "image": {
       "@type": "ImageObject",
-      "url": post.featuredImage?.node?.sourceUrl || `${baseUrl}/texas-roadhouse-og.jpg`,
+      "url": post.featuredImage?.node?.sourceUrl || `${baseUrl}/little-caesars-og.jpg`,
       "alt": post.featuredImage?.node?.altText || post.title
     },
-    "articleSection": post.categories?.nodes?.[0]?.name || "Restaurant News",
+    "articleSection": post.categories?.nodes?.[0]?.name || "Pizza News",
     "keywords": [
-      "Texas Roadhouse",
-      "steakhouse",
+      "Little Caesars",
+      "pizza",
       "menu",
       "prices",
-      "restaurant",
+      "Hot-N-Ready",
       ...(post.categories?.nodes?.map(cat => cat.name) || [])
     ].join(", "),
     "about": {
       "@type": "Restaurant",
-      "name": "Texas Roadhouse",
-      "description": "American steakhouse chain serving hand-cut steaks, fall-off-the-bone ribs, and fresh-baked bread."
+      "name": "Little Caesars",
+      "description": "America's best value pizza chain serving Hot-N-Ready pizza, Crazy Bread, and more."
     },
     "mentions": [
       {
         "@type": "Restaurant",
-        "name": "Texas Roadhouse"
+        "name": "Little Caesars"
       }
     ],
     "isPartOf": {
       "@type": "Blog",
       "@id": `${baseUrl}/blog`,
-      "name": "Texas Roadhouse Menu Blog",
-      "description": "Latest news, menu updates, and dining tips from Texas Roadhouse"
+      "name": "Little Caesars Menu Blog",
+      "description": "Latest news, menu updates, and pizza tips from Little Caesars"
     }
   })
 
@@ -104,16 +104,16 @@ export function BlogSEOEnhancer({ post, posts, category }: BlogSEOEnhancerProps)
       "@type": "WebPage",
       "@id": `${baseUrl}/blog`
     },
-    "name": "Texas Roadhouse Menu Blog",
-    "description": "Latest news, menu updates, dining tips, and restaurant information from Texas Roadhouse",
+    "name": "Little Caesars Menu Blog",
+    "description": "Latest news, menu updates, pizza tips, and restaurant information from Little Caesars",
     "url": `${baseUrl}/blog`,
     "publisher": {
       "@type": "Organization",
-      "name": "Texas Roadhouse Menu",
+      "name": "Little Caesars Menu Guide",
       "url": baseUrl,
       "logo": {
         "@type": "ImageObject",
-        "url": `${baseUrl}/Our Own Logo.png`,
+        "url": `${baseUrl}/logo.png`,
         "width": 300,
         "height": 100
       }
@@ -125,13 +125,13 @@ export function BlogSEOEnhancer({ post, posts, category }: BlogSEOEnhancerProps)
       "datePublished": post.date,
       "author": {
         "@type": "Person",
-        "name": post.author?.name || "Texas Roadhouse Menu Team"
+        "name": post.author?.name || "Little Caesars Menu Team"
       },
       "url": `${baseUrl}/blog/${post.slug}`
     })),
     "about": {
       "@type": "Restaurant",
-      "name": "Texas Roadhouse"
+      "name": "Little Caesars"
     }
   })
 
@@ -140,8 +140,8 @@ export function BlogSEOEnhancer({ post, posts, category }: BlogSEOEnhancerProps)
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": `${baseUrl}/blog/category/${category}`,
-    "name": `${category} - Texas Roadhouse Blog`,
-    "description": `Articles about ${category} from Texas Roadhouse Menu blog`,
+    "name": `${category} - Little Caesars Blog`,
+    "description": `Articles about ${category} from Little Caesars Menu blog`,
     "url": `${baseUrl}/blog/category/${category}`,
     "mainEntity": {
       "@type": "ItemList",
@@ -182,7 +182,29 @@ export function BlogSEOEnhancer({ post, posts, category }: BlogSEOEnhancerProps)
     }
   })
 
-  // FAQ Schema removed for blog posts - preventing duplicates with page-specific FAQs
+  // Content FAQ Schema for Little Caesars
+  const generateContentFAQSchema = () => ({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is on the Little Caesars menu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Little Caesars menu features Hot-N-Ready pizzas, specialty pizzas like ExtraMostBestest, Crazy Bread, wings, and various combo deals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a Hot-N-Ready pizza cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The classic Hot-N-Ready pepperoni or cheese pizza typically costs around $5.99-$7.99 depending on location."
+        }
+      }
+    ]
+  })
 
   return (
     <>
