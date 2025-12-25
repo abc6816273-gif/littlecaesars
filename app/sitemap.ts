@@ -208,6 +208,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'monthly',
         priority: 0.9,
       },
+      // Nutrition & Calories Guide - High Traffic Evergreen
+      {
+        url: `${baseUrl}/little-caesars-nutrition-calories`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.95,
+      },
       {
         url: `${baseUrl}/store-locator`,
         lastModified: currentDate,
