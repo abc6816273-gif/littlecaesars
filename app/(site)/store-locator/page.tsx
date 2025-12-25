@@ -47,7 +47,7 @@ export default function StoreLocatorPage() {
         className="bg-gradient-to-r from-little-caesars-orange via-red-600 to-orange-500"
       />
       <OptimizedStoreLocator />
-      
+
       {/* SEO Content Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,7 +55,7 @@ export default function StoreLocatorPage() {
             <h2 className="text-3xl font-slab font-bold text-stone-800 mb-8 text-center">
               Find Little Caesars Pizza Restaurants Near You
             </h2>
-            
+
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div>
                 <h3 className="text-xl font-slab font-bold text-little-caesars-orange mb-4">
@@ -69,7 +69,7 @@ export default function StoreLocatorPage() {
                   <li>• <strong>Family-Friendly Prices:</strong> Quality pizza at unbeatable prices</li>
                 </ul>
               </div>
-              
+
               <div>
                 <h3 className="text-xl font-slab font-bold text-little-caesars-orange mb-4">
                   How to Use Our Store Locator
@@ -83,7 +83,7 @@ export default function StoreLocatorPage() {
                 </ol>
               </div>
             </div>
-            
+
             <div className="bg-cream rounded-2xl p-8 mb-12">
               <h3 className="text-2xl font-slab font-bold text-stone-800 mb-4 text-center">
                 Popular Little Caesars Locations
@@ -121,7 +121,7 @@ export default function StoreLocatorPage() {
                 </div>
               </div>
             </div>
-            
+
             {/* Interactive FAQ Section */}
             <div className="bg-gradient-to-br from-cream to-white rounded-2xl p-8 shadow-xl border border-stone-100">
               <div className="text-center mb-8">
@@ -132,7 +132,7 @@ export default function StoreLocatorPage() {
                   Everything you need to know about finding Little Caesars pizza restaurants near you
                 </p>
               </div>
-              
+
               <div className="space-y-4 max-w-3xl mx-auto">
                 <details className="group bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-all duration-200">
                   <summary className="flex justify-between items-center p-6 cursor-pointer hover:bg-stone-50 transition-colors">
@@ -150,19 +150,19 @@ export default function StoreLocatorPage() {
 
                 <details className="group bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-all duration-200">
                   <summary className="flex justify-between items-center p-6 cursor-pointer hover:bg-stone-50 transition-colors">
-                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-texas-red transition-colors">
-                      What are typical Texas Roadhouse restaurant hours?
+                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-little-caesars-orange transition-colors">
+                      What are typical Little Caesars restaurant hours?
                     </h4>
-                    <svg className="w-5 h-5 text-texas-red transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-little-caesars-orange transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="px-6 pb-6 text-stone-700 leading-relaxed">
-                    <p>Most Texas Roadhouse locations operate with these hours:</p>
+                    <p>Most Little Caesars locations operate with these hours:</p>
                     <ul className="mt-2 space-y-1 ml-4">
-                      <li>• <strong>Monday-Thursday:</strong> 4:00 PM - 10:00 PM</li>
-                      <li>• <strong>Friday-Saturday:</strong> 4:00 PM - 11:00 PM</li>
-                      <li>• <strong>Sunday:</strong> 4:00 PM - 9:00 PM</li>
+                      <li>• <strong>Monday-Thursday:</strong> 11:00 AM - 10:00 PM</li>
+                      <li>• <strong>Friday-Saturday:</strong> 11:00 AM - 11:00 PM</li>
+                      <li>• <strong>Sunday:</strong> 11:00 AM - 10:00 PM</li>
                     </ul>
                     <p className="mt-2 text-sm text-stone-600">Note: Hours may vary by location. Use our locator to get specific hours for your nearest restaurant.</p>
                   </div>
@@ -170,77 +170,77 @@ export default function StoreLocatorPage() {
 
                 <details className="group bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-all duration-200">
                   <summary className="flex justify-between items-center p-6 cursor-pointer hover:bg-stone-50 transition-colors">
-                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-texas-red transition-colors">
-                      Does Texas Roadhouse accept reservations or take-out orders?
+                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-little-caesars-orange transition-colors">
+                      What is Hot-N-Ready and how does it work?
                     </h4>
-                    <svg className="w-5 h-5 text-texas-red transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-little-caesars-orange transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="px-6 pb-6 text-stone-700 leading-relaxed">
-                    <p>Texas Roadhouse operates on a <strong>first-come, first-served basis</strong> and does not accept traditional reservations. However, you can:</p>
+                    <p>Hot-N-Ready means your pizza is <strong>ready when you are</strong> - no waiting, no ordering ahead! Simply walk in and grab your pizza.</p>
                     <ul className="mt-2 space-y-1 ml-4">
-                      <li>• Call ahead to add your name to the waitlist</li>
-                      <li>• Order takeout by calling your local restaurant</li>
-                      <li>• Use their mobile app for easier ordering</li>
+                      <li>• Hot-N-Ready Pepperoni - $5.99</li>
+                      <li>• Hot-N-Ready Cheese - $5.99</li>
+                      <li>• ExtraMostBestest - $7.99</li>
                     </ul>
-                    <p className="mt-2">Find your local restaurant's phone number using our location finder above!</p>
+                    <p className="mt-2">Available during peak hours at most locations!</p>
                   </div>
                 </details>
 
                 <details className="group bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-all duration-200">
                   <summary className="flex justify-between items-center p-6 cursor-pointer hover:bg-stone-50 transition-colors">
-                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-texas-red transition-colors">
-                      Are Texas Roadhouse menu prices the same at all locations?
+                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-little-caesars-orange transition-colors">
+                      Are Little Caesars menu prices the same at all locations?
                     </h4>
-                    <svg className="w-5 h-5 text-texas-red transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-little-caesars-orange transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="px-6 pb-6 text-stone-700 leading-relaxed">
-                    <p>Menu prices may vary slightly between locations due to local market conditions, rent costs, and regional economic factors. However, Texas Roadhouse strives to maintain consistent pricing across their restaurants. For the most accurate pricing, contact your specific location directly or visit our <a href="/menus-prices" className="text-texas-red hover:underline font-medium">menu prices page</a> for general pricing information.</p>
+                    <p>Menu prices may vary slightly between locations. Little Caesars strives to maintain consistent pricing, but local market conditions may affect prices. Visit our <a href="/menus-prices" className="text-little-caesars-orange hover:underline font-medium">menu prices page</a> for general pricing information.</p>
                   </div>
                 </details>
 
                 <details className="group bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-all duration-200">
                   <summary className="flex justify-between items-center p-6 cursor-pointer hover:bg-stone-50 transition-colors">
-                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-texas-red transition-colors">
-                      What makes Texas Roadhouse different from other steakhouses?
+                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-little-caesars-orange transition-colors">
+                      What makes Little Caesars different from other pizza chains?
                     </h4>
-                    <svg className="w-5 h-5 text-texas-red transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-little-caesars-orange transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="px-6 pb-6 text-stone-700 leading-relaxed">
-                    <p>Texas Roadhouse is famous for several unique features:</p>
+                    <p>Little Caesars is famous for:</p>
                     <ul className="mt-2 space-y-1 ml-4">
-                      <li>• <strong>Hand-Cut Steaks:</strong> Fresh, never frozen steaks cut in-house daily</li>
-                      <li>• <strong>Fall-Off-The-Bone Ribs:</strong> Slow-cooked with signature dry rub</li>
-                      <li>• <strong>Fresh-Baked Bread:</strong> Warm rolls with cinnamon honey butter at every table</li>
-                      <li>• <strong>Made-From-Scratch Sides:</strong> All sides prepared fresh daily</li>
-                      <li>• <strong>Lively Atmosphere:</strong> Country music and line dancing</li>
-                      <li>• <strong>Family-Friendly:</strong> Welcoming environment for all ages</li>
+                      <li>• <strong>Hot-N-Ready Pizzas:</strong> Fresh pizzas ready when you arrive</li>
+                      <li>• <strong>Detroit-Style Deep Dish:</strong> Authentic deep dish with crispy cheese edges</li>
+                      <li>• <strong>Crazy Bread:</strong> Warm breadsticks with garlic butter and parmesan</li>
+                      <li>• <strong>Unbeatable Value:</strong> Large pizzas starting at just $5.99</li>
+                      <li>• <strong>Quick Service:</strong> Carry-out focused for fast pickup</li>
+                      <li>• <strong>ExtraMostBestest:</strong> More cheese and pepperoni for more flavor</li>
                     </ul>
                   </div>
                 </details>
 
                 <details className="group bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden hover:shadow-md transition-all duration-200">
                   <summary className="flex justify-between items-center p-6 cursor-pointer hover:bg-stone-50 transition-colors">
-                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-texas-red transition-colors">
-                      Does Texas Roadhouse offer vegetarian or gluten-free menu options?
+                    <h4 className="text-lg font-semibold text-stone-800 group-hover:text-little-caesars-orange transition-colors">
+                      Does Little Caesars offer vegetarian or gluten-free options?
                     </h4>
-                    <svg className="w-5 h-5 text-texas-red transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-little-caesars-orange transform group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
                     </svg>
                   </summary>
                   <div className="px-6 pb-6 text-stone-700 leading-relaxed">
-                    <p>Yes! While known for steaks, Texas Roadhouse offers options for various dietary needs:</p>
+                    <p>Yes! Little Caesars offers options for various dietary needs:</p>
                     <ul className="mt-2 space-y-1 ml-4">
-                      <li>• <strong>Vegetarian:</strong> Salads, baked potatoes, vegetable sides, and pasta dishes</li>
-                      <li>• <strong>Gluten-Free:</strong> Grilled chicken, steaks without seasoning, and select sides</li>
-                      <li>• <strong>Lighter Options:</strong> Grilled chicken and fish selections</li>
+                      <li>• <strong>Vegetarian:</strong> Cheese pizza, Veggie pizza, Crazy Bread, Italian Cheese Bread</li>
+                      <li>• <strong>Low-Carb:</strong> Wings are keto-friendly with minimal carbs</li>
+                      <li>• <strong>Lower Calorie:</strong> Cheese pizza at 240 calories per slice</li>
                     </ul>
-                    <p className="mt-2 text-sm text-stone-600">Always inform your server about allergies or dietary restrictions for the safest dining experience.</p>
+                    <p className="mt-2 text-sm text-stone-600">Note: Little Caesars does not currently offer gluten-free crust options.</p>
                   </div>
                 </details>
               </div>
