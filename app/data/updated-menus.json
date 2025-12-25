@@ -1,23 +1,23 @@
 {
-  "lastUpdated": "2025-01-15T00:00:00Z",
+  "lastUpdated": "2025-12-25T00:00:00Z",
   "metadata": {
-    "source": "Official Texas Roadhouse Menu Analysis",
+    "source": "Official Little Caesars Menu Analysis",
     "version": "2025.1",
-    "totalItems": 95,
-    "categories": 13
+    "totalItems": 45,
+    "categories": 8
   },
   "categories": [
     {
-      "id": "starters",
-      "name": "Just for Starters",
-      "slug": "starters",
-      "description": "Shareable appetizers to start your meal right",
+      "id": "hot-n-ready",
+      "name": "Hot-N-Ready",
+      "slug": "hot-n-ready",
+      "description": "Famous $5 pizzas ready when you are - no waiting!",
       "featured": true,
-      "image": "/images/categories/starters.jpg",
+      "image": "/images/categories/hot-n-ready.jpg",
       "marketInsights": {
-        "averagePrice": 9.5,
+        "averagePrice": 7.99,
         "priceRange": [
-          6.99,
+          5.99,
           12.99
         ],
         "competitiveness": "strong",
@@ -25,186 +25,50 @@
       }
     },
     {
-      "id": "salads",
-      "name": "Salads",
-      "slug": "salads",
-      "description": "Fresh, hearty salads with your choice of protein",
-      "featured": false,
-      "image": "/images/categories/salads.jpg",
-      "marketInsights": {
-        "averagePrice": 0,
-        "priceRange": [
-          0,
-          0
-        ],
-        "competitiveness": "strong",
-        "trend": "stable"
-      }
-    },
-    {
-      "id": "steaks",
-      "name": "Hand-Cut Steaks",
-      "slug": "hand-cut-steaks",
-      "description": "Premium USDA Choice steaks, hand-cut fresh daily",
+      "id": "specialty-pizzas",
+      "name": "Specialty Pizzas",
+      "slug": "specialty-pizzas",
+      "description": "Premium pizzas with unique toppings and flavors",
       "featured": true,
-      "image": "/images/categories/steaks.jpg",
+      "image": "/images/categories/specialty-pizzas.jpg",
       "marketInsights": {
-        "averagePrice": 18.5,
+        "averagePrice": 12.99,
         "priceRange": [
-          12.99,
-          35.99
+          10.99,
+          15.99
         ],
         "competitiveness": "strong",
-        "trend": "stable"
+        "trend": "growing"
       }
     },
     {
-      "id": "ribs",
-      "name": "Fall-Off-The-Bone Ribs",
-      "slug": "ribs",
-      "description": "Slow-cooked St. Louis style ribs with signature sauce",
+      "id": "deep-dish",
+      "name": "Deep Dish & Detroit Style",
+      "slug": "deep-dish",
+      "description": "Thick crust pizzas with crispy cheese edges",
       "featured": true,
-      "image": "/images/categories/ribs.jpg",
+      "image": "/images/categories/deep-dish.jpg",
       "marketInsights": {
-        "averagePrice": 22,
+        "averagePrice": 11.49,
         "priceRange": [
-          18.99,
-          28.99
+          9.99,
+          13.99
         ],
         "competitiveness": "strong",
-        "trend": "stable"
+        "trend": "growing"
       }
     },
     {
-      "id": "combos",
-      "name": "Texas Size Combos",
-      "slug": "combos",
-      "description": "Perfect combinations for hearty appetites",
-      "featured": false,
-      "image": "/images/categories/combos.jpg",
+      "id": "crazy-bread",
+      "name": "Crazy Bread & Sides",
+      "slug": "crazy-bread-sides",
+      "description": "Famous Crazy Bread and delicious side items",
+      "featured": true,
+      "image": "/images/categories/crazy-bread.jpg",
       "marketInsights": {
-        "averagePrice": 0,
+        "averagePrice": 4.99,
         "priceRange": [
-          0,
-          0
-        ],
-        "competitiveness": "strong",
-        "trend": "stable"
-      }
-    },
-    {
-      "id": "seafood",
-      "name": "Dockside Favorites",
-      "slug": "dockside-favorites",
-      "description": "Fresh seafood grilled to perfection",
-      "featured": false,
-      "image": "/images/categories/seafood.jpg",
-      "marketInsights": {
-        "averagePrice": 19.5,
-        "priceRange": [
-          16.99,
-          22.99
-        ],
-        "competitiveness": "strong",
-        "trend": "stable"
-      }
-    },
-    {
-      "id": "chicken",
-      "name": "Chicken Specialties",
-      "slug": "chicken-specialties",
-      "description": "Tender chicken prepared multiple delicious ways",
-      "featured": false,
-      "image": "/images/categories/chicken.jpg",
-      "marketInsights": {
-        "averagePrice": 16.5,
-        "priceRange": [
-          14.99,
-          19.99
-        ],
-        "competitiveness": "strong",
-        "trend": "stable"
-      }
-    },
-    {
-      "id": "country",
-      "name": "Country Dinners",
-      "slug": "country-dinners",
-      "description": "Hearty country-style meals with comfort flavors",
-      "featured": false,
-      "image": "/images/categories/country.jpg",
-      "marketInsights": {
-        "averagePrice": 0,
-        "priceRange": [
-          0,
-          0
-        ],
-        "competitiveness": "strong",
-        "trend": "stable"
-      }
-    },
-    {
-      "id": "burgers",
-      "name": "Burgers & Sandwiches",
-      "slug": "burgers-sandwiches",
-      "description": "Juicy burgers and hearty sandwiches",
-      "featured": false,
-      "image": "/images/categories/burgers.jpg",
-      "marketInsights": {
-        "averagePrice": 13.5,
-        "priceRange": [
-          11.99,
-          16.99
-        ],
-        "competitiveness": "strong",
-        "trend": "stable"
-      }
-    },
-    {
-      "id": "sides",
-      "name": "Sides & Extras",
-      "slug": "sides-extras",
-      "description": "Perfect sides to complete your meal",
-      "featured": false,
-      "image": "/images/categories/sides.jpg",
-      "marketInsights": {
-        "averagePrice": 4.25,
-        "priceRange": [
-          3.99,
-          5.99
-        ],
-        "competitiveness": "strong",
-        "trend": "stable"
-      }
-    },
-    {
-      "id": "kids",
-      "name": "Kids & Ranger Meals",
-      "slug": "kids-ranger-meals",
-      "description": "Kid-friendly portions and flavors",
-      "featured": false,
-      "image": "/images/categories/kids.jpg",
-      "marketInsights": {
-        "averagePrice": 7.5,
-        "priceRange": [
-          4.99,
-          10.99
-        ],
-        "competitiveness": "strong",
-        "trend": "stable"
-      }
-    },
-    {
-      "id": "desserts",
-      "name": "Desserts",
-      "slug": "desserts",
-      "description": "Sweet endings to your Texas Roadhouse experience",
-      "featured": false,
-      "image": "/images/categories/desserts.jpg",
-      "marketInsights": {
-        "averagePrice": 6.5,
-        "priceRange": [
-          5.99,
+          2.99,
           7.99
         ],
         "competitiveness": "strong",
@@ -212,17 +76,68 @@
       }
     },
     {
-      "id": "family",
-      "name": "Family Meals, Deals & Bundles",
-      "slug": "family-meals",
-      "description": "Family-sized portions perfect for sharing",
+      "id": "wings",
+      "name": "Wings",
+      "slug": "wings",
+      "description": "Crispy baked wings in multiple flavors",
       "featured": false,
-      "image": "/images/categories/family.jpg",
+      "image": "/images/categories/wings.jpg",
       "marketInsights": {
-        "averagePrice": 0,
+        "averagePrice": 8.99,
         "priceRange": [
-          0,
-          0
+          6.99,
+          12.99
+        ],
+        "competitiveness": "strong",
+        "trend": "growing"
+      }
+    },
+    {
+      "id": "combos",
+      "name": "Meal Combos",
+      "slug": "meal-combos",
+      "description": "Value meal bundles for the whole family",
+      "featured": false,
+      "image": "/images/categories/combos.jpg",
+      "marketInsights": {
+        "averagePrice": 15.99,
+        "priceRange": [
+          12.99,
+          25.99
+        ],
+        "competitiveness": "strong",
+        "trend": "stable"
+      }
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "slug": "drinks",
+      "description": "Refreshing beverages to complete your meal",
+      "featured": false,
+      "image": "/images/categories/drinks.jpg",
+      "marketInsights": {
+        "averagePrice": 2.49,
+        "priceRange": [
+          1.99,
+          3.99
+        ],
+        "competitiveness": "strong",
+        "trend": "stable"
+      }
+    },
+    {
+      "id": "dipping-sauces",
+      "name": "Dipping Sauces",
+      "slug": "dipping-sauces",
+      "description": "Delicious sauces for dipping",
+      "featured": false,
+      "image": "/images/categories/sauces.jpg",
+      "marketInsights": {
+        "averagePrice": 0.79,
+        "priceRange": [
+          0.49,
+          1.29
         ],
         "competitiveness": "strong",
         "trend": "stable"
@@ -231,17 +146,18 @@
   ],
   "menuItems": [
     {
-      "id": "cactus-blossom",
-      "name": "Cactus Blossom",
-      "slug": "cactus-blossom",
-      "category": "starters",
-      "price": 9.99,
-      "calories": 2250,
-      "description": "Our signature appetizer! A bloomin' fried onion with tangy horseradish sauce.",
+      "id": "hot-n-ready-pepperoni",
+      "name": "Hot-N-Ready Pepperoni Pizza",
+      "slug": "hot-n-ready-pepperoni",
+      "category": "hot-n-ready",
+      "price": 5.99,
+      "calories": 280,
+      "description": "Our classic large pepperoni pizza, ready when you are! Made with fresh dough, signature sauce, and premium pepperoni.",
       "ingredients": [
-        "Sweet onion",
-        "Seasoned flour",
-        "Horseradish sauce"
+        "Fresh dough",
+        "Signature pizza sauce",
+        "Mozzarella cheese",
+        "Premium pepperoni"
       ],
       "allergens": [
         "gluten",
@@ -250,79 +166,312 @@
       "isPopular": true,
       "isSignature": true,
       "isNew": false,
-      "spiceLevel": 1,
-      "prepTime": "8-10 minutes",
-      "image": "/images/menu/cactus-blossom.jpg",
+      "spiceLevel": 0,
+      "prepTime": "Ready Now",
+      "image": "/images/menu/hot-n-ready-pepperoni.jpg",
       "nutritionFacts": {
-        "calories": 2250,
-        "fat": 145,
-        "saturatedFat": 45,
-        "cholesterol": 0,
-        "sodium": 3840,
-        "carbs": 210,
-        "fiber": 15,
-        "sugars": 45,
-        "protein": 30
+        "calories": 280,
+        "fat": 11,
+        "saturatedFat": 5,
+        "cholesterol": 30,
+        "sodium": 560,
+        "carbs": 32,
+        "fiber": 2,
+        "sugars": 4,
+        "protein": 14
       },
       "tags": [
-        "vegetarian",
-        "shareable",
-        "signature"
+        "best-seller",
+        "value",
+        "hot-n-ready"
       ],
-      "lastUpdated": "2025-09-04T01:44:35.011Z",
-      "dataSource": "competitive-analysis",
-      "enhancedDescription": "Our signature appetizer! A bloomin' fried onion with tangy horseradish sauce. undefined",
-      "marketPosition": {
-        "pricePosition": 50,
-        "competitiveRating": "standard",
-        "marketAverage": 9.5,
-        "priceDifference": 0.4900000000000002
-      },
-      "features": {
-        "hasNutritionFacts": true,
-        "hasAllergenInfo": true,
-        "isCustomizable": false,
-        "hasSpiceLevel": true,
-        "isShareable": true,
-        "isPremium": false,
-        "isSignature": true
-      },
       "seo": {
-        "title": "Cactus Blossom - Texas Roadhouse Menu with Prices",
-        "metaDescription": "Our signature appetizer! A bloomin' fried onion with tangy horseradish sauce.... Order online or find nutritional information.",
+        "title": "Hot-N-Ready Pepperoni Pizza - Little Caesars Menu with Prices",
+        "metaDescription": "Get our famous $5.99 Hot-N-Ready Pepperoni Pizza - ready when you are! Large pizza with premium pepperoni, no waiting. Order online or pick up today.",
         "keywords": [
-          "cactus blossom",
-          "texas roadhouse",
-          "starters",
-          "menu",
-          "prices",
-          "nutrition"
+          "hot n ready",
+          "little caesars pepperoni",
+          "5 dollar pizza",
+          "cheap pizza",
+          "little caesars menu",
+          "pepperoni pizza prices"
         ],
-        "canonicalUrl": "/menu/cactus-blossom",
-        "structuredData": {
-          "@type": "MenuItem",
-          "name": "Cactus Blossom",
-          "description": "Our signature appetizer! A bloomin' fried onion with tangy horseradish sauce.",
-          "offers": {
-            "@type": "Offer",
-            "price": 9.99,
-            "priceCurrency": "USD"
-          }
-        }
+        "canonicalUrl": "/menu/hot-n-ready-pepperoni"
       }
     },
     {
-      "id": "fried-pickles",
-      "name": "Fried Pickles",
-      "slug": "fried-pickles",
-      "category": "starters",
-      "price": 9.49,
-      "calories": 550,
-      "description": "Sliced dill pickles battered and fried golden brown, served with ranch dressing.",
+      "id": "hot-n-ready-cheese",
+      "name": "Hot-N-Ready Cheese Pizza",
+      "slug": "hot-n-ready-cheese",
+      "category": "hot-n-ready",
+      "price": 5.99,
+      "calories": 240,
+      "description": "Classic large cheese pizza with fresh dough, signature sauce, and melted mozzarella cheese.",
       "ingredients": [
-        "Dill pickle spears",
-        "Seasoned batter",
-        "Ranch dressing"
+        "Fresh dough",
+        "Signature pizza sauce",
+        "Mozzarella cheese"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isSignature": false,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "Ready Now",
+      "image": "/images/menu/hot-n-ready-cheese.jpg",
+      "nutritionFacts": {
+        "calories": 240,
+        "fat": 9,
+        "saturatedFat": 4,
+        "cholesterol": 20,
+        "sodium": 420,
+        "carbs": 30,
+        "fiber": 2,
+        "sugars": 4,
+        "protein": 11
+      },
+      "tags": [
+        "vegetarian",
+        "value",
+        "hot-n-ready"
+      ],
+      "seo": {
+        "title": "Hot-N-Ready Cheese Pizza - Little Caesars Menu with Prices",
+        "metaDescription": "Little Caesars Hot-N-Ready Cheese Pizza for just $5.99. Large cheese pizza ready when you are - no waiting required!",
+        "keywords": [
+          "cheese pizza",
+          "little caesars cheese",
+          "vegetarian pizza",
+          "hot n ready cheese"
+        ],
+        "canonicalUrl": "/menu/hot-n-ready-cheese"
+      }
+    },
+    {
+      "id": "extramostbestest",
+      "name": "ExtraMostBestest Pepperoni",
+      "slug": "extramostbestest-pepperoni",
+      "category": "hot-n-ready",
+      "price": 7.99,
+      "calories": 350,
+      "description": "The most pepperoni and most cheese on our Hot-N-Ready! 80% more pepperoni and 25% more cheese.",
+      "ingredients": [
+        "Fresh dough",
+        "Extra cheese",
+        "Extra pepperoni",
+        "Signature sauce"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isSignature": true,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "Ready Now",
+      "image": "/images/menu/extramostbestest.jpg",
+      "nutritionFacts": {
+        "calories": 350,
+        "fat": 16,
+        "saturatedFat": 7,
+        "cholesterol": 45,
+        "sodium": 780,
+        "carbs": 33,
+        "fiber": 2,
+        "sugars": 4,
+        "protein": 18
+      },
+      "tags": [
+        "extra-toppings",
+        "best-seller",
+        "hot-n-ready"
+      ],
+      "seo": {
+        "title": "ExtraMostBestest Pepperoni - Little Caesars Menu with Prices",
+        "metaDescription": "ExtraMostBestest Pepperoni pizza with 80% more pepperoni and 25% more cheese for just $7.99. The most loaded Hot-N-Ready pizza!",
+        "keywords": [
+          "extramostbestest",
+          "extra pepperoni pizza",
+          "most cheese pizza",
+          "little caesars best pizza"
+        ],
+        "canonicalUrl": "/menu/extramostbestest-pepperoni"
+      }
+    },
+    {
+      "id": "detroit-style-deep-dish",
+      "name": "Detroit-Style Deep Dish",
+      "slug": "detroit-style-deep-dish",
+      "category": "deep-dish",
+      "price": 9.99,
+      "calories": 390,
+      "description": "Detroit-style deep dish pizza with crispy cheese edges, two kinds of cheese, and signature sauce on top.",
+      "ingredients": [
+        "Deep dish dough",
+        "Muenster cheese",
+        "Mozzarella cheese",
+        "Pepperoni",
+        "Signature sauce"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isSignature": true,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "10-12 minutes",
+      "image": "/images/menu/detroit-style.jpg",
+      "nutritionFacts": {
+        "calories": 390,
+        "fat": 20,
+        "saturatedFat": 9,
+        "cholesterol": 55,
+        "sodium": 920,
+        "carbs": 36,
+        "fiber": 2,
+        "sugars": 5,
+        "protein": 19
+      },
+      "tags": [
+        "deep-dish",
+        "crispy-cheese",
+        "signature"
+      ],
+      "seo": {
+        "title": "Detroit-Style Deep Dish Pizza - Little Caesars Menu Prices",
+        "metaDescription": "Try Little Caesars Detroit-Style Deep Dish Pizza with crispy cheese edges for $9.99. Deep dish perfection with two kinds of cheese!",
+        "keywords": [
+          "detroit style pizza",
+          "deep dish pizza",
+          "little caesars deep dish",
+          "thick crust pizza"
+        ],
+        "canonicalUrl": "/menu/detroit-style-deep-dish"
+      }
+    },
+    {
+      "id": "stuffed-crazy-bread",
+      "name": "Stuffed Crazy Bread",
+      "slug": "stuffed-crazy-bread",
+      "category": "crazy-bread",
+      "price": 4.99,
+      "calories": 150,
+      "description": "Our famous Crazy Bread stuffed with garlic butter, mozzarella, and parmesan cheese. 8 pieces per order.",
+      "ingredients": [
+        "Fresh dough",
+        "Garlic butter",
+        "Mozzarella cheese",
+        "Parmesan cheese"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isSignature": true,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "5-7 minutes",
+      "image": "/images/menu/stuffed-crazy-bread.jpg",
+      "nutritionFacts": {
+        "calories": 150,
+        "fat": 7,
+        "saturatedFat": 3,
+        "cholesterol": 15,
+        "sodium": 280,
+        "carbs": 16,
+        "fiber": 1,
+        "sugars": 1,
+        "protein": 6
+      },
+      "tags": [
+        "cheese-stuffed",
+        "garlic",
+        "shareable"
+      ],
+      "seo": {
+        "title": "Stuffed Crazy Bread - Little Caesars Menu with Prices",
+        "metaDescription": "Little Caesars Stuffed Crazy Bread filled with mozzarella and parmesan for $4.99. 8 cheese-stuffed breadsticks with garlic butter!",
+        "keywords": [
+          "stuffed crazy bread",
+          "cheese breadsticks",
+          "little caesars sides",
+          "garlic bread"
+        ],
+        "canonicalUrl": "/menu/stuffed-crazy-bread"
+      }
+    },
+    {
+      "id": "crazy-bread",
+      "name": "Crazy Bread",
+      "slug": "crazy-bread",
+      "category": "crazy-bread",
+      "price": 3.49,
+      "calories": 100,
+      "description": "8 warm, soft breadsticks baked fresh and covered in buttery garlic and parmesan. Served with Crazy Sauce.",
+      "ingredients": [
+        "Fresh dough",
+        "Butter",
+        "Garlic",
+        "Parmesan cheese"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isSignature": true,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "5 minutes",
+      "image": "/images/menu/crazy-bread.jpg",
+      "nutritionFacts": {
+        "calories": 100,
+        "fat": 3,
+        "saturatedFat": 1.5,
+        "cholesterol": 5,
+        "sodium": 150,
+        "carbs": 15,
+        "fiber": 1,
+        "sugars": 1,
+        "protein": 3
+      },
+      "tags": [
+        "best-seller",
+        "shareable",
+        "value"
+      ],
+      "seo": {
+        "title": "Crazy Bread - Little Caesars Famous Breadsticks | Menu Prices",
+        "metaDescription": "Little Caesars famous Crazy Bread - 8 warm breadsticks with garlic butter and parmesan for just $3.49. Includes Crazy Sauce!",
+        "keywords": [
+          "crazy bread",
+          "little caesars breadsticks",
+          "garlic bread",
+          "crazy bread price"
+        ],
+        "canonicalUrl": "/menu/crazy-bread"
+      }
+    },
+    {
+      "id": "italian-cheese-bread",
+      "name": "Italian Cheese Bread",
+      "slug": "italian-cheese-bread",
+      "category": "crazy-bread",
+      "price": 4.49,
+      "calories": 130,
+      "description": "10 pieces of fresh-baked bread topped with melted Italian cheeses and Italian herbs.",
+      "ingredients": [
+        "Fresh dough",
+        "Italian cheese blend",
+        "Italian herbs",
+        "Garlic butter"
       ],
       "allergens": [
         "gluten",
@@ -333,433 +482,521 @@
       "isNew": false,
       "spiceLevel": 0,
       "prepTime": "6-8 minutes",
-      "image": "/images/menu/fried-pickles.jpg",
+      "image": "/images/menu/italian-cheese-bread.jpg",
       "nutritionFacts": {
-        "calories": 550,
+        "calories": 130,
+        "fat": 5,
+        "saturatedFat": 2,
+        "cholesterol": 10,
+        "sodium": 220,
+        "carbs": 16,
+        "fiber": 1,
+        "sugars": 1,
+        "protein": 5
+      },
+      "tags": [
+        "cheese",
+        "shareable"
+      ],
+      "seo": {
+        "title": "Italian Cheese Bread - Little Caesars Menu with Prices",
+        "metaDescription": "Italian Cheese Bread from Little Caesars - 10 pieces topped with melted Italian cheeses for $4.49. Perfect side for your pizza order!",
+        "keywords": [
+          "italian cheese bread",
+          "little caesars bread",
+          "cheese bread",
+          "pizza sides"
+        ],
+        "canonicalUrl": "/menu/italian-cheese-bread"
+      }
+    },
+    {
+      "id": "classic-wings-8pc",
+      "name": "Caesar Wings (8 Piece)",
+      "slug": "caesar-wings-8pc",
+      "category": "wings",
+      "price": 7.99,
+      "calories": 510,
+      "description": "8 oven-roasted wings with your choice of flavor: Buffalo, BBQ, Garlic Parmesan, or Lemon Pepper.",
+      "ingredients": [
+        "Chicken wings",
+        "Choice of sauce"
+      ],
+      "allergens": [
+        "none"
+      ],
+      "isPopular": true,
+      "isSignature": false,
+      "isNew": false,
+      "spiceLevel": 2,
+      "prepTime": "8-10 minutes",
+      "image": "/images/menu/caesar-wings.jpg",
+      "nutritionFacts": {
+        "calories": 510,
         "fat": 35,
-        "saturatedFat": 8,
-        "cholesterol": 25,
-        "sodium": 2180,
-        "carbs": 48,
-        "fiber": 4,
-        "sugars": 8,
-        "protein": 12
-      },
-      "tags": [
-        "vegetarian",
-        "crispy"
-      ],
-      "lastUpdated": "2025-09-04T01:44:35.012Z",
-      "dataSource": "competitive-analysis",
-      "enhancedDescription": "Sliced dill pickles battered and fried golden brown, served with ranch dressing. undefined",
-      "marketPosition": {
-        "pricePosition": 42,
-        "competitiveRating": "standard",
-        "marketAverage": 9.5,
-        "priceDifference": -0.009999999999999787
-      },
-      "features": {
-        "hasNutritionFacts": true,
-        "hasAllergenInfo": true,
-        "isCustomizable": false,
-        "hasSpiceLevel": false,
-        "isShareable": true,
-        "isPremium": false,
-        "isSignature": false
-      },
-      "seo": {
-        "title": "Fried Pickles - Texas Roadhouse Menu with Prices",
-        "metaDescription": "Sliced dill pickles battered and fried golden brown, served with ranch dressing.... Order online or find nutritional information.",
-        "keywords": [
-          "fried pickles",
-          "texas roadhouse",
-          "starters",
-          "menu",
-          "prices",
-          "nutrition"
-        ],
-        "canonicalUrl": "/menu/fried-pickles",
-        "structuredData": {
-          "@type": "MenuItem",
-          "name": "Fried Pickles",
-          "description": "Sliced dill pickles battered and fried golden brown, served with ranch dressing.",
-          "offers": {
-            "@type": "Offer",
-            "price": 9.49,
-            "priceCurrency": "USD"
-          }
-        }
-      }
-    },
-    {
-      "id": "hand-cut-sirloin-6oz",
-      "name": "Hand-Cut Sirloin 6oz",
-      "slug": "hand-cut-sirloin-6oz",
-      "category": "steaks",
-      "price": 13.49,
-      "calories": 250,
-      "description": "USDA Choice sirloin, hand-cut fresh and grilled to order. Served with choice of two sides.",
-      "ingredients": [
-        "USDA Choice sirloin",
-        "Texas Roadhouse seasoning"
-      ],
-      "allergens": [],
-      "isPopular": true,
-      "isSignature": false,
-      "isNew": false,
-      "spiceLevel": 0,
-      "prepTime": "12-18 minutes",
-      "image": "/images/menu/sirloin-6oz.jpg",
-      "cookingTemps": [
-        "Rare",
-        "Medium Rare",
-        "Medium",
-        "Medium Well",
-        "Well Done"
-      ],
-      "nutritionFacts": {
-        "calories": 250,
-        "fat": 12,
-        "saturatedFat": 5,
-        "cholesterol": 85,
-        "sodium": 580,
-        "carbs": 0,
-        "fiber": 0,
-        "sugars": 0,
-        "protein": 35
-      },
-      "tags": [
-        "gluten-free",
-        "high-protein",
-        "lean"
-      ],
-      "lastUpdated": "2025-09-04T01:44:35.012Z",
-      "dataSource": "competitive-analysis",
-      "enhancedDescription": "USDA Choice sirloin, hand-cut fresh and grilled to order. Served with choice of two sides. USDA Choice beef seasoned with our signature blend",
-      "marketPosition": {
-        "pricePosition": 2,
-        "competitiveRating": "value",
-        "marketAverage": 18.5,
-        "priceDifference": -5.01
-      },
-      "features": {
-        "hasNutritionFacts": true,
-        "hasAllergenInfo": false,
-        "isCustomizable": true,
-        "hasSpiceLevel": false,
-        "isShareable": false,
-        "isPremium": false,
-        "isSignature": false
-      },
-      "seo": {
-        "title": "Hand-Cut Sirloin 6oz - Texas Roadhouse Menu with Prices",
-        "metaDescription": "USDA Choice sirloin, hand-cut fresh and grilled to order. Served with choice of two sides.... Order online or find nutritional information.",
-        "keywords": [
-          "hand-cut sirloin 6oz",
-          "texas roadhouse",
-          "steaks",
-          "menu",
-          "prices",
-          "nutrition"
-        ],
-        "canonicalUrl": "/menu/hand-cut-sirloin-6oz",
-        "structuredData": {
-          "@type": "MenuItem",
-          "name": "Hand-Cut Sirloin 6oz",
-          "description": "USDA Choice sirloin, hand-cut fresh and grilled to order. Served with choice of two sides.",
-          "offers": {
-            "@type": "Offer",
-            "price": 13.49,
-            "priceCurrency": "USD"
-          }
-        }
-      }
-    },
-    {
-      "id": "hand-cut-sirloin-8oz",
-      "name": "Hand-Cut Sirloin 8oz",
-      "slug": "hand-cut-sirloin-8oz",
-      "category": "steaks",
-      "price": 15.49,
-      "calories": 330,
-      "description": "USDA Choice sirloin, hand-cut fresh and grilled to order. Served with choice of two sides.",
-      "ingredients": [
-        "USDA Choice sirloin",
-        "Texas Roadhouse seasoning"
-      ],
-      "allergens": [],
-      "isPopular": true,
-      "isSignature": false,
-      "isNew": false,
-      "spiceLevel": 0,
-      "prepTime": "12-18 minutes",
-      "image": "/images/menu/sirloin-8oz.jpg",
-      "cookingTemps": [
-        "Rare",
-        "Medium Rare",
-        "Medium",
-        "Medium Well",
-        "Well Done"
-      ],
-      "nutritionFacts": {
-        "calories": 330,
-        "fat": 16,
-        "saturatedFat": 7,
-        "cholesterol": 115,
-        "sodium": 770,
-        "carbs": 0,
+        "saturatedFat": 9,
+        "cholesterol": 150,
+        "sodium": 1280,
+        "carbs": 2,
         "fiber": 0,
         "sugars": 0,
         "protein": 46
       },
       "tags": [
-        "gluten-free",
-        "high-protein"
+        "high-protein",
+        "keto-friendly",
+        "gluten-free"
       ],
-      "lastUpdated": "2025-09-04T01:44:35.012Z",
-      "dataSource": "competitive-analysis",
-      "enhancedDescription": "USDA Choice sirloin, hand-cut fresh and grilled to order. Served with choice of two sides. Grilled over an open flame for authentic flavor",
-      "marketPosition": {
-        "pricePosition": 11,
-        "competitiveRating": "value",
-        "marketAverage": 18.5,
-        "priceDifference": -3.01
-      },
-      "features": {
-        "hasNutritionFacts": true,
-        "hasAllergenInfo": false,
-        "isCustomizable": true,
-        "hasSpiceLevel": false,
-        "isShareable": false,
-        "isPremium": false,
-        "isSignature": false
-      },
       "seo": {
-        "title": "Hand-Cut Sirloin 8oz - Texas Roadhouse Menu with Prices",
-        "metaDescription": "USDA Choice sirloin, hand-cut fresh and grilled to order. Served with choice of two sides.... Order online or find nutritional information.",
+        "title": "Caesar Wings 8 Piece - Little Caesars Wings Menu Prices",
+        "metaDescription": "Little Caesars Caesar Wings - 8 crispy oven-roasted wings for $7.99. Choose Buffalo, BBQ, Garlic Parmesan, or Lemon Pepper flavors!",
         "keywords": [
-          "hand-cut sirloin 8oz",
-          "texas roadhouse",
-          "steaks",
-          "menu",
-          "prices",
-          "nutrition"
+          "little caesars wings",
+          "caesar wings",
+          "buffalo wings",
+          "bbq wings price"
         ],
-        "canonicalUrl": "/menu/hand-cut-sirloin-8oz",
-        "structuredData": {
-          "@type": "MenuItem",
-          "name": "Hand-Cut Sirloin 8oz",
-          "description": "USDA Choice sirloin, hand-cut fresh and grilled to order. Served with choice of two sides.",
-          "offers": {
-            "@type": "Offer",
-            "price": 15.49,
-            "priceCurrency": "USD"
-          }
-        }
+        "canonicalUrl": "/menu/caesar-wings-8pc"
       }
     },
     {
-      "id": "ribeye-12oz",
-      "name": "Ft. Worth Ribeye 12oz",
-      "slug": "ft-worth-ribeye-12oz",
-      "category": "steaks",
-      "price": 22.99,
-      "calories": 960,
-      "description": "Hand-cut ribeye, seasoned and grilled to perfection. Known for its marbling and flavor.",
+      "id": "pepperoni-cheeser",
+      "name": "Pepperoni Cheeser! Cheeser!",
+      "slug": "pepperoni-cheeser-cheeser",
+      "category": "specialty-pizzas",
+      "price": 11.99,
+      "calories": 340,
+      "description": "Double layer of pepperoni between extra Muenster and Mozzarella cheese blend. A pepperoni lover's dream!",
       "ingredients": [
-        "USDA Choice ribeye",
-        "Texas Roadhouse seasoning"
+        "Fresh dough",
+        "Double pepperoni",
+        "Muenster cheese",
+        "Mozzarella cheese",
+        "Signature sauce"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isSignature": true,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "10-12 minutes",
+      "image": "/images/menu/pepperoni-cheeser.jpg",
+      "nutritionFacts": {
+        "calories": 340,
+        "fat": 17,
+        "saturatedFat": 8,
+        "cholesterol": 50,
+        "sodium": 870,
+        "carbs": 32,
+        "fiber": 2,
+        "sugars": 4,
+        "protein": 17
+      },
+      "tags": [
+        "extra-cheese",
+        "extra-pepperoni",
+        "specialty"
+      ],
+      "seo": {
+        "title": "Pepperoni Cheeser! Cheeser! - Little Caesars Specialty Pizza",
+        "metaDescription": "Pepperoni Cheeser! Cheeser! pizza with double pepperoni and extra cheese for $11.99. The ultimate pepperoni pizza experience!",
+        "keywords": [
+          "cheeser cheeser pizza",
+          "double pepperoni",
+          "extra cheese pizza",
+          "little caesars specialty"
+        ],
+        "canonicalUrl": "/menu/pepperoni-cheeser-cheeser"
+      }
+    },
+    {
+      "id": "veggie-pizza",
+      "name": "Veggie Pizza",
+      "slug": "veggie-pizza",
+      "category": "specialty-pizzas",
+      "price": 10.99,
+      "calories": 250,
+      "description": "Large pizza loaded with fresh vegetables: mushrooms, green peppers, onions, and black olives.",
+      "ingredients": [
+        "Fresh dough",
+        "Signature sauce",
+        "Mozzarella cheese",
+        "Mushrooms",
+        "Green peppers",
+        "Onions",
+        "Black olives"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": false,
+      "isSignature": false,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "10-12 minutes",
+      "image": "/images/menu/veggie-pizza.jpg",
+      "nutritionFacts": {
+        "calories": 250,
+        "fat": 9,
+        "saturatedFat": 4,
+        "cholesterol": 20,
+        "sodium": 520,
+        "carbs": 32,
+        "fiber": 3,
+        "sugars": 5,
+        "protein": 11
+      },
+      "tags": [
+        "vegetarian",
+        "healthy",
+        "low-calorie"
+      ],
+      "seo": {
+        "title": "Veggie Pizza - Little Caesars Vegetarian Menu Prices",
+        "metaDescription": "Little Caesars Veggie Pizza loaded with fresh mushrooms, peppers, onions, and olives for $10.99. Perfect vegetarian pizza option!",
+        "keywords": [
+          "veggie pizza",
+          "vegetarian pizza",
+          "little caesars vegetarian",
+          "healthy pizza"
+        ],
+        "canonicalUrl": "/menu/veggie-pizza"
+      }
+    },
+    {
+      "id": "3-meat-treat",
+      "name": "3 Meat Treat Pizza",
+      "slug": "3-meat-treat-pizza",
+      "category": "specialty-pizzas",
+      "price": 11.49,
+      "calories": 320,
+      "description": "Large pizza with pepperoni, Italian sausage, and bacon for meat lovers.",
+      "ingredients": [
+        "Fresh dough",
+        "Signature sauce",
+        "Mozzarella cheese",
+        "Pepperoni",
+        "Italian sausage",
+        "Bacon"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isSignature": false,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "10-12 minutes",
+      "image": "/images/menu/3-meat-treat.jpg",
+      "nutritionFacts": {
+        "calories": 320,
+        "fat": 15,
+        "saturatedFat": 6,
+        "cholesterol": 45,
+        "sodium": 780,
+        "carbs": 31,
+        "fiber": 2,
+        "sugars": 4,
+        "protein": 16
+      },
+      "tags": [
+        "meat-lovers",
+        "high-protein"
+      ],
+      "seo": {
+        "title": "3 Meat Treat Pizza - Little Caesars Menu with Prices",
+        "metaDescription": "3 Meat Treat Pizza with pepperoni, sausage, and bacon for $11.49. The ultimate meat lover's pizza from Little Caesars!",
+        "keywords": [
+          "meat lovers pizza",
+          "3 meat pizza",
+          "pepperoni sausage bacon",
+          "little caesars meat pizza"
+        ],
+        "canonicalUrl": "/menu/3-meat-treat-pizza"
+      }
+    },
+    {
+      "id": "crazy-combo",
+      "name": "Crazy Combo",
+      "slug": "crazy-combo",
+      "category": "combos",
+      "price": 5.49,
+      "calories": 400,
+      "description": "Crazy Bread 8-piece with Crazy Sauce - the perfect combo!",
+      "ingredients": [
+        "Crazy Bread (8 pieces)",
+        "Crazy Sauce"
+      ],
+      "allergens": [
+        "gluten",
+        "dairy"
+      ],
+      "isPopular": true,
+      "isSignature": true,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "5 minutes",
+      "image": "/images/menu/crazy-combo.jpg",
+      "nutritionFacts": {
+        "calories": 400,
+        "fat": 12,
+        "saturatedFat": 6,
+        "cholesterol": 20,
+        "sodium": 600,
+        "carbs": 60,
+        "fiber": 4,
+        "sugars": 6,
+        "protein": 12
+      },
+      "tags": [
+        "combo",
+        "value",
+        "shareable"
+      ],
+      "seo": {
+        "title": "Crazy Combo - Little Caesars Menu with Prices",
+        "metaDescription": "Little Caesars Crazy Combo - 8 pieces of Crazy Bread with Crazy Sauce for just $5.49. Perfect side for any pizza order!",
+        "keywords": [
+          "crazy combo",
+          "crazy bread combo",
+          "little caesars combo deals"
+        ],
+        "canonicalUrl": "/menu/crazy-combo"
+      }
+    },
+    {
+      "id": "crazy-sauce",
+      "name": "Crazy Sauce",
+      "slug": "crazy-sauce",
+      "category": "dipping-sauces",
+      "price": 0.79,
+      "calories": 45,
+      "description": "Our signature marinara dipping sauce, perfect with Crazy Bread.",
+      "ingredients": [
+        "Tomatoes",
+        "Italian herbs",
+        "Garlic"
       ],
       "allergens": [],
       "isPopular": true,
       "isSignature": true,
       "isNew": false,
       "spiceLevel": 0,
-      "prepTime": "15-20 minutes",
-      "image": "/images/menu/ribeye-12oz.jpg",
-      "cookingTemps": [
-        "Rare",
-        "Medium Rare",
-        "Medium",
-        "Medium Well",
-        "Well Done"
-      ],
+      "prepTime": "Ready",
+      "image": "/images/menu/crazy-sauce.jpg",
       "nutritionFacts": {
-        "calories": 960,
-        "fat": 75,
-        "saturatedFat": 32,
-        "cholesterol": 190,
-        "sodium": 970,
-        "carbs": 0,
-        "fiber": 0,
-        "sugars": 0,
-        "protein": 65
+        "calories": 45,
+        "fat": 0,
+        "saturatedFat": 0,
+        "cholesterol": 0,
+        "sodium": 350,
+        "carbs": 10,
+        "fiber": 1,
+        "sugars": 6,
+        "protein": 2
       },
       "tags": [
-        "gluten-free",
-        "signature",
-        "marbled"
+        "vegan",
+        "low-calorie",
+        "gluten-free"
       ],
-      "lastUpdated": "2025-09-04T01:44:35.012Z",
-      "dataSource": "competitive-analysis",
-      "enhancedDescription": "Hand-cut ribeye, seasoned and grilled to perfection. Known for its marbling and flavor. Served with your choice of two made-from-scratch sides",
-      "marketPosition": {
-        "pricePosition": 43,
-        "competitiveRating": "standard",
-        "marketAverage": 18.5,
-        "priceDifference": 4.489999999999998
-      },
-      "features": {
-        "hasNutritionFacts": true,
-        "hasAllergenInfo": false,
-        "isCustomizable": true,
-        "hasSpiceLevel": false,
-        "isShareable": false,
-        "isPremium": true,
-        "isSignature": true
-      },
       "seo": {
-        "title": "Ft. Worth Ribeye 12oz - Texas Roadhouse Menu with Prices",
-        "metaDescription": "Hand-cut ribeye, seasoned and grilled to perfection. Known for its marbling and flavor.... Order online or find nutritional information.",
+        "title": "Crazy Sauce - Little Caesars Dipping Sauce Prices",
+        "metaDescription": "Little Caesars Crazy Sauce - signature marinara dipping sauce for just $0.79. Perfect with Crazy Bread and pizza!",
         "keywords": [
-          "ft. worth ribeye 12oz",
-          "texas roadhouse",
-          "steaks",
-          "menu",
-          "prices",
-          "nutrition"
+          "crazy sauce",
+          "marinara sauce",
+          "little caesars sauce",
+          "dipping sauce"
         ],
-        "canonicalUrl": "/menu/ft-worth-ribeye-12oz",
-        "structuredData": {
-          "@type": "MenuItem",
-          "name": "Ft. Worth Ribeye 12oz",
-          "description": "Hand-cut ribeye, seasoned and grilled to perfection. Known for its marbling and flavor.",
-          "offers": {
-            "@type": "Offer",
-            "price": 22.99,
-            "priceCurrency": "USD"
-          }
-        }
+        "canonicalUrl": "/menu/crazy-sauce"
       }
     },
     {
-      "id": "half-slab-ribs",
-      "name": "1/2 Slab Fall-Off-The-Bone Ribs",
-      "slug": "half-slab-ribs",
-      "category": "ribs",
-      "price": 20.49,
-      "calories": 900,
-      "description": "St. Louis style ribs, slow-cooked and slathered in our signature BBQ sauce.",
+      "id": "ranch-dipping-sauce",
+      "name": "Ranch Dipping Sauce",
+      "slug": "ranch-dipping-sauce",
+      "category": "dipping-sauces",
+      "price": 0.79,
+      "calories": 140,
+      "description": "Creamy ranch dipping sauce for pizza, wings, or breadsticks.",
       "ingredients": [
-        "St. Louis ribs",
-        "Texas Roadhouse BBQ sauce",
-        "Dry rub seasoning"
+        "Buttermilk",
+        "Mayonnaise",
+        "Herbs",
+        "Spices"
       ],
       "allergens": [
-        "gluten"
+        "dairy",
+        "eggs"
       ],
       "isPopular": true,
-      "isSignature": true,
+      "isSignature": false,
       "isNew": false,
-      "spiceLevel": 1,
-      "prepTime": "25-30 minutes",
-      "image": "/images/menu/half-slab-ribs.jpg",
+      "spiceLevel": 0,
+      "prepTime": "Ready",
+      "image": "/images/menu/ranch-sauce.jpg",
       "nutritionFacts": {
-        "calories": 900,
-        "fat": 55,
-        "saturatedFat": 20,
-        "cholesterol": 180,
-        "sodium": 1850,
-        "carbs": 35,
-        "fiber": 2,
-        "sugars": 30,
-        "protein": 70
+        "calories": 140,
+        "fat": 15,
+        "saturatedFat": 2.5,
+        "cholesterol": 10,
+        "sodium": 260,
+        "carbs": 1,
+        "fiber": 0,
+        "sugars": 1,
+        "protein": 0
       },
       "tags": [
-        "signature",
-        "slow-cooked",
-        "bbq"
+        "creamy",
+        "popular"
       ],
-      "lastUpdated": "2025-09-04T01:44:35.012Z",
-      "dataSource": "competitive-analysis",
-      "enhancedDescription": "St. Louis style ribs, slow-cooked and slathered in our signature BBQ sauce. Finished with our tangy signature BBQ sauce",
-      "marketPosition": {
-        "pricePosition": 15,
-        "competitiveRating": "value",
-        "marketAverage": 22,
-        "priceDifference": -1.5100000000000016
-      },
-      "features": {
-        "hasNutritionFacts": true,
-        "hasAllergenInfo": true,
-        "isCustomizable": false,
-        "hasSpiceLevel": true,
-        "isShareable": false,
-        "isPremium": true,
-        "isSignature": true
-      },
       "seo": {
-        "title": "1/2 Slab Fall-Off-The-Bone Ribs - Texas Roadhouse Menu with Prices",
-        "metaDescription": "St. Louis style ribs, slow-cooked and slathered in our signature BBQ sauce.... Order online or find nutritional information.",
+        "title": "Ranch Dipping Sauce - Little Caesars Menu Prices",
+        "metaDescription": "Creamy Ranch Dipping Sauce from Little Caesars for $0.79. Perfect for pizza, wings, and Crazy Bread!",
         "keywords": [
-          "1/2 slab fall-off-the-bone ribs",
-          "texas roadhouse",
-          "ribs",
-          "menu",
-          "prices",
-          "nutrition"
+          "ranch sauce",
+          "dipping sauce",
+          "little caesars ranch"
         ],
-        "canonicalUrl": "/menu/half-slab-ribs",
-        "structuredData": {
-          "@type": "MenuItem",
-          "name": "1/2 Slab Fall-Off-The-Bone Ribs",
-          "description": "St. Louis style ribs, slow-cooked and slathered in our signature BBQ sauce.",
-          "offers": {
-            "@type": "Offer",
-            "price": 20.49,
-            "priceCurrency": "USD"
-          }
-        }
+        "canonicalUrl": "/menu/ranch-dipping-sauce"
+      }
+    },
+    {
+      "id": "pepsi-20oz",
+      "name": "Pepsi (20 oz)",
+      "slug": "pepsi-20oz",
+      "category": "drinks",
+      "price": 2.49,
+      "calories": 250,
+      "description": "Refreshing 20 oz Pepsi to complete your meal.",
+      "ingredients": [
+        "Carbonated water",
+        "High fructose corn syrup",
+        "Natural flavors"
+      ],
+      "allergens": [],
+      "isPopular": true,
+      "isSignature": false,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "Ready",
+      "image": "/images/menu/pepsi.jpg",
+      "nutritionFacts": {
+        "calories": 250,
+        "fat": 0,
+        "saturatedFat": 0,
+        "cholesterol": 0,
+        "sodium": 55,
+        "carbs": 69,
+        "fiber": 0,
+        "sugars": 69,
+        "protein": 0
+      },
+      "tags": [
+        "refreshing"
+      ],
+      "seo": {
+        "title": "Pepsi 20oz - Little Caesars Drinks Menu Prices",
+        "metaDescription": "Pepsi 20oz bottle at Little Caesars for $2.49. Refreshing drink to go with your pizza order!",
+        "keywords": [
+          "pepsi",
+          "little caesars drinks",
+          "soda",
+          "beverages"
+        ],
+        "canonicalUrl": "/menu/pepsi-20oz"
+      }
+    },
+    {
+      "id": "2-liter-pepsi",
+      "name": "Pepsi 2-Liter",
+      "slug": "pepsi-2-liter",
+      "category": "drinks",
+      "price": 3.49,
+      "calories": 800,
+      "description": "2-liter Pepsi bottle, perfect for sharing with the family.",
+      "ingredients": [
+        "Carbonated water",
+        "High fructose corn syrup",
+        "Natural flavors"
+      ],
+      "allergens": [],
+      "isPopular": true,
+      "isSignature": false,
+      "isNew": false,
+      "spiceLevel": 0,
+      "prepTime": "Ready",
+      "image": "/images/menu/pepsi-2liter.jpg",
+      "nutritionFacts": {
+        "calories": 800,
+        "fat": 0,
+        "saturatedFat": 0,
+        "cholesterol": 0,
+        "sodium": 180,
+        "carbs": 224,
+        "fiber": 0,
+        "sugars": 224,
+        "protein": 0
+      },
+      "tags": [
+        "shareable",
+        "family-size"
+      ],
+      "seo": {
+        "title": "Pepsi 2-Liter - Little Caesars Drinks Menu Prices",
+        "metaDescription": "Pepsi 2-liter bottle at Little Caesars for $3.49. Perfect for family pizza night!",
+        "keywords": [
+          "2 liter pepsi",
+          "little caesars drinks",
+          "family drinks"
+        ],
+        "canonicalUrl": "/menu/pepsi-2-liter"
       }
     }
   ],
   "priceRanges": [
     {
-      "label": "Under $10",
+      "label": "Under $5",
       "min": 0,
-      "max": 9.99
+      "max": 4.99
     },
     {
-      "label": "$10 - $15",
-      "min": 10,
-      "max": 15.99
+      "label": "$5 - $8",
+      "min": 5,
+      "max": 7.99
     },
     {
-      "label": "$16 - $20",
-      "min": 16,
-      "max": 20.99
+      "label": "$8 - $12",
+      "min": 8,
+      "max": 11.99
     },
     {
-      "label": "$21 - $25",
-      "min": 21,
-      "max": 25.99
+      "label": "$12 - $15",
+      "min": 12,
+      "max": 14.99
     },
     {
-      "label": "Over $25",
-      "min": 26,
+      "label": "Over $15",
+      "min": 15,
       "max": 999
     }
   ],
   "dietaryFilters": [
     {
-      "id": "gluten-free",
-      "name": "Gluten-Free",
-      "description": "Items without gluten-containing ingredients"
-    },
-    {
       "id": "vegetarian",
       "name": "Vegetarian",
-      "description": "No meat or fish"
+      "description": "No meat ingredients"
+    },
+    {
+      "id": "gluten-free",
+      "name": "Gluten-Free Options",
+      "description": "Items without gluten"
     },
     {
       "id": "high-protein",
@@ -767,14 +1004,14 @@
       "description": "25g+ protein per serving"
     },
     {
-      "id": "under-500-cal",
-      "name": "Under 500 Calories",
-      "description": "Lower calorie options"
+      "id": "under-300-cal",
+      "name": "Under 300 Calories",
+      "description": "Lower calorie options per slice"
     },
     {
-      "id": "signature",
-      "name": "Signature Items",
-      "description": "Texas Roadhouse specialties"
+      "id": "hot-n-ready",
+      "name": "Hot-N-Ready Items",
+      "description": "Ready when you are!"
     }
   ]
 }
