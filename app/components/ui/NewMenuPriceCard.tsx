@@ -22,7 +22,7 @@ export function NewMenuPriceCard({ item }: NewMenuPriceCardProps) {
         {item.image ? (
           <img
             src={item.image}
-            alt={`${item.name} - Texas Roadhouse Menu ${item.category} - $${item.price.toFixed(2)}`}
+            alt={`${item.name} - Little Caesars Menu ${item.category} - $${item.price.toFixed(2)}`}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             style={{
               width: '100%',
@@ -44,7 +44,7 @@ export function NewMenuPriceCard({ item }: NewMenuPriceCardProps) {
             </div>
           </div>
         )}
-        
+
         {/* Badges */}
         {item.isPopular && (
           <div className="absolute top-3 left-3 bg-texas-red text-white px-2 py-1 rounded-md text-xs font-bold">
@@ -57,7 +57,7 @@ export function NewMenuPriceCard({ item }: NewMenuPriceCardProps) {
           </div>
         )}
       </div>
-      
+
       <div className="p-4">
         <div className="flex justify-between items-start mb-2">
           <h4 className="font-slab text-lg font-bold text-stone-900 line-clamp-2 flex-1">
@@ -67,13 +67,13 @@ export function NewMenuPriceCard({ item }: NewMenuPriceCardProps) {
             ${item.price.toFixed(2)}
           </span>
         </div>
-        
+
         {item.description && (
           <p className="text-stone-600 text-sm mb-3 line-clamp-2">
             {item.description}
           </p>
         )}
-        
+
         <div className="flex justify-between items-center text-sm">
           {item.calories && (
             <span className="bg-stone-100 text-stone-700 px-2 py-1 rounded-full">

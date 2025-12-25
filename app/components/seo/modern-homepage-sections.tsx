@@ -31,7 +31,7 @@ interface BlogPost {
 export function ModernHomepageMenuSection({ className = '' }: HomepageMenuSectionProps) {
   const [trendingBlogs, setTrendingBlogs] = useState<BlogPost[]>([])
   const [blogsLoading, setBlogsLoading] = useState(true)
-  
+
   // Fetch trending blogs
   useEffect(() => {
     const fetchTrendingBlogs = async () => {
@@ -47,10 +47,10 @@ export function ModernHomepageMenuSection({ className = '' }: HomepageMenuSectio
         setBlogsLoading(false)
       }
     }
-    
+
     fetchTrendingBlogs()
   }, [])
-  
+
   // CONSOLE DEBUG - SEO OPTIMIZED COMPONENT
   console.log('🚀 SEO OPTIMIZED HOMEPAGE SECTIONS LOADED:', new Date().toISOString())
   console.log('📈 Trending blogs:', trendingBlogs.length)
@@ -66,13 +66,13 @@ export function ModernHomepageMenuSection({ className = '' }: HomepageMenuSectio
               <TrendingUp className="h-6 w-6 text-texas-red" />
               <h2 className="font-slab text-2xl sm:text-3xl font-bold text-stone-900">
                 Trending Blog Posts
-                </h2>
+              </h2>
             </div>
             <p className="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto">
               Stay updated with latest menu news, cooking tips, and restaurant insights
-                </p>
-              </div>
-              
+            </p>
+          </div>
+
           {blogsLoading ? (
             // Loading skeleton
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -87,9 +87,9 @@ export function ModernHomepageMenuSection({ className = '' }: HomepageMenuSectio
                       <div className="h-3 bg-stone-200 rounded w-16"></div>
                     </div>
                   </div>
-                    </div>
+                </div>
               ))}
-                  </div>
+            </div>
           ) : (
             // Trending blogs grid
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -113,36 +113,36 @@ export function ModernHomepageMenuSection({ className = '' }: HomepageMenuSectio
                         <div className="w-full h-full bg-gradient-to-br from-texas-yellow/20 to-texas-red/20 flex items-center justify-center">
                           <div className="text-center">
                             <Star className="h-12 w-12 text-texas-yellow mx-auto mb-2" />
-                            <p className="text-texas-black font-semibold text-sm">Texas Roadhouse</p>
-                    </div>
-                  </div>
+                            <p className="text-texas-black font-semibold text-sm">Little Caesars</p>
+                          </div>
+                        </div>
                       )}
                       <div className="absolute top-3 left-3">
                         <span className="bg-texas-red text-white text-xs font-bold px-2 py-1 rounded-full">
                           TRENDING
                         </span>
+                      </div>
                     </div>
-                  </div>
                     <div className="p-4">
                       <h3 className="font-slab font-bold text-stone-900 mb-2 group-hover:text-texas-red transition-colors line-clamp-2">
                         {blog.title}
-                </h3>
+                      </h3>
                       {blog.excerpt && (
                         <p className="text-stone-600 text-sm mb-3 line-clamp-2">
                           {blog.excerpt.replace(/<[^>]*>/g, '')}
-                </p>
+                        </p>
                       )}
                       <div className="flex justify-between items-center text-xs text-stone-500">
                         <div className="flex items-center gap-1">
                           <Clock className="h-3 w-3" />
                           <span>{new Date(blog.date).toLocaleDateString()}</span>
-              </div>
+                        </div>
                         {blog.categories?.nodes?.[0]?.name && (
                           <span className="bg-texas-yellow/10 text-texas-black px-2 py-1 rounded-full">
                             {blog.categories.nodes[0].name}
-                    </span>
-                  )}
-                </div>
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </Link>
                 ))
@@ -154,13 +154,13 @@ export function ModernHomepageMenuSection({ className = '' }: HomepageMenuSectio
                     Blog Posts Coming Soon!
                   </h3>
                   <p className="text-stone-600 max-w-md mx-auto">
-                    We're working on bringing you the latest Texas Roadhouse news, menu updates, and cooking tips.
-                      </p>
-                    </div>
-                  )}
+                    We're working on bringing you the latest Little Caesars news, menu updates, and pizza tips.
+                  </p>
                 </div>
+              )}
+            </div>
           )}
-          
+
           {/* View All Blogs CTA */}
           {trendingBlogs.length > 0 && (
             <div className="text-center mt-8">
@@ -171,9 +171,9 @@ export function ModernHomepageMenuSection({ className = '' }: HomepageMenuSectio
                 View All Blog Posts
                 <ArrowRight className="h-4 w-4" />
               </Link>
-                    </div>
-                  )}
-                </div>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   )

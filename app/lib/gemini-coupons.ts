@@ -35,7 +35,7 @@ export interface CouponGenerationResponse {
 }
 
 /**
- * Generate fresh Texas Roadhouse coupons using Gemini AI
+ * Generate fresh Little Caesars coupons using Gemini AI
  * This function creates realistic, up-to-date coupon data
  */
 export async function generateCoupons(): Promise<CouponGenerationResponse> {
@@ -49,7 +49,7 @@ export async function generateCoupons(): Promise<CouponGenerationResponse> {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = `
-    Generate 9 latest Texas Roadhouse coupons for August 2025. 
+    Generate 9 latest Little Caesars coupons for December 2025. 
     
     Requirements:
     - Make them realistic and believable
@@ -109,114 +109,114 @@ export async function generateCoupons(): Promise<CouponGenerationResponse> {
  */
 function getFallbackCoupons(): CouponGenerationResponse {
   console.log('🔄 Using fallback coupon data');
-  
-  const fallbackCoupons: GeneratedCoupon[] = [
-      {
-        code: "AUGUST25",
-        title: "August Savings Special",
-        description: "Get 25% off your entire order this August",
-        discount: "25% OFF",
-        expiryDate: "August 31, 2025",
-        terms: "Valid on orders $30+. Cannot combine with other offers.",
-        type: "code",
-        verified: "Verified August 2025",
-        validUntil: "August 31, 2025"
-      },
-      {
-        code: "VIPCLUB",
-        title: "VIP Member Exclusive",
-        description: "Join VIP Club and get 15% off your first visit",
-        discount: "15% OFF",
-        expiryDate: "Ongoing",
-        terms: "New VIP members only. Valid on first visit.",
-        type: "deal",
-        verified: "Verified August 2025",
-        validUntil: "Ongoing"
-      },
-      {
-        code: "MILITARY",
-        title: "Military & Veteran Discount",
-        description: "Special pricing for active and retired military",
-        discount: "20% OFF",
-        expiryDate: "Always Available",
-        terms: "Valid ID required. Cannot combine with other offers.",
-        type: "discount",
-        verified: "Verified August 2025",
-        validUntil: "Always Available"
-      },
-      {
-        code: "FAMILY25",
-        title: "Family Meal Bundle",
-        description: "Save on family-sized portions and combos",
-        discount: "30% OFF",
-        expiryDate: "August 31, 2025",
-        terms: "Valid on family meal packages only.",
-        type: "deal",
-        verified: "Verified August 2025",
-        validUntil: "August 31, 2025"
-      },
-      {
-        code: "WELCOME10",
-        title: "New Customer Welcome",
-        description: "10% off for first-time customers",
-        discount: "10% OFF",
-        expiryDate: "August 31, 2025",
-        terms: "First-time customers only. Valid ID may be required.",
-        type: "code",
-        verified: "Verified August 2025",
-        validUntil: "August 31, 2025"
-      },
-      {
-        code: "RIBEYE50",
-        title: "Ribeye Special Deal",
-        description: "$5 off any ribeye steak dinner",
-        discount: "$5 OFF",
-        expiryDate: "September 30, 2025",
-        terms: "Valid on ribeye steaks only. Dine-in orders.",
-        type: "deal",
-        verified: "Verified August 2025",
-        validUntil: "September 30, 2025"
-      },
-      {
-        code: "BIRTHDAY",
-        title: "Birthday Month Special",
-        description: "Free appetizer during your birthday month",
-        discount: "FREE Appetizer",
-        expiryDate: "Ongoing",
-        terms: "Valid ID required showing birthday month.",
-        type: "discount",
-        verified: "Verified August 2025",
-        validUntil: "Ongoing"
-      },
-      {
-        code: "EARLYBIRD",
-        title: "Early Bird Dinner",
-        description: "20% off dinner orders before 6 PM",
-        discount: "20% OFF",
-        expiryDate: "December 31, 2025",
-        terms: "Valid before 6 PM only. Dine-in orders.",
-        type: "deal",
-        verified: "Verified August 2025",
-        validUntil: "December 31, 2025"
-      },
-      {
-        code: "LOYALTY15",
-        title: "Loyalty Program Bonus",
-        description: "15% off for loyalty members",
-        discount: "15% OFF",
-        expiryDate: "Ongoing",
-        terms: "Valid loyalty membership required.",
-        type: "code",
-        verified: "Verified August 2025",
-        validUntil: "Ongoing"
-      }
-    ];
 
-    return {
-      success: true,
-      coupons: fallbackCoupons,
-      generatedAt: new Date().toISOString()
-    };
+  const fallbackCoupons: GeneratedCoupon[] = [
+    {
+      code: "AUGUST25",
+      title: "August Savings Special",
+      description: "Get 25% off your entire order this August",
+      discount: "25% OFF",
+      expiryDate: "August 31, 2025",
+      terms: "Valid on orders $30+. Cannot combine with other offers.",
+      type: "code",
+      verified: "Verified August 2025",
+      validUntil: "August 31, 2025"
+    },
+    {
+      code: "VIPCLUB",
+      title: "VIP Member Exclusive",
+      description: "Join VIP Club and get 15% off your first visit",
+      discount: "15% OFF",
+      expiryDate: "Ongoing",
+      terms: "New VIP members only. Valid on first visit.",
+      type: "deal",
+      verified: "Verified August 2025",
+      validUntil: "Ongoing"
+    },
+    {
+      code: "MILITARY",
+      title: "Military & Veteran Discount",
+      description: "Special pricing for active and retired military",
+      discount: "20% OFF",
+      expiryDate: "Always Available",
+      terms: "Valid ID required. Cannot combine with other offers.",
+      type: "discount",
+      verified: "Verified August 2025",
+      validUntil: "Always Available"
+    },
+    {
+      code: "FAMILY25",
+      title: "Family Meal Bundle",
+      description: "Save on family-sized portions and combos",
+      discount: "30% OFF",
+      expiryDate: "August 31, 2025",
+      terms: "Valid on family meal packages only.",
+      type: "deal",
+      verified: "Verified August 2025",
+      validUntil: "August 31, 2025"
+    },
+    {
+      code: "WELCOME10",
+      title: "New Customer Welcome",
+      description: "10% off for first-time customers",
+      discount: "10% OFF",
+      expiryDate: "August 31, 2025",
+      terms: "First-time customers only. Valid ID may be required.",
+      type: "code",
+      verified: "Verified August 2025",
+      validUntil: "August 31, 2025"
+    },
+    {
+      code: "RIBEYE50",
+      title: "Ribeye Special Deal",
+      description: "$5 off any ribeye steak dinner",
+      discount: "$5 OFF",
+      expiryDate: "September 30, 2025",
+      terms: "Valid on ribeye steaks only. Dine-in orders.",
+      type: "deal",
+      verified: "Verified August 2025",
+      validUntil: "September 30, 2025"
+    },
+    {
+      code: "BIRTHDAY",
+      title: "Birthday Month Special",
+      description: "Free appetizer during your birthday month",
+      discount: "FREE Appetizer",
+      expiryDate: "Ongoing",
+      terms: "Valid ID required showing birthday month.",
+      type: "discount",
+      verified: "Verified August 2025",
+      validUntil: "Ongoing"
+    },
+    {
+      code: "EARLYBIRD",
+      title: "Early Bird Dinner",
+      description: "20% off dinner orders before 6 PM",
+      discount: "20% OFF",
+      expiryDate: "December 31, 2025",
+      terms: "Valid before 6 PM only. Dine-in orders.",
+      type: "deal",
+      verified: "Verified August 2025",
+      validUntil: "December 31, 2025"
+    },
+    {
+      code: "LOYALTY15",
+      title: "Loyalty Program Bonus",
+      description: "15% off for loyalty members",
+      discount: "15% OFF",
+      expiryDate: "Ongoing",
+      terms: "Valid loyalty membership required.",
+      type: "code",
+      verified: "Verified August 2025",
+      validUntil: "Ongoing"
+    }
+  ];
+
+  return {
+    success: true,
+    coupons: fallbackCoupons,
+    generatedAt: new Date().toISOString()
+  };
 }
 
 /**
@@ -224,8 +224,8 @@ function getFallbackCoupons(): CouponGenerationResponse {
  */
 export function validateCoupons(coupons: GeneratedCoupon[]): boolean {
   if (!Array.isArray(coupons)) return false;
-  
-  return coupons.every(coupon => 
+
+  return coupons.every(coupon =>
     coupon.code &&
     coupon.title &&
     coupon.description &&

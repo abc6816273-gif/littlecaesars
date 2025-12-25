@@ -1,13 +1,13 @@
 /**
  * 🎯 Google AdSense Configuration
- * Texas Roadhouse Menu Site - Ad Strategy
+ * Little Caesars Menu Site - Ad Strategy
  */
 
 export const ADS_CONFIG = {
   // 🔧 AdSense Settings
   enabled: process.env.NODE_ENV === 'production',
   publisherId: process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID || '',
-  
+
   // 📊 Ad Slots (Replace with your actual slots from AdSense)
   adSlots: {
     headerBanner: '1234567890',     // 728x90 desktop, 320x50 mobile
@@ -63,12 +63,12 @@ export function loadAdSenseScript() {
   script.async = true
   script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS_CONFIG.publisherId}`
   script.crossOrigin = 'anonymous'
-  
+
   // Add error handling
   script.onerror = () => {
     console.warn('Failed to load Google AdSense script')
   }
-  
+
   document.head.appendChild(script)
 }
 
@@ -88,7 +88,7 @@ export function estimateRevenue(dailyPageViews: number, cpm: number = 5) {
   const adsPerPage = 3 // Average ads per page
   const impressions = dailyPageViews * adsPerPage
   const dailyRevenue = (impressions / 1000) * cpm
-  
+
   return {
     daily: dailyRevenue,
     monthly: dailyRevenue * 30,

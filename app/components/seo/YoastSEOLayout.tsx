@@ -19,17 +19,17 @@ interface YoastSEOLayoutProps {
  * Layout component that applies site-wide Yoast SEO settings
  * Use this as a wrapper for pages that need full Yoast integration
  */
-export function YoastSEOLayout({ 
-  children, 
-  siteSEO, 
-  generalSettings, 
+export function YoastSEOLayout({
+  children,
+  siteSEO,
+  generalSettings,
   pageSEO,
   fallbacks = {}
 }: YoastSEOLayoutProps) {
   // Generate fallback values from WordPress general settings and user fallbacks
   const finalFallbacks = {
-    title: fallbacks.title || generalSettings?.title || 'Texas Roadhouse Menu',
-    description: fallbacks.description || generalSettings?.description || 'Texas Roadhouse Menu with Prices',
+    title: fallbacks.title || generalSettings?.title || 'Little Caesars Menu',
+    description: fallbacks.description || generalSettings?.description || 'Little Caesars Menu with Prices',
     favicon: fallbacks.favicon || '/favicon.ico',
     schema: fallbacks.schema,
   }
@@ -45,7 +45,7 @@ export function YoastSEOLayout({
         fallbackFavicon={finalFallbacks.favicon}
         fallbackSchema={finalFallbacks.schema}
       />
-      
+
       {children}
     </>
   )
@@ -61,7 +61,7 @@ export async function useSiteSEO(): Promise<{
   try {
     const { getSiteSEOSettings } = await import('@/lib/data')
     const response = await getSiteSEOSettings()
-    
+
     return {
       siteSEO: response?.seo || null,
       generalSettings: response?.generalSettings || null,
