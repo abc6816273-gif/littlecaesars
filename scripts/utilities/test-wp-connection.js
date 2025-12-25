@@ -31,7 +31,7 @@ const testQuery = {
 function testConnection() {
   const url = new URL(WORDPRESS_API_URL);
   const postData = JSON.stringify(testQuery);
-  
+
   const options = {
     hostname: url.hostname,
     port: url.port || (url.protocol === 'https:' ? 443 : 80),
@@ -40,24 +40,24 @@ function testConnection() {
     headers: {
       'Content-Type': 'application/json',
       'Content-Length': Buffer.byteLength(postData),
-      'User-Agent': 'Texas-Roadhouse-Menu-Test/1.0'
+      'User-Agent': 'Little-Caesars-Menu-Test/1.0'
     },
     timeout: 10000 // 10 second timeout
   };
 
   console.log('⏳ Attempting connection...');
-  
+
   const client = url.protocol === 'https:' ? https : http;
-  
+
   const req = client.request(options, (res) => {
     console.log(`📊 Status Code: ${res.statusCode}`);
     console.log(`📋 Headers:`, res.headers);
-    
+
     let data = '';
     res.on('data', (chunk) => {
       data += chunk;
     });
-    
+
     res.on('end', () => {
       console.log('\n📄 Response:');
       try {
@@ -77,7 +77,7 @@ function testConnection() {
       }
     });
   });
-  
+
   req.on('error', (error) => {
     console.log('❌ Connection Error:', error.message);
     console.log('💡 Common causes:');
@@ -87,7 +87,7 @@ function testConnection() {
     console.log('   - DNS resolution issues');
     console.log('   - SSL certificate problems');
   });
-  
+
   req.on('timeout', () => {
     console.log('⏰ Connection timed out after 10 seconds');
     console.log('💡 This usually means:');
@@ -96,7 +96,7 @@ function testConnection() {
     console.log('   - Server is overloaded');
     req.destroy();
   });
-  
+
   req.write(postData);
   req.end();
 }
@@ -111,10 +111,10 @@ require('dns').lookup(url.hostname, (err, address, family) => {
     console.log('💡 Check if the domain exists and is accessible');
     return;
   }
-  
+
   console.log(`✅ DNS OK: ${url.hostname} → ${address} (IPv${family})`);
   console.log('');
-  
+
   // Proceed with connection test
   testConnection();
 });

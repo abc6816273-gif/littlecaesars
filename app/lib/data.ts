@@ -1,19 +1,19 @@
 // Modern data fetching using Apollo Client GraphQL - Cleaned up version
-import { 
-  fetchPosts, 
-  fetchPostBySlug, 
-  fetchCategories, 
-  fetchPostsByCategory, 
+import {
+  fetchPosts,
+  fetchPostBySlug,
+  fetchCategories,
+  fetchPostsByCategory,
   fetchSiteSEO,
   fetchCategoryBySlug,
-  fetchMenuItems 
+  fetchMenuItems
 } from './graphql/data-service'
 import { Post as WPPost, WPCategory, Menu as MenuItem, SiteSEOResponse } from './types'
 import { WORDPRESS_CONFIG } from './config'
 
 // Posts functions - Refactored to use Apollo Client
 export async function getPosts(
-  first: number = 10, 
+  first: number = 10,
   after?: string
 ): Promise<{ posts: { nodes: WPPost[] }, pageInfo: any }> {
   try {
@@ -22,7 +22,7 @@ export async function getPosts(
     if (after && typeof after !== 'string') after = undefined
 
     const { posts, pageInfo, error } = await fetchPosts(first, after)
-    
+
     if (error) {
       console.error('Error in getPosts:', error)
       // Return empty structure instead of throwing
@@ -36,10 +36,10 @@ export async function getPosts(
         }
       }
     }
-    
+
     // Ensure posts is an array
     const safePosts = Array.isArray(posts) ? posts : []
-    
+
     return {
       posts: { nodes: safePosts },
       pageInfo: pageInfo || {}
@@ -67,12 +67,12 @@ export async function getPostBySlug(slug: string): Promise<WPPost | null> {
     }
 
     const { post, error } = await fetchPostBySlug(slug.trim())
-    
+
     if (error) {
       console.error(`Error fetching post "${slug}":`, error)
       return null
     }
-    
+
     return post
   } catch (error) {
     console.error('Critical error in getPostBySlug:', error)
@@ -84,19 +84,19 @@ export async function getPostBySlug(slug: string): Promise<WPPost | null> {
 export async function getCategories(): Promise<WPCategory[]> {
   try {
     const { categories, error } = await fetchCategories()
-    
+
     if (error) {
       console.error('❌ Error fetching categories from WordPress:', error)
       // Return fallback categories
       return getFallbackCategories()
     }
-    
+
     // If categories exist but empty, return fallback
     if (!Array.isArray(categories) || categories.length === 0) {
       console.warn('⚠️ No categories found, using fallback')
       return getFallbackCategories()
     }
-    
+
     return categories
   } catch (error) {
     console.error('❌ Critical error in getCategories:', error)
@@ -116,7 +116,7 @@ function getFallbackCategories(): WPCategory[] {
     {
       id: 'menu',
       name: 'Little Caesars Menu',
-      slug: 'texas-roadhouse-menu',
+      slug: 'little-caesars-menu',
       count: 3
     }
   ]
@@ -124,22 +124,22 @@ function getFallbackCategories(): WPCategory[] {
 
 export async function getCategoryBySlug(slug: string): Promise<WPCategory | null> {
   const { category, error } = await fetchCategoryBySlug(slug)
-  
+
   if (error) {
     console.error(`❌ Error fetching category "${slug}":`, error)
     return null
   }
-  
+
   return category
 }
 
 export async function getPostsByCategory(
-  categorySlug: string, 
-  first: number = 10, 
+  categorySlug: string,
+  first: number = 10,
   after?: string
 ): Promise<{ posts: { nodes: WPPost[] }, pageInfo: any }> {
   const { posts, pageInfo, error } = await fetchPostsByCategory(categorySlug, first, after)
-  
+
   if (error) {
     console.error(`❌ Error fetching posts for category "${categorySlug}":`, error)
     return {
@@ -147,7 +147,7 @@ export async function getPostsByCategory(
       pageInfo: {}
     }
   }
-  
+
   return {
     posts: { nodes: posts },
     pageInfo
@@ -157,12 +157,12 @@ export async function getPostsByCategory(
 // Site SEO functions - Refactored to use Apollo Client
 export async function getSiteSEOSettings(): Promise<SiteSEOResponse | null> {
   const { seo, error } = await fetchSiteSEO()
-  
+
   if (error) {
     console.error('❌ Error fetching site SEO settings:', error)
     return null
   }
-  
+
   return seo as SiteSEOResponse
 }
 
@@ -173,7 +173,7 @@ export async function getMenus(
   filters?: any
 ): Promise<{ menus: { nodes: MenuItem[] }, pageInfo: any }> {
   const { menuItems, pageInfo, error } = await fetchMenuItems(first, after)
-  
+
   if (error) {
     console.error('❌ Error fetching menu items:', error)
     return {
@@ -181,7 +181,7 @@ export async function getMenus(
       pageInfo: {}
     }
   }
-  
+
   // Transform to match expected MenuItem interface
   const transformedMenus = menuItems.map((item: any) => ({
     id: item.id,
@@ -195,7 +195,7 @@ export async function getMenus(
     },
     featuredImage: item.featuredImage
   }))
-  
+
   return {
     menus: { nodes: transformedMenus },
     pageInfo
@@ -205,11 +205,11 @@ export async function getMenus(
 export async function getMenuBySlug(slug: string): Promise<MenuItem | null> {
   // For now, fetch from posts since menu items are stored as posts
   const post = await getPostBySlug(slug)
-  
+
   if (!post) {
     return null
   }
-  
+
   // Transform post to MenuItem
   return {
     id: post.id,

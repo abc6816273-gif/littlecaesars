@@ -37,12 +37,12 @@ async function testWordPressConnection() {
 
   try {
     console.log('⏳ Fetching latest posts...');
-    
+
     const response = await fetch(WORDPRESS_API_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'User-Agent': 'Texas-Roadhouse-Menu-Test/1.0'
+        'User-Agent': 'Little-Caesars-Menu-Test/1.0'
       },
       body: JSON.stringify({ query }),
     });
@@ -64,18 +64,18 @@ async function testWordPressConnection() {
     }
 
     console.log('✅ WordPress connection successful!\n');
-    
+
     // Display site info
     const siteInfo = result.data.generalSettings;
     console.log('🏠 Site Information:');
     console.log(`   Title: ${siteInfo.title}`);
     console.log(`   Description: ${siteInfo.description}`);
     console.log(`   URL: ${siteInfo.url}\n`);
-    
+
     // Display latest posts
     const posts = result.data.posts.nodes;
     console.log(`📝 Latest ${posts.length} Posts:`);
-    
+
     posts.forEach((post, index) => {
       console.log(`   ${index + 1}. ${post.title}`);
       console.log(`      Slug: ${post.slug}`);
