@@ -172,13 +172,13 @@ export default function NutritionCaloriesGuidePage() {
 
             <main className="min-h-screen bg-gradient-to-br from-green-50 via-white to-orange-50">
                 {/* Hero Section */}
-                <section className="relative py-16 bg-gradient-to-r from-green-600 to-green-700 text-white">
+                <section className="relative py-16 text-white" style={{ background: 'linear-gradient(to right, #16a34a, #15803d)' }}>
                     <div className="max-w-5xl mx-auto px-4 text-center">
                         <div className="text-5xl mb-4">🥗🍕</div>
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
                             Little Caesars Nutrition & Calories Guide {currentYear}
                         </h1>
-                        <p className="text-xl opacity-90 max-w-3xl mx-auto">
+                        <p className="text-xl max-w-3xl mx-auto text-white" style={{ opacity: 0.95 }}>
                             Complete nutrition information for every menu item.
                             Find calories, carbs, protein, fat, and the healthiest options!
                         </p>
