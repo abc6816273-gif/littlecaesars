@@ -427,9 +427,14 @@ export default function HomePage() {
               href="/happy-christmas-2025"
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-red-500"
             >
-              <div className="relative h-48 bg-gradient-to-r from-red-600 to-green-600">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">🎄</span>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp"
+                  alt="Happy Christmas 2025 - Little Caesars Holiday Pizza Celebration"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                  🎄 HOLIDAY
                 </div>
               </div>
               <div className="p-6">
@@ -451,9 +456,14 @@ export default function HomePage() {
               href="/little-caesars-menu"
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
             >
-              <div className="relative h-48 bg-gradient-to-r from-little-caesars-orange to-yellow-500">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">🍕</span>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Menu Prices & Calories Guide 2025"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                  📋 GUIDE
                 </div>
               </div>
               <div className="p-6">
