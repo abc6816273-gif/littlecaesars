@@ -335,6 +335,35 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Coupons January 2025 Card - HOT DEALS */}
+            <Link
+              href="/little-caesars-coupons-january-2025"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Coupons January 2025 - 50% Off Promo Codes"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                  🔥 HOT DEALS
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Coupons & Deals</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
+                  Coupons January 2025 - 50% OFF Codes
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  15 verified promo codes for January 2025! Save up to 50% on pizza, Crazy Bread, wings & more.
+                </p>
+                <div className="mt-4 text-little-caesars-orange font-semibold text-sm flex items-center">
+                  Get Coupons →
+                </div>
+              </div>
+            </Link>
+
             {/* Crazy Puffs Card - TRENDING */}
             <Link
               href="/crazy-puffs"
