@@ -1,9 +1,7 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
-import { useState } from 'react'
 
 interface BlogCardProps {
   blog: {
@@ -24,32 +22,16 @@ interface BlogCardProps {
 }
 
 export default function BlogCard({ blog, featured = false, priority = false }: BlogCardProps) {
-  const [imageError, setImageError] = useState(false)
-
   return (
     <article className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       {/* Image Container */}
       <div className="relative h-56 bg-gray-100 overflow-hidden">
-        {!imageError ? (
-          <Image
-            src={blog.image}
-            alt={blog.imageAlt}
-            fill
-            className="object-cover transition-transform duration-300 hover:scale-105"
-            sizes={priority ? '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' : '(max-width: 768px) 100vw, 33vw'}
-            priority={priority}
-            onError={() => setImageError(true)}
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-orange-100 to-red-100">
-            <div className="text-center text-gray-500">
-              <div className="w-16 h-16 bg-little-caesars-orange/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                <span className="text-2xl">🍕</span>
-              </div>
-              <p className="text-sm font-medium">{blog.category}</p>
-            </div>
-          </div>
-        )}
+        <img
+          src={blog.image}
+          alt={blog.imageAlt}
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          loading={priority ? "eager" : "lazy"}
+        />
 
         {/* NEW Badge - Top Right */}
         {blog.isNew && (
