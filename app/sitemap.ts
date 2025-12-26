@@ -215,6 +215,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'monthly',
         priority: 0.95,
       },
+      // Crazy Puffs Guide - NEW 2025 Trending Content - Maximum Priority
+      {
+        url: `${baseUrl}/crazy-puffs`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 1.0,
+      },
       {
         url: `${baseUrl}/store-locator`,
         lastModified: currentDate,
