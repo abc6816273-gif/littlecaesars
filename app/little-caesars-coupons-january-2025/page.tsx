@@ -646,12 +646,15 @@ export default function LittleCaesarsCouponsJanuary2025() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-16 bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 text-white">
+                <section
+                    className="py-16"
+                    style={{ background: 'linear-gradient(135deg, #c53030 0%, #dd6b20 50%, #c53030 100%)' }}
+                >
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                        <h2 style={{ color: '#ffffff' }} className="text-3xl md:text-4xl font-bold mb-6">
                             Start Saving Today! 🍕
                         </h2>
-                        <p className="text-xl text-orange-100 mb-8">
+                        <p style={{ color: '#ffffff' }} className="text-xl mb-8">
                             Use these verified Little Caesars coupons and save up to 50% on your next pizza order!
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
@@ -659,14 +662,16 @@ export default function LittleCaesarsCouponsJanuary2025() {
                                 href="https://littlecaesars.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-50 transition-colors shadow-lg"
+                                style={{ backgroundColor: '#ffffff', color: '#c53030' }}
+                                className="inline-flex items-center px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-colors shadow-lg"
                             >
                                 Order Now
                                 <ArrowRight className="ml-2 w-5 h-5" />
                             </a>
                             <Link
                                 href="/coupons"
-                                className="inline-flex items-center bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors"
+                                style={{ border: '2px solid #ffffff', color: '#ffffff' }}
+                                className="inline-flex items-center bg-transparent px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors"
                             >
                                 View All Coupons
                             </Link>
