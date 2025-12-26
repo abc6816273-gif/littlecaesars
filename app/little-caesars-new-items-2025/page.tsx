@@ -557,7 +557,7 @@ export default function NewItems2025Page() {
             </section>
 
             {/* Deals Section */}
-            <section id="deals" className="py-16 bg-gradient-to-r from-green-600 to-emerald-600">
+            <section id="deals" className="py-16" style={{ background: 'linear-gradient(135deg, #15803d 0%, #166534 50%, #14532d 100%)' }}>
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <span className="text-5xl mb-4 block">💰</span>
@@ -695,8 +695,8 @@ export default function NewItems2025Page() {
                                         </td>
                                         <td className="p-4 text-center">
                                             <span className={`text-xs font-bold px-2 py-1 rounded-full ${item.status === 'Available Now'
-                                                    ? 'bg-green-100 text-green-700'
-                                                    : 'bg-purple-100 text-purple-700'
+                                                ? 'bg-green-100 text-green-700'
+                                                : 'bg-purple-100 text-purple-700'
                                                 }`}>
                                                 {item.status}
                                             </span>
