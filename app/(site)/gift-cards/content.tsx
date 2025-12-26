@@ -3,14 +3,14 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { 
-  CreditCard, 
-  Gift, 
-  Search, 
-  Star, 
-  Shield, 
-  Clock, 
-  Users, 
+import {
+  CreditCard,
+  Gift,
+  Search,
+  Star,
+  Shield,
+  Clock,
+  Users,
   Building2,
   ChevronDown,
   ChevronUp,
@@ -82,7 +82,7 @@ export default function GiftCardContent() {
     setIsLoading(true)
     setError('')
     setBalance(null)
-    
+
     try {
       const response = await fetch('/api/gift-cards/balance', {
         method: 'POST',
@@ -136,7 +136,7 @@ export default function GiftCardContent() {
               Give the gift of Hot-N-Ready pizzas, Crazy Bread, and delicious Italian favorites
             </p>
           </div>
-          
+
           {/* Small gift card preview */}
           <div className="flex justify-center space-x-2 opacity-75">
             <div className="w-16 h-10 bg-gradient-to-br from-orange-400 to-orange-600 rounded shadow-lg flex items-center justify-center transform rotate-3">
@@ -191,19 +191,19 @@ export default function GiftCardContent() {
                   />
                 </div>
               </div>
-              
+
               {error && (
                 <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg">
                   {error}
                 </div>
               )}
-              
+
               {balance !== null && (
                 <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg">
                   <div className="text-lg font-semibold">Your balance is: ${balance.toFixed(2)}</div>
                 </div>
               )}
-              
+
               <button
                 type="submit"
                 disabled={isLoading || !cardNumber || !pinNumber}
@@ -226,17 +226,20 @@ export default function GiftCardContent() {
       {/* Gift Card Options */}
       <section className="py-12 bg-gradient-to-b from-amber-400 to-amber-500">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-little-caesars-orange mb-8">Choose Your Gift Card</h2>
+          <h2 className="text-3xl font-bold text-center text-white mb-2" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>Choose Your Gift Card</h2>
+          <p className="text-center text-white/90 mb-8">Give the gift of delicious pizza!</p>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Personalize Your Cards */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src="/gc-personalized2x.jpg"
-                  alt="Personalized Gift Card"
-                  fill
-                  className="object-cover"
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center">
+                <img
+                  src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Personalized Gift Card"
+                  className="w-48 h-48 object-cover rounded-xl shadow-2xl transform rotate-3 border-4 border-white"
                 />
+                <div className="absolute top-4 right-4 bg-white/90 text-orange-600 px-3 py-1 rounded-full text-xs font-bold">
+                  🎁 GIFT CARD
+                </div>
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-bold text-little-caesars-orange mb-3">PERSONALIZE YOUR CARDS</h3>
@@ -254,8 +257,8 @@ export default function GiftCardContent() {
                     eGift Card options sent via email instantly
                   </li>
                 </ul>
-                <a 
-                  href="https://texasroadhouse.cashstar.com/store/recipient?_gl=1*10g9cgq*_ga*MzQ1OTgzNzEzLjE3NTY5NTA2NzM.*_ga_XXJFB4ZMND*czE3NTY5NTA2NzMkbzEkZzEkdDE3NTY5NTE2MjAkajU4JGwwJGgw*_fplc*eFBDYXI2OEklMkZvTHFpeUd0MjFNSmZzdiUyQkJhSEVsaDJ5djVUJTJCWTRiYmNXSk12N0JlODVWcjBlRjhSNjc2MmRKbWRHdWdGTHdmeVVJbHN6ZXp0YW5BeEpPOG94bGg3TklvdGUwVDUlMkJpSkt0WFdFeTZQR0YxTjA4Q1NGSlk0SUElM0QlM0Q.&locale=en-us"
+                <a
+                  href="https://www.littlecaesars.com/gift-cards"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-little-caesars-orange hover:bg-little-caesars-orange/90 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 uppercase tracking-wide text-sm"
@@ -267,21 +270,23 @@ export default function GiftCardContent() {
 
             {/* Gift Cards for a Good Cause */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src="/ky-ffa-website-imagery.jpg"
-                  alt="Kentucky FFA Foundation Gift Card"
-                  fill
-                  className="object-cover"
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-red-500 to-orange-500 flex items-center justify-center">
+                <img
+                  src="/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Community Gift Card"
+                  className="w-48 h-48 object-cover rounded-xl shadow-2xl transform -rotate-3 border-4 border-white"
                 />
+                <div className="absolute top-4 left-4 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold">
+                  ❤️ GIVE BACK
+                </div>
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-bold text-little-caesars-orange mb-3">GIFT CARDS FOR A GOOD CAUSE</h3>
                 <p className="text-gray-700 mb-4 text-sm">
                   When you purchase a gift card, Little Caesars supports local communities through various charitable initiatives and programs.
                 </p>
-                <a 
-                  href="https://texasroadhouse.cashstar.com/store/recipient?_gl=1*10g9cgq*_ga*MzQ1OTgzNzEzLjE3NTY5NTA2NzM.*_ga_XXJFB4ZMND*czE3NTY5NTA2NzMkbzEkZzEkdDE3NTY5NTE2MjAkajU4JGwwJGgw*_fplc*eFBDYXI2OEklMkZvTHFpeUd0MjFNSmZzdiUyQkJhSEVsaDJ5djVUJTJCWTRiYmNXSk12N0JlODVWcjBlRjhSNjc2MmRKbWRHdWdGTHdmeVVJbHN6ZXp0YW5BeEpPOG94bGg3TklvdGUwVDUlMkJpSkt0WFdFeTZQR0YxTjA4Q1NGSlk0SUElM0QlM0Q.&locale=en-us"
+                <a
+                  href="https://www.littlecaesars.com/gift-cards"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-little-caesars-orange hover:bg-little-caesars-orange/90 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 uppercase tracking-wide text-sm"
@@ -293,20 +298,22 @@ export default function GiftCardContent() {
 
             {/* Buy Gift Cards in Bulk */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src="/gc-co-brand2x.jpg"
-                  alt="Business Logo Gift Card"
-                  fill
-                  className="object-cover"
+              <div className="relative h-64 overflow-hidden bg-gradient-to-br from-orange-600 to-yellow-500 flex items-center justify-center">
+                <img
+                  src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Pepperoni-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Bulk Gift Cards"
+                  className="w-48 h-48 object-cover rounded-xl shadow-2xl border-4 border-white"
                 />
+                <div className="absolute top-4 right-4 bg-white/90 text-orange-600 px-3 py-1 rounded-full text-xs font-bold">
+                  🏢 BUSINESS
+                </div>
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-bold text-little-caesars-orange mb-3">BUY GIFT CARDS IN BULK</h3>
                 <ul className="text-gray-700 space-y-1 mb-4 text-sm">
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-little-caesars-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    Personalized gift cards with your company logo or pizza-themed designs
+                    Personalized gift cards with your company logo
                   </li>
                   <li className="flex items-start">
                     <div className="w-2 h-2 bg-little-caesars-orange rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -317,8 +324,8 @@ export default function GiftCardContent() {
                     Perfect for employee rewards, client gifts, and corporate events
                   </li>
                 </ul>
-                <a 
-                  href="https://texasroadhouse-biz.cashstar.com/login/login/"
+                <a
+                  href="https://www.littlecaesars.com/gift-cards"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-little-caesars-orange hover:bg-little-caesars-orange/90 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 uppercase tracking-wide text-sm"
@@ -335,7 +342,7 @@ export default function GiftCardContent() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-little-caesars-orange text-center mb-12">FREQUENTLY ASKED QUESTIONS</h2>
-          
+
           <div className="space-y-4">
             {faqItems.map((item) => (
               <div key={item.id} className="border border-gray-200 rounded-lg overflow-hidden">
@@ -371,7 +378,7 @@ export default function GiftCardContent() {
             Give the perfect gift - delicious Hot-N-Ready pizzas and unforgettable experiences at Little Caesars
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <a
               href="https://texasroadhouse.cashstar.com/store/recipient?_gl=1*10g9cgq*_ga*MzQ1OTgzNzEzLjE3NTY5NTA2NzM.*_ga_XXJFB4ZMND*czE3NTY5NTA2NzMkbzEkZzEkdDE3NTY5NTE2MjAkajU4JGwwJGgw*_fplc*eFBDYXI2OEklMkZvTHFpeUd0MjFNSmZzdiUyQkJhSEVsaDJ5djVUJTJCWTRiYmNXSk12N0JlODVWcjBlRjhSNjc2MmRKbWRHdWdGTHdmeVVJbHN6ZXp0YW5BeEpPOG94bGg3TklvdGUwVDUlMkJpSkt0WFdFeTZQR0YxTjA4Q1NGSlk0SUElM0QlM0Q.&locale=en-us"
               target="_blank"
               rel="noopener noreferrer"
@@ -379,7 +386,7 @@ export default function GiftCardContent() {
             >
               BUY NOW
             </a>
-            <a 
+            <a
               href="https://www.littlecaesars.com/store-locator"
               target="_blank"
               rel="noopener noreferrer"
