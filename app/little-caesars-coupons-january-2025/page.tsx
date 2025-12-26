@@ -392,12 +392,12 @@ export default function LittleCaesarsCouponsJanuary2025() {
                             UPDATED: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white">
                             Little Caesars Coupons<br />
                             <span className="text-yellow-300">January 2025</span>
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-orange-100 mb-8 max-w-3xl mx-auto">
+                        <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
                             🔥 <strong>15 Verified Promo Codes</strong> - Save up to <strong>50% OFF</strong> on pizza, Crazy Bread,
                             wings, and more! All deals tested and working.
                         </p>
