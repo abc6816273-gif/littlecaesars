@@ -379,7 +379,10 @@ export default function LittleCaesarsCouponsJanuary2025() {
                 </nav>
 
                 {/* Hero Section */}
-                <header className="relative bg-gradient-to-r from-orange-600 via-red-600 to-orange-600 text-white py-16 lg:py-24 overflow-hidden">
+                <header
+                    className="relative py-16 lg:py-24 overflow-hidden"
+                    style={{ background: 'linear-gradient(135deg, #c53030 0%, #dd6b20 50%, #c53030 100%)' }}
+                >
                     <div className="absolute inset-0 opacity-10">
                         <div className="absolute top-10 left-10 text-8xl">🍕</div>
                         <div className="absolute bottom-10 right-10 text-8xl">💰</div>
@@ -392,28 +395,28 @@ export default function LittleCaesarsCouponsJanuary2025() {
                             UPDATED: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                         </div>
 
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white">
+                        <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
                             Little Caesars Coupons<br />
-                            <span className="text-yellow-300">January 2025</span>
+                            <span style={{ color: '#fcd34d' }}>January 2025</span>
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
+                        <p style={{ color: '#ffffff' }} className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
                             🔥 <strong>15 Verified Promo Codes</strong> - Save up to <strong>50% OFF</strong> on pizza, Crazy Bread,
                             wings, and more! All deals tested and working.
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-4 mb-8">
-                            <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-xl">
-                                <div className="text-3xl font-bold">15+</div>
-                                <div className="text-sm">Active Coupons</div>
+                            <div style={{ backgroundColor: 'rgba(255,255,255,0.2)' }} className="backdrop-blur px-6 py-3 rounded-xl">
+                                <div style={{ color: '#ffffff' }} className="text-3xl font-bold">15+</div>
+                                <div style={{ color: '#ffffff' }} className="text-sm">Active Coupons</div>
                             </div>
-                            <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-xl">
-                                <div className="text-3xl font-bold">50%</div>
-                                <div className="text-sm">Max Discount</div>
+                            <div style={{ backgroundColor: 'rgba(255,255,255,0.2)' }} className="backdrop-blur px-6 py-3 rounded-xl">
+                                <div style={{ color: '#ffffff' }} className="text-3xl font-bold">50%</div>
+                                <div style={{ color: '#ffffff' }} className="text-sm">Max Discount</div>
                             </div>
-                            <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-xl">
-                                <div className="text-3xl font-bold">85K+</div>
-                                <div className="text-sm">Times Used</div>
+                            <div style={{ backgroundColor: 'rgba(255,255,255,0.2)' }} className="backdrop-blur px-6 py-3 rounded-xl">
+                                <div style={{ color: '#ffffff' }} className="text-3xl font-bold">85K+</div>
+                                <div style={{ color: '#ffffff' }} className="text-sm">Times Used</div>
                             </div>
                         </div>
 
