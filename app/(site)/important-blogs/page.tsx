@@ -63,6 +63,45 @@ const breadcrumbSchema = {
 // Featured blog posts - real content only  
 const featuredBlogs = [
   {
+    id: 'crazy-puffs-guide',
+    category: 'Trending',
+    title: 'Crazy Puffs Little Caesars 2025 - Complete Guide, Flavors, Price & Calories',
+    excerpt: 'Everything you need to know about Little Caesars viral Crazy Puffs! All 5 flavors, prices starting at $3.99, calories, nutrition facts, and honest reviews. The #1 trending menu item of 2024-2025!',
+    image: '/menu/crazy-puffs-little-caesars.png',
+    imageAlt: 'Little Caesars Crazy Puffs - All 5 Flavors with Prices and Calories',
+    date: 'December 26, 2025',
+    readTime: '10 min read',
+    slug: 'crazy-puffs',
+    isNew: true,
+    featured: true
+  },
+  {
+    id: 'new-items-2025',
+    category: 'New Menu',
+    title: 'Little Caesars New Items 2025 - Complete Guide to All New Menu Items',
+    excerpt: 'Discover all 10 NEW Little Caesars menu items for 2025! Stuffed Crust, Pretzel Crust, new pizzas, sides, drinks, and exclusive deals. Everything launching this year with prices and availability.',
+    image: '/menu/little-caesars-new-items-2025.png',
+    imageAlt: 'Little Caesars New Menu Items 2025 - All New Pizzas, Sides, and Deals',
+    date: 'December 26, 2025',
+    readTime: '12 min read',
+    slug: 'little-caesars-new-items-2025',
+    isNew: true,
+    featured: true
+  },
+  {
+    id: 'nutrition-calories-guide',
+    category: 'Health Guide',
+    title: 'Little Caesars Nutrition & Calories Guide 2025 - Complete Health Facts',
+    excerpt: 'Complete nutrition and calorie information for every Little Caesars menu item. Find the healthiest options, compare calories, and make informed choices for your diet goals.',
+    image: '/menu/little-caesars-nutrition-calories.png',
+    imageAlt: 'Little Caesars Nutrition Facts and Calorie Guide 2025',
+    date: 'December 26, 2025',
+    readTime: '8 min read',
+    slug: 'little-caesars-nutrition-calories',
+    isNew: true,
+    featured: true
+  },
+  {
     id: 'happy-christmas-2025',
     category: 'Holiday Special',
     title: 'Happy Christmas 2025 - Little Caesars Holiday Deals & Festive Pizza Guide',
@@ -72,7 +111,7 @@ const featuredBlogs = [
     date: 'December 20, 2025',
     readTime: '8 min read',
     slug: 'happy-christmas-2025',
-    isNew: true,
+    isNew: false,
     featured: true
   },
   {

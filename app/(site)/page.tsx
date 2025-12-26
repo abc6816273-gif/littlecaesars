@@ -334,7 +334,85 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Crazy Puffs Card - TRENDING */}
+            <Link
+              href="/crazy-puffs"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-purple-500"
+            >
+              <div className="relative h-48 bg-gradient-to-r from-purple-600 to-pink-500">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-6xl">🔥</span>
+                </div>
+                <div className="absolute top-3 right-3 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                  🚀 TRENDING
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-purple-600 uppercase tracking-wide">Viral Menu Item</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-purple-600 transition-colors">
+                  Crazy Puffs - Complete Guide, Flavors & Prices
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Everything about Little Caesars viral Crazy Puffs! All 5 flavors, prices from $3.99, calories & reviews.
+                </p>
+                <div className="mt-4 text-purple-600 font-semibold text-sm flex items-center">
+                  Read More →
+                </div>
+              </div>
+            </Link>
+
+            {/* New Items 2025 Card */}
+            <Link
+              href="/little-caesars-new-items-2025"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-green-500"
+            >
+              <div className="relative h-48 bg-gradient-to-r from-green-600 to-teal-500">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-6xl">✨</span>
+                </div>
+                <div className="absolute top-3 right-3 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold">
+                  🆕 NEW
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-green-600 uppercase tracking-wide">New Menu</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-green-600 transition-colors">
+                  Little Caesars New Items 2025 - All 10 Items
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  All 10 NEW menu items for 2025! Stuffed Crust, Pretzel Crust, new pizzas, sides & exclusive deals.
+                </p>
+                <div className="mt-4 text-green-600 font-semibold text-sm flex items-center">
+                  Read More →
+                </div>
+              </div>
+            </Link>
+
+            {/* Nutrition Guide Card */}
+            <Link
+              href="/little-caesars-nutrition-calories"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-500"
+            >
+              <div className="relative h-48 bg-gradient-to-r from-blue-600 to-cyan-500">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-6xl">🥗</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Health Guide</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
+                  Nutrition & Calories Guide 2025
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Complete nutrition facts for every menu item. Find healthiest options & make informed diet choices.
+                </p>
+                <div className="mt-4 text-blue-600 font-semibold text-sm flex items-center">
+                  Read More →
+                </div>
+              </div>
+            </Link>
+
             {/* Christmas Blog Card */}
             <Link
               href="/happy-christmas-2025"
@@ -343,9 +421,6 @@ export default function HomePage() {
               <div className="relative h-48 bg-gradient-to-r from-red-600 to-green-600">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-6xl">🎄</span>
-                </div>
-                <div className="absolute top-3 right-3 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold">
-                  🔥 NEW
                 </div>
               </div>
               <div className="p-6">
