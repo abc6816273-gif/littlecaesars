@@ -340,10 +340,12 @@ export default function HomePage() {
               href="/crazy-puffs"
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-purple-500"
             >
-              <div className="relative h-48 bg-gradient-to-r from-purple-600 to-pink-500">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">🔥</span>
-                </div>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/4-Cheese-Crazy-Puffs-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Crazy Puffs - Viral Menu Item 2025"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
                 <div className="absolute top-3 right-3 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold animate-pulse">
                   🚀 TRENDING
                 </div>
@@ -367,10 +369,12 @@ export default function HomePage() {
               href="/little-caesars-new-items-2025"
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-green-500"
             >
-              <div className="relative h-48 bg-gradient-to-r from-green-600 to-teal-500">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">✨</span>
-                </div>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/Stuffed-Crust-Pepperoni-Little-Caesars-Menu.webp"
+                  alt="Little Caesars New Menu Items 2025 - Stuffed Crust Pizza"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
                 <div className="absolute top-3 right-3 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold">
                   🆕 NEW
                 </div>
@@ -394,9 +398,14 @@ export default function HomePage() {
               href="/little-caesars-nutrition-calories"
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-500"
             >
-              <div className="relative h-48 bg-gradient-to-r from-blue-600 to-cyan-500">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-6xl">🥗</span>
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Nutrition & Calories Guide 2025"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                  📊 GUIDE
                 </div>
               </div>
               <div className="p-6">
