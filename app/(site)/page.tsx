@@ -338,7 +338,7 @@ export default function HomePage() {
             {/* Crazy Puffs Card - TRENDING */}
             <Link
               href="/crazy-puffs"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-purple-500"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -351,14 +351,14 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-6">
-                <span className="text-xs font-bold text-purple-600 uppercase tracking-wide">Viral Menu Item</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-purple-600 transition-colors">
+                <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Viral Menu Item</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
                   Crazy Puffs - Complete Guide, Flavors & Prices
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
                   Everything about Little Caesars viral Crazy Puffs! All 5 flavors, prices from $3.99, calories & reviews.
                 </p>
-                <div className="mt-4 text-purple-600 font-semibold text-sm flex items-center">
+                <div className="mt-4 text-little-caesars-orange font-semibold text-sm flex items-center">
                   Read More →
                 </div>
               </div>
@@ -367,7 +367,7 @@ export default function HomePage() {
             {/* New Items 2025 Card */}
             <Link
               href="/little-caesars-new-items-2025"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-green-500"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -380,14 +380,14 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-6">
-                <span className="text-xs font-bold text-green-600 uppercase tracking-wide">New Menu</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-green-600 transition-colors">
+                <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">New Menu</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
                   Little Caesars New Items 2025 - All 10 Items
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
                   All 10 NEW menu items for 2025! Stuffed Crust, Pretzel Crust, new pizzas, sides & exclusive deals.
                 </p>
-                <div className="mt-4 text-green-600 font-semibold text-sm flex items-center">
+                <div className="mt-4 text-little-caesars-orange font-semibold text-sm flex items-center">
                   Read More →
                 </div>
               </div>
@@ -396,7 +396,7 @@ export default function HomePage() {
             {/* Nutrition Guide Card */}
             <Link
               href="/little-caesars-nutrition-calories"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-500"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -404,19 +404,19 @@ export default function HomePage() {
                   alt="Little Caesars Nutrition & Calories Guide 2025"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute top-3 right-3 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                <div className="absolute top-3 right-3 bg-little-caesars-orange text-white px-3 py-1 rounded-full text-xs font-bold">
                   📊 GUIDE
                 </div>
               </div>
               <div className="p-6">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Health Guide</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
+                <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Health Guide</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
                   Nutrition & Calories Guide 2025
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
                   Complete nutrition facts for every menu item. Find healthiest options & make informed diet choices.
                 </p>
-                <div className="mt-4 text-blue-600 font-semibold text-sm flex items-center">
+                <div className="mt-4 text-little-caesars-orange font-semibold text-sm flex items-center">
                   Read More →
                 </div>
               </div>
@@ -425,7 +425,7 @@ export default function HomePage() {
             {/* Christmas Blog Card */}
             <Link
               href="/happy-christmas-2025"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-red-500"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
@@ -438,7 +438,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="p-6">
-                <span className="text-xs font-bold text-red-500 uppercase tracking-wide">Holiday Special</span>
+                <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Holiday Special</span>
                 <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
                   Happy Christmas 2025 - Holiday Deals & Party Ideas
                 </h3>
