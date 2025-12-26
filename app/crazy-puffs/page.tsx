@@ -802,7 +802,7 @@ export default function CrazyPuffsGuidePage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-gradient-to-r from-orange-600 via-red-600 to-orange-600">
+            <section className="py-16" style={{ background: 'linear-gradient(135deg, #c2410c 0%, #b91c1c 50%, #9a3412 100%)' }}>
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                         Ready to Try Crazy Puffs? 🍕
