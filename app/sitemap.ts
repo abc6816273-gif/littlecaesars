@@ -222,6 +222,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'weekly',
         priority: 1.0,
       },
+      // Little Caesars New Items 2025 - Maximum Priority for Trending Content
+      {
+        url: `${baseUrl}/little-caesars-new-items-2025`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 1.0,
+      },
       {
         url: `${baseUrl}/store-locator`,
         lastModified: currentDate,
