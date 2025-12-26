@@ -63,6 +63,19 @@ const breadcrumbSchema = {
 // Featured blog posts - real content only  
 const featuredBlogs = [
   {
+    id: 'coupons-january-2025',
+    category: 'Coupons & Deals',
+    title: 'Little Caesars Coupons January 2025 - 50% Off Promo Codes & Deals',
+    excerpt: 'Get 15 verified Little Caesars coupons for January 2025! Exclusive promo codes: 50% off, FREE Crazy Bread, $5.99 pizzas, BOGO deals. Save up to $20 on your next order!',
+    image: '/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp',
+    imageAlt: 'Little Caesars Coupons January 2025 - Save 50% with Promo Codes',
+    date: 'January 1, 2025',
+    readTime: '5 min read',
+    slug: 'little-caesars-coupons-january-2025',
+    isNew: true,
+    featured: true
+  },
+  {
     id: 'crazy-puffs-guide',
     category: 'Trending',
     title: 'Crazy Puffs Little Caesars 2025 - Complete Guide, Flavors, Price & Calories',
