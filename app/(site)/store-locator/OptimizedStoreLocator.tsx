@@ -725,7 +725,8 @@ function OptimizedStoreLocator() {
                         href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 bg-little-caesars-orange text-white text-center py-3 px-4 rounded-xl font-semibold hover:bg-little-caesars-orange/90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
+                        style={{ backgroundColor: '#FF5A1F', color: '#ffffff' }}
+                        className="flex-1 text-center py-3 px-4 rounded-xl font-semibold hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
                       >
                         <Navigation className="h-4 w-4 mr-2" />
                         Get Directions
@@ -734,7 +735,7 @@ function OptimizedStoreLocator() {
                       {location.phone ? (
                         <a
                           href={`tel:${location.phone}`}
-                          style={{ backgroundColor: '#16a34a', color: '#ffffff' }}
+                          style={{ backgroundColor: '#1f2937', color: '#ffffff' }}
                           className="flex-1 text-center py-3 px-4 rounded-xl font-semibold hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
                         >
                           <Phone className="h-4 w-4 mr-2" />
