@@ -726,9 +726,9 @@ function OptimizedStoreLocator() {
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ backgroundColor: '#FF5A1F', color: '#ffffff' }}
-                        className="inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
+                        className="inline-flex items-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl whitespace-nowrap"
                       >
-                        <Navigation className="h-5 w-5 mr-2" />
+                        <Navigation className="h-5 w-5 mr-2 flex-shrink-0" />
                         Get Directions
                       </a>
 
@@ -736,9 +736,9 @@ function OptimizedStoreLocator() {
                         <a
                           href={`tel:${location.phone}`}
                           style={{ backgroundColor: '#1f2937', color: '#ffffff' }}
-                          className="inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
+                          className="inline-flex items-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl whitespace-nowrap"
                         >
-                          <Phone className="h-5 w-5 mr-2" />
+                          <Phone className="h-5 w-5 mr-2 flex-shrink-0" />
                           Call Now
                         </a>
                       ) : (
@@ -747,9 +747,9 @@ function OptimizedStoreLocator() {
                           target="_blank"
                           rel="noopener noreferrer"
                           style={{ backgroundColor: '#1f2937', color: '#ffffff' }}
-                          className="inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
+                          className="inline-flex items-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl whitespace-nowrap"
                         >
-                          <MapPin className="h-5 w-5 mr-2" />
+                          <MapPin className="h-5 w-5 mr-2 flex-shrink-0" />
                           View Details
                         </a>
                       )}
