@@ -734,7 +734,8 @@ function OptimizedStoreLocator() {
                       {location.phone ? (
                         <a
                           href={`tel:${location.phone}`}
-                          className="flex-1 bg-green-600 text-white text-center py-3 px-4 rounded-xl font-semibold hover:bg-green-700 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
+                          style={{ backgroundColor: '#16a34a', color: '#ffffff' }}
+                          className="flex-1 text-center py-3 px-4 rounded-xl font-semibold hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
                         >
                           <Phone className="h-4 w-4 mr-2" />
                           Call Now
@@ -744,7 +745,8 @@ function OptimizedStoreLocator() {
                           href="https://www.littlecaesars.com/store-locator"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 bg-gray-800 text-white text-center py-3 px-4 rounded-xl font-semibold hover:bg-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
+                          style={{ backgroundColor: '#1f2937', color: '#ffffff' }}
+                          className="flex-1 text-center py-3 px-4 rounded-xl font-semibold hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
                         >
                           <MapPin className="h-4 w-4 mr-2" />
                           View Details
