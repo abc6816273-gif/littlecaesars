@@ -74,7 +74,7 @@ export const defaultSEO: Metadata = {
     title: `${siteName} - Independent Menu Guide`,
     description: 'Complete guide to Little Caesars menu items, prices, and nutritional information',
     images: ['/og-image.jpg'],
-    creator: '@texasroadhousemenu',
+    creator: '@littlecaesarsmenu',
   },
   robots: {
     index: true,
@@ -110,7 +110,7 @@ export function generatePageSEO({
   lastModified?: string
 }): Metadata {
   const fullUrl = `${siteUrl}${path}`
-  
+
   return {
     title,
     description,
@@ -144,10 +144,10 @@ export function generatePageSEO({
         follow: true,
       },
     },
-    ...(lastModified && { 
-      other: { 
-        'last-modified': lastModified 
-      } 
+    ...(lastModified && {
+      other: {
+        'last-modified': lastModified
+      }
     }),
   }
 }
@@ -161,7 +161,7 @@ export function generateMenuItemSEO(menuItem: {
 }): Metadata {
   const title = `${menuItem.title} - $${menuItem.price.toFixed(2)} | ${siteName}`
   const description = `${menuItem.description} Price: $${menuItem.price.toFixed(2)}. Category: ${menuItem.category}. View complete menu details and nutrition info.`
-  
+
   return generatePageSEO({
     title,
     description,
@@ -214,6 +214,6 @@ export const pageSpeedOptimizations = {
   ],
   // DNS prefetch for external domains
   dnsPrefetch: [
-    'https://www.texasroadhouse.com',
+    'https://www.littlecaesars.com',
   ],
 }

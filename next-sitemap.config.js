@@ -46,7 +46,7 @@ module.exports = {
         lastmod: new Date().toISOString(),
       }
     }
-    
+
     if (path.startsWith('/blog/')) {
       // Transform /blog/slug to /slug for clean URLs in sitemap
       const cleanPath = path.replace('/blog/', '/')
@@ -57,12 +57,35 @@ module.exports = {
         lastmod: new Date().toISOString(),
       }
     }
-    
+
     if (path.startsWith('/menus-prices')) {
       return {
         loc: path,
         changefreq: 'daily',
         priority: 0.9,
+        lastmod: new Date().toISOString(),
+      }
+    }
+
+    // High-traffic SEO pages - maximum priority
+    const highPriorityPages = [
+      '/little-caesars-secret-menu',
+      '/best-little-caesars-pizza-ranked',
+      '/little-caesars-delivery',
+      '/little-caesars-coupons-january-2025',
+      '/little-caesars-pretzel-crust-pizza-2025',
+      '/little-caesars-9-99-menu',
+      '/crazy-puffs',
+      '/little-caesars-new-items-2025',
+      '/little-caesars-nutrition-calories',
+      '/menu'
+    ]
+
+    if (highPriorityPages.includes(path)) {
+      return {
+        loc: path,
+        changefreq: 'daily',
+        priority: 0.95,
         lastmod: new Date().toISOString(),
       }
     }
