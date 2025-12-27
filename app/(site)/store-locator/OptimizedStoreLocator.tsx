@@ -720,15 +720,15 @@ function OptimizedStoreLocator() {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-3">
+                    <div className="flex flex-col sm:flex-row gap-4">
                       <a
                         href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ backgroundColor: '#FF5A1F', color: '#ffffff' }}
-                        className="flex-1 text-center py-3 px-4 rounded-xl font-semibold hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
+                        className="inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
                       >
-                        <Navigation className="h-4 w-4 mr-2" />
+                        <Navigation className="h-5 w-5 mr-2" />
                         Get Directions
                       </a>
 
@@ -736,9 +736,9 @@ function OptimizedStoreLocator() {
                         <a
                           href={`tel:${location.phone}`}
                           style={{ backgroundColor: '#1f2937', color: '#ffffff' }}
-                          className="flex-1 text-center py-3 px-4 rounded-xl font-semibold hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
+                          className="inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
                         >
-                          <Phone className="h-4 w-4 mr-2" />
+                          <Phone className="h-5 w-5 mr-2" />
                           Call Now
                         </a>
                       ) : (
@@ -747,9 +747,9 @@ function OptimizedStoreLocator() {
                           target="_blank"
                           rel="noopener noreferrer"
                           style={{ backgroundColor: '#1f2937', color: '#ffffff' }}
-                          className="flex-1 text-center py-3 px-4 rounded-xl font-semibold hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
+                          className="inline-flex items-center justify-center px-6 py-3 font-semibold rounded-xl hover:opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl"
                         >
-                          <MapPin className="h-4 w-4 mr-2" />
+                          <MapPin className="h-5 w-5 mr-2" />
                           View Details
                         </a>
                       )}
