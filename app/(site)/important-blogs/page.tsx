@@ -139,6 +139,45 @@ const featuredBlogs = [
     slug: 'little-caesars-menu',
     isNew: false,
     featured: true
+  },
+  {
+    id: 'secret-menu-2025',
+    category: 'Hidden Hacks',
+    title: 'Little Caesars Secret Menu 2025 - Hidden Items & Ordering Hacks Revealed!',
+    excerpt: 'Discover the Little Caesars SECRET MENU! 8 hidden items, 5 ordering hacks, insider tips & tricks that most customers don\'t know about. Unlock exclusive customizations!',
+    image: '/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp',
+    imageAlt: 'Little Caesars Secret Menu 2025 - Hidden Items and Ordering Hacks',
+    date: 'December 27, 2025',
+    readTime: '8 min read',
+    slug: 'little-caesars-secret-menu',
+    isNew: true,
+    featured: true
+  },
+  {
+    id: 'pizza-ranking-2025',
+    category: 'Best Pizza',
+    title: 'Best Pizza at Little Caesars 2025 - All 12 Pizzas Ranked from #1 to Worst',
+    excerpt: 'Which Little Caesars pizza is the best? We ranked ALL 12 pizzas! ExtraMostBestest, Detroit Deep Dish, Stuffed Crust compared with pros, cons, and verdicts.',
+    image: '/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp',
+    imageAlt: 'Best Pizza at Little Caesars - All Pizzas Ranked 2025',
+    date: 'December 27, 2025',
+    readTime: '10 min read',
+    slug: 'best-little-caesars-pizza-ranked',
+    isNew: true,
+    featured: true
+  },
+  {
+    id: 'delivery-guide-2025',
+    category: 'Delivery Guide',
+    title: 'Little Caesars Delivery 2025 - Complete Guide: Fees, Hours, Areas & Tips',
+    excerpt: 'Everything about Little Caesars delivery! $3.99 fee, $12 minimum, 25-45 min wait, delivery partners compared, ordering steps, and money-saving tips.',
+    image: '/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp',
+    imageAlt: 'Little Caesars Delivery Guide 2025 - Fees, Hours, Tips',
+    date: 'December 27, 2025',
+    readTime: '7 min read',
+    slug: 'little-caesars-delivery',
+    isNew: true,
+    featured: true
   }
 ]
 
