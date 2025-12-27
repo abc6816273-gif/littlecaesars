@@ -123,26 +123,26 @@ function OptimizedStoreLocator() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [mapReady, setMapReady] = useState(false)
-  const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null)
+  const [userLocation, setUserLocation] = useState<{ lat: number, lng: number } | null>(null)
   const [locationPermission, setLocationPermission] = useState<'granted' | 'denied' | 'prompt' | 'loading'>('prompt')
   const [autoLocationLoaded, setAutoLocationLoaded] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
-  
+
   const mapRef = useRef<HTMLDivElement>(null)
   const mapInstanceRef = useRef<any>(null)
   const markersRef = useRef<any[]>([])
-  
+
   // Mobile optimization hook
   useMobileOptimization()
 
   // Detect mobile device
   useEffect(() => {
     setIsMobile(window.innerWidth <= 768)
-    
+
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768)
     }
-    
+
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
@@ -169,7 +169,7 @@ function OptimizedStoreLocator() {
               // Initialize map with user location or USA center
               const center = userLocation ? [userLocation.lat, userLocation.lng] : [39.8283, -98.5795]
               const zoom = userLocation ? 10 : 4
-              
+
               mapInstanceRef.current = window.L.map(mapRef.current, {
                 center: center,
                 zoom: zoom,
@@ -206,7 +206,7 @@ function OptimizedStoreLocator() {
         try {
           const center = userLocation ? [userLocation.lat, userLocation.lng] : [39.8283, -98.5795]
           const zoom = userLocation ? 10 : 4
-          
+
           mapInstanceRef.current = window.L.map(mapRef.current, {
             center: center,
             zoom: zoom,
@@ -259,7 +259,7 @@ function OptimizedStoreLocator() {
         const { latitude, longitude } = position.coords
         setUserLocation({ lat: latitude, lng: longitude })
         setLocationPermission('granted')
-        
+
         // Auto-search nearby locations
         if (!autoLocationLoaded) {
           searchNearbyLocations(latitude, longitude)
@@ -269,7 +269,7 @@ function OptimizedStoreLocator() {
       (error) => {
         console.error('Geolocation error:', error)
         setLocationPermission('denied')
-        
+
         switch (error.code) {
           case error.PERMISSION_DENIED:
             setError('Location access denied. Please enable location services and refresh the page.')
@@ -305,11 +305,11 @@ function OptimizedStoreLocator() {
     const R = 6371 // Radius of the Earth in kilometers
     const dLat = (lat2 - lat1) * Math.PI / 180
     const dLon = (lon2 - lon1) * Math.PI / 180
-    const a = 
-      Math.sin(dLat/2) * Math.sin(dLat/2) +
-      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
-      Math.sin(dLon/2) * Math.sin(dLon/2)
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2)
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
     return R * c
   }
 
@@ -383,12 +383,12 @@ function OptimizedStoreLocator() {
     const response = await fetch(
       `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1&countrycodes=us`
     )
-    
+
     if (!response.ok) throw new Error('Geocoding failed')
-    
+
     const data = await response.json()
     if (!data || data.length === 0) throw new Error('Location not found')
-    
+
     return {
       lat: parseFloat(data[0].lat),
       lng: parseFloat(data[0].lon),
@@ -402,9 +402,9 @@ function OptimizedStoreLocator() {
       const response = await fetch(
         `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=18&addressdetails=1`
       )
-      
+
       if (!response.ok) throw new Error('Reverse geocoding failed')
-      
+
       const data = await response.json()
       return data.display_name || `${lat.toFixed(4)}, ${lng.toFixed(4)}`
     } catch (error) {
@@ -421,7 +421,7 @@ function OptimizedStoreLocator() {
     try {
       // Get address for the coordinates
       const address = await reverseGeocode(lat, lng)
-      
+
       const searchLocation = { lat, lng, address }
 
       // Find nearby Texas Roadhouse locations
@@ -528,7 +528,7 @@ function OptimizedStoreLocator() {
               <MapPin className="h-5 w-5 text-little-caesars-orange" />
               <span className="text-stone-700 font-medium">Find Little Caesars Near You</span>
             </div>
-            
+
             {/* Location Status Indicator */}
             {locationPermission === 'loading' && (
               <div className="flex items-center justify-center gap-2 text-sm text-little-caesars-orange mb-4">
@@ -536,14 +536,14 @@ function OptimizedStoreLocator() {
                 <span>Detecting your location...</span>
               </div>
             )}
-            
+
             {locationPermission === 'granted' && userLocation && (
               <div className="flex items-center justify-center gap-2 text-sm text-green-600 mb-4">
                 <CheckCircle className="h-4 w-4" />
                 <span>Location detected! Showing nearby pizza restaurants.</span>
               </div>
             )}
-            
+
             {locationPermission === 'denied' && (
               <div className="flex items-center justify-center gap-2 text-sm text-stone-600 mb-4">
                 <AlertCircle className="h-4 w-4" />
@@ -551,7 +551,7 @@ function OptimizedStoreLocator() {
               </div>
             )}
           </div>
-          
+
           <div className="flex flex-col gap-4 max-w-2xl mx-auto">
             {/* Search Input and Button */}
             <div className="flex flex-col sm:flex-row gap-4">
@@ -584,7 +584,7 @@ function OptimizedStoreLocator() {
                 )}
               </button>
             </div>
-            
+
             {/* Use My Location Button */}
             {locationPermission !== 'loading' && (
               <div className="text-center">
@@ -599,7 +599,7 @@ function OptimizedStoreLocator() {
               </div>
             )}
           </div>
-          
+
           {error && (
             <div className="mt-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl max-w-2xl mx-auto">
               <div className="flex items-center">
@@ -624,7 +624,7 @@ function OptimizedStoreLocator() {
             <div
               ref={mapRef}
               className={`w-full ${isMobile ? 'h-[350px]' : 'h-[500px]'} bg-stone-50 flex items-center justify-center touch-pan-x touch-pan-y`}
-              style={{ 
+              style={{
                 touchAction: 'pan-x pan-y',
                 WebkitOverflowScrolling: 'touch'
               }}
@@ -643,7 +643,7 @@ function OptimizedStoreLocator() {
 
       {/* Enhanced Local Business Schema for SEO */}
       {searchResults && (
-        <LocalBusinessSchema 
+        <LocalBusinessSchema
           locations={searchResults.locations}
           searchLocation={searchResults.searchLocation}
         />
@@ -661,7 +661,7 @@ function OptimizedStoreLocator() {
                 Closest locations to <span className="font-semibold text-little-caesars-orange">"{searchResults.searchLocation.address}"</span>
               </p>
             </div>
-            
+
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {searchResults.locations.map((location, index) => (
                 <div key={location.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-stone-100 group hover:-translate-y-1">
@@ -676,7 +676,7 @@ function OptimizedStoreLocator() {
                       </span>
                     </div>
                   </div>
-                  
+
                   {/* Card Content */}
                   <div className="p-6">
                     <div className="space-y-4 mb-6">
@@ -684,26 +684,26 @@ function OptimizedStoreLocator() {
                         <MapPin className="h-5 w-5 text-little-caesars-orange mt-0.5 mr-3 flex-shrink-0" />
                         <span className="text-stone-700 leading-relaxed">{location.address}</span>
                       </div>
-                      
+
                       {location.phone && (
                         <div className="flex items-center">
                           <Phone className="h-5 w-5 text-little-caesars-orange mr-3 flex-shrink-0" />
-                          <a 
-                            href={`tel:${location.phone}`} 
+                          <a
+                            href={`tel:${location.phone}`}
                             className="text-stone-700 hover:text-little-caesars-orange transition-colors font-medium"
                           >
                             {location.phone}
                           </a>
                         </div>
                       )}
-                      
+
                       <div className="flex items-center">
                         <Star className="h-5 w-5 text-yellow-500 mr-3 flex-shrink-0 fill-current" />
                         <span className="text-stone-700">
                           <span className="font-semibold">{location.rating}</span>/5 rating
                         </span>
                       </div>
-                      
+
                       {location.distance && (
                         <div className="flex items-center">
                           <Navigation className="h-5 w-5 text-green-600 mr-3 flex-shrink-0" />
@@ -718,7 +718,7 @@ function OptimizedStoreLocator() {
                         <span className="text-stone-700">Open daily • Hours vary by location</span>
                       </div>
                     </div>
-                    
+
                     {/* Action Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3">
                       <a
@@ -730,21 +730,21 @@ function OptimizedStoreLocator() {
                         <Navigation className="h-4 w-4 mr-2" />
                         Get Directions
                       </a>
-                      
+
                       {location.phone ? (
                         <a
                           href={`tel:${location.phone}`}
-                          className="flex-1 bg-texas-green text-white text-center py-3 px-4 rounded-xl font-semibold hover:bg-texas-green/90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
+                          className="flex-1 bg-green-600 text-white text-center py-3 px-4 rounded-xl font-semibold hover:bg-green-700 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
                         >
                           <Phone className="h-4 w-4 mr-2" />
                           Call Now
                         </a>
                       ) : (
                         <a
-                          href="https://www.texasroadhouse.com/locations"
+                          href="https://www.littlecaesars.com/store-locator"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 bg-texas-yellow text-texas-black text-center py-3 px-4 rounded-xl font-semibold hover:bg-texas-yellow/90 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
+                          className="flex-1 bg-gray-800 text-white text-center py-3 px-4 rounded-xl font-semibold hover:bg-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl group-hover:scale-[1.02] flex items-center justify-center"
                         >
                           <MapPin className="h-4 w-4 mr-2" />
                           View Details
@@ -760,14 +760,14 @@ function OptimizedStoreLocator() {
             <div className="mt-16 bg-white rounded-2xl shadow-lg p-8 border border-stone-100">
               <div className="text-center">
                 <h4 className="text-2xl font-slab font-bold text-stone-800 mb-4">
-                  Need Help Finding Texas Roadhouse Near Me?
+                  Need Help Finding Little Caesars Near Me?
                 </h4>
                 <p className="text-stone-600 mb-6 max-w-2xl mx-auto">
-                  Can't find a Texas Roadhouse restaurant near you? Visit the official Texas Roadhouse website for the complete directory of all locations, hours, phone numbers, and special services nationwide.
+                  Can't find a Little Caesars restaurant near you? Visit the official Little Caesars website for the complete directory of all locations, hours, phone numbers, and special services nationwide.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="https://www.texasroadhouse.com/locations"
+                    href="https://www.littlecaesars.com/store-locator"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-6 py-3 bg-little-caesars-orange text-white font-semibold rounded-xl hover:bg-little-caesars-orange/90 transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -776,8 +776,8 @@ function OptimizedStoreLocator() {
                     Official Store Directory
                   </a>
                   <a
-                    href="/menus-prices"
-                    className="inline-flex items-center px-6 py-3 bg-texas-green text-white font-semibold rounded-xl hover:bg-texas-green/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+                    href="/menu"
+                    className="inline-flex items-center px-6 py-3 bg-gray-800 text-white font-semibold rounded-xl hover:bg-gray-900 transition-all duration-200 shadow-lg hover:shadow-xl"
                   >
                     <Star className="h-5 w-5 mr-2" />
                     View Menu & Prices
