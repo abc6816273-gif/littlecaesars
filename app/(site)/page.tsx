@@ -509,6 +509,93 @@ export default function HomePage() {
                 </div>
               </div>
             </Link>
+
+            {/* Secret Menu Card - NEW */}
+            <Link
+              href="/little-caesars-secret-menu"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-purple-500"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Secret Menu 2025 - Hidden Items"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                  🤫 SECRET
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-purple-600 uppercase tracking-wide">Hidden Hacks</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-purple-600 transition-colors">
+                  Secret Menu 2025 - Hidden Items Revealed!
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Discover 8 secret menu items & ordering hacks that most customers don't know about!
+                </p>
+                <div className="mt-4 text-purple-600 font-semibold text-sm flex items-center">
+                  Unlock Secrets →
+                </div>
+              </div>
+            </Link>
+
+            {/* Pizza Ranking Card - NEW */}
+            <Link
+              href="/best-little-caesars-pizza-ranked"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-yellow-500"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                  alt="Best Pizza at Little Caesars Ranked 2025"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
+                  🏆 RANKED
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-yellow-600 uppercase tracking-wide">Best Pizza</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-yellow-600 transition-colors">
+                  Best Pizza at Little Caesars - All Ranked!
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Complete ranking of all 12 pizzas from #1 to worst. ExtraMostBestest wins!
+                </p>
+                <div className="mt-4 text-yellow-600 font-semibold text-sm flex items-center">
+                  See Rankings →
+                </div>
+              </div>
+            </Link>
+
+            {/* Delivery Guide Card - NEW */}
+            <Link
+              href="/little-caesars-delivery"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-500"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Delivery Guide 2025"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                  🚚 DELIVERY
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Delivery Guide</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
+                  Delivery Guide 2025 - Fees, Hours & Tips
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  $3.99 delivery fee, $12 minimum, 25-45 min wait. Complete delivery guide!
+                </p>
+                <div className="mt-4 text-blue-600 font-semibold text-sm flex items-center">
+                  Order Delivery →
+                </div>
+              </div>
+            </Link>
           </div>
 
           {/* View All Blogs Link */}
