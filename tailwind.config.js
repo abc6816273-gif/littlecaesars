@@ -9,7 +9,7 @@ module.exports = {
     // Ensure responsive grid classes are always available
     'grid-cols-1',
     'grid-cols-2',
-    'sm:grid-cols-2', 
+    'sm:grid-cols-2',
     'sm:grid-cols-3',
     'lg:grid-cols-3',
     'lg:grid-cols-4',
@@ -38,27 +38,27 @@ module.exports = {
         'little-caesars-red': '#dc2626',       // Secondary red  
         'little-caesars-yellow': '#FFD400',    // Yellow accent
         'little-caesars-black': '#1C1C1C',     // Black text
-        
+
         // Legacy compatibility (updated for Little Caesars)
         'school-bus-yellow': '#FCD705',
         'licorice': '#000000',
         'night': '#151515',
         'reseda-green': '#719372',
         'red-cmyk': '#dc2626',
-        
+
         // Brand aliases for easy use
         'brand-orange': '#FF5A1F',
         'brand-red': '#dc2626',
         'brand-yellow': '#FFD400',
         'brand-black': '#1C1C1C',
-        
+
         // Semantic colors
         primary: '#FF5A1F',          // Orange
         secondary: '#dc2626',        // Red
         accent: '#FFD400',           // Yellow
         dark: '#1C1C1C',             // Black
         light: '#FFFFFF',            // Clean white
-        
+
         // Supporting colors (keeping some for compatibility)
         wood: '#6B4F3A',
         stone: '#2F2F2F',
@@ -66,6 +66,12 @@ module.exports = {
         green: '#719372',
         orange: '#FF5A1F',           // Main orange
         cream: '#FFF9EF',
+
+        // Texas-prefixed colors (legacy support for existing components)
+        'texas-green': '#719372',
+        'texas-yellow': '#FCD705',
+        'texas-black': '#110302',
+        'texas-red': '#dc2626',
       },
       fontFamily: {
         'slab': ['Roboto Slab', 'serif'],
@@ -100,7 +106,7 @@ module.exports = {
         // Typography settings - spacing and layout only, no colors
         maxWidth: '75ch', // Optimal for readability (Google guidelines)
         lineHeight: '1.6', // Google recommended line height
-        
+
         // Headings - spacing and weights only
         'h1, h2, h3, h4, h5, h6': {
           fontWeight: '700',
@@ -127,14 +133,14 @@ module.exports = {
           marginTop: '2rem',
           marginBottom: '0.75rem',
         },
-        
+
         // Paragraphs and text
         p: {
           marginTop: '0',
           marginBottom: '1.5rem',
           lineHeight: '1.7',
         },
-        
+
         // Lists
         'ul, ol': {
           marginTop: '1.5rem',
@@ -150,7 +156,7 @@ module.exports = {
           marginTop: '0.75rem',
           marginBottom: '0.75rem',
         },
-        
+
         // Images
         img: {
           marginTop: '2rem',
@@ -167,7 +173,7 @@ module.exports = {
           marginTop: '0.75rem',
           textAlign: 'center',
         },
-        
+
         // Tables
         table: {
           width: '100%',
@@ -191,7 +197,7 @@ module.exports = {
           padding: '1rem',
           borderTopWidth: '1px',
         },
-        
+
         // Blockquotes
         blockquote: {
           fontWeight: '500',
@@ -202,7 +208,7 @@ module.exports = {
           marginBottom: '2rem',
           borderRadius: '0 0.5rem 0.5rem 0',
         },
-        
+
         // Code
         code: {
           fontWeight: '600',
