@@ -174,6 +174,34 @@ const pizzaRankings = [
     }
 ]
 
+// FAQ Data
+const faqData = [
+    {
+        question: "Which is the best pizza at Little Caesars?",
+        answer: "The ExtraMostBestest Pepperoni is the #1 ranked pizza at Little Caesars. It features 80+ pieces of pepperoni and extra cheese for only $7.99, making it the best value and taste combination."
+    },
+    {
+        question: "Is the Detroit Deep Dish pizza worth it?",
+        answer: "Yes! The Detroit Deep Dish is our #2 ranked pizza. It has crispy caramelized cheese edges, a thick buttery crust, and a unique taste. At $9.49, it's worth the extra cost for a premium pizza experience."
+    },
+    {
+        question: "What is the cheapest pizza at Little Caesars?",
+        answer: "The Hot-N-Ready Pepperoni and Hot-N-Ready Cheese are the cheapest at $5.55 each. They're ready when you walk in and offer the best budget value."
+    },
+    {
+        question: "Is Little Caesars Stuffed Crust good?",
+        answer: "Yes! Our ranking puts Stuffed Crust Pepperoni at #3. The cheese-filled crust is delicious and worth the $10.99 price for a premium feel."
+    },
+    {
+        question: "What is the worst pizza at Little Caesars?",
+        answer: "The Thin Crust Pepperoni ranks lowest at #12 in our list. It's not bad, but it's less filling and can burn easily. It's best for those who specifically prefer thin crust pizza."
+    },
+    {
+        question: "Does Little Caesars have a secret menu?",
+        answer: "Yes! Little Caesars has unofficial secret menu items including double pepperoni, well-done pizza, half-and-half options, and extra cheese requests. Check our Secret Menu guide for all hacks!"
+    }
+]
+
 // Schema
 function generateSchemas() {
     const articleSchema = {
@@ -197,16 +225,30 @@ function generateSchemas() {
         }))
     }
 
-    return { articleSchema, listSchema }
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqData.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    }
+
+    return { articleSchema, listSchema, faqSchema }
 }
 
 export default function PizzaRankingPage() {
-    const { articleSchema, listSchema } = generateSchemas()
+    const { articleSchema, listSchema, faqSchema } = generateSchemas()
 
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(listSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
                 {/* Breadcrumb */}
@@ -277,7 +319,7 @@ export default function PizzaRankingPage() {
                                 <div
                                     key={pizza.rank}
                                     className={`relative bg-white rounded-2xl shadow-lg overflow-hidden border-2 ${pizza.rank === 1 ? 'border-yellow-400' :
-                                            pizza.rank <= 3 ? 'border-orange-300' : 'border-gray-200'
+                                        pizza.rank <= 3 ? 'border-orange-300' : 'border-gray-200'
                                         }`}
                                 >
                                     {/* Rank Badge */}
@@ -329,11 +371,11 @@ export default function PizzaRankingPage() {
                                         </div>
 
                                         <div className={`inline-block px-4 py-2 rounded-full font-bold text-sm ${pizza.verdict === 'MUST TRY' ? 'bg-green-500 text-white' :
-                                                pizza.verdict === 'EXCELLENT' ? 'bg-blue-500 text-white' :
-                                                    pizza.verdict === 'WORTH IT' ? 'bg-purple-500 text-white' :
-                                                        pizza.verdict === 'GET IT NOW' ? 'bg-orange-500 text-white' :
-                                                            pizza.verdict === 'BEST VALUE' ? 'bg-green-600 text-white' :
-                                                                'bg-gray-500 text-white'
+                                            pizza.verdict === 'EXCELLENT' ? 'bg-blue-500 text-white' :
+                                                pizza.verdict === 'WORTH IT' ? 'bg-purple-500 text-white' :
+                                                    pizza.verdict === 'GET IT NOW' ? 'bg-orange-500 text-white' :
+                                                        pizza.verdict === 'BEST VALUE' ? 'bg-green-600 text-white' :
+                                                            'bg-gray-500 text-white'
                                             }`}>
                                             {pizza.verdict}
                                         </div>
@@ -374,6 +416,39 @@ export default function PizzaRankingPage() {
                             >
                                 Find Location
                             </Link>
+                        </div>
+                    </div>
+                </section>
+
+                {/* FAQ Section */}
+                <section className="py-16 bg-white">
+                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                ❓ Frequently Asked Questions
+                            </h2>
+                            <p className="text-lg text-gray-600">
+                                Common questions about Little Caesars pizza rankings
+                            </p>
+                        </div>
+
+                        <div className="space-y-4">
+                            {faqData.map((faq, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200"
+                                >
+                                    <h3 className="font-bold text-gray-900 text-lg mb-3 flex items-start gap-3">
+                                        <span className="bg-orange-500 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm flex-shrink-0">
+                                            Q
+                                        </span>
+                                        {faq.question}
+                                    </h3>
+                                    <p className="text-gray-700 leading-relaxed ml-10">
+                                        {faq.answer}
+                                    </p>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>
