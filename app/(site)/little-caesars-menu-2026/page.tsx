@@ -219,7 +219,7 @@ export default function Menu2026Page() {
                             <span className="inline-block bg-orange-100 text-orange-600 px-4 py-2 rounded-full text-sm font-bold mb-4">
                                 🍕 MADE FRESH DAILY
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+                            <h2 style={{ color: '#111827' }} className="text-3xl md:text-4xl font-black mb-4">
                                 Featured Pizza Menu
                             </h2>
                             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -272,7 +272,7 @@ export default function Menu2026Page() {
                             <span className="inline-block bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
                                 🥖 SIDES & BREAD
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+                            <h2 style={{ color: '#111827' }} className="text-3xl md:text-4xl font-black mb-4">
                                 Sides Menu
                             </h2>
                             <p className="text-lg text-gray-600">Complete your meal with our delicious sides</p>
@@ -316,7 +316,7 @@ export default function Menu2026Page() {
                             <span className="inline-block bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
                                 🥤 DRINKS
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
+                            <h2 style={{ color: '#111827' }} className="text-3xl md:text-4xl font-black mb-4">
                                 Drinks Menu
                             </h2>
                         </div>
@@ -332,8 +332,8 @@ export default function Menu2026Page() {
                                         />
                                     </div>
                                     <div className="p-4">
-                                        <h3 className="font-bold text-gray-900 mb-2">{item.name}</h3>
-                                        <span className="text-2xl font-black text-orange-600">{item.price}</span>
+                                        <h3 style={{ color: '#111827' }} className="font-bold mb-2">{item.name}</h3>
+                                        <span style={{ color: '#ea580c' }} className="text-2xl font-black">{item.price}</span>
                                     </div>
                                 </div>
                             ))}
