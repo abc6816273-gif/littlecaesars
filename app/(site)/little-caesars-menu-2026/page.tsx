@@ -366,39 +366,97 @@ export default function Menu2026Page() {
                     </div>
                 </section>
 
-                {/* Sides & Drinks */}
-                <section className="py-16 bg-white">
+                {/* Sides & Drinks - Beautiful Table Design */}
+                <section className="py-16 bg-gradient-to-br from-orange-50 via-white to-orange-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid lg:grid-cols-2 gap-12">
-                            {/* Sides */}
-                            <div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-6">🥖 Sides Menu 2026</h2>
-                                <div className="space-y-3">
-                                    {sidesMenu.map((item, index) => (
-                                        <div key={index} className="flex justify-between items-center bg-gray-50 rounded-lg p-4">
-                                            <div>
-                                                <span className="font-medium text-gray-900">{item.name}</span>
-                                                {item.popular && <span className="ml-2 text-orange-500 text-sm">🔥</span>}
-                                            </div>
-                                            <span className="font-bold text-orange-600">{item.price}</span>
-                                        </div>
-                                    ))}
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                🥖 Sides & Drinks Menu 2026
+                            </h2>
+                            <p className="text-lg text-gray-600">Complete list with prices and calories</p>
+                        </div>
+
+                        <div className="grid lg:grid-cols-2 gap-8">
+                            {/* Sides Table */}
+                            <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-orange-200">
+                                <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-4">
+                                    <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                                        🥖 Sides Menu
+                                    </h3>
+                                </div>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full">
+                                        <thead className="bg-orange-50">
+                                            <tr>
+                                                <th className="px-6 py-4 text-left text-sm font-bold text-orange-800 uppercase tracking-wider">Item</th>
+                                                <th className="px-6 py-4 text-center text-sm font-bold text-orange-800 uppercase tracking-wider">Calories</th>
+                                                <th className="px-6 py-4 text-right text-sm font-bold text-orange-800 uppercase tracking-wider">Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-orange-100">
+                                            {sidesMenu.map((item, index) => (
+                                                <tr key={index} className="hover:bg-orange-50 transition-colors">
+                                                    <td className="px-6 py-4">
+                                                        <div className="flex items-center gap-2">
+                                                            <span className="font-medium text-gray-900">{item.name}</span>
+                                                            {item.popular && (
+                                                                <span className="bg-orange-500 text-white text-xs px-2 py-0.5 rounded-full font-bold">HOT</span>
+                                                            )}
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-6 py-4 text-center">
+                                                        <span className="text-gray-600 bg-gray-100 px-2 py-1 rounded text-sm">{item.calories}</span>
+                                                    </td>
+                                                    <td className="px-6 py-4 text-right">
+                                                        <span className="text-xl font-bold text-orange-600">{item.price}</span>
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
-                            {/* Drinks */}
-                            <div>
-                                <h2 className="text-2xl font-bold text-gray-900 mb-6">🥤 Drinks Menu 2026</h2>
-                                <div className="space-y-3">
-                                    {drinksMenu.map((item, index) => (
-                                        <div key={index} className="flex justify-between items-center bg-gray-50 rounded-lg p-4">
-                                            <div>
-                                                <span className="font-medium text-gray-900">{item.name}</span>
-                                                {item.popular && <span className="ml-2 text-orange-500 text-sm">🔥</span>}
-                                            </div>
-                                            <span className="font-bold text-orange-600">{item.price}</span>
-                                        </div>
-                                    ))}
+                            {/* Drinks Table */}
+                            <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-2 border-orange-200">
+                                <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-4">
+                                    <h3 className="text-xl font-bold text-white flex items-center gap-2">
+                                        🥤 Drinks Menu
+                                    </h3>
+                                </div>
+                                <div className="overflow-x-auto">
+                                    <table className="w-full">
+                                        <thead className="bg-orange-50">
+                                            <tr>
+                                                <th className="px-6 py-4 text-left text-sm font-bold text-orange-800 uppercase tracking-wider">Drink</th>
+                                                <th className="px-6 py-4 text-right text-sm font-bold text-orange-800 uppercase tracking-wider">Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-orange-100">
+                                            {drinksMenu.map((item, index) => (
+                                                <tr key={index} className="hover:bg-orange-50 transition-colors">
+                                                    <td className="px-6 py-4">
+                                                        <div className="flex items-center gap-2">
+                                                            <span className="font-medium text-gray-900">{item.name}</span>
+                                                            {item.popular && (
+                                                                <span className="bg-orange-500 text-white text-xs px-2 py-0.5 rounded-full font-bold">POPULAR</span>
+                                                            )}
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-6 py-4 text-right">
+                                                        <span className="text-xl font-bold text-orange-600">{item.price}</span>
+                                                    </td>
+                                                </tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                {/* Dipping Sauces Note */}
+                                <div className="bg-orange-50 px-6 py-4 border-t-2 border-orange-100">
+                                    <p className="text-sm text-orange-700 font-medium">
+                                        💡 <strong>Pro Tip:</strong> All dipping sauces (Crazy Sauce, Ranch, Buffalo Ranch, Buttery Garlic) are just <strong>$0.79</strong> each!
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -488,30 +546,55 @@ export default function Menu2026Page() {
                     </div>
                 </section>
 
-                {/* FAQ Section */}
-                <section className="py-16 bg-white">
+                {/* FAQ Section - Chipotle Style */}
+                <section className="py-16 bg-gradient-to-b from-white to-orange-50">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
+                            <div className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                💡 GET ANSWERS
+                            </div>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                                ❓ Frequently Asked Questions 2026
+                                Frequently Asked Questions 2026
                             </h2>
-                            <p className="text-lg text-gray-600">Everything you need to know</p>
+                            <p className="text-lg text-gray-600">Everything you need to know about Little Caesars in 2026</p>
                         </div>
 
                         <div className="space-y-4">
                             {faqData.map((faq, index) => (
-                                <div key={index} className="bg-gradient-to-r from-orange-50 to-red-50 rounded-xl p-6 border border-orange-200">
-                                    <h3 className="font-bold text-gray-900 text-lg mb-3 flex items-start gap-3">
-                                        <span className="bg-orange-500 text-white rounded-full w-7 h-7 flex items-center justify-center text-sm flex-shrink-0">
-                                            Q
-                                        </span>
-                                        {faq.question}
-                                    </h3>
-                                    <p className="text-gray-700 leading-relaxed ml-10">
-                                        {faq.answer}
-                                    </p>
+                                <div
+                                    key={index}
+                                    className="bg-white rounded-2xl shadow-lg border-2 border-orange-100 overflow-hidden hover:border-orange-300 transition-all duration-300 hover:shadow-xl"
+                                >
+                                    {/* Question Header */}
+                                    <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-4 flex items-center gap-4">
+                                        <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-orange-600 font-bold text-lg flex-shrink-0 shadow-md">
+                                            {index + 1}
+                                        </div>
+                                        <h3 className="font-bold text-white text-lg leading-snug">
+                                            {faq.question}
+                                        </h3>
+                                    </div>
+                                    {/* Answer Body */}
+                                    <div className="px-6 py-5 bg-white">
+                                        <div className="flex items-start gap-3">
+                                            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0 mt-0.5">
+                                                A
+                                            </div>
+                                            <p className="text-gray-700 leading-relaxed text-base">
+                                                {faq.answer}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
+                        </div>
+
+                        {/* FAQ CTA */}
+                        <div className="mt-10 text-center">
+                            <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-6 py-3 rounded-full font-medium">
+                                <span>🤔</span>
+                                <span>Have more questions? <a href="#" className="underline font-bold hover:text-orange-800">Contact Us</a></span>
+                            </div>
                         </div>
                     </div>
                 </section>
