@@ -246,10 +246,10 @@ export default function Menu2026Page() {
                                         </div>
                                     </div>
                                     <div className="p-5">
-                                        <h3 className="font-bold text-lg text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
+                                        <h3 style={{ color: '#111827' }} className="font-bold text-lg mb-2 group-hover:text-orange-600 transition-colors">
                                             {pizza.name}
                                         </h3>
-                                        <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+                                        <p style={{ color: '#4b5563' }} className="text-sm mb-4 line-clamp-2">
                                             {pizza.description}
                                         </p>
                                         <div className="flex items-center justify-between">
@@ -366,10 +366,10 @@ export default function Menu2026Page() {
                                     </div>
                                     <div className="p-6">
                                         <div className="flex items-center justify-between mb-4">
-                                            <h3 className="text-xl font-black text-gray-900">{combo.name}</h3>
+                                            <h3 style={{ color: '#111827' }} className="text-xl font-black">{combo.name}</h3>
                                             <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">{combo.savings}</span>
                                         </div>
-                                        <p className="text-gray-600 mb-4">{combo.items}</p>
+                                        <p style={{ color: '#4b5563' }} className="mb-4">{combo.items}</p>
                                         <div className="text-3xl font-black text-orange-600">{combo.price}</div>
                                     </div>
                                 </div>
@@ -400,8 +400,8 @@ export default function Menu2026Page() {
                                             {item.prediction}
                                         </span>
                                     </div>
-                                    <h3 className="font-bold text-xl text-gray-900 mb-2">{item.name}</h3>
-                                    <p className="text-gray-600">{item.description}</p>
+                                    <h3 style={{ color: '#111827' }} className="font-bold text-xl mb-2">{item.name}</h3>
+                                    <p style={{ color: '#4b5563' }}>{item.description}</p>
                                 </div>
                             ))}
                         </div>
