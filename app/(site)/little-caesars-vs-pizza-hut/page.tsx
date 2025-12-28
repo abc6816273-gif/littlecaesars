@@ -446,18 +446,19 @@ export default function LittleCaesarsVsPizzaHutPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 bg-gradient-to-r from-orange-500 to-red-500">
+            <section className="py-16" style={{ background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)' }}>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 style={{ color: '#ffffff' }} className="text-3xl font-black mb-4">
+                    <h2 style={{ color: '#ffffff', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }} className="text-3xl font-black mb-4">
                         Ready to Order?
                     </h2>
-                    <p style={{ color: '#ffffff' }} className="text-lg mb-8 opacity-90">
+                    <p style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }} className="text-lg mb-8">
                         Get your Hot-N-Ready pizza for just $5.55 - no waiting required!
                     </p>
                     <Link
                         href="https://littlecaesars.com"
                         target="_blank"
-                        className="inline-block bg-white text-orange-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-orange-50 transition-colors shadow-xl"
+                        style={{ backgroundColor: '#ffffff', color: '#ea580c' }}
+                        className="inline-block px-10 py-4 rounded-full font-bold text-lg hover:bg-orange-50 transition-colors shadow-xl"
                     >
                         Order from Little Caesars 🍕
                     </Link>
