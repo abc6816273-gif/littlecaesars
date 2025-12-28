@@ -345,13 +345,13 @@ export default function Menu2026Page() {
                 <section className="py-16 bg-gradient-to-r from-orange-500 to-red-600">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
-                            <span className="inline-block bg-white/20 text-white px-4 py-2 rounded-full text-sm font-bold mb-4">
+                            <span style={{ color: '#ffffff', backgroundColor: 'rgba(255,255,255,0.2)' }} className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-4">
                                 🎉 BEST VALUE
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
+                            <h2 style={{ color: '#ffffff' }} className="text-3xl md:text-4xl font-black mb-4">
                                 Value Combos
                             </h2>
-                            <p className="text-white/80 text-lg">Save more with our combo deals</p>
+                            <p style={{ color: 'rgba(255,255,255,0.8)' }} className="text-lg">Save more with our combo deals</p>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -382,13 +382,13 @@ export default function Menu2026Page() {
                 <section id="new-2026" className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
-                            <span className="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+                            <span style={{ color: '#15803d', backgroundColor: '#dcfce7' }} className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-4">
                                 🔮 COMING SOON
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            <h2 style={{ color: '#111827' }} className="text-3xl md:text-4xl font-bold mb-4">
                                 Predicted New Items for 2026
                             </h2>
-                            <p className="text-lg text-gray-600">Based on industry trends and insider info</p>
+                            <p style={{ color: '#4b5563' }} className="text-lg">Based on industry trends and insider info</p>
                         </div>
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
