@@ -596,6 +596,35 @@ export default function HomePage() {
                 </div>
               </div>
             </Link>
+
+            {/* Menu 2026 Card - NEW & FEATURED */}
+            <Link
+              href="/little-caesars-menu-2026"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-green-500"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars Menu 2026 - Complete Price List"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                  🔥 2026 MENU
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-green-600 uppercase tracking-wide">Complete Menu</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-green-600 transition-colors">
+                  Little Caesars Menu 2026 - Full Price Guide
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Complete 2026 menu with all prices, new items, combos & money-saving tips!
+                </p>
+                <div className="mt-4 text-green-600 font-semibold text-sm flex items-center">
+                  View Full Menu →
+                </div>
+              </div>
+            </Link>
           </div>
 
           {/* View All Blogs Link */}

@@ -69,6 +69,7 @@ module.exports = {
 
     // High-traffic SEO pages - maximum priority
     const highPriorityPages = [
+      '/little-caesars-menu-2026',
       '/little-caesars-secret-menu',
       '/best-little-caesars-pizza-ranked',
       '/little-caesars-delivery',
