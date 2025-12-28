@@ -89,6 +89,32 @@ const featuredBlogs = [
     featured: true
   },
   {
+    id: 'lc-vs-dominos',
+    category: 'Comparison',
+    title: 'Little Caesars vs Dominos 2025 - Ultimate Pizza Price Comparison',
+    excerpt: 'Complete comparison: Little Caesars is 47% cheaper than Dominos! Compare prices, menu, nutrition, delivery & more. Find out which pizza chain gives best value.',
+    image: '/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp',
+    imageAlt: 'Little Caesars vs Dominos Comparison - Prices and Quality',
+    date: 'December 28, 2025',
+    readTime: '8 min read',
+    slug: 'little-caesars-vs-dominos',
+    isNew: true,
+    featured: true
+  },
+  {
+    id: 'lc-vs-pizza-hut',
+    category: 'Comparison',
+    title: 'Little Caesars vs Pizza Hut 2025 - Price & Quality Showdown',
+    excerpt: 'Little Caesars is 53% cheaper than Pizza Hut! Hot-N-Ready vs Stuffed Crust - compare prices, taste, nutrition. See why LC wins for value-conscious pizza lovers.',
+    image: '/menu/Homepage-menus/Detroit-Style-Deep-Dish-Cheese-Little-Caesars-Menu.webp',
+    imageAlt: 'Little Caesars vs Pizza Hut Comparison - Price and Value',
+    date: 'December 28, 2025',
+    readTime: '8 min read',
+    slug: 'little-caesars-vs-pizza-hut',
+    isNew: true,
+    featured: true
+  },
+  {
     id: 'coupons-january-2025',
     category: 'Coupons & Deals',
     title: 'Little Caesars Coupons January 2025 - 50% Off Promo Codes & Deals',
