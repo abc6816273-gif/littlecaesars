@@ -379,38 +379,29 @@ export default function Menu2026Page() {
                 </section>
 
                 {/* New Items 2026 */}
-                <section id="new-2026" className="py-16 bg-white">
+                <section id="new-2026" className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
-                            <span className="inline-block bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                                ✨ COMING SOON
+                            <span className="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+                                🔮 COMING SOON
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-                                New Items Coming in 2026
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                Predicted New Items for 2026
                             </h2>
                             <p className="text-lg text-gray-600">Based on industry trends and insider info</p>
                         </div>
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {newItems2026.map((item, index) => (
-                                <div key={index} className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl overflow-hidden border-2 border-orange-200 hover:border-orange-400 transition-all group">
-                                    <div className="h-40 overflow-hidden bg-orange-100">
-                                        <img
-                                            src={item.image}
-                                            alt={item.name}
-                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                        />
+                                <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-100">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <span className="text-3xl">🆕</span>
+                                        <span className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                            {item.prediction}
+                                        </span>
                                     </div>
-                                    <div className="p-5">
-                                        <div className="flex items-center justify-between mb-3">
-                                            <span className="text-2xl">🆕</span>
-                                            <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                                                {item.prediction}
-                                            </span>
-                                        </div>
-                                        <h3 className="font-bold text-lg text-gray-900 mb-2">{item.name}</h3>
-                                        <p className="text-sm text-gray-600">{item.description}</p>
-                                    </div>
+                                    <h3 className="font-bold text-xl text-gray-900 mb-2">{item.name}</h3>
+                                    <p className="text-gray-600">{item.description}</p>
                                 </div>
                             ))}
                         </div>
