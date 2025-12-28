@@ -626,6 +626,64 @@ export default function HomePage() {
               </div>
             </Link>
 
+            {/* LC vs Dominos Card - NEW */}
+            <Link
+              href="/little-caesars-vs-dominos"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-600"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                  alt="Little Caesars vs Dominos Comparison 2025"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                  🆚 VS DOMINOS
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Comparison</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
+                  Little Caesars vs Dominos 2025 - Price War
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  Little Caesars is 47% cheaper than Dominos! Compare prices, quality, and nutrition facts.
+                </p>
+                <div className="mt-4 text-blue-600 font-semibold text-sm flex items-center">
+                  See Comparison →
+                </div>
+              </div>
+            </Link>
+
+            {/* LC vs Pizza Hut Card - NEW */}
+            <Link
+              href="/little-caesars-vs-pizza-hut"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-red-600"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Cheese-Little-Caesars-Menu.webp"
+                  alt="Little Caesars vs Pizza Hut Comparison 2025"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                  🆚 VS PIZZA HUT
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-red-600 uppercase tracking-wide">Comparison</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-red-600 transition-colors">
+                  Little Caesars vs Pizza Hut 2025 - Value Showdown
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  See why LC wins for value! 53% price difference compared to Pizza Hut's premium menu.
+                </p>
+                <div className="mt-4 text-red-600 font-semibold text-sm flex items-center">
+                  See Comparison →
+                </div>
+              </div>
+            </Link>
+
             {/* Menu 2026 Card - NEW & FEATURED */}
             <Link
               href="/little-caesars-menu-2026"
