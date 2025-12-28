@@ -141,6 +141,99 @@ function generateSchema() {
                 ]
             },
             {
+                '@type': 'HowTo',
+                'name': 'How to Order Little Caesars Pizza Online',
+                'description': 'Step-by-step guide to ordering Little Caesars pizza online or through the app',
+                'totalTime': 'PT10M',
+                'estimatedCost': {
+                    '@type': 'MonetaryAmount',
+                    'currency': 'USD',
+                    'value': '10-25'
+                },
+                'step': [
+                    {
+                        '@type': 'HowToStep',
+                        'position': 1,
+                        'name': 'Download the App or Visit Website',
+                        'text': 'Download the Little Caesars app from App Store or Google Play, or visit littlecaesars.com. Create an account for faster checkout and exclusive deals.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 2,
+                        'name': 'Enter Your Location',
+                        'text': 'Enter your ZIP code or enable location services to find the nearest Little Caesars store with Hot-N-Ready availability.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 3,
+                        'name': 'Browse the Menu',
+                        'text': 'Explore Hot-N-Ready pizzas, ExtraMostBestest, Detroit-Style Deep Dish, Crazy Bread, Wings, and more. Check prices and calories.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 4,
+                        'name': 'Add to Cart',
+                        'text': 'Select your items and add them to cart. You can customize pizzas with extra toppings. Apply any coupon codes for discounts.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 5,
+                        'name': 'Choose Pickup or Delivery',
+                        'text': 'Select pickup at store (often faster) or delivery. For Hot-N-Ready, choose Pizza Portal pickup for contactless experience.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 6,
+                        'name': 'Pay and Get Your Pizza',
+                        'text': 'Complete payment with card, PayPal, or Apple/Google Pay. For Pizza Portal, you will receive a 3-digit code to access your order.'
+                    }
+                ]
+            },
+            {
+                '@type': 'HowTo',
+                'name': 'How to Customize Your Little Caesars Pizza',
+                'description': 'Complete guide to customizing toppings, crust, and sauce at Little Caesars',
+                'totalTime': 'PT5M',
+                'step': [
+                    {
+                        '@type': 'HowToStep',
+                        'position': 1,
+                        'name': 'Choose Your Crust Style',
+                        'text': 'Select from Classic Round, Detroit-Style Deep Dish (thick & crispy edges), Thin Crust, or Stuffed Crust (cheese-filled edges).'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 2,
+                        'name': 'Pick Your Size',
+                        'text': 'Choose Large (14 inch, 8 slices) for Hot-N-Ready or go custom. Detroit-Style comes in a rectangular 8-piece.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 3,
+                        'name': 'Select Sauce',
+                        'text': 'Options include Classic Pizza Sauce, Garlic Butter, BBQ Sauce, or No Sauce. classic sauce has the authentic Little Caesars flavor.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 4,
+                        'name': 'Choose Cheese Amount',
+                        'text': 'Select Light, Regular, Extra, or Double Cheese. ExtraMostBestest already includes 25% more cheese.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 5,
+                        'name': 'Add Toppings',
+                        'text': 'Choose from: Pepperoni, Sausage, Bacon, Ham, Beef, Mushrooms, Onions, Green Peppers, Black Olives, Jalapeños, Banana Peppers, Pineapple.'
+                    },
+                    {
+                        '@type': 'HowToStep',
+                        'position': 6,
+                        'name': 'Half-and-Half Options',
+                        'text': 'Ask for half-and-half toppings - get different toppings on each side. Pro tip: Order extra Crazy Sauce for dipping!'
+                    }
+                ]
+            },
+            {
                 '@type': 'BreadcrumbList',
                 'itemListElement': [
                     { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://www.littlecaesarsmenu.us' },
