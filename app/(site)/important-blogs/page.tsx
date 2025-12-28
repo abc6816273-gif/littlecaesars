@@ -76,6 +76,19 @@ const featuredBlogs = [
     featured: true
   },
   {
+    id: 'menu-2026',
+    category: '2026 Menu',
+    title: 'Little Caesars Menu 2026 - Full Menu with Prices, New Items & Deals',
+    excerpt: 'Complete Little Caesars Menu 2026 with all prices! NEW items coming in 2026, $5.55 Hot-N-Ready, Crazy Bread, Detroit Pizza + secret menu hacks. Updated December 2026!',
+    image: '/menu/Homepage-menus/Detroit-Style-Deep-Dish-Pepperoni-Little-Caesars-Menu.webp',
+    imageAlt: 'Little Caesars Menu 2026 - Complete Price List with New Items',
+    date: 'December 28, 2025',
+    readTime: '10 min read',
+    slug: 'little-caesars-menu-2026',
+    isNew: true,
+    featured: true
+  },
+  {
     id: 'coupons-january-2025',
     category: 'Coupons & Deals',
     title: 'Little Caesars Coupons January 2025 - 50% Off Promo Codes & Deals',

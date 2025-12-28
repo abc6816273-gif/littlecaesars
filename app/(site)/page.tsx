@@ -510,6 +510,35 @@ export default function HomePage() {
               </div>
             </Link>
 
+            {/* Calorie Calculator Card - NEW */}
+            <Link
+              href="/little-caesars-calorie-calculator"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-emerald-500"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src="/menu/Homepage-menus/calorie-calculator-tool.png"
+                  alt="Little Caesars Calorie Calculator - Track Nutrition"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                  🧮 CALCULATOR
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wide">Health Tool</span>
+                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-emerald-600 transition-colors">
+                  Little Caesars Calorie Calculator 2025
+                </h3>
+                <p className="text-gray-600 mt-2 text-sm">
+                  FREE interactive tool to track calories, fat, protein & carbs for your entire order!
+                </p>
+                <div className="mt-4 text-emerald-600 font-semibold text-sm flex items-center">
+                  Try Calculator →
+                </div>
+              </div>
+            </Link>
+
             {/* Secret Menu Card - NEW */}
             <Link
               href="/little-caesars-secret-menu"
@@ -636,14 +665,14 @@ export default function HomePage() {
               View All Blogs →
             </Link>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
 
       {/* Real-Time Coupons Section (Gemini AI integration) */}
-      <CouponSection />
+      < CouponSection />
 
       {/* Internal Linking Section for SEO */}
-      <InternalLinks currentPage="/" showExternal={true} variant="full" />
+      < InternalLinks currentPage="/" showExternal={true} variant="full" />
     </>
   )
 }
