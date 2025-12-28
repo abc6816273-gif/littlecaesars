@@ -324,11 +324,11 @@ export default function Menu2026Page() {
                         <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
                             {drinksMenu.map((item, index) => (
                                 <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group text-center">
-                                    <div className="h-32 overflow-hidden bg-blue-50 flex items-center justify-center">
+                                    <div className="h-40 overflow-hidden">
                                         <img
                                             src={item.image}
                                             alt={item.name}
-                                            className="h-24 object-contain group-hover:scale-110 transition-transform duration-500"
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                         />
                                     </div>
                                     <div className="p-4">
