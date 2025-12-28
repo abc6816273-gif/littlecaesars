@@ -286,13 +286,15 @@ export default function CalorieCalculatorPage() {
                                         <button
                                             key={key}
                                             onClick={() => setSelectedCategory(key)}
-                                            style={{ color: selectedCategory === key ? '#ffffff' : '#374151' }}
-                                            className={`px-4 py-2 rounded-full font-semibold transition-all ${selectedCategory === key
-                                                ? 'bg-orange-500 shadow-lg'
-                                                : 'bg-white hover:bg-orange-100'
-                                                }`}
+                                            style={{
+                                                color: selectedCategory === key ? '#ffffff' : '#1f2937',
+                                                backgroundColor: selectedCategory === key ? '#f97316' : '#ffffff'
+                                            }}
+                                            className="px-4 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg"
                                         >
-                                            {category.name}
+                                            <span style={{ color: selectedCategory === key ? '#ffffff' : '#1f2937' }}>
+                                                {category.name}
+                                            </span>
                                         </button>
                                     ))}
                                 </div>
