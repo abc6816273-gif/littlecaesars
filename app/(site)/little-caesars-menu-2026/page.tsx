@@ -396,7 +396,7 @@ export default function Menu2026Page() {
                                 <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-100">
                                     <div className="flex items-center justify-between mb-4">
                                         <span className="text-3xl">🆕</span>
-                                        <span className="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                        <span style={{ color: '#ffffff', backgroundColor: '#22c55e' }} className="text-xs font-bold px-3 py-1 rounded-full">
                                             {item.prediction}
                                         </span>
                                     </div>
