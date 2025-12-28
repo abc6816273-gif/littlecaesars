@@ -175,28 +175,28 @@ export default function Menu2026Page() {
                                 UPDATED DECEMBER 2026
                             </div>
 
-                            <h1 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tight">
+                            <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-6xl font-black mb-4 tracking-tight">
                                 Little Caesars Menu
                             </h1>
-                            <p className="text-2xl md:text-3xl font-bold text-yellow-300 mb-6">
+                            <p style={{ color: '#fcd34d' }} className="text-2xl md:text-3xl font-bold mb-6">
                                 2026 Complete Price Guide
                             </p>
-                            <p className="text-lg text-white/90 max-w-2xl mx-auto mb-8">
-                                All pizzas, sides, drinks with prices. Hot-N-Ready from <span className="font-bold text-yellow-300">$5.55</span>
+                            <p style={{ color: '#ffffff' }} className="text-lg max-w-2xl mx-auto mb-8">
+                                All pizzas, sides, drinks with prices. Hot-N-Ready from <span style={{ color: '#fcd34d' }} className="font-bold">$5.55</span>
                             </p>
 
                             <div className="flex flex-wrap justify-center gap-4 mb-8">
-                                <div className="bg-white/10 backdrop-blur-sm px-6 py-4 rounded-2xl border border-white/20">
-                                    <div className="text-3xl font-black text-white">12+</div>
-                                    <div className="text-sm text-white/80">Pizzas</div>
+                                <div style={{ backgroundColor: 'rgba(255,255,255,0.15)' }} className="backdrop-blur-sm px-6 py-4 rounded-2xl border border-white/30">
+                                    <div style={{ color: '#ffffff' }} className="text-3xl font-black">12+</div>
+                                    <div style={{ color: '#ffffff' }} className="text-sm opacity-80">Pizzas</div>
                                 </div>
-                                <div className="bg-white/10 backdrop-blur-sm px-6 py-4 rounded-2xl border border-white/20">
-                                    <div className="text-3xl font-black text-yellow-300">$5.55</div>
-                                    <div className="text-sm text-white/80">Starting</div>
+                                <div style={{ backgroundColor: 'rgba(255,255,255,0.15)' }} className="backdrop-blur-sm px-6 py-4 rounded-2xl border border-white/30">
+                                    <div style={{ color: '#fcd34d' }} className="text-3xl font-black">$5.55</div>
+                                    <div style={{ color: '#ffffff' }} className="text-sm opacity-80">Starting</div>
                                 </div>
-                                <div className="bg-white/10 backdrop-blur-sm px-6 py-4 rounded-2xl border border-white/20">
-                                    <div className="text-3xl font-black text-white">6</div>
-                                    <div className="text-sm text-white/80">New Items</div>
+                                <div style={{ backgroundColor: 'rgba(255,255,255,0.15)' }} className="backdrop-blur-sm px-6 py-4 rounded-2xl border border-white/30">
+                                    <div style={{ color: '#ffffff' }} className="text-3xl font-black">6</div>
+                                    <div style={{ color: '#ffffff' }} className="text-sm opacity-80">New Items</div>
                                 </div>
                             </div>
 
@@ -418,44 +418,48 @@ export default function Menu2026Page() {
                     </div>
                 </section>
 
-                {/* FAQ Section - Chipotle Style */}
-                <section className="py-16 bg-gray-50">
+                {/* FAQ Section - Accordion Style */}
+                <section id="faq" className="py-16 bg-white">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
-                            <span className="inline-block bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
-                                💡 GET ANSWERS
-                            </span>
-                            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-                                Frequently Asked Questions
+                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                Little Caesars Menu 2026 FAQ
                             </h2>
-                            <p className="text-lg text-gray-600">Everything you need to know about Little Caesars in 2026</p>
+                            <p className="text-xl text-gray-600">
+                                Everything you need to know about the 2026 menu
+                            </p>
                         </div>
 
                         <div className="space-y-4">
                             {faqData.map((faq, index) => (
-                                <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                                    <div className="px-6 py-5 flex items-start gap-4">
-                                        <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
-                                            {index + 1}
-                                        </div>
-                                        <div className="flex-grow">
-                                            <h3 className="font-bold text-gray-900 text-lg mb-2">{faq.question}</h3>
-                                            <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
-                                        </div>
+                                <details
+                                    key={index}
+                                    className="group bg-orange-50 rounded-2xl overflow-hidden border border-orange-100 hover:shadow-lg transition-all"
+                                >
+                                    <summary className="flex justify-between items-center p-6 cursor-pointer hover:bg-orange-100 transition-colors">
+                                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-orange-700 transition-colors pr-4">
+                                            {faq.question}
+                                        </h3>
+                                        <svg className="w-6 h-6 text-orange-600 transform group-open:rotate-180 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </summary>
+                                    <div className="px-6 pb-6 text-gray-700 leading-relaxed border-t border-orange-100 pt-4">
+                                        {faq.answer}
                                     </div>
-                                </div>
+                                </details>
                             ))}
                         </div>
                     </div>
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-16 bg-gradient-to-r from-orange-500 to-red-600">
+                <section className="py-16" style={{ background: 'linear-gradient(135deg, #f97316 0%, #ea580c 50%, #dc2626 100%)' }}>
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                        <h2 className="text-3xl md:text-4xl font-black text-white mb-6">
+                        <h2 style={{ color: '#ffffff' }} className="text-3xl md:text-4xl font-black mb-6">
                             Ready to Order? 🍕
                         </h2>
-                        <p className="text-white/90 text-xl mb-8">
+                        <p style={{ color: '#ffffff' }} className="text-xl mb-8 opacity-90">
                             Get your Hot-N-Ready pizza for just $5.55!
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
