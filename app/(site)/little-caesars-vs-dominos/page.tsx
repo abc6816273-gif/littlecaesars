@@ -105,13 +105,13 @@ export default function LittleCaesarsVsDominosPage() {
 
             <main className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50">
                 {/* Hero Section */}
-                <section className="relative py-16 bg-gradient-to-r from-little-caesars-orange via-red-500 to-blue-600 text-white">
+                <section className="relative py-16" style={{ background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #2563eb 100%)' }}>
                     <div className="max-w-4xl mx-auto px-4 text-center">
-                        <div className="text-5xl mb-4">🍕 VS 🍕</div>
-                        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                        <div style={{ color: '#ffffff', fontSize: '3rem' }} className="mb-4">🍕 VS 🍕</div>
+                        <h1 style={{ color: '#ffffff', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }} className="text-4xl md:text-5xl font-bold mb-4">
                             Little Caesars vs Domino's Prices {currentYear}
                         </h1>
-                        <p className="text-xl opacity-90 max-w-2xl mx-auto">
+                        <p style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }} className="text-xl max-w-2xl mx-auto">
                             Complete side-by-side comparison of prices, quality, delivery, and value.
                             Find out which pizza chain offers the best deal!
                         </p>
@@ -423,24 +423,26 @@ export default function LittleCaesarsVsDominosPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-12 bg-little-caesars-orange text-white">
+                <section className="py-12" style={{ background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)' }}>
                     <div className="max-w-4xl mx-auto px-4 text-center">
-                        <h2 className="text-3xl font-bold mb-4">
+                        <h2 style={{ color: '#ffffff', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }} className="text-3xl font-bold mb-4">
                             Ready to Order from Little Caesars?
                         </h2>
-                        <p className="text-xl mb-6 opacity-90">
+                        <p style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }} className="text-xl mb-6">
                             Check out our complete menu with all prices and nutrition info!
                         </p>
                         <div className="flex flex-wrap gap-4 justify-center">
                             <a
                                 href="/menus-prices"
-                                className="bg-white text-little-caesars-orange px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors"
+                                style={{ backgroundColor: '#ffffff', color: '#ea580c' }}
+                                className="px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors"
                             >
                                 View Full Menu →
                             </a>
                             <a
                                 href="/store-locator"
-                                className="bg-red-700 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-red-800 transition-colors"
+                                style={{ backgroundColor: '#b91c1c', color: '#ffffff' }}
+                                className="px-8 py-3 rounded-full font-bold text-lg hover:bg-red-800 transition-colors"
                             >
                                 📍 Find Store Near You
                             </a>
