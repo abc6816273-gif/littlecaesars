@@ -369,26 +369,28 @@ export default function LittleCaesarsVsPizzaHutPage() {
             </section>
 
             {/* Winner Declaration */}
-            <section className="py-16 bg-gradient-to-r from-green-500 to-green-600">
+            <section className="py-16" style={{ background: 'linear-gradient(135deg, #16a34a 0%, #15803d 100%)' }}>
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <span style={{ color: '#ffffff' }} className="text-6xl">🏆</span>
-                    <h2 style={{ color: '#ffffff' }} className="text-3xl md:text-4xl font-black mt-4 mb-6">
+                    <span style={{ color: '#ffffff', fontSize: '4rem' }}>🏆</span>
+                    <h2 style={{ color: '#ffffff', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }} className="text-3xl md:text-4xl font-black mt-4 mb-6">
                         The Winner: Little Caesars!
                     </h2>
-                    <p style={{ color: '#ffffff' }} className="text-xl mb-8 opacity-90">
+                    <p style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.3)' }} className="text-xl mb-8">
                         For budget-conscious pizza fans, Little Caesars delivers incredible value.
                         Save 50%+ while enjoying Hot-N-Ready convenience and Detroit-Style greatness!
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         <Link
                             href="/little-caesars-menu"
-                            className="inline-block bg-white text-green-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-green-50 transition-colors shadow-xl"
+                            style={{ backgroundColor: '#ffffff', color: '#16a34a' }}
+                            className="inline-block px-8 py-4 rounded-full font-bold text-lg hover:bg-green-50 transition-colors shadow-xl"
                         >
                             View Full Menu →
                         </Link>
                         <Link
                             href="/little-caesars-calorie-calculator"
-                            className="inline-block bg-green-700 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-800 transition-colors shadow-xl"
+                            style={{ backgroundColor: '#15803d', color: '#ffffff' }}
+                            className="inline-block px-8 py-4 rounded-full font-bold text-lg hover:bg-green-800 transition-colors shadow-xl"
                         >
                             Try Calorie Calculator 🧮
                         </Link>
