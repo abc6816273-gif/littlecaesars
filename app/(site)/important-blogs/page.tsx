@@ -63,6 +63,19 @@ const breadcrumbSchema = {
 // Featured blog posts - real content only  
 const featuredBlogs = [
   {
+    id: 'calorie-calculator',
+    category: 'Health Tool',
+    title: 'Little Caesars Calorie Calculator 2025 - Count Calories for Your Order',
+    excerpt: 'FREE interactive calorie calculator for Little Caesars! Track calories, fat, protein, carbs for pizzas, wings, Crazy Bread & more. Plan your meal and make healthier choices with real-time nutrition tracking.',
+    image: '/menu/Homepage-menus/calorie-calculator-tool.png',
+    imageAlt: 'Little Caesars Calorie Calculator - Track Nutrition for Pizza and Sides',
+    date: 'December 28, 2025',
+    readTime: '3 min read',
+    slug: 'little-caesars-calorie-calculator',
+    isNew: true,
+    featured: true
+  },
+  {
     id: 'coupons-january-2025',
     category: 'Coupons & Deals',
     title: 'Little Caesars Coupons January 2025 - 50% Off Promo Codes & Deals',
