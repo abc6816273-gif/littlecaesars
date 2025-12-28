@@ -286,9 +286,10 @@ export default function CalorieCalculatorPage() {
                                         <button
                                             key={key}
                                             onClick={() => setSelectedCategory(key)}
+                                            style={{ color: selectedCategory === key ? '#ffffff' : '#374151' }}
                                             className={`px-4 py-2 rounded-full font-semibold transition-all ${selectedCategory === key
-                                                    ? 'bg-orange-500 text-white shadow-lg'
-                                                    : 'bg-white text-gray-700 hover:bg-orange-100'
+                                                ? 'bg-orange-500 shadow-lg'
+                                                : 'bg-white hover:bg-orange-100'
                                                 }`}
                                         >
                                             {category.name}
@@ -319,11 +320,11 @@ export default function CalorieCalculatorPage() {
                                                             {item.calories} cal
                                                         </span>
                                                         {selectedCategory === 'pizzas' && (
-                                                            <span className="text-xs text-gray-500">per slice</span>
+                                                            <span style={{ color: '#6b7280' }} className="text-xs">per slice</span>
                                                         )}
                                                     </div>
                                                 </div>
-                                                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+                                                <div style={{ color: '#ffffff', backgroundColor: '#f97316' }} className="w-8 h-8 rounded-full flex items-center justify-center font-bold opacity-0 group-hover:opacity-100 transition-opacity">
                                                     +
                                                 </div>
                                             </div>
@@ -340,7 +341,8 @@ export default function CalorieCalculatorPage() {
                                         {selectedItems.length > 0 && (
                                             <button
                                                 onClick={clearAll}
-                                                className="text-red-500 text-sm hover:underline"
+                                                style={{ color: '#ef4444' }}
+                                                className="text-sm hover:underline"
                                             >
                                                 Clear All
                                             </button>
@@ -348,9 +350,9 @@ export default function CalorieCalculatorPage() {
                                     </div>
 
                                     {selectedItems.length === 0 ? (
-                                        <div className="text-center py-8 text-gray-500">
+                                        <div className="text-center py-8">
                                             <p className="text-4xl mb-2">🍕</p>
-                                            <p>Click items to add them</p>
+                                            <p style={{ color: '#6b7280' }}>Click items to add them</p>
                                         </div>
                                     ) : (
                                         <div className="space-y-3 mb-6 max-h-64 overflow-y-auto">
@@ -358,21 +360,23 @@ export default function CalorieCalculatorPage() {
                                                 <div key={item.id} className="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
                                                     <div className="flex-1">
                                                         <p style={{ color: '#111827' }} className="font-semibold text-sm">{item.name}</p>
-                                                        <p className="text-orange-600 font-bold">{item.calories} cal</p>
+                                                        <p style={{ color: '#ea580c' }} className="font-bold">{item.calories} cal</p>
                                                     </div>
                                                     <div className="flex items-center gap-2">
                                                         <button
                                                             onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                                                            className="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center hover:bg-gray-300"
+                                                            style={{ color: '#111827', backgroundColor: '#e5e7eb' }}
+                                                            className="w-6 h-6 rounded-full flex items-center justify-center hover:bg-gray-300"
                                                         >
                                                             -
                                                         </button>
-                                                        <span className="font-bold w-6 text-center">
+                                                        <span style={{ color: '#111827' }} className="font-bold w-6 text-center">
                                                             {item.quantity}{item.isSliceBased ? '' : ''}
                                                         </span>
                                                         <button
                                                             onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                                                            className="w-6 h-6 bg-orange-500 text-white rounded-full flex items-center justify-center hover:bg-orange-600"
+                                                            style={{ color: '#ffffff', backgroundColor: '#f97316' }}
+                                                            className="w-6 h-6 rounded-full flex items-center justify-center hover:bg-orange-600"
                                                         >
                                                             +
                                                         </button>
@@ -385,28 +389,28 @@ export default function CalorieCalculatorPage() {
                                     {/* Totals */}
                                     <div className="border-t pt-4">
                                         <div className="text-center mb-4">
-                                            <p className="text-sm text-gray-500">Total Calories</p>
+                                            <p style={{ color: '#6b7280' }} className="text-sm">Total Calories</p>
                                             <p style={{ color: '#ea580c' }} className="text-4xl font-black">{Math.round(totals.calories)}</p>
-                                            <p className="text-sm text-gray-500">{dailyValues.calories}% of daily value</p>
+                                            <p style={{ color: '#6b7280' }} className="text-sm">{dailyValues.calories}% of daily value</p>
                                         </div>
 
                                         {selectedItems.length > 0 && (
                                             <div className="space-y-2">
                                                 <div className="flex justify-between text-sm">
                                                     <span style={{ color: '#4b5563' }}>Fat</span>
-                                                    <span className="font-semibold">{Math.round(totals.fat)}g ({dailyValues.fat}%)</span>
+                                                    <span style={{ color: '#111827' }} className="font-semibold">{Math.round(totals.fat)}g ({dailyValues.fat}%)</span>
                                                 </div>
                                                 <div className="flex justify-between text-sm">
                                                     <span style={{ color: '#4b5563' }}>Protein</span>
-                                                    <span className="font-semibold">{Math.round(totals.protein)}g ({dailyValues.protein}%)</span>
+                                                    <span style={{ color: '#111827' }} className="font-semibold">{Math.round(totals.protein)}g ({dailyValues.protein}%)</span>
                                                 </div>
                                                 <div className="flex justify-between text-sm">
                                                     <span style={{ color: '#4b5563' }}>Carbs</span>
-                                                    <span className="font-semibold">{Math.round(totals.carbs)}g ({dailyValues.carbs}%)</span>
+                                                    <span style={{ color: '#111827' }} className="font-semibold">{Math.round(totals.carbs)}g ({dailyValues.carbs}%)</span>
                                                 </div>
                                                 <div className="flex justify-between text-sm">
                                                     <span style={{ color: '#4b5563' }}>Sodium</span>
-                                                    <span className="font-semibold">{Math.round(totals.sodium)}mg ({dailyValues.sodium}%)</span>
+                                                    <span style={{ color: '#111827' }} className="font-semibold">{Math.round(totals.sodium)}mg ({dailyValues.sodium}%)</span>
                                                 </div>
                                             </div>
                                         )}
