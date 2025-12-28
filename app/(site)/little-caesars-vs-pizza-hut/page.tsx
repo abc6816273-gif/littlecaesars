@@ -229,12 +229,12 @@ export default function LittleCaesarsVsPizzaHutPage() {
                         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                             <div className="overflow-x-auto">
                                 <table className="w-full">
-                                    <thead className="bg-gradient-to-r from-orange-500 to-red-500">
+                                    <thead style={{ background: 'linear-gradient(135deg, #f97316 0%, #dc2626 100%)' }}>
                                         <tr>
-                                            <th style={{ color: '#ffffff' }} className="px-6 py-4 text-left font-bold">Menu Item</th>
-                                            <th style={{ color: '#ffffff' }} className="px-6 py-4 text-center font-bold">🏆 Little Caesars</th>
-                                            <th style={{ color: '#ffffff' }} className="px-6 py-4 text-center font-bold">Pizza Hut</th>
-                                            <th style={{ color: '#ffffff' }} className="px-6 py-4 text-center font-bold">Your Savings</th>
+                                            <th style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.2)' }} className="px-6 py-4 text-left font-bold">Menu Item</th>
+                                            <th style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.2)' }} className="px-6 py-4 text-center font-bold">🏆 Little Caesars</th>
+                                            <th style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.2)' }} className="px-6 py-4 text-center font-bold">Pizza Hut</th>
+                                            <th style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.2)' }} className="px-6 py-4 text-center font-bold">Your Savings</th>
                                         </tr>
                                     </thead>
                                     <tbody>
