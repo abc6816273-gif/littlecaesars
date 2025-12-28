@@ -367,7 +367,7 @@ export default function Menu2026Page() {
                                     <div className="p-6">
                                         <div className="flex items-center justify-between mb-4">
                                             <h3 style={{ color: '#111827' }} className="text-xl font-black">{combo.name}</h3>
-                                            <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">{combo.savings}</span>
+                                            <span style={{ color: '#ffffff', backgroundColor: '#22c55e' }} className="px-3 py-1 rounded-full text-sm font-bold">{combo.savings}</span>
                                         </div>
                                         <p style={{ color: '#4b5563' }} className="mb-4">{combo.items}</p>
                                         <div className="text-3xl font-black text-orange-600">{combo.price}</div>
