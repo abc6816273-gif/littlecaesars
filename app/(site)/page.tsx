@@ -604,7 +604,7 @@ export default function HomePage() {
             >
               <div className="relative h-48 overflow-hidden">
                 <img
-                  src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Pizza-Little-Caesars-Menu.webp"
+                  src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Pepperoni-Little-Caesars-Menu.webp"
                   alt="Little Caesars Menu 2026 - Complete Price List"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
