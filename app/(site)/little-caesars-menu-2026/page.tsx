@@ -398,7 +398,7 @@ export default function Menu2026Page() {
                                         <img
                                             src={item.image}
                                             alt={item.name}
-                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                         />
                                     </div>
                                     <div className="p-5">
