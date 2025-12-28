@@ -163,10 +163,9 @@ export default function Menu2026Page() {
                     </div>
                 </nav>
 
-                {/* Hero Section - Chipotle Style */}
-                <header className="relative py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-orange-500 via-orange-600 to-red-600">
-                    <div className="absolute inset-0 bg-black/10"></div>
-                    <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url("/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp")', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                {/* Hero Section - Orange Background */}
+                <header className="relative py-16 lg:py-20 overflow-hidden" style={{ background: 'linear-gradient(135deg, #f97316 0%, #ea580c 50%, #dc2626 100%)' }}>
+                    <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.1)' }}></div>
 
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center">
