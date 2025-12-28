@@ -165,14 +165,14 @@ export default function LittleCaesarsVsPizzaHutPage() {
                             The ultimate battle: Hot-N-Ready vs Stuffed Crust! Compare prices, taste, nutrition & value.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <div className="bg-orange-600 px-6 py-3 rounded-xl">
+                            <div style={{ backgroundColor: '#ea580c' }} className="px-6 py-3 rounded-xl">
                                 <span style={{ color: '#ffffff' }} className="font-bold">🏆 Little Caesars</span>
-                                <p style={{ color: '#ffffff' }} className="text-sm opacity-90">$5.55 Hot-N-Ready</p>
+                                <p style={{ color: '#ffffff' }} className="text-sm">$5.55 Hot-N-Ready</p>
                             </div>
                             <div style={{ color: '#ffffff' }} className="text-4xl font-black flex items-center">VS</div>
-                            <div className="bg-red-700 px-6 py-3 rounded-xl">
+                            <div style={{ backgroundColor: '#b91c1c' }} className="px-6 py-3 rounded-xl">
                                 <span style={{ color: '#ffffff' }} className="font-bold">🍕 Pizza Hut</span>
-                                <p style={{ color: '#ffffff' }} className="text-sm opacity-90">$16.99+ Large Pizza</p>
+                                <p style={{ color: '#ffffff' }} className="text-sm">$16.99+ Large Pizza</p>
                             </div>
                         </div>
                     </div>
