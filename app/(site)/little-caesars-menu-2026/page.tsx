@@ -382,7 +382,7 @@ export default function Menu2026Page() {
                 <section id="new-2026" className="py-16 bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
-                            <span className="inline-block bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
+                            <span className="inline-block bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-bold mb-4">
                                 ✨ COMING SOON
                             </span>
                             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
@@ -393,8 +393,8 @@ export default function Menu2026Page() {
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {newItems2026.map((item, index) => (
-                                <div key={index} className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl overflow-hidden border-2 border-purple-200 hover:border-purple-400 transition-all group">
-                                    <div className="h-40 overflow-hidden bg-purple-100">
+                                <div key={index} className="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl overflow-hidden border-2 border-orange-200 hover:border-orange-400 transition-all group">
+                                    <div className="h-40 overflow-hidden bg-orange-100">
                                         <img
                                             src={item.image}
                                             alt={item.name}
@@ -404,7 +404,7 @@ export default function Menu2026Page() {
                                     <div className="p-5">
                                         <div className="flex items-center justify-between mb-3">
                                             <span className="text-2xl">🆕</span>
-                                            <span className="bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                                            <span className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                                                 {item.prediction}
                                             </span>
                                         </div>
