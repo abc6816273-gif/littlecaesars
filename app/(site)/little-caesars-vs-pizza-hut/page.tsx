@@ -316,8 +316,8 @@ export default function LittleCaesarsVsPizzaHutPage() {
                         <div className="grid md:grid-cols-2 gap-8">
                             {/* Little Caesars */}
                             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-t-4 border-orange-500">
-                                <div className="bg-orange-500 px-6 py-4">
-                                    <h3 style={{ color: '#ffffff' }} className="text-xl font-bold">🏆 Little Caesars</h3>
+                                <div style={{ backgroundColor: '#f97316' }} className="px-6 py-4">
+                                    <h3 style={{ color: '#ffffff', textShadow: '1px 1px 2px rgba(0,0,0,0.2)' }} className="text-xl font-bold">🏆 Little Caesars</h3>
                                 </div>
                                 <div className="p-6">
                                     <h4 style={{ color: '#16a34a' }} className="font-bold mb-3">✅ Pros</h4>
