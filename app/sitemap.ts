@@ -64,7 +64,7 @@ async function fetchWordPressContent(): Promise<SitemapResponse | null> {
       },
       body: JSON.stringify({ query }),
       next: {
-        revalidate: 3600, // Cache for 1 hour
+        revalidate: 900, // ✅ 15 minutes - Faster indexing for new content
         tags: ['sitemap', 'posts', 'pages', 'categories']
       }
     })
@@ -175,12 +175,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'daily',
         priority: 0.7,
       },
-      {
-        url: `${baseUrl}/little-caesars-menu`,
-        lastModified: currentDate,
-        changeFrequency: 'weekly',
-        priority: 0.9,
-      },
+      // ❌ DUPLICATE REMOVED - Already exists at line 137 with priority 0.95
       {
         url: `${baseUrl}/important-blogs`,
         lastModified: currentDate,
@@ -200,6 +195,73 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         lastModified: currentDate,
         changeFrequency: 'weekly',
         priority: 0.95,
+      },
+      // ✅ CRITICAL SEO PAGES - Added manually for indexing
+      {
+        url: `${baseUrl}/crazy-puffs`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      },
+      {
+        url: `${baseUrl}/little-caesars-new-items-2025`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      },
+      {
+        url: `${baseUrl}/little-caesars-coupons-january-2025`,
+        lastModified: currentDate,
+        changeFrequency: 'daily',
+        priority: 0.95,
+      },
+      {
+        url: `${baseUrl}/little-caesars-nutrition-calories`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      },
+      {
+        url: `${baseUrl}/little-caesars-menu-2026`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      },
+      {
+        url: `${baseUrl}/little-caesars-pretzel-crust-pizza-2025`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      },
+      {
+        url: `${baseUrl}/little-caesars-9-99-menu`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      },
+      {
+        url: `${baseUrl}/little-caesars-delivery`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}/little-caesars-calorie-calculator`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}/little-caesars-secret-menu`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.85,
+      },
+      {
+        url: `${baseUrl}/store-locator`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.8,
       },
       // Comparison Blog - Evergreen High Traffic
       {
