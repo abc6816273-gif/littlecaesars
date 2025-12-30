@@ -169,6 +169,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'monthly',
         priority: 0.5,
       },
+      // Additional Navigation & Discovery Pages
+      {
+        url: `${baseUrl}/menu`, // Redirects to /little-caesars-menu but helps discovery
+        lastModified: currentDate,
+        changeFrequency: 'daily',
+        priority: 0.7,
+      },
       {
         url: `${baseUrl}/posts`,
         lastModified: currentDate,
