@@ -263,6 +263,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'weekly',
         priority: 0.8,
       },
+      // More High-Value Blog Pages
+      {
+        url: `${baseUrl}/little-caesars-vs-pizza-hut`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.85,
+      },
+      {
+        url: `${baseUrl}/best-little-caesars-pizza-ranked`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.85,
+      },
       // Comparison Blog - Evergreen High Traffic
       {
         url: `${baseUrl}/little-caesars-vs-dominos`,
@@ -270,20 +283,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'monthly',
         priority: 0.9,
       },
-      // Nutrition & Calories Guide - High Traffic Evergreen
-      {
-        url: `${baseUrl}/little-caesars-nutrition-calories`,
-        lastModified: currentDate,
-        changeFrequency: 'monthly',
-        priority: 0.95,
-      },
-      // Crazy Puffs Guide - NEW 2025 Trending Content - Maximum Priority
-      {
-        url: `${baseUrl}/crazy-puffs`,
-        lastModified: currentDate,
-        changeFrequency: 'weekly',
-        priority: 1.0,
-      },
+
       // Little Caesars New Items 2025 - Maximum Priority for Trending Content
       {
         url: `${baseUrl}/little-caesars-new-items-2025`,
