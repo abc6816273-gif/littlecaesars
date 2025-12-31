@@ -328,6 +328,67 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'monthly',
         priority: 0.4,
       },
+      // 🚀 HIGH-TRAFFIC POTENTIAL PAGES - Strategic SEO URLs
+      {
+        url: `${baseUrl}/little-caesars-near-me`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.9,
+      },
+      {
+        url: `${baseUrl}/little-caesars-hours`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      },
+      {
+        url: `${baseUrl}/little-caesars-menu-with-prices`,
+        lastModified: currentDate,
+        changeFrequency: 'daily',
+        priority: 0.95,
+      },
+      {
+        url: `${baseUrl}/little-caesars-lunch-specials`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      },
+      {
+        url: `${baseUrl}/little-caesars-deals-today`,
+        lastModified: currentDate,
+        changeFrequency: 'daily',
+        priority: 0.9,
+      },
+      {
+        url: `${baseUrl}/little-caesars-app`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}/little-caesars-online-ordering`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      },
+      {
+        url: `${baseUrl}/little-caesars-rewards-program`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}/little-caesars-catering`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.75,
+      },
+      {
+        url: `${baseUrl}/little-caesars-gluten-free-options`,
+        lastModified: currentDate,
+        changeFrequency: 'monthly',
+        priority: 0.75,
+      },
     ]
 
     let dynamicPages: MetadataRoute.Sitemap = []
