@@ -16,8 +16,8 @@ export const revalidate = 300
 // Generate metadata with SEO-friendly pagination links
 export function generateMetadata(): Metadata {
   // Ultra SEO-optimized metadata
-  const title = `Little Caesars Menu Prices and Pictures [September 2025]`
-  const description = `Complete Little Caesars menu guide with current prices, pictures, calories & nutrition info. Hot-N-Ready pizzas, Crazy Bread, wings, and exclusive deals. Updated September 2025.`
+  const title = `Little Caesars Menu Prices and Pictures [${getFormattedDate()}]`
+  const description = `Complete Little Caesars menu guide with current prices, pictures, calories & nutrition info. Hot-N-Ready pizzas, Crazy Bread, wings, and exclusive deals. Updated ${getFormattedDate()}.`
 
   // Fast static metadata - no API dependencies
   return {
@@ -308,7 +308,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <Hero
-        title="🍕 Little Caesars Menu Prices and Pictures [September 2025]"
+        title={`🍕 Little Caesars Menu Prices and Pictures [${getFormattedDate()}]`}
         subtitle="Your complete guide to Hot-N-Ready pizzas, Crazy Bread, wings & more with current prices, pictures, and nutritional information"
         primaryCta={{
           text: "🍕 Browse Complete Menu",

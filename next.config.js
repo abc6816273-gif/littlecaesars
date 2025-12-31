@@ -54,7 +54,7 @@ const nextConfig = {
         'core-js': false,
         'regenerator-runtime': false,
       }
-      
+
       config.optimization.splitChunks = {
         chunks: 'all',
         minSize: 10000,
@@ -92,8 +92,8 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: process.env.NODE_ENV === 'development' 
-              ? 'no-cache, no-store, must-revalidate' 
+            value: process.env.NODE_ENV === 'development'
+              ? 'no-cache, no-store, must-revalidate'
               : 'public, max-age=31536000, immutable',
           },
           {
@@ -107,7 +107,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: process.env.NODE_ENV === 'development' 
+            value: process.env.NODE_ENV === 'development'
               ? 'no-cache, no-store, must-revalidate'
               : 'public, max-age=31536000, immutable',
           },
@@ -118,7 +118,7 @@ const nextConfig = {
         headers: [
           {
             key: 'Cache-Control',
-            value: process.env.NODE_ENV === 'development' 
+            value: process.env.NODE_ENV === 'development'
               ? 'no-cache, no-store, must-revalidate'
               : 'public, max-age=31536000, immutable',
           },
@@ -150,9 +150,9 @@ const nextConfig = {
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-          { 
-            key: 'Cache-Control', 
-            value: process.env.NODE_ENV === 'development' 
+          {
+            key: 'Cache-Control',
+            value: process.env.NODE_ENV === 'development'
               ? 'no-cache, no-store, must-revalidate'
               : 'public, max-age=0, s-maxage=86400, stale-while-revalidate=86400'
           },
@@ -163,7 +163,18 @@ const nextConfig = {
 
   async redirects() {
     return [
-      // add custom redirects if needed
+      // ✅ SEO FIX: Consolidate duplicate menu URLs
+      {
+        source: '/menu',
+        destination: '/little-caesars-menu',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/menus-prices',
+        destination: '/little-caesars-menu',
+        permanent: true, // 301 redirect
+      },
+      // Add more custom redirects if needed
     ]
   },
 }
