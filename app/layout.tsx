@@ -118,6 +118,19 @@ export default async function RootLayout({
         <link rel="dns-prefetch" href="https://www.littlecaesars.com" />
 
         {/* Google Analytics - Deferred */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VDQKMZE46"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-7VDQKMZE46');
+            `
+          }}
+        />
+
+
 
         {/* Google AdSense Auto Ads - FIXED Implementation */}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2413532455913207" crossOrigin="anonymous"></script>
