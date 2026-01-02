@@ -510,220 +510,310 @@ export default function HomePage() {
               </div>
             </Link>
 
-            {/* Calorie Calculator Card - NEW */}
-            <Link
-              href="/little-caesars-calorie-calculator"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-emerald-500"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/menu/Homepage-menus/calorie-calculator-tool.png"
-                  alt="Little Caesars Calorie Calculator - Track Nutrition"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
-                  🧮 CALCULATOR
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-bold text-emerald-600 uppercase tracking-wide">Health Tool</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-emerald-600 transition-colors">
-                  Little Caesars Calorie Calculator 2025
-                </h3>
-                <p className="text-gray-600 mt-2 text-sm">
-                  FREE interactive tool to track calories, fat, protein & carbs for your entire order!
+            {/* ==================== */}
+            {/* QUICK TOOLS SECTION - HIGH-TRAFFIC UTILITY PAGES */}
+            {/* ==================== */}
+            <section className="mb-16">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  🔥 Quick Tools & Info
+                </h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Fast access to the most searched information about Little Caesars
                 </p>
-                <div className="mt-4 text-emerald-600 font-semibold text-sm flex items-center">
-                  Try Calculator →
-                </div>
               </div>
-            </Link>
 
-            {/* Secret Menu Card - NEW */}
-            <Link
-              href="/little-caesars-secret-menu"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-purple-500"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                  alt="Little Caesars Secret Menu 2025 - Hidden Items"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute top-3 right-3 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">
-                  🤫 SECRET
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-bold text-purple-600 uppercase tracking-wide">Hidden Hacks</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-purple-600 transition-colors">
-                  Secret Menu 2025 - Hidden Items Revealed!
-                </h3>
-                <p className="text-gray-600 mt-2 text-sm">
-                  Discover 8 secret menu items & ordering hacks that most customers don't know about!
+              <div className="grid md:grid-cols-3 gap-8 mb-12">
+                {/* Near Me Tool */}
+                <Link
+                  href="/little-caesars-near-me"
+                  className="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.03] border-2 border-blue-200 hover:border-blue-400">
+                  <div className="p-8 text-center">
+                    <div className="w-20 h-20 bg-blue-500 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl shadow-lg">
+                      📍
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                      Find Locations Near You
+                    </h3>
+                    <p className="text-gray-700 mb-4">
+                      Search by city or zip code to find the closest Little Caesars. Get directions, hours, and contact info.
+                    </p>
+                    <div className="text-blue-600 font-bold flex items-center justify-center gap-2">
+                      Search Now →
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Store Hours */}
+                <Link
+                  href="/little-caesars-hours"
+                  className="group bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.03] border-2 border-orange-200 hover:border-orange-400">
+                  <div className="p-8 text-center">
+                    <div className="w-20 h-20 bg-orange-500 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl shadow-lg">
+                      🕐
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">
+                      Store Hours & Schedule
+                    </h3>
+                    <p className="text-gray-700 mb-4">
+                      Check opening and closing times for your local store. View holiday hours and special schedules.
+                    </p>
+                    <div className="text-orange-600 font-bold flex items-center justify-center gap-2">
+                      View Hours →
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Today's Deals */}
+                <Link
+                  href="/little-caesars-deals-today"
+                  className="group bg-gradient-to-br from-red-50 to-red-100 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-[1.03] border-2 border-red-200 hover:border-red-400">
+                  <div className="p-8 text-center">
+                    <div className="w-20 h-20 bg-red-500 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl shadow-lg animate-pulse">
+                      🎁
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors">
+                      Today's Hot Deals
+                    </h3>
+                    <p className="text-gray-700 mb-4">
+                      Discover today's best offers, promotions, and exclusive app deals. Save money on your order!
+                    </p>
+                    <div className="text-red-600 font-bold flex items-center justify-center gap-2">
+                      See Deals →
+                    </div>
+                  </div>
+                </Link>
+              </div >
+            </section>
+
+            {/* ==================== */}
+            {/* IMPORTANT BLOG POSTS */}
+            {/* ==================== */}
+            <section className="mb-16">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  📰 Essential Guides & Reviews
+                </h2>
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  Expert guides, reviews, and tips to get the most out of your Little Caesars experience
                 </p>
-                <div className="mt-4 text-purple-600 font-semibold text-sm flex items-center">
-                  Unlock Secrets →
-                </div>
               </div>
-            </Link>
 
-            {/* Pizza Ranking Card - NEW */}
-            <Link
-              href="/best-little-caesars-pizza-ranked"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-yellow-500"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                  alt="Best Pizza at Little Caesars Ranked 2025"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute top-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
-                  🏆 RANKED
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-bold text-yellow-600 uppercase tracking-wide">Best Pizza</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-yellow-600 transition-colors">
-                  Best Pizza at Little Caesars - All Ranked!
-                </h3>
-                <p className="text-gray-600 mt-2 text-sm">
-                  Complete ranking of all 12 pizzas from #1 to worst. ExtraMostBestest wins!
-                </p>
-                <div className="mt-4 text-yellow-600 font-semibold text-sm flex items-center">
-                  See Rankings →
-                </div>
-              </div>
-            </Link>
+              <div className="grid md:grid-cols-3 gap-8">
+                {/* Calorie Calculator Card - NEW */}
+                <Link
+                  href="/little-caesars-calorie-calculator"
+                  className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-emerald-500"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="/menu/Homepage-menus/calorie-calculator-tool.png"
+                      alt="Little Caesars Calorie Calculator - Track Nutrition"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                      🧮 CALCULATOR
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-bold text-emerald-600 uppercase tracking-wide">Health Tool</span>
+                    <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-emerald-600 transition-colors">
+                      Little Caesars Calorie Calculator 2025
+                    </h3>
+                    <p className="text-gray-600 mt-2 text-sm">
+                      FREE interactive tool to track calories, fat, protein & carbs for your entire order!
+                    </p>
+                    <div className="mt-4 text-emerald-600 font-semibold text-sm flex items-center">
+                      Try Calculator →
+                    </div>
+                  </div>
+                </Link>
 
-            {/* Delivery Guide Card - NEW */}
-            <Link
-              href="/little-caesars-delivery"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-500"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp"
-                  alt="Little Caesars Delivery Guide 2025"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute top-3 right-3 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
-                  🚚 DELIVERY
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Delivery Guide</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
-                  Delivery Guide 2025 - Fees, Hours & Tips
-                </h3>
-                <p className="text-gray-600 mt-2 text-sm">
-                  $3.99 delivery fee, $12 minimum, 25-45 min wait. Complete delivery guide!
-                </p>
-                <div className="mt-4 text-blue-600 font-semibold text-sm flex items-center">
-                  Order Delivery →
-                </div>
-              </div>
-            </Link>
+                {/* Secret Menu Card - NEW */}
+                <Link
+                  href="/little-caesars-secret-menu"
+                  className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-purple-500"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                      alt="Little Caesars Secret Menu 2025 - Hidden Items"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute top-3 right-3 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                      🤫 SECRET
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-bold text-purple-600 uppercase tracking-wide">Hidden Hacks</span>
+                    <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-purple-600 transition-colors">
+                      Secret Menu 2025 - Hidden Items Revealed!
+                    </h3>
+                    <p className="text-gray-600 mt-2 text-sm">
+                      Discover 8 secret menu items & ordering hacks that most customers don't know about!
+                    </p>
+                    <div className="mt-4 text-purple-600 font-semibold text-sm flex items-center">
+                      Unlock Secrets →
+                    </div>
+                  </div>
+                </Link>
 
-            {/* LC vs Dominos Card - NEW */}
-            <Link
-              href="/little-caesars-vs-dominos"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-600"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                  alt="Little Caesars vs Dominos Comparison 2025"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute top-3 right-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
-                  🆚 VS DOMINOS
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Comparison</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
-                  Little Caesars vs Dominos 2025 - Price War
-                </h3>
-                <p className="text-gray-600 mt-2 text-sm">
-                  Little Caesars is 47% cheaper than Dominos! Compare prices, quality, and nutrition facts.
-                </p>
-                <div className="mt-4 text-blue-600 font-semibold text-sm flex items-center">
-                  See Comparison →
-                </div>
-              </div>
-            </Link>
+                {/* Pizza Ranking Card - NEW */}
+                <Link
+                  href="/best-little-caesars-pizza-ranked"
+                  className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-yellow-500"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                      alt="Best Pizza at Little Caesars Ranked 2025"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute top-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
+                      🏆 RANKED
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-bold text-yellow-600 uppercase tracking-wide">Best Pizza</span>
+                    <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-yellow-600 transition-colors">
+                      Best Pizza at Little Caesars - All Ranked!
+                    </h3>
+                    <p className="text-gray-600 mt-2 text-sm">
+                      Complete ranking of all 12 pizzas from #1 to worst. ExtraMostBestest wins!
+                    </p>
+                    <div className="mt-4 text-yellow-600 font-semibold text-sm flex items-center">
+                      See Rankings →
+                    </div>
+                  </div>
+                </Link>
 
-            {/* LC vs Pizza Hut Card - NEW */}
-            <Link
-              href="/little-caesars-vs-pizza-hut"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-red-600"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Cheese-Little-Caesars-Menu.webp"
-                  alt="Little Caesars vs Pizza Hut Comparison 2025"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute top-3 right-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
-                  🆚 VS PIZZA HUT
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-bold text-red-600 uppercase tracking-wide">Comparison</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-red-600 transition-colors">
-                  Little Caesars vs Pizza Hut 2025 - Value Showdown
-                </h3>
-                <p className="text-gray-600 mt-2 text-sm">
-                  See why LC wins for value! 53% price difference compared to Pizza Hut's premium menu.
-                </p>
-                <div className="mt-4 text-red-600 font-semibold text-sm flex items-center">
-                  See Comparison →
-                </div>
-              </div>
-            </Link>
+                {/* Delivery Guide Card - NEW */}
+                <Link
+                  href="/little-caesars-delivery"
+                  className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-500"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp"
+                      alt="Little Caesars Delivery Guide 2025"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute top-3 right-3 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                      🚚 DELIVERY
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Delivery Guide</span>
+                    <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
+                      Delivery Guide 2025 - Fees, Hours & Tips
+                    </h3>
+                    <p className="text-gray-600 mt-2 text-sm">
+                      $3.99 delivery fee, $12 minimum, 25-45 min wait. Complete delivery guide!
+                    </p>
+                    <div className="mt-4 text-blue-600 font-semibold text-sm flex items-center">
+                      Order Delivery →
+                    </div>
+                  </div>
+                </Link>
 
-            {/* Menu 2026 Card - NEW & FEATURED */}
-            <Link
-              href="/little-caesars-menu-2026"
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-green-500"
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Pepperoni-Little-Caesars-Menu.webp"
-                  alt="Little Caesars Menu 2026 - Complete Price List"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute top-3 right-3 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
-                  🔥 2026 MENU
-                </div>
-              </div>
-              <div className="p-6">
-                <span className="text-xs font-bold text-green-600 uppercase tracking-wide">Complete Menu</span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-green-600 transition-colors">
-                  Little Caesars Menu 2026 - Full Price Guide
-                </h3>
-                <p className="text-gray-600 mt-2 text-sm">
-                  Complete 2026 menu with all prices, new items, combos & money-saving tips!
-                </p>
-                <div className="mt-4 text-green-600 font-semibold text-sm flex items-center">
-                  View Full Menu →
-                </div>
-              </div>
-            </Link>
-          </div>
+                {/* LC vs Dominos Card - NEW */}
+                <Link
+                  href="/little-caesars-vs-dominos"
+                  className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-blue-600"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
+                      alt="Little Caesars vs Dominos Comparison 2025"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute top-3 right-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                      🆚 VS DOMINOS
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Comparison</span>
+                    <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
+                      Little Caesars vs Dominos 2025 - Price War
+                    </h3>
+                    <p className="text-gray-600 mt-2 text-sm">
+                      Little Caesars is 47% cheaper than Dominos! Compare prices, quality, and nutrition facts.
+                    </p>
+                    <div className="mt-4 text-blue-600 font-semibold text-sm flex items-center">
+                      See Comparison →
+                    </div>
+                  </div>
+                </Link>
 
-          {/* View All Blogs Link */}
-          <div className="text-center mt-8">
-            <Link
-              href="/important-blogs"
-              className="inline-flex items-center px-6 py-3 bg-little-caesars-orange text-white rounded-full font-bold hover:bg-orange-600 transition-colors shadow-lg hover:shadow-xl"
-            >
-              View All Blogs →
-            </Link>
-          </div>
-        </div >
+                {/* LC vs Pizza Hut Card - NEW */}
+                <Link
+                  href="/little-caesars-vs-pizza-hut"
+                  className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-red-600"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Cheese-Little-Caesars-Menu.webp"
+                      alt="Little Caesars vs Pizza Hut Comparison 2025"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute top-3 right-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                      🆚 VS PIZZA HUT
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-bold text-red-600 uppercase tracking-wide">Comparison</span>
+                    <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-red-600 transition-colors">
+                      Little Caesars vs Pizza Hut 2025 - Value Showdown
+                    </h3>
+                    <p className="text-gray-600 mt-2 text-sm">
+                      See why LC wins for value! 53% price difference compared to Pizza Hut's premium menu.
+                    </p>
+                    <div className="mt-4 text-red-600 font-semibold text-sm flex items-center">
+                      See Comparison →
+                    </div>
+                  </div>
+                </Link>
+
+                {/* Menu 2026 Card - NEW & FEATURED */}
+                <Link
+                  href="/little-caesars-menu-2026"
+                  className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-green-500"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Pepperoni-Little-Caesars-Menu.webp"
+                      alt="Little Caesars Menu 2026 - Complete Price List"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute top-3 right-3 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                      🔥 2026 MENU
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <span className="text-xs font-bold text-green-600 uppercase tracking-wide">Complete Menu</span>
+                    <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-green-600 transition-colors">
+                      Little Caesars Menu 2026 - Full Price Guide
+                    </h3>
+                    <p className="text-gray-600 mt-2 text-sm">
+                      Complete 2026 menu with all prices, new items, combos & money-saving tips!
+                    </p>
+                    <div className="mt-4 text-green-600 font-semibold text-sm flex items-center">
+                      View Full Menu →
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+              {/* View All Blogs Link */}
+              <div className="text-center mt-8">
+                <Link
+                  href="/important-blogs"
+                  className="inline-flex items-center px-6 py-3 bg-little-caesars-orange text-white rounded-full font-bold hover:bg-orange-600 transition-colors shadow-lg hover:shadow-xl"
+                >
+                  View All Blogs →
+                </Link>
+              </div>
+          </div >
       </section >
 
       {/* Real-Time Coupons Section (Gemini AI integration) */}

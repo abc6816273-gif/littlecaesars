@@ -408,6 +408,69 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'weekly',
         priority: 0.65,
       },
+      // 🌎 NEW STATE LOCATION PAGES - SEO EXPANSION
+      {
+        url: `${baseUrl}/little-caesars-california`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.88,
+      },
+      {
+        url: `${baseUrl}/little-caesars-texas`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.88,
+      },
+      {
+        url: `${baseUrl}/little-caesars-florida`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.88,
+      },
+      {
+        url: `${baseUrl}/little-caesars-new-york`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.88,
+      },
+      {
+        url: `${baseUrl}/little-caesars-delivery-near-me`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.90,
+      },
+      // 🍕 NEW MENU DETAIL PAGES - HIGH SEO VALUE
+      {
+        url: `${baseUrl}/little-caesars-pepperoni-pizza`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.92,
+      },
+      {
+        url: `${baseUrl}/little-caesars-crazy-bread`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.87,
+      },
+      {
+        url: `${baseUrl}/little-caesars-wings`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.87,
+      },
+      // 📅 NEW SEASONAL/TRENDING PAGES - TIMELY CONTENT
+      {
+        url: `${baseUrl}/little-caesars-february-2026-deals`,
+        lastModified: currentDate,
+        changeFrequency: 'daily',
+        priority: 0.95,
+      },
+      {
+        url: `${baseUrl}/little-caesars-super-bowl-2026`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.97,
+      },
     ]
 
     let dynamicPages: MetadataRoute.Sitemap = []
