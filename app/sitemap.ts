@@ -389,6 +389,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'monthly',
         priority: 0.75,
       },
+      // ✅ CONTENT DISCOVERY & NAVIGATION PAGES
+      {
+        url: `${baseUrl}/blog`,
+        lastModified: currentDate,
+        changeFrequency: 'daily',
+        priority: 0.8,
+      },
+      {
+        url: `${baseUrl}/categories`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.7,
+      },
+      {
+        url: `${baseUrl}/category`,
+        lastModified: currentDate,
+        changeFrequency: 'weekly',
+        priority: 0.65,
+      },
     ]
 
     let dynamicPages: MetadataRoute.Sitemap = []
