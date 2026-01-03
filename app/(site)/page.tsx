@@ -9,7 +9,6 @@ import { InternalLinks } from '@/components/seo'
 import { ModernHomepageMenuSection } from '@/components/seo/modern-homepage-sections'
 import { DetailedMenuSections } from '@/components/menu/DetailedMenuSections'
 import { generateUltimateSchema } from '../lib/seo/ultimate-schema'
-import { InternalLinks } from '@/components/seo/InternalLinks'
 
 // Enable ISR with 300-second (5 min) revalidation for better performance
 export const revalidate = 300
