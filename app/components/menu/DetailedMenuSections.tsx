@@ -23,7 +23,7 @@ const menuSections: MenuSection[] = [
     subtitle: "Fresh, hot pizzas ready when you walk in - no waiting!",
     icon: "🔥",
     imagePlaceholder: "Hot-N-Ready Pizza Image",
-    imageUrl: "/menu/IMG-20250920-WA0001.jpg",
+    imageUrl: "/menu/IMG-20260920-WA0001.jpg",
     items: [
       {
         name: "Hot-N-Ready Pepperoni",
@@ -47,7 +47,7 @@ const menuSections: MenuSection[] = [
     subtitle: "Classic round pizzas perfect for families and groups",
     icon: "🍕",
     imagePlaceholder: "Large Round Pizza Image",
-    imageUrl: "/menu/IMG-20250920-WA0002.jpg",
+    imageUrl: "/menu/IMG-20260920-WA0002.jpg",
     items: [
       {
         name: "ExtraMostBest Pepperoni",
@@ -71,7 +71,7 @@ const menuSections: MenuSection[] = [
     subtitle: "Thick, buttery crust with cheese baked to perfection",
     icon: "🍰",
     imagePlaceholder: "Deep Dish Pizza Image",
-    imageUrl: "/menu/IMG-20250920-WA0003.jpg",
+    imageUrl: "/menu/IMG-20260920-WA0003.jpg",
     items: [
       {
         name: "Deep Deep Dish Pepperoni",
@@ -90,7 +90,7 @@ const menuSections: MenuSection[] = [
     subtitle: "Famous Crazy Bread and delicious sides",
     icon: "🥖",
     imagePlaceholder: "Crazy Bread Image",
-    imageUrl: "/menu/IMG-20250920-WA0004.jpg",
+    imageUrl: "/menu/IMG-20260920-WA0004.jpg",
     items: [
       {
         name: "Crazy Bread 8-piece",
@@ -114,7 +114,7 @@ const menuSections: MenuSection[] = [
     subtitle: "Buffalo wings and crispy chicken in multiple flavors",
     icon: "🍗",
     imagePlaceholder: "Wings Image",
-    imageUrl: "/menu/IMG-20250920-WA0005.jpg",
+    imageUrl: "/menu/IMG-20260920-WA0005.jpg",
     items: [
       {
         name: "Buffalo Wings 8-piece",
@@ -133,7 +133,7 @@ const menuSections: MenuSection[] = [
     subtitle: "Refreshing drinks and sweet treats",
     icon: "🥤",
     imagePlaceholder: "Beverages Image",
-    imageUrl: "/menu/IMG-20250920-WA0006.jpg",
+    imageUrl: "/menu/IMG-20260920-WA0006.jpg",
     items: [
       {
         name: "Pepsi Products",

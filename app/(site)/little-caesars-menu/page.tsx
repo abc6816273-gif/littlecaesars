@@ -7,7 +7,7 @@ import MenuCard from './MenuCard'
 import FAQSection from './FAQSection'
 
 export const metadata: Metadata = {
-  title: 'Little Caesars Menu Prices & Calories Guide 2025 - Complete Pizza Menu',
+  title: 'Little Caesars Menu Prices & Calories Guide 2026 - Complete Pizza Menu',
   description: 'Discover Little Caesars complete menu with prices and calories. From Hot-N-Ready pizzas to Crazy Bread, explore every item with detailed nutritional information and current pricing.',
   keywords: [
     'Little Caesars menu',
@@ -21,10 +21,10 @@ export const metadata: Metadata = {
     'fast food menu'
   ],
   openGraph: {
-    title: 'Little Caesars Menu Prices & Calories Guide 2025',
+    title: 'Little Caesars Menu Prices & Calories Guide 2026',
     description: 'Complete guide to Little Caesars menu with prices and calories for every pizza, side, and drink.',
     type: 'article',
-    publishedTime: '2025-01-20',
+    publishedTime: '2026-01-20',
     authors: ['Little Caesars Menu Team'],
     images: [
       {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Little Caesars Menu Prices & Calories Guide 2025',
+    title: 'Little Caesars Menu Prices & Calories Guide 2026',
     description: 'Complete guide to Little Caesars menu with prices and calories.',
     images: ['/menu/hot-n-ready-pepperoni.webp']
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 const jsonLdArticle = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Little Caesars Menu Prices & Calories Guide 2025 - Complete Pizza Menu',
+  headline: 'Little Caesars Menu Prices & Calories Guide 2026 - Complete Pizza Menu',
   description: 'Discover Little Caesars complete menu with prices and calories. From Hot-N-Ready pizzas to Crazy Bread, explore every item with detailed nutritional information and current pricing.',
   image: 'https://littlecaesarsmenu.us/menu/hot-n-ready-pepperoni.webp',
   author: {
@@ -64,8 +64,8 @@ const jsonLdArticle = {
       url: 'https://littlecaesarsmenu.us/Little-Caesars-Menu-Logo.png'
     }
   },
-  datePublished: '2025-01-20',
-  dateModified: '2025-01-20',
+  datePublished: '2026-01-20',
+  dateModified: '2026-01-20',
   mainEntityOfPage: {
     '@type': 'WebPage',
     '@id': 'https://littlecaesarsmenu.us/little-caesars-menu'
@@ -146,7 +146,7 @@ export default function LittleCaesarsMenuGuide() {
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Little Caesars Menu Prices & Calories Guide 2025
+                Little Caesars Menu Prices & Calories Guide 2026
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto drop-shadow-lg">
                 Your complete guide to every pizza, side, and drink with detailed pricing and nutritional information
@@ -154,7 +154,7 @@ export default function LittleCaesarsMenuGuide() {
               <div className="flex flex-wrap justify-center gap-4 text-sm">
                 <div className="flex items-center bg-white/20 px-4 py-2 rounded-full">
                   <Clock className="w-4 h-4 mr-2" />
-                  Updated January 2025
+                  Updated January 2026
                 </div>
                 <div className="flex items-center bg-white/20 px-4 py-2 rounded-full">
                   <Users className="w-4 h-4 mr-2" />

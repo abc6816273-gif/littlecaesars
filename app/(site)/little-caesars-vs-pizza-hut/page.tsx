@@ -96,14 +96,14 @@ function generateSchema() {
         '@graph': [
             {
                 '@type': 'Article',
-                'headline': 'Little Caesars vs Pizza Hut 2025: Complete Price & Quality Comparison',
+                'headline': 'Little Caesars vs Pizza Hut 2026: Complete Price & Quality Comparison',
                 'description': 'Detailed comparison of Little Caesars and Pizza Hut - prices, menu, nutrition, delivery, taste. Find out which pizza chain offers better value.',
                 'author': {
                     '@type': 'Organization',
                     'name': 'LittleCaesarsMenu.us'
                 },
-                'datePublished': '2025-01-01',
-                'dateModified': '2025-12-28'
+                'datePublished': '2026-01-01',
+                'dateModified': '2026-12-28'
             },
             {
                 '@type': 'FAQPage',
@@ -156,7 +156,7 @@ export default function LittleCaesarsVsPizzaHutPage() {
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
                     <div className="text-center">
                         <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-                            <span style={{ color: '#ffffff' }} className="text-sm font-bold">🍕 2025 PIZZA SHOWDOWN</span>
+                            <span style={{ color: '#ffffff' }} className="text-sm font-bold">🍕 2026 PIZZA SHOWDOWN</span>
                         </div>
                         <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-6xl font-black mb-6">
                             Little Caesars vs Pizza Hut
@@ -438,7 +438,7 @@ export default function LittleCaesarsVsPizzaHutPage() {
                             <h3 style={{ color: '#111827' }} className="font-bold mt-2 group-hover:text-orange-600">Calorie Calculator</h3>
                             <p style={{ color: '#6b7280' }} className="text-sm mt-1">Count calories in your order</p>
                         </Link>
-                        <Link href="/little-caesars-coupons-january-2025" className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all group">
+                        <Link href="/little-caesars-coupons-january-2026" className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all group">
                             <span className="text-3xl">🎟️</span>
                             <h3 style={{ color: '#111827' }} className="font-bold mt-2 group-hover:text-orange-600">Latest Coupons</h3>
                             <p style={{ color: '#6b7280' }} className="text-sm mt-1">Save even more with deals</p>

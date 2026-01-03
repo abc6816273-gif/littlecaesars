@@ -264,15 +264,15 @@ const littleCaesarsMenuData = [
 
 // Generate comprehensive SEO metadata
 export async function generateMetadata(): Promise<Metadata> {
-  const title = "Little Caesars Menu Prices 2025 | Complete Menu with Photos & Latest Prices"
-  const description = "🍕 Official Little Caesars Menu Prices 2025! ✅ Hot-N-Ready Pizza $5.55 ✅ Crazy Bread $3.49 ✅ Deep Dish Pizza ✅ Wings ✅ Real Photos ✅ Updated Daily"
+  const title = "Little Caesars Menu Prices 2026 | Complete Menu with Photos & Latest Prices"
+  const description = "🍕 Official Little Caesars Menu Prices 2026! ✅ Hot-N-Ready Pizza $5.55 ✅ Crazy Bread $3.49 ✅ Deep Dish Pizza ✅ Wings ✅ Real Photos ✅ Updated Daily"
   
   return {
     title,
     description,
     keywords: [
       'Little Caesars menu',
-      'Little Caesars prices 2025', 
+      'Little Caesars prices 2026', 
       'Little Caesars pizza menu',
       'Hot-N-Ready pizza',
       'Crazy Bread',
@@ -289,7 +289,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: 'https://littlecaesarsmenu.us/littlecaesars-menu-prices-logo.png',
           width: 1200,
           height: 630,
-          alt: 'Little Caesars Menu Prices 2025'
+          alt: 'Little Caesars Menu Prices 2026'
         }
       ],
       locale: 'en_US',

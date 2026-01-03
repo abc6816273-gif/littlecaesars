@@ -104,7 +104,7 @@ function generateSchemas() {
         "@type": "Article",
         "headline": "Little Caesars Menu 2026 - Complete Menu with Prices & New Items",
         "author": { "@type": "Organization", "name": "Little Caesars Menu" },
-        "datePublished": "2025-12-28",
+        "datePublished": "2026-12-28",
         "dateModified": new Date().toISOString().split('T')[0],
         "description": "Complete Little Caesars Menu 2026 with all prices, new items, deals, and money-saving tips."
     }
@@ -487,7 +487,7 @@ export default function Menu2026Page() {
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600">Pizza Rankings</h3>
                                 <p className="text-sm text-gray-500 mt-2">Best to worst ranked</p>
                             </Link>
-                            <Link href="/little-caesars-coupons-january-2025" className="bg-gray-50 rounded-xl p-6 hover:bg-orange-50 transition-all border border-gray-100 group text-center">
+                            <Link href="/little-caesars-coupons-january-2026" className="bg-gray-50 rounded-xl p-6 hover:bg-orange-50 transition-all border border-gray-100 group text-center">
                                 <div className="text-4xl mb-3">🎟️</div>
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600">Coupons & Deals</h3>
                                 <p className="text-sm text-gray-500 mt-2">Save up to 50%</p>

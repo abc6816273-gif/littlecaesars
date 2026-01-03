@@ -49,7 +49,7 @@ export async function generateCoupons(): Promise<CouponGenerationResponse> {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = `
-    Generate 9 latest Little Caesars coupons for December 2025. 
+    Generate 9 latest Little Caesars coupons for December 2026. 
     
     Requirements:
     - Make them realistic and believable
@@ -65,11 +65,11 @@ export async function generateCoupons(): Promise<CouponGenerationResponse> {
         "title": "Short descriptive title",
         "description": "Detailed description of the offer",
         "discount": "25% OFF",
-        "expiryDate": "August 31, 2025",
+        "expiryDate": "August 31, 2026",
         "terms": "Valid on orders $25+. Cannot combine with other offers.",
         "type": "code",
-        "verified": "Verified August 2025",
-        "validUntil": "August 31, 2025"
+        "verified": "Verified August 2026",
+        "validUntil": "August 31, 2026"
       }
     ]
     
@@ -116,11 +116,11 @@ function getFallbackCoupons(): CouponGenerationResponse {
       title: "August Savings Special",
       description: "Get 25% off your entire order this August",
       discount: "25% OFF",
-      expiryDate: "August 31, 2025",
+      expiryDate: "August 31, 2026",
       terms: "Valid on orders $30+. Cannot combine with other offers.",
       type: "code",
-      verified: "Verified August 2025",
-      validUntil: "August 31, 2025"
+      verified: "Verified August 2026",
+      validUntil: "August 31, 2026"
     },
     {
       code: "VIPCLUB",
@@ -130,7 +130,7 @@ function getFallbackCoupons(): CouponGenerationResponse {
       expiryDate: "Ongoing",
       terms: "New VIP members only. Valid on first visit.",
       type: "deal",
-      verified: "Verified August 2025",
+      verified: "Verified August 2026",
       validUntil: "Ongoing"
     },
     {
@@ -141,7 +141,7 @@ function getFallbackCoupons(): CouponGenerationResponse {
       expiryDate: "Always Available",
       terms: "Valid ID required. Cannot combine with other offers.",
       type: "discount",
-      verified: "Verified August 2025",
+      verified: "Verified August 2026",
       validUntil: "Always Available"
     },
     {
@@ -149,33 +149,33 @@ function getFallbackCoupons(): CouponGenerationResponse {
       title: "Family Meal Bundle",
       description: "Save on family-sized portions and combos",
       discount: "30% OFF",
-      expiryDate: "August 31, 2025",
+      expiryDate: "August 31, 2026",
       terms: "Valid on family meal packages only.",
       type: "deal",
-      verified: "Verified August 2025",
-      validUntil: "August 31, 2025"
+      verified: "Verified August 2026",
+      validUntil: "August 31, 2026"
     },
     {
       code: "WELCOME10",
       title: "New Customer Welcome",
       description: "10% off for first-time customers",
       discount: "10% OFF",
-      expiryDate: "August 31, 2025",
+      expiryDate: "August 31, 2026",
       terms: "First-time customers only. Valid ID may be required.",
       type: "code",
-      verified: "Verified August 2025",
-      validUntil: "August 31, 2025"
+      verified: "Verified August 2026",
+      validUntil: "August 31, 2026"
     },
     {
       code: "RIBEYE50",
       title: "Ribeye Special Deal",
       description: "$5 off any ribeye steak dinner",
       discount: "$5 OFF",
-      expiryDate: "September 30, 2025",
+      expiryDate: "September 30, 2026",
       terms: "Valid on ribeye steaks only. Dine-in orders.",
       type: "deal",
-      verified: "Verified August 2025",
-      validUntil: "September 30, 2025"
+      verified: "Verified August 2026",
+      validUntil: "September 30, 2026"
     },
     {
       code: "BIRTHDAY",
@@ -185,7 +185,7 @@ function getFallbackCoupons(): CouponGenerationResponse {
       expiryDate: "Ongoing",
       terms: "Valid ID required showing birthday month.",
       type: "discount",
-      verified: "Verified August 2025",
+      verified: "Verified August 2026",
       validUntil: "Ongoing"
     },
     {
@@ -193,11 +193,11 @@ function getFallbackCoupons(): CouponGenerationResponse {
       title: "Early Bird Dinner",
       description: "20% off dinner orders before 6 PM",
       discount: "20% OFF",
-      expiryDate: "December 31, 2025",
+      expiryDate: "December 31, 2026",
       terms: "Valid before 6 PM only. Dine-in orders.",
       type: "deal",
-      verified: "Verified August 2025",
-      validUntil: "December 31, 2025"
+      verified: "Verified August 2026",
+      validUntil: "December 31, 2026"
     },
     {
       code: "LOYALTY15",
@@ -207,7 +207,7 @@ function getFallbackCoupons(): CouponGenerationResponse {
       expiryDate: "Ongoing",
       terms: "Valid loyalty membership required.",
       type: "code",
-      verified: "Verified August 2025",
+      verified: "Verified August 2026",
       validUntil: "Ongoing"
     }
   ];

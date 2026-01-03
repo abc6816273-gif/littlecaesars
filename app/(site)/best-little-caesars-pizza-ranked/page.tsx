@@ -15,7 +15,7 @@ import {
 
 // SEO Metadata
 export const metadata: Metadata = {
-    title: 'Best Pizza at Little Caesars 2025 - All Pizzas Ranked #1 to #15',
+    title: 'Best Pizza at Little Caesars 2026 - All Pizzas Ranked #1 to #15',
     description: 'Which Little Caesars pizza is the best? We ranked ALL 15 pizzas from best to worst! ExtraMostBestest, Detroit Deep Dish, Stuffed Crust & more compared.',
     keywords: [
         'best Little Caesars pizza',
@@ -207,9 +207,9 @@ function generateSchemas() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Best Pizza at Little Caesars 2025 - Complete Ranking",
+        "headline": "Best Pizza at Little Caesars 2026 - Complete Ranking",
         "author": { "@type": "Organization", "name": "Little Caesars Menu" },
-        "datePublished": "2025-01-01",
+        "datePublished": "2026-01-01",
         "dateModified": new Date().toISOString().split('T')[0]
     }
 
@@ -277,7 +277,7 @@ export default function PizzaRankingPage() {
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <div className="inline-flex items-center bg-yellow-400 text-orange-900 px-4 py-2 rounded-full text-sm font-bold mb-6">
                             <Trophy className="w-4 h-4 mr-2" />
-                            🏆 DEFINITIVE RANKING 2025
+                            🏆 DEFINITIVE RANKING 2026
                         </div>
 
                         <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
@@ -460,13 +460,13 @@ export default function PizzaRankingPage() {
                         <div className="grid md:grid-cols-3 gap-6">
                             <Link href="/menu" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600">Full Menu & Prices</h3>
-                                <p className="text-sm text-gray-600 mt-2">Complete 2025 menu</p>
+                                <p className="text-sm text-gray-600 mt-2">Complete 2026 menu</p>
                             </Link>
                             <Link href="/little-caesars-secret-menu" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600">Secret Menu</h3>
                                 <p className="text-sm text-gray-600 mt-2">Hidden items & hacks</p>
                             </Link>
-                            <Link href="/little-caesars-coupons-january-2025" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
+                            <Link href="/little-caesars-coupons-january-2026" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600">Coupons & Deals</h3>
                                 <p className="text-sm text-gray-600 mt-2">Save up to 50%</p>
                             </Link>

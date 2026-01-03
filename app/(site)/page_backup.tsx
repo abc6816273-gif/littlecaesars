@@ -14,32 +14,32 @@ export const revalidate = 300
 // Generate metadata with SEO-friendly pagination links
 export function generateMetadata(): Metadata {
   // Static metadata for ultra-fast loading
-  const title = `Texas Roadhouse Menu with Prices 2025 | Updated ${getFormattedDate()}`
+  const title = `Texas Roadhouse Menu with Prices 2026 | Updated ${getFormattedDate()}`
   const description = `Complete Texas Roadhouse menu guide with current prices, calories & nutrition info. Updated ${getFormattedDate()}. Find steaks, ribs, family meals, deals & coupons.`
   
   // Fast static metadata - no API dependencies
     return {
-      title: `Texas Roadhouse Menu with Prices 2025 | Updated ${getFormattedDate()} - Texas Roadhouse Menu`,
+      title: `Texas Roadhouse Menu with Prices 2026 | Updated ${getFormattedDate()} - Texas Roadhouse Menu`,
       description: `Complete Texas Roadhouse menu guide with current prices, calories & nutrition info. Updated ${getFormattedDate()}. Find steaks, ribs, family meals, deals & coupons.`,
       keywords: [
-        'Texas Roadhouse menu 2025',
+        'Texas Roadhouse menu 2026',
         `Texas Roadhouse prices ${getFormattedDate()}`, 
         'Texas Roadhouse calories nutrition',
         'Texas Roadhouse family meals deals',
-        'Texas Roadhouse coupons 2025',
+        'Texas Roadhouse coupons 2026',
         'Texas Roadhouse USA menu updated'
       ].join(', '),
       openGraph: {
-        title: `Texas Roadhouse Menu with Prices 2025 | Complete Guide - Updated ${getFormattedDate()}`,
+        title: `Texas Roadhouse Menu with Prices 2026 | Complete Guide - Updated ${getFormattedDate()}`,
         description: `Latest Texas Roadhouse menu with prices, calories & nutrition. Updated ${getFormattedDate()}. Find steaks, ribs, family meals & exclusive deals.`,
         url: 'https://texasroadhouse-menus.us',
         siteName: 'Texas Roadhouse Menu',
         images: [
           {
-            url: 'https://texasroadhouse-menus.us/images/texas-roadhouse-menu-2025.jpg',
+            url: 'https://texasroadhouse-menus.us/images/texas-roadhouse-menu-2026.jpg',
             width: 1200,
             height: 630,
-            alt: `Texas Roadhouse Menu with Prices 2025 - Complete Guide - Updated ${getFormattedDate()}`
+            alt: `Texas Roadhouse Menu with Prices 2026 - Complete Guide - Updated ${getFormattedDate()}`
           }
         ],
         locale: 'en_US',
@@ -47,9 +47,9 @@ export function generateMetadata(): Metadata {
       },
       twitter: {
         card: 'summary_large_image',
-        title: `Texas Roadhouse Menu with Prices 2025 | Updated ${getFormattedDate()}`,
+        title: `Texas Roadhouse Menu with Prices 2026 | Updated ${getFormattedDate()}`,
         description: `Complete Texas Roadhouse menu with current prices, calories & nutrition. Updated ${getFormattedDate()}. Find steaks, ribs, family meals & deals.`,
-        images: ['https://texasroadhouse-menus.us/images/texas-roadhouse-menu-2025.jpg'],
+        images: ['https://texasroadhouse-menus.us/images/texas-roadhouse-menu-2026.jpg'],
       },
       alternates: {
         canonical: 'https://texasroadhouse-menus.us',
@@ -66,8 +66,8 @@ export function generateMetadata(): Metadata {
         },
       },
       other: {
-        'article:published_time': '2025-08-22T00:00:00Z',
-        'article:modified_time': '2025-08-22T12:00:00Z',
+        'article:published_time': '2026-08-22T00:00:00Z',
+        'article:modified_time': '2026-08-22T12:00:00Z',
       }
     }
 }
@@ -133,12 +133,12 @@ function FeaturedContent() {
 
     return (
       <>
-        {/* Official Texas Roadhouse Menu 2025 - FIRST AFTER HERO */}
+        {/* Official Texas Roadhouse Menu 2026 - FIRST AFTER HERO */}
         <section className="py-16 bg-gradient-to-br from-stone-50 via-white to-stone-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="font-slab text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 mb-6">
-                Official Texas Roadhouse Menu 2025 - Complete Menu with Prices
+                Official Texas Roadhouse Menu 2026 - Complete Menu with Prices
               </h2>
               <p className="text-xl text-stone-600 max-w-4xl mx-auto leading-relaxed">
                 Browse the complete Texas Roadhouse menu with actual photos, current pricing, and detailed nutritional information. Each menu section includes real images showing all available items, prices, and descriptions - exactly as you'll see in the restaurant.
@@ -161,7 +161,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_2_Texas-Roadhouse-Starter-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Appetizers and Starters Menu 2025 - Complete menu with prices including Cactus Blossom $7.99, Fried Pickles $6.99, Awesome Blossom Petals, Cheese Fries, and more appetizers with detailed pricing"
+                    alt="Texas Roadhouse Appetizers and Starters Menu 2026 - Complete menu with prices including Cactus Blossom $7.99, Fried Pickles $6.99, Awesome Blossom Petals, Cheese Fries, and more appetizers with detailed pricing"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -187,7 +187,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_4_Texas-Roadhouse-Hand-Cut-Steaks-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Hand-Cut Steaks Menu 2025 - Premium steaks with prices including Ribeye $23.99, Dallas Filet $26.99, New York Strip $21.99, Porterhouse $28.99, and all steak cuts with detailed pricing and descriptions"
+                    alt="Texas Roadhouse Hand-Cut Steaks Menu 2026 - Premium steaks with prices including Ribeye $23.99, Dallas Filet $26.99, New York Strip $21.99, Porterhouse $28.99, and all steak cuts with detailed pricing and descriptions"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -213,7 +213,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_7_Texas-Roadhouse-Chicken-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Chicken Menu 2025 - Chicken specialties with prices including Country Fried Chicken $14.99, Grilled Chicken $13.99, Chicken Tenders $12.99, and other chicken options with complete pricing details"
+                    alt="Texas Roadhouse Chicken Menu 2026 - Chicken specialties with prices including Country Fried Chicken $14.99, Grilled Chicken $13.99, Chicken Tenders $12.99, and other chicken options with complete pricing details"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -239,7 +239,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_5_Texas-Roadhouse-Dockside-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Dockside Seafood Menu 2025 - Fresh seafood with prices including Grilled Salmon $18.99, Catfish $15.99, Shrimp options, and other coastal favorites with detailed pricing and descriptions"
+                    alt="Texas Roadhouse Dockside Seafood Menu 2026 - Fresh seafood with prices including Grilled Salmon $18.99, Catfish $15.99, Shrimp options, and other coastal favorites with detailed pricing and descriptions"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -265,7 +265,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_3_Texas-Roadhouse-Salads-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Fresh Salads Menu 2025 - Healthy salad options with prices including Caesar Salad $8.99, House Salad $7.99, Steakhouse Salad $12.99, with protein additions and nutritional information"
+                    alt="Texas Roadhouse Fresh Salads Menu 2026 - Healthy salad options with prices including Caesar Salad $8.99, House Salad $7.99, Steakhouse Salad $12.99, with protein additions and nutritional information"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -291,7 +291,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_8_Texas-Roadhouse-Desserts-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Desserts Menu 2025 - Sweet treats with prices including Big Ol' Brownie $6.99, Granny's Apple Classic $5.99, Ice Cream $4.99, and other homestyle desserts with detailed descriptions"
+                    alt="Texas Roadhouse Desserts Menu 2026 - Sweet treats with prices including Big Ol' Brownie $6.99, Granny's Apple Classic $5.99, Ice Cream $4.99, and other homestyle desserts with detailed descriptions"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -328,7 +328,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_10_Texas-Roadhouse-Margaritas-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Legendary Margaritas Menu 2025 - Complete margarita selection with prices including House Margarita $7.99, Strawberry Margarita $8.99, Top Shelf varieties, and all margarita options with detailed pricing"
+                    alt="Texas Roadhouse Legendary Margaritas Menu 2026 - Complete margarita selection with prices including House Margarita $7.99, Strawberry Margarita $8.99, Top Shelf varieties, and all margarita options with detailed pricing"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -354,7 +354,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_32_Texas-Roadhouse-Cocktails-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Signature Cocktails Menu 2025 - Premium cocktails with prices including Long Island Tea $9.99, Whiskey selections, mixed drinks, and all cocktail options with complete pricing details"
+                    alt="Texas Roadhouse Signature Cocktails Menu 2026 - Premium cocktails with prices including Long Island Tea $9.99, Whiskey selections, mixed drinks, and all cocktail options with complete pricing details"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -380,7 +380,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_9_Texas-Roadhouse-Drinks-Menu-Prices.webp" 
-                    alt="Texas Roadhouse Non-Alcoholic Drinks Menu 2025 - Refreshing beverages with prices including sodas, tea, coffee, lemonade, and specialty drinks with current pricing and options"
+                    alt="Texas Roadhouse Non-Alcoholic Drinks Menu 2026 - Refreshing beverages with prices including sodas, tea, coffee, lemonade, and specialty drinks with current pricing and options"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -406,7 +406,7 @@ function FeaturedContent() {
                 <div className="relative px-4 sm:px-0">
                   <img 
                     src="/Homepage-Menus-Images/imgi_23_Texas-Roadhouse-Combo-Meals-Menu-Prices-200x300.webp" 
-                    alt="Texas Roadhouse Texas Size Combo Meals Menu 2025 - Value combo meals with prices including steak combos, chicken combos, and family meal options with detailed pricing and descriptions"
+                    alt="Texas Roadhouse Texas Size Combo Meals Menu 2026 - Value combo meals with prices including steak combos, chicken combos, and family meal options with detailed pricing and descriptions"
                     className="w-full h-auto object-contain rounded-lg sm:rounded-none"
                   />
                 </div>
@@ -654,7 +654,7 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <Hero
-        title="🥩 Texas Roadhouse Menu & Prices 2025"
+        title="🥩 Texas Roadhouse Menu & Prices 2026"
         subtitle={`Your complete guide to 95+ menu items • Detailed nutrition info, calories & current prices • Updated ${getFormattedDate()}`}
         primaryCta={{
           text: "🍽️ Browse Complete Menu",

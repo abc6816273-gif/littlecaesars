@@ -6,20 +6,20 @@ import { Clock, ArrowRight, TrendingUp, Star, Flame, Tag, Calendar, Eye } from '
 const blogPosts = [
   {
     id: 1,
-    title: "Little Caesars Coupons January 2025 - 50% OFF Promo Codes",
-    slug: "/little-caesars-coupons-january-2025",
-    excerpt: "Get 15 verified Little Caesars coupons for January 2025. Exclusive promo codes with 50% off, FREE Crazy Bread, $5.99 pizzas, and BOGO deals. Updated daily!",
+    title: "Little Caesars Coupons January 2026 - 50% OFF Promo Codes",
+    slug: "/little-caesars-coupons-january-2026",
+    excerpt: "Get 15 verified Little Caesars coupons for January 2026. Exclusive promo codes with 50% off, FREE Crazy Bread, $5.99 pizzas, and BOGO deals. Updated daily!",
     image: "/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp",
     category: "Coupons",
     readTime: "5 min",
-    date: "January 2025",
+    date: "January 2026",
     featured: true,
     hot: true,
     views: "85K+"
   },
   {
     id: 2,
-    title: "Little Caesars Crazy Puffs - Complete Guide & Review 2025",
+    title: "Little Caesars Crazy Puffs - Complete Guide & Review 2026",
     slug: "/crazy-puffs",
     excerpt: "Everything about Little Caesars Crazy Puffs! 4-Cheese filling, prices ($4.99), calories (720), preparation tips, and honest reviews. New menu item guide!",
     image: "/menu/Homepage-menus/4-Cheese-Crazy-Puffs-Little-Caesars-Menu.webp",
@@ -32,20 +32,20 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "Little Caesars New Items 2025 - Complete Menu Updates",
-    slug: "/little-caesars-new-items-2025",
-    excerpt: "Discover all new Little Caesars menu items for 2025! Crazy Puffs, new pizza flavors, limited-time offers, and upcoming releases. Full guide with prices.",
+    title: "Little Caesars New Items 2026 - Complete Menu Updates",
+    slug: "/little-caesars-new-items-2026",
+    excerpt: "Discover all new Little Caesars menu items for 2026! Crazy Puffs, new pizza flavors, limited-time offers, and upcoming releases. Full guide with prices.",
     image: "/menu/Homepage-menus/Detroit-Style-Deep-Dish-Pepperoni-Little-Caesars-Menu.webp",
     category: "Menu Updates",
     readTime: "8 min",
-    date: "January 2025",
+    date: "January 2026",
     featured: true,
     hot: false,
     views: "32K+"
   },
   {
     id: 4,
-    title: "Little Caesars Nutrition & Calories Guide 2025",
+    title: "Little Caesars Nutrition & Calories Guide 2026",
     slug: "/little-caesars-nutrition-calories",
     excerpt: "Complete nutrition information for Little Caesars menu. Calories, carbs, protein, fat content for every pizza, crazy bread, wings, and more. Diet-friendly options!",
     image: "/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp",
@@ -58,9 +58,9 @@ const blogPosts = [
   },
   {
     id: 5,
-    title: "Happy Christmas 2025 - Little Caesars Holiday Deals",
-    slug: "/happy-christmas-2025",
-    excerpt: "Celebrate Christmas 2025 with Little Caesars! Special holiday deals, party packs, family meal bundles, and festive offers for the holiday season.",
+    title: "Happy Christmas 2026 - Little Caesars Holiday Deals",
+    slug: "/happy-christmas-2026",
+    excerpt: "Celebrate Christmas 2026 with Little Caesars! Special holiday deals, party packs, family meal bundles, and festive offers for the holiday season.",
     image: "/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp",
     category: "Holiday Deals",
     readTime: "6 min",
@@ -71,9 +71,9 @@ const blogPosts = [
   },
   {
     id: 6,
-    title: "Little Caesars Christmas Hours 2025 - Holiday Schedule",
+    title: "Little Caesars Christmas Hours 2026 - Holiday Schedule",
     slug: "/little-caesars-christmas-hours",
-    excerpt: "Check Little Caesars Christmas hours for 2024-2025. Are they open on Christmas Eve? Christmas Day hours, New Year's schedule, and holiday closures guide.",
+    excerpt: "Check Little Caesars Christmas hours for 2024-2026. Are they open on Christmas Eve? Christmas Day hours, New Year's schedule, and holiday closures guide.",
     image: "/menu/Homepage-menus/Hula-Hawaiian-Pizza-Little-Caesars-Menu.webp",
     category: "Store Hours",
     readTime: "4 min",
@@ -84,7 +84,7 @@ const blogPosts = [
   },
   {
     id: 7,
-    title: "Little Caesars vs Domino's - Complete Comparison 2025",
+    title: "Little Caesars vs Domino's - Complete Comparison 2026",
     slug: "/little-caesars-vs-dominos",
     excerpt: "Little Caesars vs Domino's pizza comparison. Which is better? Price comparison, taste test, menu variety, delivery options, and value for money analysis.",
     image: "/menu/Homepage-menus/Stuffed-Crust-Pepperoni-Little-Caesars-Menu.webp",
@@ -103,7 +103,7 @@ const blogPosts = [
     image: "/menu/Homepage-menus/Classic-Cheese-Pizza-Little-Caesars-Menu.webp",
     category: "Menu Guide",
     readTime: "12 min",
-    date: "January 2025",
+    date: "January 2026",
     featured: false,
     hot: false,
     views: "120K+"
@@ -116,7 +116,7 @@ const blogPosts = [
     image: "/menu/Homepage-menus/Veggie-Pizza-Little-Caesars-Menu.webp",
     category: "Gift Cards",
     readTime: "5 min",
-    date: "January 2025",
+    date: "January 2026",
     featured: false,
     hot: false,
     views: "15K+"
@@ -133,22 +133,22 @@ const categories = [
 
 // SEO Metadata - Optimized for Blog & News ranking
 export const metadata: Metadata = {
-  title: 'Little Caesars Blog & News 2025 - Coupons, Deals, Menu Updates',
-  description: 'Little Caesars blog with latest coupons, menu updates, nutrition guides, and deals for 2025. Get 50% off promo codes, new menu items, and pizza tips. Updated daily!',
+  title: 'Little Caesars Blog & News 2026 - Coupons, Deals, Menu Updates',
+  description: 'Little Caesars blog with latest coupons, menu updates, nutrition guides, and deals for 2026. Get 50% off promo codes, new menu items, and pizza tips. Updated daily!',
   keywords: [
     'Little Caesars blog',
-    'Little Caesars news 2025',
+    'Little Caesars news 2026',
     'Little Caesars coupons blog',
     'Little Caesars menu updates',
     'pizza deals blog',
     'Little Caesars tips',
     'pizza news',
     'Little Caesars articles',
-    'pizza coupons 2025',
+    'pizza coupons 2026',
     'Little Caesars guide'
   ],
   openGraph: {
-    title: 'Little Caesars Blog & News 2025 - Latest Coupons & Deals',
+    title: 'Little Caesars Blog & News 2026 - Latest Coupons & Deals',
     description: 'Stay updated with Little Caesars coupons, menu updates, nutrition guides, and exclusive deals. Your ultimate pizza resource!',
     url: 'https://littlecaesarsmenu.us/posts',
     type: 'website',
@@ -161,7 +161,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Little Caesars Blog & News 2025',
+    title: 'Little Caesars Blog & News 2026',
     description: 'Latest Little Caesars coupons, menu updates, and deals. Updated daily!',
   },
   alternates: {

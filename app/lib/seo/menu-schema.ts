@@ -47,8 +47,8 @@ export function generateMenuSchema(menuItems: Array<{
     "@context": "https://schema.org",
     "@type": "Menu",
     "@id": `${siteUrl}/menus#menu`,
-    "name": "Little Caesars Menu Prices 2025",
-    "description": "Complete Little Caesars menu with updated prices for 2025. Featuring Hot-N-Ready pizzas, deep dish pizza, wings, Crazy Bread, and more.",
+    "name": "Little Caesars Menu Prices 2026",
+    "description": "Complete Little Caesars menu with updated prices for 2026. Featuring Hot-N-Ready pizzas, deep dish pizza, wings, Crazy Bread, and more.",
     "hasMenuSection": [
       {
         "@type": "MenuSection",
@@ -156,10 +156,10 @@ export function generateFAQSchema() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What are the current Little Caesars menu prices for 2025?",
+        "name": "What are the current Little Caesars menu prices for 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Little Caesars menu prices for 2025 range from $0.59 for sauces to $10.99 for specialty pizzas. Hot-N-Ready pizzas start at $5.55, wings are $8.49, and Crazy Bread is $3.49. Prices may vary by location."
+          "text": "Little Caesars menu prices for 2026 range from $0.59 for sauces to $10.99 for specialty pizzas. Hot-N-Ready pizzas start at $5.55, wings are $8.49, and Crazy Bread is $3.49. Prices may vary by location."
         }
       },
       {

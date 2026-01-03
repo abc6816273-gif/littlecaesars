@@ -60,16 +60,16 @@ export default function CouponsPageClient() {
               title: "August Savings Special",
               description: "Get 25% off your entire order this August",
               discount: "25% OFF",
-              expiryDate: "August 31, 2025",
+              expiryDate: "August 31, 2026",
               terms: "Valid on orders $30+. Cannot be combined with other offers.",
-              verified: "Verified August 2025"
+              verified: "Verified August 2026"
             },
             {
               code: "GEMINI25", 
               title: "AI Generated Deal",
               description: "25% off powered by Gemini AI",
               discount: "25% OFF",
-              expiryDate: "September 30, 2025",
+              expiryDate: "September 30, 2026",
               terms: "AI-generated coupon. Valid on all menu items.",
               verified: "Verified by Gemini AI"
             },
@@ -80,7 +80,7 @@ export default function CouponsPageClient() {
               discount: "20% OFF",
               expiryDate: "Always Available",
               terms: "Valid military ID required. Cannot combine with other offers.",
-              verified: "Verified August 2025"
+              verified: "Verified August 2026"
             }
           ],
           metadata: {

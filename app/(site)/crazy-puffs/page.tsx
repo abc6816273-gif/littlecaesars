@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 // Ultimate SEO metadata for Crazy Puffs - targeting all high-traffic keywords
 export const metadata: Metadata = {
-    title: 'Crazy Puffs Little Caesars 2025 | Complete Guide, Flavors, Price, Calories & Review',
-    description: 'Ultimate Little Caesars Crazy Puffs guide! Discover all 5 flavors, prices ($3.99), calories (90 per puff), nutrition facts, secret menu hacks, and honest reviews. Find out if Crazy Puffs are worth it in 2025.',
+    title: 'Crazy Puffs Little Caesars 2026 | Complete Guide, Flavors, Price, Calories & Review',
+    description: 'Ultimate Little Caesars Crazy Puffs guide! Discover all 5 flavors, prices ($3.99), calories (90 per puff), nutrition facts, secret menu hacks, and honest reviews. Find out if Crazy Puffs are worth it in 2026.',
     keywords: [
         'crazy puffs',
         'little caesars crazy puffs',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
         'crazy puffs near me'
     ].join(', '),
     openGraph: {
-        title: 'Crazy Puffs Little Caesars 2025 | Complete Guide & Review',
-        description: 'Everything about Little Caesars Crazy Puffs - all flavors, prices, calories, and honest reviews. The ultimate 2025 guide!',
+        title: 'Crazy Puffs Little Caesars 2026 | Complete Guide & Review',
+        description: 'Everything about Little Caesars Crazy Puffs - all flavors, prices, calories, and honest reviews. The ultimate 2026 guide!',
         type: 'article',
         url: 'https://littlecaesarsmenu.us/crazy-puffs',
         images: [
@@ -37,17 +37,17 @@ export const metadata: Metadata = {
                 url: 'https://littlecaesarsmenu.us/images/crazy-puffs-guide.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Little Caesars Crazy Puffs Complete Guide 2025'
+                alt: 'Little Caesars Crazy Puffs Complete Guide 2026'
             }
         ],
-        publishedTime: '2025-12-26T00:00:00Z',
+        publishedTime: '2026-12-26T00:00:00Z',
         modifiedTime: new Date().toISOString(),
         authors: ['Little Caesars Menu'],
         section: 'Food Guide'
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Crazy Puffs Little Caesars 2025 | Complete Guide',
+        title: 'Crazy Puffs Little Caesars 2026 | Complete Guide',
         description: 'All flavors, prices, calories & honest review of Little Caesars Crazy Puffs'
     },
     alternates: {
@@ -154,7 +154,7 @@ const faqs = [
     },
     {
         question: 'What flavors of Crazy Puffs are available?',
-        answer: 'Little Caesars offers 5 Crazy Puffs varieties: Original Pepperoni (classic), 4 Cheese (vegetarian-friendly), Bacon Cheese (new 2025), Stuffed (extra cheese), and Cheesesteak (NFL season special). Flavors vary by location.'
+        answer: 'Little Caesars offers 5 Crazy Puffs varieties: Original Pepperoni (classic), 4 Cheese (vegetarian-friendly), Bacon Cheese (new 2026), Stuffed (extra cheese), and Cheesesteak (NFL season special). Flavors vary by location.'
     },
     {
         question: 'Are Crazy Puffs Hot-N-Ready?',
@@ -195,7 +195,7 @@ export default function CrazyPuffsGuidePage() {
                             {
                                 "@type": "Article",
                                 "@id": "https://littlecaesarsmenu.us/crazy-puffs#article",
-                                "headline": "Crazy Puffs Little Caesars 2025: Complete Guide, Flavors, Price & Calories",
+                                "headline": "Crazy Puffs Little Caesars 2026: Complete Guide, Flavors, Price & Calories",
                                 "description": "Ultimate guide to Little Caesars Crazy Puffs with all flavors, prices, calories, nutrition facts and honest reviews.",
                                 "image": "https://littlecaesarsmenu.us/images/crazy-puffs-guide.jpg",
                                 "author": {
@@ -295,16 +295,16 @@ export default function CrazyPuffsGuidePage() {
                 <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
                         <span className="animate-pulse">🔥</span>
-                        <span className="text-white font-medium">NEW 2025 Flavors Available!</span>
+                        <span className="text-white font-medium">NEW 2026 Flavors Available!</span>
                     </div>
 
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                         Little Caesars Crazy Puffs:<br />
-                        <span className="text-yellow-300">The Complete 2025 Guide</span>
+                        <span className="text-yellow-300">The Complete 2026 Guide</span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
-                        Everything you need to know about Crazy Puffs - all 5 flavors, prices, calories, nutrition facts, and honest reviews. Updated for 2025!
+                        Everything you need to know about Crazy Puffs - all 5 flavors, prices, calories, nutrition facts, and honest reviews. Updated for 2026!
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -400,7 +400,7 @@ export default function CrazyPuffsGuidePage() {
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <span className="text-orange-500 mt-1">✓</span>
-                                        <span><strong>5 flavor varieties</strong> including new 2025 options</span>
+                                        <span><strong>5 flavor varieties</strong> including new 2026 options</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <span className="text-orange-500 mt-1">✓</span>
@@ -425,7 +425,7 @@ export default function CrazyPuffsGuidePage() {
                                     </div>
                                     <div className="flex items-center gap-3 bg-white p-3 rounded-xl shadow-sm">
                                         <span className="text-2xl">🏆</span>
-                                        <span className="text-gray-700">Featured in <strong>Super Bowl 2025 ad</strong></span>
+                                        <span className="text-gray-700">Featured in <strong>Super Bowl 2026 ad</strong></span>
                                     </div>
                                     <div className="flex items-center gap-3 bg-white p-3 rounded-xl shadow-sm">
                                         <span className="text-2xl">💯</span>
@@ -443,7 +443,7 @@ export default function CrazyPuffsGuidePage() {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            All 5 Crazy Puffs Flavors (2025 Menu)
+                            All 5 Crazy Puffs Flavors (2026 Menu)
                         </h2>
                         <p className="text-xl text-gray-600">
                             Complete breakdown of every Crazy Puffs variety with prices and calories
@@ -461,7 +461,7 @@ export default function CrazyPuffsGuidePage() {
                                     <div className="flex gap-2 p-3 bg-gradient-to-r from-orange-500 to-red-500">
                                         {puff.isNew && (
                                             <span className="bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full">
-                                                NEW 2025
+                                                NEW 2026
                                             </span>
                                         )}
                                         {puff.isPopular && (
@@ -519,7 +519,7 @@ export default function CrazyPuffsGuidePage() {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Crazy Puffs Prices 2025
+                            Crazy Puffs Prices 2026
                         </h2>
                         <p className="text-xl text-gray-600">
                             Complete pricing guide including combos and deals
@@ -826,7 +826,7 @@ export default function CrazyPuffsGuidePage() {
                     </div>
 
                     <p className="text-white/70 mt-8 text-sm">
-                        Last updated: December 2025 | Prices and availability may vary by location
+                        Last updated: December 2026 | Prices and availability may vary by location
                     </p>
                 </div>
             </section>

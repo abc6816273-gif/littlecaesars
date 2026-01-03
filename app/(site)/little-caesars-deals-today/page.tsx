@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Tag, Clock, TrendingDown } from 'lucide-react'
 
 export const metadata: Metadata = {
-    title: 'Little Caesars Deals Today - Current Offers & Promotions 2025',
+    title: 'Little Caesars Deals Today - Current Offers & Promotions 2026',
     description: 'Get today's hottest Little Caesars deals! $5 Hot- N - Ready pizzas, ExtraMostBestest combos, family deals, and exclusive app offers.Updated daily.',
 keywords: 'little caesars deals today, hot n ready deals, pizza deals, little caesars specials, daily offers',
     openGraph: {

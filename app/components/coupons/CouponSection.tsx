@@ -211,7 +211,7 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
       verified: "Fallback Only",
       type: "code",
 
-      validUntil: "December 31, 2025"
+      validUntil: "December 31, 2026"
     },
     {
       code: "NEWCUSTOMER",
@@ -523,7 +523,7 @@ export default function CouponSection({ dynamicCoupons, lastUpdated }: CouponSec
             </div>
             <h2 className="font-slab font-slab-extra text-4xl sm:text-5xl lg:text-6xl text-little-caesars-black mb-6 leading-tight">
               Little Caesars Coupons &
-              <span className="block text-little-caesars-orange">Discount Codes 2025</span>
+              <span className="block text-little-caesars-orange">Discount Codes 2026</span>
             </h2>
             <p className="text-xl sm:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
               Verified coupon codes and smart savings strategies for Hot-N-Ready® pizza deals.

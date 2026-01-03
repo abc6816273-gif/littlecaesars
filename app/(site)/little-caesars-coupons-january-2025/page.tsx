@@ -19,42 +19,42 @@ import {
     Sparkles
 } from 'lucide-react'
 
-// SEO Metadata - Optimized for "Little Caesars Coupons January 2025"
+// SEO Metadata - Optimized for "Little Caesars Coupons January 2026"
 export const metadata: Metadata = {
-    title: 'Little Caesars Coupons January 2025 - 50% Off Codes & Promo Deals',
-    description: 'Get 15 verified Little Caesars coupons for January 2025. Exclusive promo codes: 50% off, FREE Crazy Bread, $5.99 pizzas, BOGO deals. Updated daily - save up to $20!',
+    title: 'Little Caesars Coupons January 2026 - 50% Off Codes & Promo Deals',
+    description: 'Get 15 verified Little Caesars coupons for January 2026. Exclusive promo codes: 50% off, FREE Crazy Bread, $5.99 pizzas, BOGO deals. Updated daily - save up to $20!',
     keywords: [
-        'Little Caesars coupons January 2025',
-        'Little Caesars promo codes 2025',
+        'Little Caesars coupons January 2026',
+        'Little Caesars promo codes 2026',
         'Little Caesars coupon codes January',
-        'Little Caesars deals January 2025',
+        'Little Caesars deals January 2026',
         'Little Caesars discount codes',
-        'Little Caesars offers 2025',
-        'pizza coupons January 2025',
+        'Little Caesars offers 2026',
+        'pizza coupons January 2026',
         'Little Caesars specials',
         'Hot-N-Ready coupons',
         'Crazy Bread deals',
         'Little Caesars pizza deals'
     ],
     openGraph: {
-        title: 'Little Caesars Coupons January 2025 - 50% Off + FREE Crazy Bread',
-        description: 'Save big with 15 verified Little Caesars coupon codes for January 2025. Get 50% off, BOGO deals, FREE Crazy Bread & more. Updated daily!',
-        url: 'https://littlecaesarsmenu.us/little-caesars-coupons-january-2025',
+        title: 'Little Caesars Coupons January 2026 - 50% Off + FREE Crazy Bread',
+        description: 'Save big with 15 verified Little Caesars coupon codes for January 2026. Get 50% off, BOGO deals, FREE Crazy Bread & more. Updated daily!',
+        url: 'https://littlecaesarsmenu.us/little-caesars-coupons-january-2026',
         type: 'article',
         images: [{
             url: 'https://littlecaesarsmenu.us/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp',
             width: 1200,
             height: 630,
-            alt: 'Little Caesars Coupons January 2025'
+            alt: 'Little Caesars Coupons January 2026'
         }]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Little Caesars Coupons January 2025 - Save 50%',
-        description: '15 verified promo codes for January 2025. FREE Crazy Bread, $5.99 pizzas, BOGO deals & more!'
+        title: 'Little Caesars Coupons January 2026 - Save 50%',
+        description: '15 verified promo codes for January 2026. FREE Crazy Bread, $5.99 pizzas, BOGO deals & more!'
     },
     alternates: {
-        canonical: 'https://littlecaesarsmenu.us/little-caesars-coupons-january-2025'
+        canonical: 'https://littlecaesarsmenu.us/little-caesars-coupons-january-2026'
     }
 }
 
@@ -138,7 +138,7 @@ const couponOffers = [
         discount: 'BOGO',
         discountType: 'bogo',
         minOrder: '1 Crazy Puffs',
-        expiry: 'February 28, 2025',
+        expiry: 'February 28, 2026',
         verified: true,
         popular: true,
         usedCount: 21345,
@@ -166,7 +166,7 @@ const couponOffers = [
         discount: '20% OFF',
         discountType: 'percentage',
         minOrder: '$20',
-        expiry: 'March 31, 2025',
+        expiry: 'March 31, 2026',
         verified: true,
         popular: true,
         usedCount: 19876,
@@ -180,7 +180,7 @@ const couponOffers = [
         discount: '$14.99',
         discountType: 'fixed',
         minOrder: 'None',
-        expiry: 'January 31, 2025',
+        expiry: 'January 31, 2026',
         verified: true,
         popular: true,
         usedCount: 14567,
@@ -194,7 +194,7 @@ const couponOffers = [
         discount: '$5.99',
         discountType: 'fixed',
         minOrder: 'None',
-        expiry: 'January 31, 2025',
+        expiry: 'January 31, 2026',
         verified: true,
         popular: true,
         usedCount: 32456,
@@ -208,7 +208,7 @@ const couponOffers = [
         discount: '$3 OFF',
         discountType: 'fixed',
         minOrder: '$18',
-        expiry: 'August 31, 2025',
+        expiry: 'August 31, 2026',
         verified: true,
         popular: false,
         usedCount: 9876,
@@ -222,7 +222,7 @@ const couponOffers = [
         discount: '$18.99',
         discountType: 'bundle',
         minOrder: 'None',
-        expiry: 'August 10, 2025',
+        expiry: 'August 10, 2026',
         verified: true,
         popular: false,
         usedCount: 7654,
@@ -236,7 +236,7 @@ const couponOffers = [
         discount: '15% OFF',
         discountType: 'percentage',
         minOrder: '$15',
-        expiry: 'December 31, 2025',
+        expiry: 'December 31, 2026',
         verified: true,
         popular: true,
         usedCount: 28765,
@@ -275,24 +275,24 @@ const couponOffers = [
 // FAQ Data for Schema
 const faqData = [
     {
-        question: "What Little Caesars coupons are available in January 2025?",
-        answer: "In January 2025, Little Caesars offers multiple verified coupons including 50% off first orders (code: CRAZY50), FREE Crazy Bread with any pizza (code: FREEBREAD), $5.99 pepperoni pizzas, BOGO deals, and up to 25% off family meals. All codes are updated daily."
+        question: "What Little Caesars coupons are available in January 2026?",
+        answer: "In January 2026, Little Caesars offers multiple verified coupons including 50% off first orders (code: CRAZY50), FREE Crazy Bread with any pizza (code: FREEBREAD), $5.99 pepperoni pizzas, BOGO deals, and up to 25% off family meals. All codes are updated daily."
     },
     {
         question: "How do I use Little Caesars promo codes?",
         answer: "To use Little Caesars promo codes: 1) Order online at littlecaesars.com or through the app, 2) Add items to your cart, 3) At checkout, find the 'Promo Code' or 'Coupon Code' field, 4) Enter your code and click Apply, 5) Your discount will be automatically applied."
     },
     {
-        question: "Does Little Caesars have a $5 pizza deal in January 2025?",
-        answer: "Yes! Little Caesars offers their famous Hot-N-Ready $5.99 Classic Pepperoni Pizza in January 2025. You can also use code PIZZA599 to ensure you get this special price at participating locations."
+        question: "Does Little Caesars have a $5 pizza deal in January 2026?",
+        answer: "Yes! Little Caesars offers their famous Hot-N-Ready $5.99 Classic Pepperoni Pizza in January 2026. You can also use code PIZZA599 to ensure you get this special price at participating locations."
     },
     {
         question: "Can I stack multiple Little Caesars coupons?",
         answer: "Unfortunately, Little Caesars typically allows only one promo code per order. However, you can combine promo codes with in-store specials, Hot-N-Ready prices, and the Little Caesars rewards program for maximum savings."
     },
     {
-        question: "What is the best Little Caesars coupon for January 2025?",
-        answer: "The best Little Caesars coupon for January 2025 is BOGO2025 (Buy One Get One FREE on large pizzas) for families, or CRAZY50 (50% off first online order) for new customers. Both offer significant savings of over $10."
+        question: "What is the best Little Caesars coupon for January 2026?",
+        answer: "The best Little Caesars coupon for January 2026 is BOGO2026 (Buy One Get One FREE on large pizzas) for families, or CRAZY50 (50% off first online order) for new customers. Both offer significant savings of over $10."
     },
     {
         question: "Are Little Caesars coupons valid for delivery?",
@@ -313,15 +313,15 @@ function generateSchemas() {
     const couponSchema = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "Little Caesars Coupons January 2025",
-        "description": "Verified Little Caesars coupon codes and promo deals for January 2025",
+        "name": "Little Caesars Coupons January 2026",
+        "description": "Verified Little Caesars coupon codes and promo deals for January 2026",
         "numberOfItems": couponOffers.length,
         "itemListElement": couponOffers.map((coupon, index) => ({
             "@type": "Offer",
             "position": index + 1,
             "name": coupon.title,
             "description": coupon.description,
-            "priceValidUntil": "2025-01-31",
+            "priceValidUntil": "2026-01-31",
             "category": "Restaurant Coupon",
             "seller": {
                 "@type": "Organization",
@@ -346,8 +346,8 @@ function generateSchemas() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Little Caesars Coupons January 2025 - 50% Off Codes & Promo Deals",
-        "description": "Complete guide to all Little Caesars coupons, promo codes, and deals for January 2025. Save up to 50% with verified discount codes.",
+        "headline": "Little Caesars Coupons January 2026 - 50% Off Codes & Promo Deals",
+        "description": "Complete guide to all Little Caesars coupons, promo codes, and deals for January 2026. Save up to 50% with verified discount codes.",
         "author": {
             "@type": "Organization",
             "name": "Little Caesars Menu"
@@ -360,9 +360,9 @@ function generateSchemas() {
                 "url": "https://littlecaesarsmenu.us/Little-Caesars-Menu-Logo.png"
             }
         },
-        "datePublished": "2025-01-01",
+        "datePublished": "2026-01-01",
         "dateModified": new Date().toISOString().split('T')[0],
-        "mainEntityOfPage": "https://littlecaesarsmenu.us/little-caesars-coupons-january-2025"
+        "mainEntityOfPage": "https://littlecaesarsmenu.us/little-caesars-coupons-january-2026"
     }
 
     const breadcrumbSchema = {
@@ -384,8 +384,8 @@ function generateSchemas() {
             {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "January 2025",
-                "item": "https://littlecaesarsmenu.us/little-caesars-coupons-january-2025"
+                "name": "January 2026",
+                "item": "https://littlecaesarsmenu.us/little-caesars-coupons-january-2026"
             }
         ]
     }
@@ -393,7 +393,7 @@ function generateSchemas() {
     return { couponSchema, faqSchema, articleSchema, breadcrumbSchema }
 }
 
-export default function LittleCaesarsCouponsJanuary2025() {
+export default function LittleCaesarsCouponsJanuary2026() {
     const { couponSchema, faqSchema, articleSchema, breadcrumbSchema } = generateSchemas()
     const popularCoupons = couponOffers.filter(c => c.popular)
     const allCoupons = couponOffers
@@ -427,7 +427,7 @@ export default function LittleCaesarsCouponsJanuary2025() {
                             <li className="text-gray-400">/</li>
                             <li><Link href="/coupons" className="text-gray-500 hover:text-little-caesars-orange">Coupons</Link></li>
                             <li className="text-gray-400">/</li>
-                            <li className="text-gray-900 font-medium">January 2025</li>
+                            <li className="text-gray-900 font-medium">January 2026</li>
                         </ol>
                     </div>
                 </nav>
@@ -451,7 +451,7 @@ export default function LittleCaesarsCouponsJanuary2025() {
 
                         <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
                             Little Caesars Coupons<br />
-                            <span style={{ color: '#fcd34d' }}>January 2025</span>
+                            <span style={{ color: '#fcd34d' }}>January 2026</span>
                         </h1>
 
                         <p style={{ color: '#ffffff' }} className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
@@ -494,7 +494,7 @@ export default function LittleCaesarsCouponsJanuary2025() {
                                     MOST POPULAR
                                 </span>
                                 <h2 className="text-3xl font-bold text-gray-900">
-                                    Top Little Caesars Coupons for January 2025
+                                    Top Little Caesars Coupons for January 2026
                                 </h2>
                             </div>
 
@@ -546,7 +546,7 @@ export default function LittleCaesarsCouponsJanuary2025() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                                All Little Caesars Coupon Codes - January 2025
+                                All Little Caesars Coupon Codes - January 2026
                             </h2>
                             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                                 Complete list of verified promo codes and discount deals. Click any code to copy!
@@ -618,7 +618,7 @@ export default function LittleCaesarsCouponsJanuary2025() {
                 <section className="py-16 bg-white">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">
-                            Little Caesars January 2025 In-Store Deals
+                            Little Caesars January 2026 In-Store Deals
                         </h2>
 
                         <div className="grid md:grid-cols-3 gap-8">
@@ -651,7 +651,7 @@ export default function LittleCaesarsCouponsJanuary2025() {
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                                Little Caesars Coupons FAQ - January 2025
+                                Little Caesars Coupons FAQ - January 2026
                             </h2>
                             <p className="text-xl text-gray-600">
                                 Everything you need to know about Little Caesars coupons
@@ -752,7 +752,7 @@ export default function LittleCaesarsCouponsJanuary2025() {
                         <div className="grid md:grid-cols-3 gap-6">
                             <Link href="/little-caesars-menu" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Little Caesars Menu & Prices</h3>
-                                <p className="text-sm text-gray-600 mt-2">Complete menu with updated 2025 prices</p>
+                                <p className="text-sm text-gray-600 mt-2">Complete menu with updated 2026 prices</p>
                             </Link>
                             <Link href="/crazy-puffs" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Crazy Puffs Guide</h3>

@@ -24,15 +24,15 @@ export function generateMetadata(): Metadata {
     title,
     description,
     keywords: [
-      'Little Caesars menu 2025',
+      'Little Caesars menu 2026',
       `Little Caesars prices ${getFormattedDate()}`,
       'Little Caesars calories nutrition',
       'Little Caesars Hot-N-Ready pizza deals',
-      'Little Caesars coupons 2025',
+      'Little Caesars coupons 2026',
       'Little Caesars USA menu updated'
     ].join(', '),
     openGraph: {
-      title: `Little Caesars Menu with Prices 2025 | Complete Guide - Updated ${getFormattedDate()}`,
+      title: `Little Caesars Menu with Prices 2026 | Complete Guide - Updated ${getFormattedDate()}`,
       description: `Latest Little Caesars menu with prices, calories & nutrition. Updated ${getFormattedDate()}. Find pizza, breadsticks, wings & exclusive Hot-N-Ready deals.`,
       url: 'https://littlecaesarsmenu.us',
       siteName: 'Little Caesars Menu',
@@ -41,7 +41,7 @@ export function generateMetadata(): Metadata {
           url: 'https://littlecaesarsmenu.us/menu/Little%20Caesars%20Menu/little-caesars-menu.jpg',
           width: 1200,
           height: 630,
-          alt: `Little Caesars Menu with Prices 2025 - Complete Guide - Updated ${getFormattedDate()}`
+          alt: `Little Caesars Menu with Prices 2026 - Complete Guide - Updated ${getFormattedDate()}`
         }
       ],
       locale: 'en_US',
@@ -49,7 +49,7 @@ export function generateMetadata(): Metadata {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Little Caesars Menu with Prices 2025 | Updated ${getFormattedDate()}`,
+      title: `Little Caesars Menu with Prices 2026 | Updated ${getFormattedDate()}`,
       description: `Complete Little Caesars menu with current prices, calories & nutrition. Updated ${getFormattedDate()}. Find pizza, breadsticks, wings & Hot-N-Ready deals.`,
       images: ['https://littlecaesarsmenu.us/menu/Little%20Caesars%20Menu/little-caesars-menu.jpg'],
     },
@@ -68,8 +68,8 @@ export function generateMetadata(): Metadata {
       },
     },
     other: {
-      'article:published_time': '2025-08-22T00:00:00Z',
-      'article:modified_time': '2025-08-22T12:00:00Z',
+      'article:published_time': '2026-08-22T00:00:00Z',
+      'article:modified_time': '2026-08-22T12:00:00Z',
     }
   }
 }
@@ -78,16 +78,16 @@ export function generateMetadata(): Metadata {
 const enhancedMenuSchema = {
   "@context": "https://schema.org",
   "@type": "Menu",
-  "name": "Little Caesars Menu 2025",
-  "description": "Complete Little Caesars menu featuring Hot-N-Ready pizzas, Crazy Bread, wings, specialty pizzas, family combos and beverages with current 2025 pricing.",
+  "name": "Little Caesars Menu 2026",
+  "description": "Complete Little Caesars menu featuring Hot-N-Ready pizzas, Crazy Bread, wings, specialty pizzas, family combos and beverages with current 2026 pricing.",
   "url": "https://littlecaesarsmenu.us",
   "image": [
-    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0001.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0002.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0003.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0004.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0005.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0006.jpg"
+    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0001.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0002.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0003.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0004.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0005.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0006.jpg"
   ],
   "inLanguage": "en-US",
   "dateModified": new Date().toISOString(),
@@ -199,12 +199,12 @@ function FeaturedContent() {
 
   return (
     <>
-      {/* Little Caesars Menu With Prices [2025] - Main Section */}
+      {/* Little Caesars Menu With Prices [2026] - Main Section */}
       <section id="little-caesars-menu" className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-white via-orange-50/30 to-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-slab text-4xl sm:text-5xl lg:text-6xl font-bold text-little-caesars-black mb-6">
-              Little Caesars Menu With Prices [2025]
+              Little Caesars Menu With Prices [2026]
             </h2>
             <div className="text-xl text-gray-700 max-w-5xl mx-auto leading-relaxed mb-8">
               <p className="text-lg sm:text-xl">
@@ -336,15 +336,15 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {/* Coupons January 2025 Card - HOT DEALS */}
+            {/* Coupons January 2026 Card - HOT DEALS */}
             <Link
-              href="/little-caesars-coupons-january-2025"
+              href="/little-caesars-coupons-january-2026"
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                  alt="Little Caesars Coupons January 2025 - 50% Off Promo Codes"
+                  alt="Little Caesars Coupons January 2026 - 50% Off Promo Codes"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-3 right-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
@@ -354,10 +354,10 @@ export default function HomePage() {
               <div className="p-6">
                 <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Coupons & Deals</span>
                 <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
-                  Coupons January 2025 - 50% OFF Codes
+                  Coupons January 2026 - 50% OFF Codes
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
-                  15 verified promo codes for January 2025! Save up to 50% on pizza, Crazy Bread, wings & more.
+                  15 verified promo codes for January 2026! Save up to 50% on pizza, Crazy Bread, wings & more.
                 </p>
                 <div className="mt-4 text-little-caesars-orange font-semibold text-sm flex items-center">
                   Get Coupons →
@@ -373,7 +373,7 @@ export default function HomePage() {
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/menu/Homepage-menus/4-Cheese-Crazy-Puffs-Little-Caesars-Menu.webp"
-                  alt="Little Caesars Crazy Puffs - Viral Menu Item 2025"
+                  alt="Little Caesars Crazy Puffs - Viral Menu Item 2026"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-3 right-3 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold animate-pulse">
@@ -394,15 +394,15 @@ export default function HomePage() {
               </div>
             </Link>
 
-            {/* New Items 2025 Card */}
+            {/* New Items 2026 Card */}
             <Link
-              href="/little-caesars-new-items-2025"
+              href="/little-caesars-new-items-2026"
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/menu/Homepage-menus/Stuffed-Crust-Pepperoni-Little-Caesars-Menu.webp"
-                  alt="Little Caesars New Menu Items 2025 - Stuffed Crust Pizza"
+                  alt="Little Caesars New Menu Items 2026 - Stuffed Crust Pizza"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-3 right-3 bg-yellow-400 text-red-800 px-3 py-1 rounded-full text-xs font-bold">
@@ -412,10 +412,10 @@ export default function HomePage() {
               <div className="p-6">
                 <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">New Menu</span>
                 <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
-                  Little Caesars New Items 2025 - All 10 Items
+                  Little Caesars New Items 2026 - All 10 Items
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
-                  All 10 NEW menu items for 2025! Stuffed Crust, Pretzel Crust, new pizzas, sides & exclusive deals.
+                  All 10 NEW menu items for 2026! Stuffed Crust, Pretzel Crust, new pizzas, sides & exclusive deals.
                 </p>
                 <div className="mt-4 text-little-caesars-orange font-semibold text-sm flex items-center">
                   Read More →
@@ -431,7 +431,7 @@ export default function HomePage() {
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                  alt="Little Caesars Nutrition & Calories Guide 2025"
+                  alt="Little Caesars Nutrition & Calories Guide 2026"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-3 right-3 bg-little-caesars-orange text-white px-3 py-1 rounded-full text-xs font-bold">
@@ -441,7 +441,7 @@ export default function HomePage() {
               <div className="p-6">
                 <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Health Guide</span>
                 <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
-                  Nutrition & Calories Guide 2025
+                  Nutrition & Calories Guide 2026
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
                   Complete nutrition facts for every menu item. Find healthiest options & make informed diet choices.
@@ -454,13 +454,13 @@ export default function HomePage() {
 
             {/* Christmas Blog Card */}
             <Link
-              href="/happy-christmas-2025"
+              href="/happy-christmas-2026"
               className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-little-caesars-orange"
             >
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp"
-                  alt="Happy Christmas 2025 - Little Caesars Holiday Pizza Celebration"
+                  alt="Happy Christmas 2026 - Little Caesars Holiday Pizza Celebration"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold">
@@ -470,7 +470,7 @@ export default function HomePage() {
               <div className="p-6">
                 <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Holiday Special</span>
                 <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
-                  Happy Christmas 2025 - Holiday Deals & Party Ideas
+                  Happy Christmas 2026 - Holiday Deals & Party Ideas
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
                   Celebrate Christmas with Little Caesars! Exclusive holiday deals, party planning tips, and festive pizza ideas.
@@ -489,7 +489,7 @@ export default function HomePage() {
               <div className="relative h-48 overflow-hidden">
                 <img
                   src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                  alt="Little Caesars Menu Prices & Calories Guide 2025"
+                  alt="Little Caesars Menu Prices & Calories Guide 2026"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute top-3 right-3 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">
@@ -499,7 +499,7 @@ export default function HomePage() {
               <div className="p-6">
                 <span className="text-xs font-bold text-little-caesars-orange uppercase tracking-wide">Complete Guide</span>
                 <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-little-caesars-orange transition-colors">
-                  Little Caesars Menu Prices & Calories 2025
+                  Little Caesars Menu Prices & Calories 2026
                 </h3>
                 <p className="text-gray-600 mt-2 text-sm">
                   Your ultimate guide to Little Caesars menu with prices, calories, nutrition info, and money-saving tips.
@@ -618,7 +618,7 @@ export default function HomePage() {
                   <div className="p-6">
                     <span className="text-xs font-bold text-emerald-600 uppercase tracking-wide">Health Tool</span>
                     <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-emerald-600 transition-colors">
-                      Little Caesars Calorie Calculator 2025
+                      Little Caesars Calorie Calculator 2026
                     </h3>
                     <p className="text-gray-600 mt-2 text-sm">
                       FREE interactive tool to track calories, fat, protein & carbs for your entire order!
@@ -637,7 +637,7 @@ export default function HomePage() {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                      alt="Little Caesars Secret Menu 2025 - Hidden Items"
+                      alt="Little Caesars Secret Menu 2026 - Hidden Items"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute top-3 right-3 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">
@@ -647,7 +647,7 @@ export default function HomePage() {
                   <div className="p-6">
                     <span className="text-xs font-bold text-purple-600 uppercase tracking-wide">Hidden Hacks</span>
                     <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-purple-600 transition-colors">
-                      Secret Menu 2025 - Hidden Items Revealed!
+                      Secret Menu 2026 - Hidden Items Revealed!
                     </h3>
                     <p className="text-gray-600 mt-2 text-sm">
                       Discover 8 secret menu items & ordering hacks that most customers don't know about!
@@ -666,7 +666,7 @@ export default function HomePage() {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                      alt="Best Pizza at Little Caesars Ranked 2025"
+                      alt="Best Pizza at Little Caesars Ranked 2026"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute top-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
@@ -695,7 +695,7 @@ export default function HomePage() {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src="/menu/Homepage-menus/Ultimate-Supreme-Pizza-Little-Caesars-Menu.webp"
-                      alt="Little Caesars Delivery Guide 2025"
+                      alt="Little Caesars Delivery Guide 2026"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute top-3 right-3 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
@@ -705,7 +705,7 @@ export default function HomePage() {
                   <div className="p-6">
                     <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Delivery Guide</span>
                     <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
-                      Delivery Guide 2025 - Fees, Hours & Tips
+                      Delivery Guide 2026 - Fees, Hours & Tips
                     </h3>
                     <p className="text-gray-600 mt-2 text-sm">
                       $3.99 delivery fee, $12 minimum, 25-45 min wait. Complete delivery guide!
@@ -724,7 +724,7 @@ export default function HomePage() {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                      alt="Little Caesars vs Dominos Comparison 2025"
+                      alt="Little Caesars vs Dominos Comparison 2026"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute top-3 right-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
@@ -734,7 +734,7 @@ export default function HomePage() {
                   <div className="p-6">
                     <span className="text-xs font-bold text-blue-600 uppercase tracking-wide">Comparison</span>
                     <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-blue-600 transition-colors">
-                      Little Caesars vs Dominos 2025 - Price War
+                      Little Caesars vs Dominos 2026 - Price War
                     </h3>
                     <p className="text-gray-600 mt-2 text-sm">
                       Little Caesars is 47% cheaper than Dominos! Compare prices, quality, and nutrition facts.
@@ -753,7 +753,7 @@ export default function HomePage() {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src="/menu/Homepage-menus/Detroit-Style-Deep-Dish-Cheese-Little-Caesars-Menu.webp"
-                      alt="Little Caesars vs Pizza Hut Comparison 2025"
+                      alt="Little Caesars vs Pizza Hut Comparison 2026"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                     <div className="absolute top-3 right-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
@@ -763,7 +763,7 @@ export default function HomePage() {
                   <div className="p-6">
                     <span className="text-xs font-bold text-red-600 uppercase tracking-wide">Comparison</span>
                     <h3 className="text-xl font-bold text-gray-900 mt-2 group-hover:text-red-600 transition-colors">
-                      Little Caesars vs Pizza Hut 2025 - Value Showdown
+                      Little Caesars vs Pizza Hut 2026 - Value Showdown
                     </h3>
                     <p className="text-gray-600 mt-2 text-sm">
                       See why LC wins for value! 53% price difference compared to Pizza Hut's premium menu.

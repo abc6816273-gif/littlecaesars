@@ -4,12 +4,12 @@ import { Button } from '@/components/ui'
 
 // SEO Metadata
 export const metadata: Metadata = {
-  title: 'Texas Roadhouse Menu with Prices 2025 | Updated August 2025 - Texas Roadhouse Menu',
-  description: 'Discover the complete Texas Roadhouse menu with prices, calories, and nutrition info. Updated August 2025 with family meals, steaks, ribs, appetizers, and desserts. Find deals and coupons.',
-  keywords: 'Texas Roadhouse menu, prices 2025, calories, nutrition, family meals, steaks, ribs, appetizers, deals, coupons, updated August 2025',
+  title: 'Texas Roadhouse Menu with Prices 2026 | Updated August 2026 - Texas Roadhouse Menu',
+  description: 'Discover the complete Texas Roadhouse menu with prices, calories, and nutrition info. Updated August 2026 with family meals, steaks, ribs, appetizers, and desserts. Find deals and coupons.',
+  keywords: 'Texas Roadhouse menu, prices 2026, calories, nutrition, family meals, steaks, ribs, appetizers, deals, coupons, updated August 2026',
   openGraph: {
-    title: 'Texas Roadhouse Menu with Prices 2025 | Texas Roadhouse Menu',
-    description: 'Complete Texas Roadhouse menu with current prices, calories & nutrition. Updated August 2025. Find steaks, ribs, family meals & deals.',
+    title: 'Texas Roadhouse Menu with Prices 2026 | Texas Roadhouse Menu',
+    description: 'Complete Texas Roadhouse menu with current prices, calories & nutrition. Updated August 2026. Find steaks, ribs, family meals & deals.',
     url: 'https://texasroadhousemenu.me',
     siteName: 'Texas Roadhouse Menu',
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: 'https://texasroadhousemenu.me/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Texas Roadhouse Menu with Prices 2025'
+        alt: 'Texas Roadhouse Menu with Prices 2026'
       }
     ],
     locale: 'en_US',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Texas Roadhouse Menu with Prices 2025 | Updated August 2025',
+    title: 'Texas Roadhouse Menu with Prices 2026 | Updated August 2026',
     description: 'Complete Texas Roadhouse menu with current prices, calories & nutrition. Find steaks, ribs, family meals & deals.',
     images: ['https://texasroadhousemenu.me/og-image.jpg'],
   },
@@ -52,10 +52,10 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What are Little Caesars prices for 2025?",
+      "name": "What are Little Caesars prices for 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Little Caesars prices in 2025 range from $0.59 for sauces to $10.99 for specialty pizzas. Hot-N-Ready pizzas start at $5.55, with lunch combos starting at $5.99. Prices may vary by location."
+        "text": "Little Caesars prices in 2026 range from $0.59 for sauces to $10.99 for specialty pizzas. Hot-N-Ready pizzas start at $5.55, with lunch combos starting at $5.99. Prices may vary by location."
       }
     },
     {
@@ -117,10 +117,10 @@ export default function SEOHomepage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-slab font-bold mb-4 sm:mb-6 leading-tight">
-              Texas Roadhouse Menu with Prices 2025
+              Texas Roadhouse Menu with Prices 2026
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl mb-6 sm:mb-8 text-texas-black/80 font-medium">
-              Complete menu guide with calories, nutrition & deals • Updated August 22, 2025
+              Complete menu guide with calories, nutrition & deals • Updated August 22, 2026
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/menus-prices">
@@ -149,7 +149,7 @@ export default function SEOHomepage() {
                 Welcome to <strong>Texas Roadhouse Menu</strong> – your ultimate guide to the most up-to-date menu items, prices, and nutritional information. Our comprehensive database is updated regularly to ensure you have access to the latest offerings and pricing from all Texas Roadhouse locations across the USA.
               </p>
               <p className="text-base sm:text-lg leading-relaxed text-stone/70 mb-8">
-                Last updated: <time dateTime="2025-08-22" className="font-semibold text-red-cmyk">August 22, 2025</time>
+                Last updated: <time dateTime="2026-08-22" className="font-semibold text-red-cmyk">August 22, 2026</time>
               </p>
             </div>
           </section>
@@ -271,7 +271,7 @@ export default function SEOHomepage() {
                     <span className="text-black font-bold text-sm">✓</span>
                   </div>
                   <div>
-                    <h3 className="font-slab font-bold text-black text-lg mb-2">Updated August 2025 Prices</h3>
+                    <h3 className="font-slab font-bold text-black text-lg mb-2">Updated August 2026 Prices</h3>
                     <p className="text-stone/70">Current menu prices verified across multiple locations nationwide.</p>
                   </div>
                 </div>
@@ -320,10 +320,10 @@ export default function SEOHomepage() {
             <div className="space-y-4">
               <details className="bg-white rounded-lg border border-stone/20 shadow-sm">
                 <summary className="p-6 cursor-pointer font-semibold text-black hover:bg-stone/5 rounded-lg transition-colors">
-                  What are Texas Roadhouse prices for 2025?
+                  What are Texas Roadhouse prices for 2026?
                 </summary>
                 <div className="px-6 pb-6 text-stone/80">
-                  <p>Texas Roadhouse prices in 2025 range from $8.99 for appetizers to $24.99 for premium steaks. Entrees typically cost $12.99-$22.99, with family meals starting at $39.99. Prices may vary by location.</p>
+                  <p>Texas Roadhouse prices in 2026 range from $8.99 for appetizers to $24.99 for premium steaks. Entrees typically cost $12.99-$22.99, with family meals starting at $39.99. Prices may vary by location.</p>
                 </div>
               </details>
 

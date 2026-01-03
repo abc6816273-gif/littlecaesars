@@ -16,39 +16,39 @@ import {
     Sparkles
 } from 'lucide-react'
 
-// SEO Metadata - Optimized for "Little Caesars Pretzel Crust Pizza 2025"
+// SEO Metadata - Optimized for "Little Caesars Pretzel Crust Pizza 2026"
 export const metadata: Metadata = {
-    title: 'Little Caesars Pretzel Crust Pizza 2025 - Prices, Review & Availability',
-    description: 'Little Caesars Pretzel Crust Pizza is BACK in 2025! Get the latest prices ($9.99), flavors, nutritional info, and where to find it. New Stuffed Pretzel Crust available!',
+    title: 'Little Caesars Pretzel Crust Pizza 2026 - Prices, Review & Availability',
+    description: 'Little Caesars Pretzel Crust Pizza is BACK in 2026! Get the latest prices ($9.99), flavors, nutritional info, and where to find it. New Stuffed Pretzel Crust available!',
     keywords: [
-        'Little Caesars Pretzel Crust Pizza 2025',
+        'Little Caesars Pretzel Crust Pizza 2026',
         'Pretzel Crust Pizza price',
         'Little Caesars Pretzel Pizza',
         'Stuffed Pretzel Crust Pizza',
-        'Little Caesars new pizza 2025',
+        'Little Caesars new pizza 2026',
         'Pretzel Crust Pizza near me',
         'Little Caesars limited time pizza',
-        'best Little Caesars pizza 2025'
+        'best Little Caesars pizza 2026'
     ],
     openGraph: {
-        title: 'Little Caesars Pretzel Crust Pizza 2025 - Its BACK!',
-        description: 'The fan-favorite Pretzel Crust Pizza returns in March 2025! Plus NEW Stuffed Pretzel Crust. Get prices, reviews & availability.',
-        url: 'https://littlecaesarsmenu.us/little-caesars-pretzel-crust-pizza-2025',
+        title: 'Little Caesars Pretzel Crust Pizza 2026 - Its BACK!',
+        description: 'The fan-favorite Pretzel Crust Pizza returns in March 2026! Plus NEW Stuffed Pretzel Crust. Get prices, reviews & availability.',
+        url: 'https://littlecaesarsmenu.us/little-caesars-pretzel-crust-pizza-2026',
         type: 'article',
         images: [{
             url: 'https://littlecaesarsmenu.us/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp',
             width: 1200,
             height: 630,
-            alt: 'Little Caesars Pretzel Crust Pizza 2025'
+            alt: 'Little Caesars Pretzel Crust Pizza 2026'
         }]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Little Caesars Pretzel Crust Pizza 2025',
+        title: 'Little Caesars Pretzel Crust Pizza 2026',
         description: 'Fan-favorite Pretzel Crust Pizza is BACK! Prices start at $9.99. New Stuffed version available!'
     },
     alternates: {
-        canonical: 'https://littlecaesarsmenu.us/little-caesars-pretzel-crust-pizza-2025'
+        canonical: 'https://littlecaesarsmenu.us/little-caesars-pretzel-crust-pizza-2026'
     }
 }
 
@@ -83,8 +83,8 @@ const pretzelProducts = [
 // FAQ Data
 const faqData = [
     {
-        question: "When is Little Caesars Pretzel Crust Pizza available in 2025?",
-        answer: "Little Caesars Pretzel Crust Pizza returns in March 2025 for a limited time. The new Stuffed Pretzel Crust Pizza is also available starting March 2025. Check your local store for availability."
+        question: "When is Little Caesars Pretzel Crust Pizza available in 2026?",
+        answer: "Little Caesars Pretzel Crust Pizza returns in March 2026 for a limited time. The new Stuffed Pretzel Crust Pizza is also available starting March 2026. Check your local store for availability."
     },
     {
         question: "How much does Pretzel Crust Pizza cost at Little Caesars?",
@@ -103,8 +103,8 @@ const faqData = [
         answer: "A slice of Pretzel Crust Pepperoni Pizza contains approximately 280 calories. The entire large pizza has about 2,240 calories (8 slices)."
     },
     {
-        question: "Is the Stuffed Pretzel Crust Pizza new for 2025?",
-        answer: "Yes! The Stuffed Pretzel Crust Pizza is a brand new addition for 2025. It features the pretzel crust stuffed with melted cheese for an even more indulgent experience."
+        question: "Is the Stuffed Pretzel Crust Pizza new for 2026?",
+        answer: "Yes! The Stuffed Pretzel Crust Pizza is a brand new addition for 2026. It features the pretzel crust stuffed with melted cheese for an even more indulgent experience."
     }
 ]
 
@@ -114,7 +114,7 @@ function generateSchemas() {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "Little Caesars Pretzel Crust Pizza",
-        "description": "Soft pretzel-style crust pizza brushed with butter and pretzel salt, available for a limited time in 2025",
+        "description": "Soft pretzel-style crust pizza brushed with butter and pretzel salt, available for a limited time in 2026",
         "brand": {
             "@type": "Brand",
             "name": "Little Caesars"
@@ -143,8 +143,8 @@ function generateSchemas() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Little Caesars Pretzel Crust Pizza 2025 - Complete Guide",
-        "description": "Everything you need to know about Little Caesars Pretzel Crust Pizza returning in 2025",
+        "headline": "Little Caesars Pretzel Crust Pizza 2026 - Complete Guide",
+        "description": "Everything you need to know about Little Caesars Pretzel Crust Pizza returning in 2026",
         "author": {
             "@type": "Organization",
             "name": "Little Caesars Menu"
@@ -157,7 +157,7 @@ function generateSchemas() {
                 "url": "https://littlecaesarsmenu.us/Little-Caesars-Menu-Logo.png"
             }
         },
-        "datePublished": "2025-01-01",
+        "datePublished": "2026-01-01",
         "dateModified": new Date().toISOString().split('T')[0]
     }
 
@@ -180,8 +180,8 @@ function generateSchemas() {
             {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "Pretzel Crust Pizza 2025",
-                "item": "https://littlecaesarsmenu.us/little-caesars-pretzel-crust-pizza-2025"
+                "name": "Pretzel Crust Pizza 2026",
+                "item": "https://littlecaesarsmenu.us/little-caesars-pretzel-crust-pizza-2026"
             }
         ]
     }
@@ -189,7 +189,7 @@ function generateSchemas() {
     return { productSchema, faqSchema, articleSchema, breadcrumbSchema }
 }
 
-export default function PretzelCrustPizza2025() {
+export default function PretzelCrustPizza2026() {
     const { productSchema, faqSchema, articleSchema, breadcrumbSchema } = generateSchemas()
 
     return (
@@ -221,7 +221,7 @@ export default function PretzelCrustPizza2025() {
                             <li className="text-gray-400">/</li>
                             <li><Link href="/menu" className="text-gray-500 hover:text-little-caesars-orange">Menu</Link></li>
                             <li className="text-gray-400">/</li>
-                            <li className="text-gray-900 font-medium">Pretzel Crust Pizza 2025</li>
+                            <li className="text-gray-900 font-medium">Pretzel Crust Pizza 2026</li>
                         </ol>
                     </div>
                 </nav>
@@ -240,7 +240,7 @@ export default function PretzelCrustPizza2025() {
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <div className="inline-flex items-center bg-yellow-400 text-amber-900 px-4 py-2 rounded-full text-sm font-bold mb-6 animate-pulse">
                             <Sparkles className="w-4 h-4 mr-2" />
-                            🔥 ITS BACK - LIMITED TIME 2025!
+                            🔥 ITS BACK - LIMITED TIME 2026!
                         </div>
 
                         <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
@@ -250,7 +250,7 @@ export default function PretzelCrustPizza2025() {
 
                         <p style={{ color: '#ffffff' }} className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
                             The fan-favorite is BACK! Soft, buttery pretzel crust with coarse salt.
-                            Plus <strong>NEW Stuffed Pretzel Crust</strong> for 2025!
+                            Plus <strong>NEW Stuffed Pretzel Crust</strong> for 2026!
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -260,7 +260,7 @@ export default function PretzelCrustPizza2025() {
                             </div>
                             <div style={{ backgroundColor: 'rgba(255,255,255,0.2)' }} className="backdrop-blur px-6 py-3 rounded-xl">
                                 <div style={{ color: '#ffffff' }} className="text-3xl font-bold">March</div>
-                                <div style={{ color: '#ffffff' }} className="text-sm">2025 Launch</div>
+                                <div style={{ color: '#ffffff' }} className="text-sm">2026 Launch</div>
                             </div>
                             <div style={{ backgroundColor: 'rgba(255,255,255,0.2)' }} className="backdrop-blur px-6 py-3 rounded-xl">
                                 <div style={{ color: '#ffffff' }} className="text-3xl font-bold">LIMITED</div>
@@ -339,7 +339,7 @@ export default function PretzelCrustPizza2025() {
                                 Pretzel Crust Pizza Menu & Prices
                             </h2>
                             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                                Available for a limited time starting March 2025. Prices may vary by location.
+                                Available for a limited time starting March 2026. Prices may vary by location.
                             </p>
                         </div>
 
@@ -351,7 +351,7 @@ export default function PretzelCrustPizza2025() {
                                 >
                                     {product.isNew && (
                                         <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-center py-2 font-bold">
-                                            🆕 NEW FOR 2025!
+                                            🆕 NEW FOR 2026!
                                         </div>
                                     )}
                                     {product.popular && !product.isNew && (
@@ -393,7 +393,7 @@ export default function PretzelCrustPizza2025() {
                     </div>
                 </section>
 
-                {/* New for 2025 */}
+                {/* New for 2026 */}
                 <section className="py-16 bg-gradient-to-r from-amber-600 to-orange-500">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="text-center text-white">
@@ -405,7 +405,7 @@ export default function PretzelCrustPizza2025() {
                                 Introducing: Stuffed Pretzel Crust Pizza
                             </h2>
                             <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-                                For 2025, Little Caesars is taking the Pretzel Crust Pizza to the next level!
+                                For 2026, Little Caesars is taking the Pretzel Crust Pizza to the next level!
                                 The new Stuffed Pretzel Crust features melted cheese INSIDE the pretzel crust for an extra indulgent experience.
                             </p>
                             <div className="flex flex-wrap justify-center gap-6">
@@ -507,9 +507,9 @@ export default function PretzelCrustPizza2025() {
                         <div className="grid md:grid-cols-3 gap-6">
                             <Link href="/menu" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Full Menu & Prices</h3>
-                                <p className="text-sm text-gray-600 mt-2">Complete Little Caesars menu with 2025 prices</p>
+                                <p className="text-sm text-gray-600 mt-2">Complete Little Caesars menu with 2026 prices</p>
                             </Link>
-                            <Link href="/little-caesars-coupons-january-2025" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
+                            <Link href="/little-caesars-coupons-january-2026" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Coupons & Deals</h3>
                                 <p className="text-sm text-gray-600 mt-2">Save up to 50% with verified promo codes</p>
                             </Link>

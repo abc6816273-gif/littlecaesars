@@ -56,7 +56,7 @@ export function CouponsSEOSection({ className = '' }: CouponsSEOSectionProps) {
           {/* Main Heading */}
           <header className="text-center mb-8 sm:mb-10 lg:mb-12">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-stone-900 mb-4 sm:mb-6 leading-tight px-2">
-              Little Caesars Coupons & Promo Codes 2025 – Save Now
+              Little Caesars Coupons & Promo Codes 2026 – Save Now
             </h1>
             <div className="w-16 sm:w-20 lg:w-24 h-1 bg-little-caesars-orange mx-auto rounded-full mb-4 sm:mb-6"></div>
           </header>

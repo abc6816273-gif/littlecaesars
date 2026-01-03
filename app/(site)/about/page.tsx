@@ -32,14 +32,14 @@ export async function generateMetadata(): Promise<Metadata> {
   
   // Fallback to static metadata
   return {
-    title: 'About Little Caesars Menu | Independent Menu Guide 2025',
+    title: 'About Little Caesars Menu | Independent Menu Guide 2026',
     description: 'Learn about Little Caesars Menu - your independent source for menu information, prices, and nutritional details. We provide comprehensive menu guides to help you make informed dining decisions.',
     keywords: [
       'About Little Caesars Menu',
       'Independent menu guide',
       'Little Caesars information',
       'Menu information source',
-      'Pizza menu guide 2025'
+      'Pizza menu guide 2026'
     ],
     alternates: {
       canonical: 'https://littlecaesarsmenu.us/about',

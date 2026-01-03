@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 // SEO-optimized metadata for nutrition guide
 export const metadata: Metadata = {
-    title: 'Little Caesars Nutrition & Calories Guide 2025 | Complete Menu Nutrition Facts',
+    title: 'Little Caesars Nutrition & Calories Guide 2026 | Complete Menu Nutrition Facts',
     description: 'Complete Little Caesars nutrition guide with calories, carbs, protein, and fat for every menu item. Find healthiest options, low-calorie pizza, and diet-friendly choices.',
     keywords: [
         'little caesars calories',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         'low calorie pizza little caesars'
     ].join(', '),
     openGraph: {
-        title: 'Little Caesars Nutrition & Calories Guide 2025',
+        title: 'Little Caesars Nutrition & Calories Guide 2026',
         description: 'Complete nutrition information for every Little Caesars menu item. Calories, carbs, protein, fat, and healthiest options.',
         type: 'article',
         url: 'https://littlecaesarsmenu.us/little-caesars-nutrition-calories',
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
                 url: 'https://littlecaesarsmenu.us/images/little-caesars-nutrition.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Little Caesars Nutrition & Calories Guide 2025'
+                alt: 'Little Caesars Nutrition & Calories Guide 2026'
             }
         ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Little Caesars Nutrition & Calories Guide 2025',
+        title: 'Little Caesars Nutrition & Calories Guide 2026',
         description: 'Complete nutrition facts for all Little Caesars menu items.'
     },
     alternates: {
@@ -84,7 +84,7 @@ const nutritionData = {
 }
 
 export default function NutritionCaloriesGuidePage() {
-    const currentYear = 2025
+    const currentYear = 2026
 
     // Schema for SEO
     const articleSchema = {

@@ -42,8 +42,8 @@ export async function generateMetadata(): Promise<Metadata> {
     const wpDescription = siteSEOResponse?.generalSettings?.description
     const logoUrl = siteSEOResponse?.seo?.schema?.companyLogo?.sourceUrl
 
-    const siteTitle = wpTitle || 'Little Caesars Menu & Prices 2025 - Official Menu'
-    const siteDescription = wpDescription || 'Official Little Caesars Menu with Prices 2025. View complete menu, pizza, breadsticks, wings & find locations near you.'
+    const siteTitle = wpTitle || 'Little Caesars Menu & Prices 2026 - Official Menu'
+    const siteDescription = wpDescription || 'Official Little Caesars Menu with Prices 2026. View complete menu, pizza, breadsticks, wings & find locations near you.'
 
     return {
       ...defaultSEO,

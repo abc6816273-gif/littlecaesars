@@ -67,7 +67,7 @@ export function generateUltimateSchema() {
           "@type": "Person",
           "name": "Sarah Johnson"
         },
-        "datePublished": "2025-01-15",
+        "datePublished": "2026-01-15",
         "description": "Amazing Hot-N-Ready pizza and the Crazy Bread is delicious! Great value and fast service.",
         "reviewRating": {
           "@type": "Rating",
@@ -114,21 +114,21 @@ export function generateUltimateSchema() {
   const menuSchema = {
     "@context": "https://schema.org",
     "@type": "Menu",
-    "name": "Little Caesars Menu With Prices [2025]",
-    "description": "Complete Little Caesars menu featuring hand-cut steaks, legendary ribs, and authentic Southern favorites with current 2025 pricing. Little Caesars food prices reflect exceptional value for premium quality dining.",
+    "name": "Little Caesars Menu With Prices [2026]",
+    "description": "Complete Little Caesars menu featuring hand-cut steaks, legendary ribs, and authentic Southern favorites with current 2026 pricing. Little Caesars food prices reflect exceptional value for premium quality dining.",
     "url": `${baseUrl}/menus-prices`,
     "dateModified": currentDate,
     "inLanguage": "en-US",
     "image": [
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0009.jpg`,
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0010.jpg`,
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0011.jpg`,
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0019.jpg`,
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0020.jpg`,
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0021.jpg`,
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0022.jpg`,
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0023.jpg`,
-      `${baseUrl}/menu/Little Caesars Menu/IMG-20250916-WA0024.jpg`
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0009.jpg`,
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0010.jpg`,
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0011.jpg`,
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0019.jpg`,
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0020.jpg`,
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0021.jpg`,
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0022.jpg`,
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0023.jpg`,
+      `${baseUrl}/menu/Little Caesars Menu/IMG-20260916-WA0024.jpg`
     ],
     "hasMenuSection": [
       {
@@ -208,7 +208,7 @@ export function generateUltimateSchema() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Little Caesars Menu Prices 2025 | Complete Guide",
+    "name": "Little Caesars Menu Prices 2026 | Complete Guide",
     "alternateName": "Little Caesars Menu with Prices",
     "url": baseUrl,
     "description": "Complete Little Caesars menu with current prices, calories, nutrition info, and hours. Updated daily. Find pizza, wings, Crazy Bread, family combos, and exclusive coupons.",

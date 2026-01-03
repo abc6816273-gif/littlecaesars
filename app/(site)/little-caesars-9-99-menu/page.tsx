@@ -15,8 +15,8 @@ import {
 
 // SEO Metadata - Optimized for "Little Caesars $9.99 Menu"
 export const metadata: Metadata = {
-    title: 'Little Caesars $9.99 Menu 2025 - More for $9.99 Value Deals & Combos',
-    description: 'Little Caesars $9.99 Menu 2025: Get pizza combos, Crazy Puffs, Caesar Wings & more starting at just $9.99! Complete value menu with prices & what\'s included.',
+    title: 'Little Caesars $9.99 Menu 2026 - More for $9.99 Value Deals & Combos',
+    description: 'Little Caesars $9.99 Menu 2026: Get pizza combos, Crazy Puffs, Caesar Wings & more starting at just $9.99! Complete value menu with prices & what\'s included.',
     keywords: [
         'Little Caesars $9.99 menu',
         'Little Caesars value menu',
@@ -25,10 +25,10 @@ export const metadata: Metadata = {
         'cheap pizza deals',
         'Little Caesars More for $9.99',
         'Little Caesars $10 pizza',
-        'budget pizza deals 2025'
+        'budget pizza deals 2026'
     ],
     openGraph: {
-        title: 'Little Caesars $9.99 Menu - Best Value Deals 2025',
+        title: 'Little Caesars $9.99 Menu - Best Value Deals 2026',
         description: 'Complete Little Caesars $9.99 Value Menu. Pizza combos, wings, Crazy Puffs & more - all for just $9.99!',
         url: 'https://littlecaesarsmenu.us/little-caesars-9-99-menu',
         type: 'article',
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
             url: 'https://littlecaesarsmenu.us/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp',
             width: 1200,
             height: 630,
-            alt: 'Little Caesars $9.99 Menu 2025'
+            alt: 'Little Caesars $9.99 Menu 2026'
         }]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Little Caesars $9.99 Menu 2025',
+        title: 'Little Caesars $9.99 Menu 2026',
         description: 'Pizza combos, wings & more for just $9.99! Complete value menu guide.'
     },
     alternates: {
@@ -131,7 +131,7 @@ const faqData = [
     },
     {
         question: "What is the More for $9.99 Menu at Little Caesars?",
-        answer: "The 'More for $9.99 Menu' was launched in January 2025 offering premium pizzas and value combos for just $9.99. It includes specialty pizzas that normally cost more, giving customers more value for their money."
+        answer: "The 'More for $9.99 Menu' was launched in January 2026 offering premium pizzas and value combos for just $9.99. It includes specialty pizzas that normally cost more, giving customers more value for their money."
     },
     {
         question: "Is the $9.99 menu available Hot-N-Ready?",
@@ -143,7 +143,7 @@ const faqData = [
     },
     {
         question: "How long is the $9.99 menu available?",
-        answer: "The $9.99 value menu is an ongoing offering that was expanded in 2025. While menu items may rotate, Little Caesars typically maintains value pricing on popular items."
+        answer: "The $9.99 value menu is an ongoing offering that was expanded in 2026. While menu items may rotate, Little Caesars typically maintains value pricing on popular items."
     }
 ]
 
@@ -186,7 +186,7 @@ function generateSchemas() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Little Caesars $9.99 Menu 2025 - Complete Value Guide",
+        "headline": "Little Caesars $9.99 Menu 2026 - Complete Value Guide",
         "description": "Everything on the Little Caesars $9.99 value menu with prices and what's included",
         "author": {
             "@type": "Organization",
@@ -196,7 +196,7 @@ function generateSchemas() {
             "@type": "Organization",
             "name": "Little Caesars Menu"
         },
-        "datePublished": "2025-01-01",
+        "datePublished": "2026-01-01",
         "dateModified": new Date().toISOString().split('T')[0]
     }
 
@@ -252,7 +252,7 @@ export default function NineNinetyNineMenu() {
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <div className="inline-flex items-center bg-yellow-400 text-green-900 px-4 py-2 rounded-full text-sm font-bold mb-6 animate-pulse">
                             <DollarSign className="w-4 h-4 mr-2" />
-                            💸 BEST VALUE DEALS 2025!
+                            💸 BEST VALUE DEALS 2026!
                         </div>
 
                         <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
@@ -492,13 +492,13 @@ export default function NineNinetyNineMenu() {
                         <div className="grid md:grid-cols-3 gap-6">
                             <Link href="/menu" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Full Menu & Prices</h3>
-                                <p className="text-sm text-gray-600 mt-2">Complete Little Caesars menu with 2025 prices</p>
+                                <p className="text-sm text-gray-600 mt-2">Complete Little Caesars menu with 2026 prices</p>
                             </Link>
-                            <Link href="/little-caesars-coupons-january-2025" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
+                            <Link href="/little-caesars-coupons-january-2026" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Coupons & Deals</h3>
                                 <p className="text-sm text-gray-600 mt-2">Save up to 50% with verified promo codes</p>
                             </Link>
-                            <Link href="/little-caesars-pretzel-crust-pizza-2025" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
+                            <Link href="/little-caesars-pretzel-crust-pizza-2026" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors">Pretzel Crust Pizza</h3>
                                 <p className="text-sm text-gray-600 mt-2">Limited time pretzel crust pizza is back!</p>
                             </Link>

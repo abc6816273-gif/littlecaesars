@@ -1,14 +1,14 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Little Caesars Menu Support 2025',
+  title: 'Contact Us | Little Caesars Menu Support 2026',
   description: 'Contact Little Caesars Menu for website feedback, menu updates, technical support, and general inquiries. Get help with your questions about our independent menu guide.',
   keywords: [
     'Contact Little Caesars Menu',
     'Menu website support',
     'Little Caesars feedback',
     'Menu information contact',
-    'Pizza menu help 2025'
+    'Pizza menu help 2026'
   ],
   alternates: {
     canonical: 'https://littlecaesarsmenu.us/contact',

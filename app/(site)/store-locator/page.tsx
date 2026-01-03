@@ -3,7 +3,7 @@ import { PageHero } from '@/components/layout/Hero'
 import OptimizedStoreLocator from './OptimizedStoreLocator'
 
 export const metadata: Metadata = {
-  title: 'Find Little Caesars Near You | Pizza Restaurant Locations & Hours 2025',
+  title: 'Find Little Caesars Near You | Pizza Restaurant Locations & Hours 2026',
   description: 'Find Little Caesars pizza restaurants near you with our interactive location finder. Get directions, hours, phone numbers & menu prices for all locations nationwide.',
   keywords: 'find Little Caesars near you, Little Caesars near me, Little Caesars locations, pizza restaurant finder, Little Caesars hours, pizza near me, Little Caesars directions',
   openGraph: {

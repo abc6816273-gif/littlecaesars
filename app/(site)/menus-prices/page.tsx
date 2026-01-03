@@ -21,8 +21,8 @@ const menuItems = menuData.map(item => ({
 
 // Generate comprehensive SEO metadata
 export async function generateMetadata(): Promise<Metadata> {
-  const title = "Little Caesars Menu Prices 2025 | Complete Menu with Photos & Latest Prices"
-  const description = "🍕 Official Little Caesars Menu Prices 2025! ✅ Hot-N-Ready Pizza ✅ Crazy Bread ✅ Deep Dish Pizza ✅ Latest Prices ✅ Wings, Sides & More!"
+  const title = "Little Caesars Menu Prices 2026 | Complete Menu with Photos & Latest Prices"
+  const description = "🍕 Official Little Caesars Menu Prices 2026! ✅ Hot-N-Ready Pizza ✅ Crazy Bread ✅ Deep Dish Pizza ✅ Latest Prices ✅ Wings, Sides & More!"
   const url = "/menus-prices"
   
   return {
@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
     keywords: [
       // Primary keywords
       "Little Caesars menu prices",
-      "Little Caesars menu 2025",
+      "Little Caesars menu 2026",
       "Little Caesars prices",
       "Little Caesars menu with prices",
       
@@ -73,13 +73,13 @@ export async function generateMetadata(): Promise<Metadata> {
       "fast food restaurant menu",
       "pizza chain menu prices",
       "family pizza menu",
-      "restaurant menu 2025",
+      "restaurant menu 2026",
       
       // Long-tail keywords
-      "Little Caesars menu prices updated 2025",
+      "Little Caesars menu prices updated 2026",
       "Little Caesars latest menu prices",
       "Little Caesars current menu prices",
-      "Little Caesars new menu items 2025"
+      "Little Caesars new menu items 2026"
     ],
     authors: [{ name: "Little Caesars Menu Guide" }],
     creator: "Little Caesars Menu Guide",
@@ -97,7 +97,7 @@ export async function generateMetadata(): Promise<Metadata> {
           url: "/og-menus-prices.jpg",
           width: 1200,
           height: 630,
-          alt: "Little Caesars Menu Prices 2025 - Complete Menu with Real Photos and Latest Prices",
+          alt: "Little Caesars Menu Prices 2026 - Complete Menu with Real Photos and Latest Prices",
           type: "image/jpeg",
         },
       ],

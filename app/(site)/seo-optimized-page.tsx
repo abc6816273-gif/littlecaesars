@@ -5,27 +5,27 @@ import { PageHero } from '@/components/layout'
 
 // Enhanced SEO Metadata with freshness signals
 export const metadata: Metadata = {
-  title: 'Texas Roadhouse Menu with Prices 2025 | Updated August 2025 - Texas Roadhouse Menu',
-  description: 'Complete Texas Roadhouse menu guide with current prices, calories & nutrition info. Updated August 22, 2025. Find steaks, ribs, family meals, deals & coupons.',
+  title: 'Texas Roadhouse Menu with Prices 2026 | Updated August 2026 - Texas Roadhouse Menu',
+  description: 'Complete Texas Roadhouse menu guide with current prices, calories & nutrition info. Updated August 22, 2026. Find steaks, ribs, family meals, deals & coupons.',
   keywords: [
-    'Texas Roadhouse menu 2025',
-    'Texas Roadhouse prices August 2025', 
+    'Texas Roadhouse menu 2026',
+    'Texas Roadhouse prices August 2026', 
     'Texas Roadhouse calories nutrition',
     'Texas Roadhouse family meals deals',
-    'Texas Roadhouse coupons 2025',
+    'Texas Roadhouse coupons 2026',
     'Texas Roadhouse USA menu updated'
   ].join(', '),
   openGraph: {
-    title: 'Texas Roadhouse Menu with Prices 2025 | Complete Guide',
-    description: 'Latest Texas Roadhouse menu with prices, calories & nutrition. Updated August 2025. Find steaks, ribs, family meals & exclusive deals.',
+    title: 'Texas Roadhouse Menu with Prices 2026 | Complete Guide',
+    description: 'Latest Texas Roadhouse menu with prices, calories & nutrition. Updated August 2026. Find steaks, ribs, family meals & exclusive deals.',
     url: 'https://texasroadhousemenu.me',
     siteName: 'Texas Roadhouse Menu',
     images: [
       {
-        url: 'https://texasroadhousemenu.me/images/texas-roadhouse-menu-2025.jpg',
+        url: 'https://texasroadhousemenu.me/images/texas-roadhouse-menu-2026.jpg',
         width: 1200,
         height: 630,
-        alt: 'Texas Roadhouse Menu with Prices 2025 - Complete Guide'
+        alt: 'Texas Roadhouse Menu with Prices 2026 - Complete Guide'
       }
     ],
     locale: 'en_US',
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Texas Roadhouse Menu with Prices 2025 | Updated August 2025',
+    title: 'Texas Roadhouse Menu with Prices 2026 | Updated August 2026',
     description: 'Complete Texas Roadhouse menu with current prices, calories & nutrition. Find steaks, ribs, family meals & deals.',
-    images: ['https://texasroadhousemenu.me/images/texas-roadhouse-menu-2025.jpg'],
+    images: ['https://texasroadhousemenu.me/images/texas-roadhouse-menu-2026.jpg'],
   },
   alternates: {
     canonical: 'https://texasroadhousemenu.me',
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    'article:published_time': '2025-08-22T00:00:00Z',
-    'article:modified_time': '2025-08-22T12:00:00Z',
+    'article:published_time': '2026-08-22T00:00:00Z',
+    'article:modified_time': '2026-08-22T12:00:00Z',
   }
 }
 
@@ -62,9 +62,9 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Texas Roadhouse Menu",
-  "alternateName": "Texas Roadhouse Menu with Prices 2025",
+  "alternateName": "Texas Roadhouse Menu with Prices 2026",
   "url": "https://texasroadhousemenu.me",
-  "description": "Complete guide to Texas Roadhouse menu items, prices, calories, and nutrition information updated for 2025.",
+  "description": "Complete guide to Texas Roadhouse menu items, prices, calories, and nutrition information updated for 2026.",
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://texasroadhousemenu.me/search?q={search_term_string}",
@@ -86,10 +86,10 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What are current Little Caesars menu prices for 2025?",
+      "name": "What are current Little Caesars menu prices for 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Little Caesars prices in 2025 range from $0.59 for sauces to $10.99 for specialty pizzas. Hot-N-Ready pizzas start at $5.55, wings are $8.49, and Crazy Bread is $3.49. Prices may vary by location."
+        "text": "Little Caesars prices in 2026 range from $0.59 for sauces to $10.99 for specialty pizzas. Hot-N-Ready pizzas start at $5.55, wings are $8.49, and Crazy Bread is $3.49. Prices may vary by location."
       }
     },
     {
@@ -118,10 +118,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      "name": "Are there current Texas Roadhouse coupons and deals for August 2025?",
+      "name": "Are there current Texas Roadhouse coupons and deals for August 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, August 2025 deals include Early Dine specials (3-6 PM), VIP Club offers, and seasonal promotions. Check our deals page for current coupons and family meal discounts updated daily."
+        "text": "Yes, August 2026 deals include Early Dine specials (3-6 PM), VIP Club offers, and seasonal promotions. Check our deals page for current coupons and family meal discounts updated daily."
       }
     }
   ]
@@ -171,7 +171,7 @@ export default function SEOOptimizedPage() {
 
       {/* Hero Section with Target Keywords */}
       <PageHero
-        title="Texas Roadhouse Menu with Prices 2025"
+        title="Texas Roadhouse Menu with Prices 2026"
         subtitle={`Complete menu guide with calories, nutrition & family meal deals • Updated ${currentDate}`}
       />
 
@@ -185,7 +185,7 @@ export default function SEOOptimizedPage() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div className="flex-shrink-0">
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-cmyk text-white">
-                    UPDATED AUGUST 2025
+                    UPDATED AUGUST 2026
                   </span>
                 </div>
                 <div>
@@ -194,7 +194,7 @@ export default function SEOOptimizedPage() {
                   </h2>
                   <p className="text-stone/80 text-sm sm:text-base">
                     All prices, calories, and nutrition data verified across multiple locations nationwide. 
-                    Last updated: <time dateTime="2025-08-22" className="font-semibold text-red-cmyk">August 22, 2025</time>
+                    Last updated: <time dateTime="2026-08-22" className="font-semibold text-red-cmyk">August 22, 2026</time>
                   </p>
                 </div>
               </div>
@@ -341,7 +341,7 @@ export default function SEOOptimizedPage() {
             </div>
             
             <div className="mt-4 text-sm text-stone/60 space-y-1">
-              <p>*Prices effective August 2025 and may vary by location. Nutritional values are approximate.</p>
+              <p>*Prices effective August 2026 and may vary by location. Nutritional values are approximate.</p>
               <p>**Family meal calories represent total for entire package. Individual portions will vary.</p>
             </div>
           </section>
@@ -428,11 +428,11 @@ export default function SEOOptimizedPage() {
             <div className="max-w-4xl mx-auto space-y-4">
               <details className="bg-white rounded-xl border border-stone/20 shadow-sm hover:shadow-md transition-shadow group">
                 <summary className="p-6 cursor-pointer font-semibold text-black hover:bg-stone/5 rounded-xl transition-colors flex items-center justify-between">
-                  <span>What are current Texas Roadhouse menu prices for 2025?</span>
+                  <span>What are current Texas Roadhouse menu prices for 2026?</span>
                   <span className="text-red-cmyk group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="px-6 pb-6 text-stone/80 leading-relaxed">
-                  <p>Texas Roadhouse prices in August 2025 range from $8.99 for appetizers like Cactus Blossom to $24.99 for premium steaks like 23oz Porterhouse. Most entrees cost $12.99-$22.99, with family meal packages starting at $39.99 for 4-6 people. Prices include complete nutritional information and may vary slightly by location.</p>
+                  <p>Texas Roadhouse prices in August 2026 range from $8.99 for appetizers like Cactus Blossom to $24.99 for premium steaks like 23oz Porterhouse. Most entrees cost $12.99-$22.99, with family meal packages starting at $39.99 for 4-6 people. Prices include complete nutritional information and may vary slightly by location.</p>
                 </div>
               </details>
 
@@ -462,17 +462,17 @@ export default function SEOOptimizedPage() {
                   <span className="text-red-cmyk group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="px-6 pb-6 text-stone/80 leading-relaxed">
-                  <p>Complete nutrition facts are available for all menu items on our detailed menu pages. Steaks range 300-800 calories, appetizers 400-1200 calories, sides 150-400 calories. Each item includes detailed macros (protein, carbs, fat), sodium content, and comprehensive allergen information updated for August 2025.</p>
+                  <p>Complete nutrition facts are available for all menu items on our detailed menu pages. Steaks range 300-800 calories, appetizers 400-1200 calories, sides 150-400 calories. Each item includes detailed macros (protein, carbs, fat), sodium content, and comprehensive allergen information updated for August 2026.</p>
                 </div>
               </details>
 
               <details className="bg-white rounded-xl border border-stone/20 shadow-sm hover:shadow-md transition-shadow group">
                 <summary className="p-6 cursor-pointer font-semibold text-black hover:bg-stone/5 rounded-xl transition-colors flex items-center justify-between">
-                  <span>Are there current Texas Roadhouse coupons and deals for August 2025?</span>
+                  <span>Are there current Texas Roadhouse coupons and deals for August 2026?</span>
                   <span className="text-red-cmyk group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="px-6 pb-6 text-stone/80 leading-relaxed">
-                  <p>Yes, August 2025 deals include Early Dine specials (3-6 PM with discounted menu pricing), VIP Club exclusive offers, and seasonal family meal promotions. Our deals page features current coupons, limited-time offers, and family package discounts updated daily with expiration dates and location availability.</p>
+                  <p>Yes, August 2026 deals include Early Dine specials (3-6 PM with discounted menu pricing), VIP Club exclusive offers, and seasonal family meal promotions. Our deals page features current coupons, limited-time offers, and family package discounts updated daily with expiration dates and location availability.</p>
                 </div>
               </details>
             </div>
@@ -501,7 +501,7 @@ export default function SEOOptimizedPage() {
             
             <div className="mt-8 pt-6 border-t border-texas-black/20">
               <p className="text-sm text-texas-black/70">
-                Trusted by thousands of Texas Roadhouse fans • Updated August 22, 2025 • Mobile-optimized for all devices
+                Trusted by thousands of Texas Roadhouse fans • Updated August 22, 2026 • Mobile-optimized for all devices
               </p>
             </div>
           </section>

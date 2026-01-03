@@ -118,8 +118,8 @@ export default function MenusPricesContent({ menuItems }: MenusPricesContentProp
 
   const faqData = [
     {
-      question: "What are the current Little Caesars menu prices for 2025?",
-      answer: "Little Caesars menu prices for 2025 range from $1.99 for beverages to $10.99 for large specialty pizzas. Hot-N-Ready pizzas start at $5.55, wings are $8.49, and Crazy Bread is $3.49. Prices may vary by location."
+      question: "What are the current Little Caesars menu prices for 2026?",
+      answer: "Little Caesars menu prices for 2026 range from $1.99 for beverages to $10.99 for large specialty pizzas. Hot-N-Ready pizzas start at $5.55, wings are $8.49, and Crazy Bread is $3.49. Prices may vary by location."
     },
     {
       question: "Does Little Caesars offer family meal deals or combos?",
@@ -127,7 +127,7 @@ export default function MenusPricesContent({ menuItems }: MenusPricesContentProp
     },
     {
       question: "Are Little Caesars menu prices the same at all locations?",
-      answer: "Menu prices may vary slightly by location due to local market conditions, but the prices listed here reflect the standard pricing across most Little Caesars locations in the USA as of 2025."
+      answer: "Menu prices may vary slightly by location due to local market conditions, but the prices listed here reflect the standard pricing across most Little Caesars locations in the USA as of 2026."
     },
     {
       question: "What comes with Little Caesars pizza orders?",
@@ -158,7 +158,7 @@ export default function MenusPricesContent({ menuItems }: MenusPricesContentProp
       
       {/* Hero Section using PageHero component like other pages */}
       <PageHero
-        title="Little Caesars Menu Prices 2025 | Complete Menu with Photos"
+        title="Little Caesars Menu Prices 2026 | Complete Menu with Photos"
         subtitle="🍕 Complete Little Caesars Menu with Latest Prices! ✅ Hot-N-Ready Pizza ✅ Crazy Bread ✅ Deep Dish Pizza ✅ Real Food Photos ✅ Updated Daily ✅ All Menu Items with Prices & Photos"
       />
 
@@ -291,7 +291,7 @@ export default function MenusPricesContent({ menuItems }: MenusPricesContentProp
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center">
             <h2 className="text-lg font-bold text-texas-black mb-3">
-              Little Caesars Menu 2025 📱
+              Little Caesars Menu 2026 📱
             </h2>
             <div className="flex justify-center space-x-6 text-sm text-stone-600">
               <div className="flex items-center">
@@ -444,10 +444,10 @@ export default function MenusPricesContent({ menuItems }: MenusPricesContentProp
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-stone-900 mb-6">Little Caesars Menu 2025: Complete Price Guide</h2>
+            <h2 className="text-4xl font-bold text-stone-900 mb-6">Little Caesars Menu 2026: Complete Price Guide</h2>
             <div className="max-w-4xl mx-auto text-lg text-stone-600 leading-relaxed space-y-4">
               <p>
-                <strong>Little Caesars menu prices 2025</strong> feature delicious <strong>pizza and sides</strong> with real photos and up-to-date pricing. 
+                <strong>Little Caesars menu prices 2026</strong> feature delicious <strong>pizza and sides</strong> with real photos and up-to-date pricing. 
                 Our comprehensive menu includes famous <strong>Hot-N-Ready pizzas</strong>, <strong>Crazy Bread</strong>, 
                 signature <strong>Deep Dish pizza</strong>, and <strong>buffalo wings</strong>.
               </p>
@@ -472,7 +472,7 @@ export default function MenusPricesContent({ menuItems }: MenusPricesContentProp
             </div>
             <div className="text-center p-6 bg-stone-50 rounded-xl">
               <h3 className="text-2xl font-bold text-texas-yellow mb-3">Updated Daily</h3>
-              <p className="text-stone-600">Latest 2025 prices verified and updated to ensure accuracy</p>
+              <p className="text-stone-600">Latest 2026 prices verified and updated to ensure accuracy</p>
             </div>
             <div className="text-center p-6 bg-stone-50 rounded-xl">
               <h3 className="text-2xl font-bold text-texas-yellow mb-3">Real Photos</h3>
@@ -487,7 +487,7 @@ export default function MenusPricesContent({ menuItems }: MenusPricesContentProp
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-stone-900 mb-4">Little Caesars Menu Prices FAQ</h2>
-            <p className="text-stone-600 text-lg">Everything you need to know about Little Caesars menu prices 2025</p>
+            <p className="text-stone-600 text-lg">Everything you need to know about Little Caesars menu prices 2026</p>
           </div>
 
           <div className="space-y-4">
@@ -565,14 +565,14 @@ export default function MenusPricesContent({ menuItems }: MenusPricesContentProp
           <div className="border-t border-stone-700 pt-8">
             <div className="text-center mb-6">
               <p className="text-stone-300 leading-relaxed max-w-4xl mx-auto">
-                <strong className="text-white">Little Caesars menu prices 2025 updated daily.</strong> Verified deals & accurate prices for pizza, wings, crazy bread, sides & desserts. 
+                <strong className="text-white">Little Caesars menu prices 2026 updated daily.</strong> Verified deals & accurate prices for pizza, wings, crazy bread, sides & desserts. 
                 Our comprehensive menu guide features Hot-N-Ready pizza, Deep Dish pizza, buffalo wings, Crazy Bread, beverages, and desserts with current pricing. 
                 Find the best value meals and save with our latest coupons and promotional offers. All prices are verified and updated regularly to ensure accuracy.
               </p>
             </div>
             
             <div className="text-center text-stone-400 text-sm">
-              <p>&copy; 2025 Little Caesars Menu Guide. All rights reserved. Prices may vary by location.</p>
+              <p>&copy; 2026 Little Caesars Menu Guide. All rights reserved. Prices may vary by location.</p>
             </div>
           </div>
         </div>

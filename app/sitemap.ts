@@ -189,9 +189,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: 'weekly',
         priority: 0.8,
       },
-      // Christmas 2025 Blog - High Priority for SEO
+      // Christmas 2026 Blog - High Priority for SEO
       {
-        url: `${baseUrl}/happy-christmas-2025`,
+        url: `${baseUrl}/happy-christmas-2026`,
         lastModified: currentDate,
         changeFrequency: 'weekly',
         priority: 0.9,
@@ -211,13 +211,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.9,
       },
       {
-        url: `${baseUrl}/little-caesars-new-items-2025`,
+        url: `${baseUrl}/little-caesars-new-items-2026`,
         lastModified: currentDate,
         changeFrequency: 'weekly',
         priority: 0.9,
       },
       {
-        url: `${baseUrl}/little-caesars-coupons-january-2025`,
+        url: `${baseUrl}/little-caesars-coupons-january-2026`,
         lastModified: currentDate,
         changeFrequency: 'daily',
         priority: 0.95,
@@ -235,7 +235,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.9,
       },
       {
-        url: `${baseUrl}/little-caesars-pretzel-crust-pizza-2025`,
+        url: `${baseUrl}/little-caesars-pretzel-crust-pizza-2026`,
         lastModified: currentDate,
         changeFrequency: 'weekly',
         priority: 0.85,
@@ -291,9 +291,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.9,
       },
 
-      // Little Caesars New Items 2025 - Maximum Priority for Trending Content
+      // Little Caesars New Items 2026 - Maximum Priority for Trending Content
       {
-        url: `${baseUrl}/little-caesars-new-items-2025`,
+        url: `${baseUrl}/little-caesars-new-items-2026`,
         lastModified: currentDate,
         changeFrequency: 'weekly',
         priority: 1.0,

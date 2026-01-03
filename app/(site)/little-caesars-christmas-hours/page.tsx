@@ -2,19 +2,19 @@ import type { Metadata } from 'next'
 
 // SEO-optimized metadata for Christmas hours page
 export const metadata: Metadata = {
-    title: 'Is Little Caesars Open on Christmas 2025? Holiday Hours Guide | Little Caesars Menu',
-    description: 'Find out if Little Caesars is open on Christmas Day 2025. Complete holiday hours guide, Christmas Eve hours, and what to order for your holiday pizza party.',
+    title: 'Is Little Caesars Open on Christmas 2026? Holiday Hours Guide | Little Caesars Menu',
+    description: 'Find out if Little Caesars is open on Christmas Day 2026. Complete holiday hours guide, Christmas Eve hours, and what to order for your holiday pizza party.',
     keywords: [
         'is little caesars open on christmas',
         'little caesars christmas hours',
-        'little caesars holiday hours 2025',
+        'little caesars holiday hours 2026',
         'little caesars christmas eve hours',
         'little caesars open christmas day',
         'pizza open on christmas'
     ].join(', '),
     openGraph: {
-        title: 'Is Little Caesars Open on Christmas 2025? | Holiday Hours Guide',
-        description: 'Complete guide to Little Caesars holiday hours. Find out if your local store is open on Christmas Day and Christmas Eve 2025.',
+        title: 'Is Little Caesars Open on Christmas 2026? | Holiday Hours Guide',
+        description: 'Complete guide to Little Caesars holiday hours. Find out if your local store is open on Christmas Day and Christmas Eve 2026.',
         type: 'article',
         url: 'https://littlecaesarsmenu.us/little-caesars-christmas-hours',
         images: [
@@ -22,14 +22,14 @@ export const metadata: Metadata = {
                 url: 'https://littlecaesarsmenu.us/images/little-caesars-christmas.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Little Caesars Christmas Hours 2025'
+                alt: 'Little Caesars Christmas Hours 2026'
             }
         ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Is Little Caesars Open on Christmas 2025?',
-        description: 'Find out Little Caesars holiday hours for Christmas Day and Christmas Eve 2025.'
+        title: 'Is Little Caesars Open on Christmas 2026?',
+        description: 'Find out Little Caesars holiday hours for Christmas Day and Christmas Eve 2026.'
     },
     alternates: {
         canonical: 'https://littlecaesarsmenu.us/little-caesars-christmas-hours'
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 }
 
 export default function LittleCaesarsChristmasHoursPage() {
-    const currentYear = 2025
+    const currentYear = 2026
 
     // Structured data for SEO
     const articleSchema = {
@@ -65,18 +65,18 @@ export default function LittleCaesarsChristmasHoursPage() {
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Is Little Caesars open on Christmas Day 2025?",
+                "name": "Is Little Caesars open on Christmas Day 2026?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Most Little Caesars locations are CLOSED on Christmas Day (December 25th, 2025). However, hours vary by location, so it's best to call your local store or check the Little Caesars app to confirm."
+                    "text": "Most Little Caesars locations are CLOSED on Christmas Day (December 25th, 2026). However, hours vary by location, so it's best to call your local store or check the Little Caesars app to confirm."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is Little Caesars open on Christmas Eve 2025?",
+                "name": "Is Little Caesars open on Christmas Eve 2026?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes! Most Little Caesars locations are open on Christmas Eve (December 24th, 2025), typically with reduced hours. Many stores close early, around 6-8 PM, so plan to pick up your pizza earlier in the day."
+                    "text": "Yes! Most Little Caesars locations are open on Christmas Eve (December 24th, 2026), typically with reduced hours. Many stores close early, around 6-8 PM, so plan to pick up your pizza earlier in the day."
                 }
             },
             {
@@ -316,11 +316,11 @@ export default function LittleCaesarsChristmasHoursPage() {
                         <div className="space-y-4">
                             <details className="bg-white p-6 rounded-lg shadow-md group" open>
                                 <summary className="font-bold text-lg cursor-pointer list-none flex justify-between items-center">
-                                    Is Little Caesars open on Christmas Day 2025?
+                                    Is Little Caesars open on Christmas Day 2026?
                                     <span className="transform group-open:rotate-180 transition-transform">▼</span>
                                 </summary>
                                 <p className="mt-4 text-gray-600">
-                                    Most Little Caesars locations are <strong>closed on Christmas Day</strong> (December 25th, 2025).
+                                    Most Little Caesars locations are <strong>closed on Christmas Day</strong> (December 25th, 2026).
                                     This is one of the few days of the year that Little Caesars closes.
                                     However, hours can vary by location, especially for franchise-owned stores,
                                     so it's always best to call ahead or check the app.
@@ -329,11 +329,11 @@ export default function LittleCaesarsChristmasHoursPage() {
 
                             <details className="bg-white p-6 rounded-lg shadow-md group">
                                 <summary className="font-bold text-lg cursor-pointer list-none flex justify-between items-center">
-                                    Is Little Caesars open on Christmas Eve 2025?
+                                    Is Little Caesars open on Christmas Eve 2026?
                                     <span className="transform group-open:rotate-180 transition-transform">▼</span>
                                 </summary>
                                 <p className="mt-4 text-gray-600">
-                                    Yes! Most Little Caesars locations are <strong>open on Christmas Eve</strong> (December 24th, 2025),
+                                    Yes! Most Little Caesars locations are <strong>open on Christmas Eve</strong> (December 24th, 2026),
                                     but typically with reduced hours. Most stores close earlier than usual,
                                     around 6-8 PM. Plan to order early to make sure you get your pizza!
                                 </p>
@@ -387,7 +387,7 @@ export default function LittleCaesarsChristmasHoursPage() {
                                 View Full Menu →
                             </a>
                             <a
-                                href="/happy-christmas-2025"
+                                href="/happy-christmas-2026"
                                 className="bg-red-700 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-red-800 transition-colors"
                             >
                                 🎄 Christmas Deals Guide
@@ -401,12 +401,12 @@ export default function LittleCaesarsChristmasHoursPage() {
                     <div className="max-w-4xl mx-auto px-4">
                         <h2 className="text-2xl font-bold mb-6">📚 Related Articles</h2>
                         <div className="grid md:grid-cols-2 gap-4">
-                            <a href="/happy-christmas-2025" className="block p-4 border rounded-lg hover:border-orange-500 transition-colors">
-                                <h3 className="font-bold text-lg mb-1">🎄 Happy Christmas 2025 - Little Caesars Holiday Guide</h3>
+                            <a href="/happy-christmas-2026" className="block p-4 border rounded-lg hover:border-orange-500 transition-colors">
+                                <h3 className="font-bold text-lg mb-1">🎄 Happy Christmas 2026 - Little Caesars Holiday Guide</h3>
                                 <p className="text-gray-600 text-sm">Complete guide to Little Caesars Christmas deals, party ideas, and festive pizza combinations.</p>
                             </a>
                             <a href="/menus-prices" className="block p-4 border rounded-lg hover:border-orange-500 transition-colors">
-                                <h3 className="font-bold text-lg mb-1">🍕 Little Caesars Menu & Prices 2025</h3>
+                                <h3 className="font-bold text-lg mb-1">🍕 Little Caesars Menu & Prices 2026</h3>
                                 <p className="text-gray-600 text-sm">Complete menu with all items, prices, calories, and nutrition information.</p>
                             </a>
                         </div>

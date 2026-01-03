@@ -1,52 +1,52 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-// Ultimate SEO metadata for New Items 2025 - targeting all high-traffic keywords
+// Ultimate SEO metadata for New Items 2026 - targeting all high-traffic keywords
 export const metadata: Metadata = {
-    title: 'Little Caesars New Menu Items 2025 | Complete Guide to All New Pizzas & Sides',
-    description: 'Discover ALL Little Caesars new menu items for 2025! Stuffed Crust Pizza, Pretzel Crust, Cheesesteak Crazy Puffs, $9.99 Value Menu, and more. Prices, calories & reviews included.',
+    title: 'Little Caesars New Menu Items 2026 | Complete Guide to All New Pizzas & Sides',
+    description: 'Discover ALL Little Caesars new menu items for 2026! Stuffed Crust Pizza, Pretzel Crust, Cheesesteak Crazy Puffs, $9.99 Value Menu, and more. Prices, calories & reviews included.',
     keywords: [
-        'little caesars new menu items 2025',
-        'little caesars new pizza 2025',
+        'little caesars new menu items 2026',
+        'little caesars new pizza 2026',
         'little caesars stuffed crust',
         'little caesars pretzel crust',
         'little caesars new items',
-        'little caesars menu 2025',
+        'little caesars menu 2026',
         'little caesars cheesesteak pizza',
         'little caesars value menu',
         'little caesars new crazy puffs',
         'little caesars stuffed crunch crust',
         'what is new at little caesars',
         'little caesars limited time',
-        'little caesars 2025 menu',
+        'little caesars 2026 menu',
         'new pizza at little caesars',
-        'little caesars specials 2025'
+        'little caesars specials 2026'
     ].join(', '),
     openGraph: {
-        title: 'Little Caesars New Menu Items 2025 | All New Pizzas & Sides',
-        description: 'Complete guide to all new Little Caesars menu items in 2025. Stuffed Crust, Pretzel Crust, Cheesesteak Crazy Puffs & more!',
+        title: 'Little Caesars New Menu Items 2026 | All New Pizzas & Sides',
+        description: 'Complete guide to all new Little Caesars menu items in 2026. Stuffed Crust, Pretzel Crust, Cheesesteak Crazy Puffs & more!',
         type: 'article',
-        url: 'https://littlecaesarsmenu.us/little-caesars-new-items-2025',
+        url: 'https://littlecaesarsmenu.us/little-caesars-new-items-2026',
         images: [
             {
-                url: 'https://littlecaesarsmenu.us/images/new-items-2025.jpg',
+                url: 'https://littlecaesarsmenu.us/images/new-items-2026.jpg',
                 width: 1200,
                 height: 630,
-                alt: 'Little Caesars New Menu Items 2025'
+                alt: 'Little Caesars New Menu Items 2026'
             }
         ],
-        publishedTime: '2025-01-01T00:00:00Z',
+        publishedTime: '2026-01-01T00:00:00Z',
         modifiedTime: new Date().toISOString(),
         authors: ['Little Caesars Menu'],
         section: 'Menu Updates'
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Little Caesars New Menu Items 2025',
-        description: 'All new pizzas, sides & deals at Little Caesars for 2025!'
+        title: 'Little Caesars New Menu Items 2026',
+        description: 'All new pizzas, sides & deals at Little Caesars for 2026!'
     },
     alternates: {
-        canonical: 'https://littlecaesarsmenu.us/little-caesars-new-items-2025'
+        canonical: 'https://littlecaesarsmenu.us/little-caesars-new-items-2026'
     },
     robots: {
         index: true,
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     }
 }
 
-// All new items data for 2025
-const newItems2025 = [
+// All new items data for 2026
+const newItems2026 = [
     {
         id: 1,
         name: 'Stuffed Crunch Crust Pizza',
@@ -70,7 +70,7 @@ const newItems2025 = [
         price: 11.99,
         calories: 320,
         description: 'Crispy, cheese-stuffed crust with a satisfying crunch in every bite. Available in Pepperoni, Cheese, and Custom toppings.',
-        releaseDate: 'January 2025',
+        releaseDate: 'January 2026',
         status: 'Available Now',
         isLimited: false,
         isHot: true,
@@ -85,7 +85,7 @@ const newItems2025 = [
         price: 10.99,
         calories: 290,
         description: 'Fan-favorite returns! Soft pretzel-style crust with buttery salt topping. A unique twist on classic pizza.',
-        releaseDate: 'February 2025',
+        releaseDate: 'February 2026',
         status: 'Available Now',
         isLimited: true,
         isHot: true,
@@ -130,7 +130,7 @@ const newItems2025 = [
         price: 3.99,
         calories: 95,
         description: 'Four delicious cheeses - mozzarella, parmesan, asiago, and muenster - in every puff. Vegetarian-friendly!',
-        releaseDate: 'March 2025',
+        releaseDate: 'March 2026',
         status: 'Available Now',
         isLimited: false,
         isHot: true,
@@ -145,7 +145,7 @@ const newItems2025 = [
         price: 4.49,
         calories: 100,
         description: 'Crispy bacon bits combined with melted cheese in a flaky puff pastry. Perfect for bacon lovers!',
-        releaseDate: 'January 2025',
+        releaseDate: 'January 2026',
         status: 'Available Now',
         isLimited: false,
         isHot: true,
@@ -160,7 +160,7 @@ const newItems2025 = [
         price: 2.49,
         calories: 170,
         description: 'Exclusive Little Caesars x Mountain Dew collaboration! Tropical mango flavor with classic Dew taste.',
-        releaseDate: 'Summer 2025',
+        releaseDate: 'Summer 2026',
         status: 'Coming Soon',
         isLimited: true,
         isHot: false,
@@ -189,8 +189,8 @@ const newItems2025 = [
         category: 'Deals',
         price: 9.99,
         calories: 0,
-        description: 'Choose from multiple combo options: Pizza + Crazy Bread, Pizza + Wings, or 2 Medium Pizzas. Best value in 2025!',
-        releaseDate: 'January 2025',
+        description: 'Choose from multiple combo options: Pizza + Crazy Bread, Pizza + Wings, or 2 Medium Pizzas. Best value in 2026!',
+        releaseDate: 'January 2026',
         status: 'Available Now',
         isLimited: false,
         isHot: true,
@@ -217,16 +217,16 @@ const newItems2025 = [
 
 const faqs = [
     {
-        question: 'What are the new items at Little Caesars in 2025?',
-        answer: 'Little Caesars has introduced several exciting new items in 2025 including: Stuffed Crunch Crust Pizza ($11.99), Pretzel Crust Pizza ($10.99), Cheesesteak Crazy Puffs ($4.99), 4 Cheese Crazy Puffs ($3.99), Bacon Cheese Crazy Puffs ($4.49), Ultimate Cheesesteak Pizza ($12.99), and the new $9.99 Value Combos. They also have an upcoming Mountain Dew Mango Rush exclusive drink.'
+        question: 'What are the new items at Little Caesars in 2026?',
+        answer: 'Little Caesars has introduced several exciting new items in 2026 including: Stuffed Crunch Crust Pizza ($11.99), Pretzel Crust Pizza ($10.99), Cheesesteak Crazy Puffs ($4.99), 4 Cheese Crazy Puffs ($3.99), Bacon Cheese Crazy Puffs ($4.49), Ultimate Cheesesteak Pizza ($12.99), and the new $9.99 Value Combos. They also have an upcoming Mountain Dew Mango Rush exclusive drink.'
     },
     {
         question: 'Is the Pretzel Crust Pizza back at Little Caesars?',
-        answer: 'Yes! The fan-favorite Pretzel Crust Pizza has returned to Little Caesars in February 2025. It features a soft pretzel-style crust with buttery salt topping and is priced at $10.99. However, it is a limited-time offering, so get it while you can!'
+        answer: 'Yes! The fan-favorite Pretzel Crust Pizza has returned to Little Caesars in February 2026. It features a soft pretzel-style crust with buttery salt topping and is priced at $10.99. However, it is a limited-time offering, so get it while you can!'
     },
     {
         question: 'What is the Stuffed Crunch Crust Pizza?',
-        answer: 'The Stuffed Crunch Crust Pizza is Little Caesars newest crust innovation for 2025. It features a cheese-stuffed crust with an extra crispy, crunchy texture. Available in Pepperoni, Cheese, or custom toppings for $11.99. Each slice has about 320 calories.'
+        answer: 'The Stuffed Crunch Crust Pizza is Little Caesars newest crust innovation for 2026. It features a cheese-stuffed crust with an extra crispy, crunchy texture. Available in Pepperoni, Cheese, or custom toppings for $11.99. Each slice has about 320 calories.'
     },
     {
         question: 'How much are the new Crazy Puffs flavors?',
@@ -234,7 +234,7 @@ const faqs = [
     },
     {
         question: 'What is the Little Caesars $9.99 Value Menu?',
-        answer: 'The $9.99 Value Menu launched in January 2025 and offers amazing combo deals: Pizza + Crazy Bread, Pizza + Wings, or 2 Medium Pizzas - all for just $9.99! This is one of the best values in the fast food pizza industry.'
+        answer: 'The $9.99 Value Menu launched in January 2026 and offers amazing combo deals: Pizza + Crazy Bread, Pizza + Wings, or 2 Medium Pizzas - all for just $9.99! This is one of the best values in the fast food pizza industry.'
     },
     {
         question: 'Are all new items available at every location?',
@@ -242,7 +242,7 @@ const faqs = [
     },
     {
         question: 'What is the Mountain Dew Mango Rush?',
-        answer: 'Mountain Dew Mango Rush is an exclusive Little Caesars x Mountain Dew collaboration drink coming in Summer 2025. It features a tropical mango flavor combined with classic Mountain Dew taste. This will be a limited edition exclusive to Little Caesars!'
+        answer: 'Mountain Dew Mango Rush is an exclusive Little Caesars x Mountain Dew collaboration drink coming in Summer 2026. It features a tropical mango flavor combined with classic Mountain Dew taste. This will be a limited edition exclusive to Little Caesars!'
     },
     {
         question: 'Which new item has the best reviews?',
@@ -250,11 +250,11 @@ const faqs = [
     }
 ]
 
-export default function NewItems2025Page() {
-    const availableItems = newItems2025.filter(item => item.status === 'Available Now')
-    const comingSoonItems = newItems2025.filter(item => item.status === 'Coming Soon')
+export default function NewItems2026Page() {
+    const availableItems = newItems2026.filter(item => item.status === 'Available Now')
+    const comingSoonItems = newItems2026.filter(item => item.status === 'Coming Soon')
     const avgRating = (availableItems.filter(i => i.rating > 0).reduce((sum, i) => sum + i.rating, 0) / availableItems.filter(i => i.rating > 0).length).toFixed(1)
-    const totalReviews = newItems2025.reduce((sum, i) => sum + i.reviews, 0)
+    const totalReviews = newItems2026.reduce((sum, i) => sum + i.reviews, 0)
 
     return (
         <>
@@ -267,10 +267,10 @@ export default function NewItems2025Page() {
                         "@graph": [
                             {
                                 "@type": "Article",
-                                "@id": "https://littlecaesarsmenu.us/little-caesars-new-items-2025#article",
-                                "headline": "Little Caesars New Menu Items 2025: Complete Guide",
-                                "description": "Comprehensive guide to all new Little Caesars menu items for 2025 including pizzas, sides, and deals.",
-                                "image": "https://littlecaesarsmenu.us/images/new-items-2025.jpg",
+                                "@id": "https://littlecaesarsmenu.us/little-caesars-new-items-2026#article",
+                                "headline": "Little Caesars New Menu Items 2026: Complete Guide",
+                                "description": "Comprehensive guide to all new Little Caesars menu items for 2026 including pizzas, sides, and deals.",
+                                "image": "https://littlecaesarsmenu.us/images/new-items-2026.jpg",
                                 "author": {
                                     "@type": "Organization",
                                     "name": "Little Caesars Menu"
@@ -283,16 +283,16 @@ export default function NewItems2025Page() {
                                         "url": "https://littlecaesarsmenu.us/logo.png"
                                     }
                                 },
-                                "datePublished": "2025-01-01",
+                                "datePublished": "2026-01-01",
                                 "dateModified": new Date().toISOString().split('T')[0],
-                                "mainEntityOfPage": "https://littlecaesarsmenu.us/little-caesars-new-items-2025"
+                                "mainEntityOfPage": "https://littlecaesarsmenu.us/little-caesars-new-items-2026"
                             },
                             {
                                 "@type": "ItemList",
-                                "@id": "https://littlecaesarsmenu.us/little-caesars-new-items-2025#itemlist",
-                                "name": "Little Caesars New Menu Items 2025",
-                                "numberOfItems": newItems2025.length,
-                                "itemListElement": newItems2025.map((item, index) => ({
+                                "@id": "https://littlecaesarsmenu.us/little-caesars-new-items-2026#itemlist",
+                                "name": "Little Caesars New Menu Items 2026",
+                                "numberOfItems": newItems2026.length,
+                                "itemListElement": newItems2026.map((item, index) => ({
                                     "@type": "ListItem",
                                     "position": index + 1,
                                     "item": {
@@ -318,7 +318,7 @@ export default function NewItems2025Page() {
                             },
                             {
                                 "@type": "FAQPage",
-                                "@id": "https://littlecaesarsmenu.us/little-caesars-new-items-2025#faq",
+                                "@id": "https://littlecaesarsmenu.us/little-caesars-new-items-2026#faq",
                                 "mainEntity": faqs.map(faq => ({
                                     "@type": "Question",
                                     "name": faq.question,
@@ -346,8 +346,8 @@ export default function NewItems2025Page() {
                                     {
                                         "@type": "ListItem",
                                         "position": 3,
-                                        "name": "New Items 2025",
-                                        "item": "https://littlecaesarsmenu.us/little-caesars-new-items-2025"
+                                        "name": "New Items 2026",
+                                        "item": "https://littlecaesarsmenu.us/little-caesars-new-items-2026"
                                     }
                                 ]
                             }
@@ -362,22 +362,22 @@ export default function NewItems2025Page() {
                 <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
                         <span className="animate-pulse text-2xl">🆕</span>
-                        <span className="text-white font-bold">Updated December 2025</span>
+                        <span className="text-white font-bold">Updated December 2026</span>
                     </div>
 
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
                         Little Caesars New Menu Items<br />
-                        <span className="text-yellow-300">2025 Complete Guide</span>
+                        <span className="text-yellow-300">2026 Complete Guide</span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
-                        All {newItems2025.length} new pizzas, sides, drinks & deals at Little Caesars for 2025.
+                        All {newItems2026.length} new pizzas, sides, drinks & deals at Little Caesars for 2026.
                         Prices, calories, and honest reviews!
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-4 mb-8">
                         <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-xl">
-                            <div className="text-3xl font-bold text-yellow-300">{newItems2025.length}</div>
+                            <div className="text-3xl font-bold text-yellow-300">{newItems2026.length}</div>
                             <div className="text-sm text-white/80">New Items</div>
                         </div>
                         <div className="bg-white/20 backdrop-blur-sm px-6 py-3 rounded-xl">
@@ -435,7 +435,7 @@ export default function NewItems2025Page() {
                     <div className="text-center mb-12">
                         <span className="text-5xl mb-4 block">🍕</span>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            New Pizzas 2025
+                            New Pizzas 2026
                         </h2>
                         <p className="text-xl text-gray-600">
                             Exciting new crust options and flavor combinations
@@ -443,7 +443,7 @@ export default function NewItems2025Page() {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                        {newItems2025.filter(item => item.category === 'Pizza').map((item) => (
+                        {newItems2026.filter(item => item.category === 'Pizza').map((item) => (
                             <div key={item.id} className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-6 shadow-lg border-2 border-red-100 hover:shadow-xl transition-all hover:-translate-y-1">
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {item.isHot && (
@@ -504,7 +504,7 @@ export default function NewItems2025Page() {
                     <div className="text-center mb-12">
                         <span className="text-5xl mb-4 block">🥟</span>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            New Sides & Snacks 2025
+                            New Sides & Snacks 2026
                         </h2>
                         <p className="text-xl text-gray-600">
                             Perfect companions to your pizza - new Crazy Puffs flavors!
@@ -512,7 +512,7 @@ export default function NewItems2025Page() {
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-6">
-                        {newItems2025.filter(item => item.category === 'Sides').map((item) => (
+                        {newItems2026.filter(item => item.category === 'Sides').map((item) => (
                             <div key={item.id} className="bg-white rounded-2xl p-6 shadow-lg border-2 border-orange-100 hover:shadow-xl transition-all hover:-translate-y-1">
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {item.isHot && (
@@ -562,18 +562,18 @@ export default function NewItems2025Page() {
                     <div className="text-center mb-12">
                         <span className="text-5xl mb-4 block">💰</span>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                            New Deals & Value Menu 2025
+                            New Deals & Value Menu 2026
                         </h2>
                         <p className="text-xl text-white/90">
                             Best bang for your buck - new combo deals!
                         </p>
                     </div>
 
-                    {newItems2025.filter(item => item.category === 'Deals').map((item) => (
+                    {newItems2026.filter(item => item.category === 'Deals').map((item) => (
                         <div key={item.id} className="bg-white rounded-3xl p-8 shadow-2xl max-w-2xl mx-auto">
                             <div className="text-center">
                                 <div className="inline-block bg-green-100 text-green-800 font-bold px-4 py-2 rounded-full mb-4">
-                                    🎉 BEST VALUE IN 2025
+                                    🎉 BEST VALUE IN 2026
                                 </div>
                                 <h3 className="text-3xl font-bold text-gray-900 mb-2">{item.name}</h3>
                                 <div className="text-6xl font-bold text-green-600 my-4">${item.price}</div>
@@ -613,7 +613,7 @@ export default function NewItems2025Page() {
                                 Coming Soon to Little Caesars
                             </h2>
                             <p className="text-xl text-gray-600">
-                                Exciting new items launching later in 2025!
+                                Exciting new items launching later in 2026!
                             </p>
                         </div>
 
@@ -653,7 +653,7 @@ export default function NewItems2025Page() {
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Complete New Items Price List 2025
+                            Complete New Items Price List 2026
                         </h2>
                         <p className="text-xl text-gray-600">
                             Quick comparison of all new menu items
@@ -673,7 +673,7 @@ export default function NewItems2025Page() {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-100">
-                                {newItems2025.map((item) => (
+                                {newItems2026.map((item) => (
                                     <tr key={item.id} className="hover:bg-red-50 transition-colors">
                                         <td className="p-4">
                                             <div className="font-medium text-gray-900">{item.name}</div>
@@ -769,7 +769,7 @@ export default function NewItems2025Page() {
                     </div>
 
                     <p className="text-white/70 mt-8 text-sm">
-                        Last updated: December 2025 | Prices and availability may vary by location
+                        Last updated: December 2026 | Prices and availability may vary by location
                     </p>
                 </div>
             </section>

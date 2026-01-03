@@ -17,8 +17,8 @@ import {
 
 // SEO Metadata
 export const metadata: Metadata = {
-    title: 'Little Caesars Delivery 2025 - Fees, Hours, Areas & How to Order',
-    description: 'Complete Little Caesars delivery guide 2025! Delivery fees ($3.99), minimum order, delivery hours, areas covered, and step-by-step ordering guide.',
+    title: 'Little Caesars Delivery 2026 - Fees, Hours, Areas & How to Order',
+    description: 'Complete Little Caesars delivery guide 2026! Delivery fees ($3.99), minimum order, delivery hours, areas covered, and step-by-step ordering guide.',
     keywords: [
         'Little Caesars delivery',
         'Little Caesars delivery near me',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         'pizza delivery'
     ],
     openGraph: {
-        title: 'Little Caesars Delivery Guide 2025 - Fees, Hours & Areas',
+        title: 'Little Caesars Delivery Guide 2026 - Fees, Hours & Areas',
         description: 'Everything you need to know about Little Caesars delivery. Fees, hours, minimum order, and how to order.',
         url: 'https://littlecaesarsmenu.us/little-caesars-delivery',
         type: 'article'
@@ -154,9 +154,9 @@ function generateSchemas() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Little Caesars Delivery Guide 2025",
+        "headline": "Little Caesars Delivery Guide 2026",
         "author": { "@type": "Organization", "name": "Little Caesars Menu" },
-        "datePublished": "2025-01-01",
+        "datePublished": "2026-01-01",
         "dateModified": new Date().toISOString().split('T')[0]
     }
 
@@ -211,7 +211,7 @@ export default function DeliveryGuidePage() {
 
                         <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
                             Little Caesars<br />
-                            <span style={{ color: '#86efac' }}>Delivery Guide</span> 2025
+                            <span style={{ color: '#86efac' }}>Delivery Guide</span> 2026
                         </h1>
 
                         <p style={{ color: '#ffffff' }} className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
@@ -433,7 +433,7 @@ export default function DeliveryGuidePage() {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">More Guides</h2>
                         <div className="grid md:grid-cols-3 gap-6">
-                            <Link href="/little-caesars-coupons-january-2025" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
+                            <Link href="/little-caesars-coupons-january-2026" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-blue-600">Coupons & Promo Codes</h3>
                                 <p className="text-sm text-gray-600 mt-2">Save up to 50% on delivery</p>
                             </Link>

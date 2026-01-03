@@ -8,11 +8,11 @@ export const revalidate = 3600 // ISR for SEO
 
 export async function generateMetadata(): Promise<Metadata> {
   return generatePageSEO({
-    title: "Little Caesars Coupons & Deals 2025 - Save Big on Pizza & More",
-    description: "Get the latest Little Caesars coupons and deals for 2025. Save on Hot-N-Ready pizza, Crazy Bread, family combos, and more. Verified discounts up to 30% off.",
+    title: "Little Caesars Coupons & Deals 2026 - Save Big on Pizza & More",
+    description: "Get the latest Little Caesars coupons and deals for 2026. Save on Hot-N-Ready pizza, Crazy Bread, family combos, and more. Verified discounts up to 30% off.",
     path: "/coupons",
     keywords: [
-      "Little Caesars coupons 2025", "Little Caesars deals", "pizza discounts",
+      "Little Caesars coupons 2026", "Little Caesars deals", "pizza discounts",
       "restaurant coupons USA", "pizza coupons", "Hot-N-Ready deals", "family combo discounts"
     ]
   })
@@ -23,7 +23,7 @@ export default function CouponsPage() {
     <div className="min-h-screen bg-stone-50">
       {/* Hero Section */}
       <PageHero
-        title="Little Caesars Coupons & Deals 2025"
+        title="Little Caesars Coupons & Deals 2026"
         subtitle="Save big on Hot-N-Ready pizza, famous Crazy Bread, and family combos with our verified coupons and exclusive deals."
       />
 

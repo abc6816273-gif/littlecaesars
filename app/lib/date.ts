@@ -3,7 +3,7 @@
  */
 
 /**
- * Returns today's date in format: "Month Day, Year" (e.g., "August 22, 2025")
+ * Returns today's date in format: "Month Day, Year" (e.g., "August 22, 2026")
  * Used for displaying current dates in UI components
  */
 export function getFormattedDate(): string {

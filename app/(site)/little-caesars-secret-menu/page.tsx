@@ -15,8 +15,8 @@ import {
 
 // SEO Metadata - Optimized for "Little Caesars Secret Menu"
 export const metadata: Metadata = {
-    title: 'Little Caesars Secret Menu 2025 - Hidden Items & Hacks Revealed!',
-    description: 'Discover the Little Caesars SECRET MENU 2025! Hidden pizza customizations, off-menu hacks, insider ordering tips & secret deals. Unlock exclusive items today!',
+    title: 'Little Caesars Secret Menu 2026 - Hidden Items & Hacks Revealed!',
+    description: 'Discover the Little Caesars SECRET MENU 2026! Hidden pizza customizations, off-menu hacks, insider ordering tips & secret deals. Unlock exclusive items today!',
     keywords: [
         'Little Caesars secret menu',
         'Little Caesars hidden menu',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         'hidden pizza deals'
     ],
     openGraph: {
-        title: 'Little Caesars Secret Menu 2025 - Hidden Items Revealed!',
+        title: 'Little Caesars Secret Menu 2026 - Hidden Items Revealed!',
         description: 'Unlock the SECRET Little Caesars menu! Hidden customizations, off-menu hacks, and insider ordering tips.',
         url: 'https://littlecaesarsmenu.us/little-caesars-secret-menu',
         type: 'article'
@@ -160,10 +160,10 @@ function generateSchemas() {
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Little Caesars Secret Menu 2025 - Hidden Items & Hacks",
+        "headline": "Little Caesars Secret Menu 2026 - Hidden Items & Hacks",
         "description": "Complete guide to Little Caesars secret menu items and ordering hacks",
         "author": { "@type": "Organization", "name": "Little Caesars Menu" },
-        "datePublished": "2025-01-01",
+        "datePublished": "2026-01-01",
         "dateModified": new Date().toISOString().split('T')[0]
     }
 
@@ -221,7 +221,7 @@ export default function SecretMenuPage() {
 
                         <h1 style={{ color: '#ffffff' }} className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
                             Little Caesars<br />
-                            <span style={{ color: '#fcd34d' }}>SECRET MENU</span> 2025
+                            <span style={{ color: '#fcd34d' }}>SECRET MENU</span> 2026
                         </h1>
 
                         <p style={{ color: '#ffffff' }} className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
@@ -380,7 +380,7 @@ export default function SecretMenuPage() {
                                 <ArrowRight className="ml-2 w-5 h-5" />
                             </a>
                             <Link
-                                href="/little-caesars-coupons-january-2025"
+                                href="/little-caesars-coupons-january-2026"
                                 style={{ border: '2px solid #ffffff', color: '#ffffff' }}
                                 className="inline-flex items-center bg-transparent px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors"
                             >
@@ -397,9 +397,9 @@ export default function SecretMenuPage() {
                         <div className="grid md:grid-cols-3 gap-6">
                             <Link href="/menu" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-purple-600">Full Menu & Prices</h3>
-                                <p className="text-sm text-gray-600 mt-2">Complete 2025 menu with prices</p>
+                                <p className="text-sm text-gray-600 mt-2">Complete 2026 menu with prices</p>
                             </Link>
-                            <Link href="/little-caesars-coupons-january-2025" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
+                            <Link href="/little-caesars-coupons-january-2026" className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all border border-gray-200 group">
                                 <h3 className="font-bold text-gray-900 group-hover:text-purple-600">Coupons & Deals</h3>
                                 <p className="text-sm text-gray-600 mt-2">15+ verified promo codes</p>
                             </Link>

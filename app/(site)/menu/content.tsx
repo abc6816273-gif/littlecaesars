@@ -109,8 +109,8 @@ export default function LittleCaesarsMenuContent({ menuItems }: LittleCaesarsMen
 
   const faqData = [
     {
-      question: "What are the current Little Caesars menu prices for 2025?",
-      answer: "Little Caesars menu prices for 2025 range from $1.99 for beverages to $10.99 for specialty pizzas. Hot-N-Ready pizzas start at $5.55, wings are $8.49, and Crazy Bread is $3.49. Prices may vary by location."
+      question: "What are the current Little Caesars menu prices for 2026?",
+      answer: "Little Caesars menu prices for 2026 range from $1.99 for beverages to $10.99 for specialty pizzas. Hot-N-Ready pizzas start at $5.55, wings are $8.49, and Crazy Bread is $3.49. Prices may vary by location."
     },
     {
       question: "What is Hot-N-Ready pizza at Little Caesars?",
@@ -149,7 +149,7 @@ export default function LittleCaesarsMenuContent({ menuItems }: LittleCaesarsMen
       
       {/* Hero Section using PageHero component like other pages */}
       <PageHero
-        title="Little Caesars Menu Prices 2025 | Complete Menu with Photos"
+        title="Little Caesars Menu Prices 2026 | Complete Menu with Photos"
         subtitle="🍕 Complete Little Caesars Menu with Latest Prices! ✅ Hot-N-Ready Pizza ✅ Crazy Bread ✅ Deep Dish Pizza ✅ Real Food Photos ✅ Updated Daily ✅ All Menu Items with Prices & Photos"
       />
 
@@ -346,10 +346,10 @@ export default function LittleCaesarsMenuContent({ menuItems }: LittleCaesarsMen
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-stone-900 mb-6">Little Caesars Menu 2025: Complete Price Guide</h2>
+            <h2 className="text-4xl font-bold text-stone-900 mb-6">Little Caesars Menu 2026: Complete Price Guide</h2>
             <div className="max-w-4xl mx-auto text-lg text-stone-600 leading-relaxed space-y-4">
               <p>
-                <strong>Little Caesars menu prices 2025</strong> feature America's best value pizza with <strong>Hot-N-Ready pizzas</strong> starting at just <strong>$5.55</strong>. Our comprehensive menu includes famous <strong>Hot-N-Ready pepperoni pizza</strong>, <strong>Crazy Bread</strong>, signature <strong>Detroit-Style Deep Dish pizza</strong>, and <strong>Caesar Wings</strong>.
+                <strong>Little Caesars menu prices 2026</strong> feature America's best value pizza with <strong>Hot-N-Ready pizzas</strong> starting at just <strong>$5.55</strong>. Our comprehensive menu includes famous <strong>Hot-N-Ready pepperoni pizza</strong>, <strong>Crazy Bread</strong>, signature <strong>Detroit-Style Deep Dish pizza</strong>, and <strong>Caesar Wings</strong>.
               </p>
               <p>
                 Popular items include the <strong>Hot-N-Ready Pepperoni Pizza ($5.55)</strong>, <strong>ExtraMostBestest Pizza ($6.00)</strong>, <strong>Crazy Bread 8-piece ($3.49)</strong>, and <strong>Caesar Wings ($8.49)</strong>. Every menu item includes current prices and real food photography for the best ordering experience.
@@ -364,7 +364,7 @@ export default function LittleCaesarsMenuContent({ menuItems }: LittleCaesarsMen
             </div>
             <div className="text-center p-6 bg-stone-50 rounded-xl">
               <h3 className="text-2xl font-bold text-little-caesars-orange mb-3">Updated Daily</h3>
-              <p className="text-stone-600">Latest 2025 prices verified and updated to ensure accuracy</p>
+              <p className="text-stone-600">Latest 2026 prices verified and updated to ensure accuracy</p>
             </div>
             <div className="text-center p-6 bg-stone-50 rounded-xl">
               <h3 className="text-2xl font-bold text-little-caesars-orange mb-3">Real Photos</h3>
@@ -379,7 +379,7 @@ export default function LittleCaesarsMenuContent({ menuItems }: LittleCaesarsMen
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-stone-900 mb-4">Little Caesars Menu Prices FAQ</h2>
-            <p className="text-stone-600 text-lg">Everything you need to know about Little Caesars menu prices 2025</p>
+            <p className="text-stone-600 text-lg">Everything you need to know about Little Caesars menu prices 2026</p>
           </div>
 
           <div className="space-y-4">

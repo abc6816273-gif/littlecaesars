@@ -3,7 +3,7 @@ import { PageHero } from '@/components/layout/Hero'
 import MealPlannerApp from './MealPlannerApp'
 
 export const metadata: Metadata = {
-  title: 'Little Caesars Meal Planner | Plan Your Perfect Weekly Pizza Experience 2025',
+  title: 'Little Caesars Meal Planner | Plan Your Perfect Weekly Pizza Experience 2026',
   description: 'Create your perfect Little Caesars meal plan with our interactive planner. Drag & drop pizzas, track nutrition & budget, download PDF plans, and get them emailed with our newsletter system.',
   keywords: 'Little Caesars meal planner, weekly meal planning, pizza meal planner, Little Caesars menu planner, dining schedule planner, meal planning app, budget meal planner, nutrition planner',
   openGraph: {

@@ -4,11 +4,11 @@ import Image from 'next/image'
 import { Calendar, Clock, ArrowLeft, Gift, Star, Heart, Sparkles, Pizza } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Happy Christmas 2025 - Little Caesars Holiday Deals, Party Ideas & Festive Pizza Guide',
-  description: 'Celebrate Christmas 2025 with Little Caesars! Discover exclusive holiday pizza deals, Christmas party planning tips, festive menu ideas, family meal combos, and how to make your holiday celebration delicious with Hot-N-Ready pizzas.',
+  title: 'Happy Christmas 2026 - Little Caesars Holiday Deals, Party Ideas & Festive Pizza Guide',
+  description: 'Celebrate Christmas 2026 with Little Caesars! Discover exclusive holiday pizza deals, Christmas party planning tips, festive menu ideas, family meal combos, and how to make your holiday celebration delicious with Hot-N-Ready pizzas.',
   keywords: [
-    'Happy Christmas 2025',
-    'Christmas 2025',
+    'Happy Christmas 2026',
+    'Christmas 2026',
     'Little Caesars Christmas',
     'Christmas pizza deals',
     'holiday pizza party',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'festive pizza deals',
     'Christmas dinner ideas',
     'holiday meal planning',
-    'Christmas 2025 food',
+    'Christmas 2026 food',
     'pizza for Christmas',
     'Little Caesars Christmas deals',
     'holiday pizza specials',
@@ -29,29 +29,29 @@ export const metadata: Metadata = {
     'Christmas pizza delivery'
   ],
   openGraph: {
-    title: 'Happy Christmas 2025 - Little Caesars Holiday Pizza Guide & Festive Deals',
-    description: 'Make your Christmas 2025 celebration special with Little Caesars! Exclusive holiday deals, party planning tips, and festive pizza ideas for the perfect holiday feast.',
+    title: 'Happy Christmas 2026 - Little Caesars Holiday Pizza Guide & Festive Deals',
+    description: 'Make your Christmas 2026 celebration special with Little Caesars! Exclusive holiday deals, party planning tips, and festive pizza ideas for the perfect holiday feast.',
     type: 'article',
-    publishedTime: '2025-12-20T00:00:00Z',
-    modifiedTime: '2025-12-20T00:00:00Z',
+    publishedTime: '2026-12-20T00:00:00Z',
+    modifiedTime: '2026-12-20T00:00:00Z',
     authors: ['Little Caesars Menu Team'],
     images: [
       {
-        url: 'https://littlecaesarsmenu.us/menu/happy-christmas-2025-little-caesars.png',
+        url: 'https://littlecaesarsmenu.us/menu/happy-christmas-2026-little-caesars.png',
         width: 1200,
         height: 630,
-        alt: 'Happy Christmas 2025 - Little Caesars Holiday Pizza Celebration'
+        alt: 'Happy Christmas 2026 - Little Caesars Holiday Pizza Celebration'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Happy Christmas 2025 - Little Caesars Holiday Deals & Party Ideas',
-    description: 'Celebrate Christmas 2025 with delicious Little Caesars pizza! Holiday deals, party tips & festive menu ideas.',
-    images: ['https://littlecaesarsmenu.us/menu/happy-christmas-2025-little-caesars.png']
+    title: 'Happy Christmas 2026 - Little Caesars Holiday Deals & Party Ideas',
+    description: 'Celebrate Christmas 2026 with delicious Little Caesars pizza! Holiday deals, party tips & festive menu ideas.',
+    images: ['https://littlecaesarsmenu.us/menu/happy-christmas-2026-little-caesars.png']
   },
   alternates: {
-    canonical: 'https://littlecaesarsmenu.us/happy-christmas-2025'
+    canonical: 'https://littlecaesarsmenu.us/happy-christmas-2026'
   },
   robots: {
     index: true,
@@ -69,11 +69,11 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: 'Happy Christmas 2025 - Little Caesars Holiday Deals, Party Ideas & Festive Pizza Guide',
-  description: 'Celebrate Christmas 2025 with Little Caesars! Discover exclusive holiday pizza deals, Christmas party planning tips, festive menu ideas, and family meal combos.',
-  image: 'https://littlecaesarsmenu.us/menu/happy-christmas-2025-little-caesars.png',
-  datePublished: '2025-12-20T00:00:00Z',
-  dateModified: '2025-12-20T00:00:00Z',
+  headline: 'Happy Christmas 2026 - Little Caesars Holiday Deals, Party Ideas & Festive Pizza Guide',
+  description: 'Celebrate Christmas 2026 with Little Caesars! Discover exclusive holiday pizza deals, Christmas party planning tips, festive menu ideas, and family meal combos.',
+  image: 'https://littlecaesarsmenu.us/menu/happy-christmas-2026-little-caesars.png',
+  datePublished: '2026-12-20T00:00:00Z',
+  dateModified: '2026-12-20T00:00:00Z',
   author: {
     '@type': 'Organization',
     name: 'Little Caesars Menu Team',
@@ -89,9 +89,9 @@ const articleSchema = {
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://littlecaesarsmenu.us/happy-christmas-2025'
+    '@id': 'https://littlecaesarsmenu.us/happy-christmas-2026'
   },
-  keywords: 'Happy Christmas 2025, Christmas pizza, Little Caesars holiday deals, Christmas party food, holiday pizza specials'
+  keywords: 'Happy Christmas 2026, Christmas pizza, Little Caesars holiday deals, Christmas party food, holiday pizza specials'
 }
 
 const faqSchema = {
@@ -100,7 +100,7 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Is Little Caesars open on Christmas Day 2025?',
+      name: 'Is Little Caesars open on Christmas Day 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Little Caesars holiday hours vary by location. Most stores have modified hours on Christmas Eve and may be closed on Christmas Day. We recommend checking with your local store or using the store locator for specific holiday hours.'
@@ -116,7 +116,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Does Little Caesars have Christmas deals in 2025?',
+      name: 'Does Little Caesars have Christmas deals in 2026?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'Yes! Little Caesars typically offers holiday specials and party deals during the Christmas season. Check our coupons page for the latest deals, including bundle offers perfect for holiday parties and family gatherings.'
@@ -152,13 +152,13 @@ const breadcrumbSchema = {
     {
       '@type': 'ListItem',
       position: 3,
-      name: 'Happy Christmas 2025',
-      item: 'https://littlecaesarsmenu.us/happy-christmas-2025'
+      name: 'Happy Christmas 2026',
+      item: 'https://littlecaesarsmenu.us/happy-christmas-2026'
     }
   ]
 }
 
-export default function HappyChristmas2025() {
+export default function HappyChristmas2026() {
   return (
     <>
       <script
@@ -191,7 +191,7 @@ export default function HappyChristmas2025() {
                 </Link>
               </li>
               <li className="text-gray-400">/</li>
-              <li className="text-gray-900 font-medium">Happy Christmas 2025</li>
+              <li className="text-gray-900 font-medium">Happy Christmas 2026</li>
             </ol>
           </div>
         </nav>
@@ -211,13 +211,13 @@ export default function HappyChristmas2025() {
             <div className="flex items-center justify-center mb-6 space-x-2">
               <Gift className="w-8 h-8 text-yellow-300" />
               <span className="bg-yellow-400 text-red-800 px-4 py-1 rounded-full text-sm font-bold">
-                🎄 Christmas Special 2025
+                🎄 Christmas Special 2026
               </span>
               <Gift className="w-8 h-8 text-yellow-300" />
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
-              🎅 Happy Christmas 2025! 🎄
+              🎅 Happy Christmas 2026! 🎄
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
               Celebrate the holidays with delicious Little Caesars pizza! Discover festive deals, party planning tips, and make your Christmas celebration unforgettable.
@@ -226,7 +226,7 @@ export default function HappyChristmas2025() {
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Calendar className="w-4 h-4 mr-2" />
-                December 20, 2025
+                December 20, 2026
               </div>
               <div className="flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Clock className="w-4 h-4 mr-2" />
@@ -245,8 +245,8 @@ export default function HappyChristmas2025() {
           {/* Featured Image */}
           <div className="relative h-80 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl mb-12 border-4 border-red-500">
             <Image
-              src="/menu/happy-christmas-2025-little-caesars.png"
-              alt="Happy Christmas 2025 - Little Caesars Holiday Pizza Celebration with festive decorations"
+              src="/menu/happy-christmas-2026-little-caesars.png"
+              alt="Happy Christmas 2026 - Little Caesars Holiday Pizza Celebration with festive decorations"
               fill
               className="object-cover"
               priority
@@ -263,7 +263,7 @@ export default function HappyChristmas2025() {
               <ul className="space-y-2 text-gray-700">
                 <li>
                   <a href="#why-little-caesars" className="text-little-caesars-orange hover:underline flex items-center">
-                    🍕 Why Choose Little Caesars for Christmas 2025
+                    🍕 Why Choose Little Caesars for Christmas 2026
                   </a>
                 </li>
                 <li>
@@ -278,7 +278,7 @@ export default function HappyChristmas2025() {
                 </li>
                 <li>
                   <a href="#holiday-hours" className="text-little-caesars-orange hover:underline flex items-center">
-                    🕐 Little Caesars Holiday Hours 2025
+                    🕐 Little Caesars Holiday Hours 2026
                   </a>
                 </li>
                 <li>
@@ -315,7 +315,7 @@ export default function HappyChristmas2025() {
                     🎁 Make This Christmas Extra Special with Pizza!
                   </h2>
                   <p className="text-gray-700 text-lg leading-relaxed mb-0">
-                    Christmas 2025 is here, and what better way to celebrate than with hot, delicious pizza from Little Caesars?
+                    Christmas 2026 is here, and what better way to celebrate than with hot, delicious pizza from Little Caesars?
                     Whether you're hosting a family gathering, planning a holiday party, or just want a stress-free Christmas dinner,
                     we've got you covered with everything you need to know about Little Caesars holiday offerings, deals, and party planning tips!
                   </p>
@@ -327,7 +327,7 @@ export default function HappyChristmas2025() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
                 <Pizza className="w-8 h-8 text-little-caesars-orange mr-3" />
-                Why Choose Little Caesars for Christmas 2025?
+                Why Choose Little Caesars for Christmas 2026?
               </h2>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -389,7 +389,7 @@ export default function HappyChristmas2025() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
                 <Gift className="w-8 h-8 text-green-600 mr-3" />
-                Christmas 2025 Party Planning Guide
+                Christmas 2026 Party Planning Guide
               </h2>
 
               <div className="bg-gradient-to-br from-green-50 to-red-50 rounded-2xl p-8 mb-8">
@@ -435,7 +435,7 @@ export default function HappyChristmas2025() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
                 <Star className="w-8 h-8 text-yellow-500 mr-3" />
-                Top Pizza Picks for Christmas 2025
+                Top Pizza Picks for Christmas 2026
               </h2>
 
               <div className="space-y-6">
@@ -493,13 +493,13 @@ export default function HappyChristmas2025() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
                 <Heart className="w-8 h-8 text-red-500 mr-3" />
-                Christmas 2025 FAQs
+                Christmas 2026 FAQs
               </h2>
 
               <div className="space-y-4">
                 <details className="bg-white rounded-xl shadow-lg overflow-hidden group">
                   <summary className="px-6 py-4 cursor-pointer font-bold text-gray-900 hover:bg-gray-50 flex items-center justify-between">
-                    Is Little Caesars open on Christmas Day 2025?
+                    Is Little Caesars open on Christmas Day 2026?
                     <span className="text-little-caesars-orange group-open:rotate-180 transition-transform">▼</span>
                   </summary>
                   <div className="px-6 py-4 bg-gray-50 border-t">
@@ -557,7 +557,7 @@ export default function HappyChristmas2025() {
             <section className="mb-12">
               <div className="bg-gradient-to-r from-red-500 via-red-600 to-green-600 rounded-2xl p-8 text-white text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  🎄 Merry Christmas 2025! 🎅
+                  🎄 Merry Christmas 2026! 🎅
                 </h2>
                 <p className="text-xl text-white/90 mb-6 max-w-2xl mx-auto">
                   From our Little Caesars family to yours, we wish you a wonderful holiday season

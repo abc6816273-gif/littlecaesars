@@ -79,7 +79,7 @@ function generateWelcomeEmailTemplate(email: string): string {
         <div class="footer">
             <p>You're receiving this because you subscribed to Texas Roadhouse Menu Updates at <strong>texasroadhouse-menus.us</strong></p>
             <p>This is an independent informational site. We are not affiliated with Texas Roadhouse.</p>
-            <p>© 2025 Texas Roadhouse Menu. All rights reserved.</p>
+            <p>© 2026 Texas Roadhouse Menu. All rights reserved.</p>
         </div>
     </div>
 </body>

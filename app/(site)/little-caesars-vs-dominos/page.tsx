@@ -2,20 +2,20 @@ import type { Metadata } from 'next'
 
 // SEO-optimized metadata for comparison page
 export const metadata: Metadata = {
-    title: "Little Caesars vs Domino's Prices 2025: Complete Comparison Guide | Little Caesars Menu",
-    description: "Compare Little Caesars vs Domino's prices, menu items, quality, and value in 2025. Which pizza chain offers better deals? Complete side-by-side comparison.",
+    title: "Little Caesars vs Domino's Prices 2026: Complete Comparison Guide | Little Caesars Menu",
+    description: "Compare Little Caesars vs Domino's prices, menu items, quality, and value in 2026. Which pizza chain offers better deals? Complete side-by-side comparison.",
     keywords: [
         'little caesars vs dominos',
         'little caesars or dominos',
         'dominos vs little caesars',
-        'cheapest pizza chain 2025',
+        'cheapest pizza chain 2026',
         'little caesars vs dominos prices',
         'which pizza is better',
         'pizza chain comparison'
     ].join(', '),
     openGraph: {
-        title: "Little Caesars vs Domino's: Complete Price & Quality Comparison 2025",
-        description: "Which pizza chain offers better value in 2025? Compare prices, quality, and deals between Little Caesars and Domino's.",
+        title: "Little Caesars vs Domino's: Complete Price & Quality Comparison 2026",
+        description: "Which pizza chain offers better value in 2026? Compare prices, quality, and deals between Little Caesars and Domino's.",
         type: 'article',
         url: 'https://littlecaesarsmenu.us/little-caesars-vs-dominos',
         images: [
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
                 url: 'https://littlecaesarsmenu.us/images/little-caesars-vs-dominos.jpg',
                 width: 1200,
                 height: 630,
-                alt: "Little Caesars vs Domino's Comparison 2025"
+                alt: "Little Caesars vs Domino's Comparison 2026"
             }
         ]
     },
     twitter: {
         card: 'summary_large_image',
-        title: "Little Caesars vs Domino's Prices 2025",
+        title: "Little Caesars vs Domino's Prices 2026",
         description: "Complete comparison of prices, quality, and value."
     },
     alternates: {
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 }
 
 export default function LittleCaesarsVsDominosPage() {
-    const currentYear = 2025
+    const currentYear = 2026
 
     // Structured data for SEO
     const articleSchema = {
