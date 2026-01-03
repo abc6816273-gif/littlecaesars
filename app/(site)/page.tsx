@@ -82,12 +82,12 @@ const enhancedMenuSchema = {
   "description": "Complete Little Caesars menu featuring Hot-N-Ready pizzas, Crazy Bread, wings, specialty pizzas, family combos and beverages with current 2026 pricing.",
   "url": "https://littlecaesarsmenu.us",
   "image": [
-    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0001.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0002.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0003.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0004.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0005.jpg",
-    "https://littlecaesarsmenu.us/menu/IMG-20260920-WA0006.jpg"
+    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0001.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0002.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0003.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0004.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0005.jpg",
+    "https://littlecaesarsmenu.us/menu/IMG-20250920-WA0006.jpg"
   ],
   "inLanguage": "en-US",
   "dateModified": new Date().toISOString(),
