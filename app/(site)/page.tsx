@@ -813,14 +813,14 @@ export default function HomePage() {
                   View All Blogs →
                 </Link>
               </div>
-          </div >
-      </section >
+          </div>
+      </section>
 
       {/* Real-Time Coupons Section (Gemini AI integration) */}
-      < CouponSection />
+      <CouponSection />
 
       {/* Internal Linking Section for SEO */}
-      < InternalLinks currentPage="/" showExternal={true} variant="full" />
+      <InternalLinks currentPage="/" showExternal={true} variant="full" />
     </>
   )
 }
