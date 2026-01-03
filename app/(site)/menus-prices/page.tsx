@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = "Little Caesars Menu Prices 2026 | Complete Menu with Photos & Latest Prices"
   const description = "🍕 Official Little Caesars Menu Prices 2026! ✅ Hot-N-Ready Pizza ✅ Crazy Bread ✅ Deep Dish Pizza ✅ Latest Prices ✅ Wings, Sides & More!"
   const url = "/menus-prices"
-  
+
   return {
     title,
     description,
@@ -34,12 +34,12 @@ export async function generateMetadata(): Promise<Metadata> {
       "Little Caesars menu 2026",
       "Little Caesars prices",
       "Little Caesars menu with prices",
-      
+
       // Location-based keywords
       "Little Caesars menu USA",
       "Little Caesars menu near me",
       "Little Caesars prices near me",
-      
+
       // Food category keywords
       "Little Caesars pizza prices",
       "Little Caesars wings prices",
@@ -49,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "Little Caesars dessert menu",
       "Little Caesars drink menu",
       "Little Caesars combo prices",
-      
+
       // Specific items
       "Hot-N-Ready price",
       "Little Caesars pepperoni price",
@@ -58,7 +58,7 @@ export async function generateMetadata(): Promise<Metadata> {
       "Little Caesars wings price",
       "Italian cheese bread price",
       "Caesar dips price",
-      
+
       // Intent keywords
       "how much does Little Caesars cost",
       "Little Caesars menu cost",
@@ -67,14 +67,14 @@ export async function generateMetadata(): Promise<Metadata> {
       "Little Caesars complete menu",
       "Little Caesars menu photos",
       "Little Caesars menu pictures",
-      
+
       // Restaurant keywords
       "pizza menu prices",
       "fast food restaurant menu",
       "pizza chain menu prices",
       "family pizza menu",
       "restaurant menu 2026",
-      
+
       // Long-tail keywords
       "Little Caesars menu prices updated 2026",
       "Little Caesars latest menu prices",
@@ -130,12 +130,12 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-// ISR for performance and SEO
-export const revalidate = 0 // No caching for immediate updates
+// ISR for performance and SEO - Force rebuild: 2026-01-03
+export const revalidate = 1 // Force cache clear
 
 export default function MenusPricesPage() {
   const schemas = generateEnhancedMenuSchema(menuItems)
-  
+
   return (
     <>
       {/* Enhanced Restaurant Schema */}
@@ -145,7 +145,7 @@ export default function MenusPricesPage() {
           __html: JSON.stringify(schemas.restaurantSchema)
         }}
       />
-      
+
       {/* Enhanced Menu Schema */}
       <script
         type="application/ld+json"
@@ -153,7 +153,7 @@ export default function MenusPricesPage() {
           __html: JSON.stringify(schemas.menuSchema)
         }}
       />
-      
+
       {/* Breadcrumb Schema */}
       <script
         type="application/ld+json"
@@ -161,9 +161,9 @@ export default function MenusPricesPage() {
           __html: JSON.stringify(schemas.breadcrumbSchema)
         }}
       />
-      
+
       {/* FAQ Schema handled by WordPress/Yoast to prevent duplicates */}
-      
+
       <MenusPricesContent menuItems={menuItems} />
     </>
   )
