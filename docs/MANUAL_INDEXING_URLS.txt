@@ -1,0 +1,100 @@
+===========================================
+MANUAL INDEXING REQUEST - TOP PRIORITY URLS
+===========================================
+
+INSTRUCTIONS:
+1. Open Google Search Console
+2. Use the "Inspect any URL" search bar at top
+3. Copy-paste each URL below (one at a time)
+4. Click "Request Indexing" for each
+5. You can do 10 URLs per day maximum
+
+===========================================
+DAY 1 (TODAY) - 10 URLs:
+===========================================
+
+1. https://littlecaesarsmenu.us/
+2. https://littlecaesarsmenu.us/little-caesars-menu
+3. https://littlecaesarsmenu.us/little-caesars-menu-with-prices
+4. https://littlecaesarsmenu.us/coupons
+5. https://littlecaesarsmenu.us/little-caesars-deals-today
+6. https://littlecaesarsmenu.us/little-caesars-near-me
+7. https://littlecaesarsmenu.us/little-caesars-hours
+8. https://littlecaesarsmenu.us/store-locator
+9. https://littlecaesarsmenu.us/little-caesars-february-2026-deals
+10. https://littlecaesarsmenu.us/little-caesars-super-bowl-2026
+
+===========================================
+DAY 2 (TOMORROW) - 10 URLs:
+===========================================
+
+1. https://littlecaesarsmenu.us/little-caesars-california
+2. https://littlecaesarsmenu.us/little-caesars-texas
+3. https://littlecaesarsmenu.us/little-caesars-florida
+4. https://littlecaesarsmenu.us/little-caesars-new-york
+5. https://littlecaesarsmenu.us/little-caesars-wings
+6. https://littlecaesarsmenu.us/little-caesars-pepperoni-pizza
+7. https://littlecaesarsmenu.us/little-caesars-crazy-bread
+8. https://littlecaesarsmenu.us/little-caesars-delivery-near-me
+9. https://littlecaesarsmenu.us/little-caesars-new-items-2026
+10. https://littlecaesarsmenu.us/little-caesars-coupons-january-2026
+
+===========================================
+DAY 3 - 10 URLs:
+===========================================
+
+1. https://littlecaesarsmenu.us/crazy-puffs
+2. https://littlecaesarsmenu.us/little-caesars-nutrition-calories
+3. https://littlecaesarsmenu.us/little-caesars-menu-2026
+4. https://littlecaesarsmenu.us/little-caesars-pretzel-crust-pizza-2026
+5. https://littlecaesarsmenu.us/little-caesars-9-99-menu
+6. https://littlecaesarsmenu.us/little-caesars-delivery
+7. https://littlecaesarsmenu.us/little-caesars-calorie-calculator
+8. https://littlecaesarsmenu.us/little-caesars-secret-menu
+9. https://littlecaesarsmenu.us/little-caesars-vs-pizza-hut
+10. https://littlecaesarsmenu.us/best-little-caesars-pizza-ranked
+
+===========================================
+DAY 4 - 10 URLs:
+===========================================
+
+1. https://littlecaesarsmenu.us/little-caesars-vs-dominos
+2. https://littlecaesarsmenu.us/happy-christmas-2026
+3. https://littlecaesarsmenu.us/little-caesars-christmas-hours
+4. https://littlecaesarsmenu.us/little-caesars-lunch-specials
+5. https://littlecaesarsmenu.us/little-caesars-app
+6. https://littlecaesarsmenu.us/little-caesars-online-ordering
+7. https://littlecaesarsmenu.us/little-caesars-rewards-program
+8. https://littlecaesarsmenu.us/little-caesars-catering
+9. https://littlecaesarsmenu.us/little-caesars-gluten-free-options
+10. https://littlecaesarsmenu.us/meal-planner
+
+===========================================
+DAY 5 - 10 URLs:
+===========================================
+
+1. https://littlecaesarsmenu.us/gift-cards
+2. https://littlecaesarsmenu.us/about
+3. https://littlecaesarsmenu.us/contact
+4. https://littlecaesarsmenu.us/posts
+5. https://littlecaesarsmenu.us/important-blogs
+6. https://littlecaesarsmenu.us/blog
+7. https://littlecaesarsmenu.us/categories
+8. https://littlecaesarsmenu.us/menus-prices
+9. https://littlecaesarsmenu.us/privacy-policy
+10. https://littlecaesarsmenu.us/terms-and-conditions
+
+===========================================
+TOTAL: 50 URLs in 5 days
+===========================================
+
+NOTES:
+- Do exactly 10 URLs per day (Google's limit)
+- Wait 24 hours between batches
+- Check status after 48 hours for each batch
+- Priority given to high-traffic pages first
+
+After 5 days, check how many pages are indexed.
+If still low, continue with more URLs from sitemap.
+
+===========================================
