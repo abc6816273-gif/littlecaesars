@@ -336,7 +336,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/happy-christmas-2026`,
+      url: `${baseUrl}/happy-christmas-2025`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.85,

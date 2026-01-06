@@ -176,11 +176,7 @@ const nextConfig = {
       },
 
       // ✅ 2025 → 2026 URL MIGRATIONS (SEO-friendly 301 redirects)
-      {
-        source: '/happy-christmas-2025',
-        destination: '/happy-christmas-2026',
-        permanent: true, // 301 redirect
-      },
+      // Note: Christmas kept as 2025 since Dec 2026 hasn't happened yet
       {
         source: '/little-caesars-coupons-january-2025',
         destination: '/little-caesars-coupons-january-2026',

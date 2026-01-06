@@ -38,7 +38,7 @@ const internalLinks = {
         { href: '/little-caesars-vs-dominos', label: 'LC vs Dominos', icon: Utensils, desc: 'Pizza comparison' },
     ],
     blogs: [
-        { href: '/happy-christmas-2026', label: 'Christmas 2026', icon: Star, desc: 'Holiday deals & hours' },
+        { href: '/happy-christmas-2025', label: 'Christmas 2025', icon: Star, desc: 'Holiday deals & hours' },
         { href: '/little-caesars-christmas-hours', label: 'Christmas Hours', icon: Clock, desc: 'Holiday schedule' },
         { href: '/posts', label: 'All Blog Posts', icon: BookOpen, desc: 'Latest news & guides' },
         { href: '/important-blogs', label: 'Featured Blogs', icon: TrendingUp, desc: 'Popular articles' },
