@@ -21,15 +21,15 @@ import {
 const internalLinks = {
     main: [
         { href: '/menu', label: 'Full Menu', icon: Pizza, desc: 'Complete menu with prices' },
-        { href: '/menus-prices', label: 'Menu Prices', icon: DollarSign, desc: 'All prices updated 2025' },
+        { href: '/menus-prices', label: 'Menu Prices', icon: DollarSign, desc: 'All prices updated 2026' },
         { href: '/store-locator', label: 'Store Locator', icon: MapPin, desc: 'Find nearest location' },
-        { href: '/little-caesars-coupons-january-2025', label: 'Coupons & Deals', icon: Tag, desc: '15+ verified codes' },
+        { href: '/little-caesars-coupons-january-2025', label: 'Coupons & Deals 2026', icon: Tag, desc: '15+ verified codes' },
     ],
     popular: [
-        { href: '/little-caesars-pretzel-crust-pizza-2025', label: 'Pretzel Crust Pizza', icon: Flame, desc: 'Limited time - $9.99' },
+        { href: '/little-caesars-pretzel-crust-pizza-2025', label: 'Pretzel Crust Pizza 2026', icon: Flame, desc: 'Limited time - $9.99' },
         { href: '/little-caesars-9-99-menu', label: '$9.99 Value Menu', icon: DollarSign, desc: 'Best value deals' },
         { href: '/crazy-puffs', label: 'Crazy Puffs Guide', icon: Star, desc: 'New snack everyone loves' },
-        { href: '/little-caesars-new-items-2025', label: 'New Items 2025', icon: TrendingUp, desc: '10 new menu items' },
+        { href: '/little-caesars-new-items-2025', label: 'New Items 2026', icon: TrendingUp, desc: '10 new menu items' },
     ],
     guides: [
         { href: '/little-caesars-nutrition-calories', label: 'Nutrition Guide', icon: Heart, desc: 'Calories & healthy options' },
@@ -38,7 +38,7 @@ const internalLinks = {
         { href: '/little-caesars-vs-dominos', label: 'LC vs Dominos', icon: Utensils, desc: 'Pizza comparison' },
     ],
     blogs: [
-        { href: '/happy-christmas-2025', label: 'Christmas 2025', icon: Star, desc: 'Holiday deals & hours' },
+        { href: '/happy-christmas-2025', label: 'Christmas 2026', icon: Star, desc: 'Holiday deals & hours' },
         { href: '/little-caesars-christmas-hours', label: 'Christmas Hours', icon: Clock, desc: 'Holiday schedule' },
         { href: '/posts', label: 'All Blog Posts', icon: BookOpen, desc: 'Latest news & guides' },
         { href: '/important-blogs', label: 'Featured Blogs', icon: TrendingUp, desc: 'Popular articles' },
@@ -280,11 +280,11 @@ export function QuickLinks({ exclude = [] }: { exclude?: string[] }) {
 // Related Posts Component
 export function RelatedPosts({ currentSlug = '' }: { currentSlug?: string }) {
     const posts = [
-        { slug: 'pretzel-crust-pizza-2025', title: 'Pretzel Crust Pizza 2025', href: '/little-caesars-pretzel-crust-pizza-2025' },
+        { slug: 'pretzel-crust-pizza-2025', title: 'Pretzel Crust Pizza 2026', href: '/little-caesars-pretzel-crust-pizza-2025' },
         { slug: '9-99-menu', title: '$9.99 Value Menu', href: '/little-caesars-9-99-menu' },
         { slug: 'crazy-puffs', title: 'Crazy Puffs Guide', href: '/crazy-puffs' },
-        { slug: 'new-items-2025', title: 'New Items 2025', href: '/little-caesars-new-items-2025' },
-        { slug: 'coupons', title: 'Coupons & Deals', href: '/little-caesars-coupons-january-2025' },
+        { slug: 'new-items-2025', title: 'New Items 2026', href: '/little-caesars-new-items-2025' },
+        { slug: 'coupons', title: 'Coupons & Deals 2026', href: '/little-caesars-coupons-january-2025' },
         { slug: 'nutrition', title: 'Nutrition Guide', href: '/little-caesars-nutrition-calories' },
     ]
 
