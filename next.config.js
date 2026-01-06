@@ -174,6 +174,28 @@ const nextConfig = {
         destination: '/little-caesars-menu',
         permanent: true, // 301 redirect
       },
+
+      // ✅ 2025 → 2026 URL MIGRATIONS (SEO-friendly 301 redirects)
+      {
+        source: '/happy-christmas-2025',
+        destination: '/happy-christmas-2026',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/little-caesars-coupons-january-2025',
+        destination: '/little-caesars-coupons-january-2026',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/little-caesars-new-items-2025',
+        destination: '/little-caesars-new-items-2026',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/little-caesars-pretzel-crust-pizza-2025',
+        destination: '/little-caesars-pretzel-crust-pizza-2026',
+        permanent: true, // 301 redirect
+      },
       // Add more custom redirects if needed
     ]
   },

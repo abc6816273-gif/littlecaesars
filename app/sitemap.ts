@@ -226,7 +226,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/little-caesars-coupons-january-2025`,
+      url: `${baseUrl}/little-caesars-coupons-january-2026`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.85,
@@ -244,7 +244,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/little-caesars-new-items-2025`,
+      url: `${baseUrl}/little-caesars-new-items-2026`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -302,7 +302,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/little-caesars-pretzel-crust-pizza-2025`,
+      url: `${baseUrl}/little-caesars-pretzel-crust-pizza-2026`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.85,
@@ -336,7 +336,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/happy-christmas-2025`,
+      url: `${baseUrl}/happy-christmas-2026`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.85,
