@@ -813,7 +813,9 @@ export default function HomePage() {
                   View All Blogs →
                 </Link>
               </div>
+            </section>
           </div>
+        </div>
       </section>
 
       {/* Real-Time Coupons Section (Gemini AI integration) */}
