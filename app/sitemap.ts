@@ -354,9 +354,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog/free-little-caesars-pizza-2026`,
+      url: `${baseUrl}/blog/free-little-caesars-pizza`,
       lastModified: currentDate,
-      changeFrequency: 'weekly',
+      changeFrequency: 'monthly',
       priority: 0.95,
     },
 

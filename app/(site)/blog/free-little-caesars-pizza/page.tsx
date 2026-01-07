@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         description: 'Save $50-200/month on pizza with these proven methods! 100% legal & actually work.',
     },
     alternates: {
-        canonical: 'https://littlecaesarsmenu.us/blog/free-little-caesars-pizza-2026'
+        canonical: 'https://littlecaesarsmenu.us/blog/free-little-caesars-pizza'
     }
 }
 
@@ -60,7 +60,7 @@ const articleSchema = {
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://littlecaesarsmenu.us/blog/free-little-caesars-pizza-2026"
+        "@id": "https://littlecaesarsmenu.us/blog/free-little-caesars-pizza"
     }
 }
 
@@ -119,19 +119,19 @@ const howToSchema = {
             "@type": "HowToStep",
             "name": "Sign up for Birthday Rewards",
             "text": "Download the Little Caesars app and register with your birthday to get free pizza during your birthday month.",
-            "url": "https://littlecaesarsmenu.us/blog/free-little-caesars-pizza-2026#method-1"
+            "url": "https://littlecaesarsmenu.us/blog/free-little-caesars-pizza#method-1"
         },
         {
             "@type": "HowToStep",
             "name": "Use App Rewards Programs",
             "text": "Download official Little Caesars app and Pizza Portal app to earn points on every purchase and get exclusive deals.",
-            "url": "https://littlecaesarsmenu.us/blog/free-little-caesars-pizza-2026#method-2"
+            "url": "https://littlecaesarsmenu.us/blog/free-little-caesars-pizza#method-2"
         },
         {
             "@type": "HowToStep",
             "name": "Refer Friends for Bonuses",
             "text": "Share your referral code with friends. You get $5 and they get $5 for each successful referral.",
-            "url": "https://littlecaesarsmenu.us/blog/free-little-caesars-pizza-2026#method-3"
+            "url": "https://littlecaesarsmenu.us/blog/free-little-caesars-pizza#method-3"
         }
     ]
 }
