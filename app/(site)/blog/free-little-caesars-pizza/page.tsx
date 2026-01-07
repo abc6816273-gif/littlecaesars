@@ -156,7 +156,7 @@ export default function FreePizzaBlogPost() {
             {/* Article Container */}
             <article className="min-h-screen bg-gradient-to-b from-white to-orange-50">
                 {/* Hero Section */}
-                <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-16">
+                <div className="text-white py-16" style={{ background: 'linear-gradient(to right, #ea580c, #dc2626)' }}>
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         {/* Breadcrumb */}
                         <nav className="mb-6 text-sm text-white">
