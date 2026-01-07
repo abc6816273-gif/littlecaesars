@@ -159,44 +159,44 @@ export default function FreePizzaBlogPost() {
                 <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-16">
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                         {/* Breadcrumb */}
-                        <nav className="mb-6 text-sm">
-                            <Link href="/" className="hover:underline opacity-90">Home</Link>
-                            <span className="mx-2">/</span>
-                            <Link href="/blog" className="hover:underline opacity-90">Blog</Link>
-                            <span className="mx-2">/</span>
-                            <span className="opacity-75">Free Pizza Guide</span>
+                        <nav className="mb-6 text-sm text-white">
+                            <Link href="/" className="text-white hover:text-orange-100 hover:underline transition-colors">Home</Link>
+                            <span className="mx-2 text-orange-200">/</span>
+                            <Link href="/blog" className="text-white hover:text-orange-100 hover:underline transition-colors">Blog</Link>
+                            <span className="mx-2 text-orange-200">/</span>
+                            <span className="text-orange-100">Free Pizza Guide</span>
                         </nav>
 
                         {/* Title */}
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-white">
                             How to Get FREE Little Caesars Pizza in 2026
-                            <span className="block text-2xl md:text-3xl mt-2 text-orange-100">
+                            <span className="block text-2xl md:text-3xl mt-2 text-yellow-200">
                                 (7 Legal Tricks That Actually Work!)
                             </span>
                         </h1>
 
                         {/* Meta Info */}
-                        <div className="flex flex-wrap items-center gap-4 text-sm text-orange-100">
-                            <div className="flex items-center gap-2">
-                                <Calendar className="w-4 h-4" />
-                                <span>January 7, 2026</span>
+                        <div className="flex flex-wrap items-center gap-4 text-sm text-white">
+                            <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
+                                <Calendar className="w-4 h-4 text-yellow-300" />
+                                <span className="text-white">January 7, 2026</span>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <Clock className="w-4 h-4" />
-                                <span>8 min read</span>
+                            <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
+                                <Clock className="w-4 h-4 text-yellow-300" />
+                                <span className="text-white">8 min read</span>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <DollarSign className="w-4 h-4" />
-                                <span>Save $50-200/month</span>
+                            <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
+                                <DollarSign className="w-4 h-4 text-yellow-300" />
+                                <span className="text-white">Save $50-200/month</span>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <Award className="w-4 h-4" />
-                                <span>95% Success Rate</span>
+                            <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full">
+                                <Award className="w-4 h-4 text-yellow-300" />
+                                <span className="text-white">95% Success Rate</span>
                             </div>
                         </div>
 
                         {/* CTA Badge */}
-                        <div className="mt-6 inline-block bg-white text-orange-600 px-6 py-3 rounded-full font-bold shadow-lg">
+                        <div className="mt-6 inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-300 transition-colors">
                             🎉 100% Legal • Actually Works • Start TODAY!
                         </div>
                     </div>
