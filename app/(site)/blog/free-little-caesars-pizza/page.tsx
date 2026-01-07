@@ -622,7 +622,7 @@ export default function FreePizzaBlogPost() {
                     </section>
 
                     {/* Action Plan */}
-                    <section className="mb-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white shadow-xl">
+                    <section className="mb-12 rounded-2xl p-8 text-white shadow-xl" style={{ background: 'linear-gradient(to right, #f97316, #ef4444)' }}>
                         <h2 className="text-3xl font-bold mb-6">🎯 Your Action Plan: Start TODAY!</h2>
 
                         <div className="space-y-6">
@@ -678,7 +678,7 @@ export default function FreePizzaBlogPost() {
                     </section>
 
                     {/* Final CTA */}
-                    <section className="mb-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl p-8 shadow-2xl text-center">
+                    <section className="mb-12 rounded-2xl p-8 shadow-2xl text-center" style={{ background: 'linear-gradient(to bottom right, #facc15, #f97316)' }}>
                         <h2 className="text-4xl font-bold text-white mb-4">
                             🚀 Your Free Pizza Journey Starts NOW!
                         </h2>
