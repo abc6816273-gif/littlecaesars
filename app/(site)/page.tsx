@@ -608,8 +608,9 @@ export default function HomePage() {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src="/menu/Homepage-menus/calorie-calculator-tool.png"
-                      alt="Little Caesars Calorie Calculator - Track Nutrition"
+                      alt="Little Caesars Calorie Calculator - Track Nutrition 2026"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      loading="lazy"
                     />
                     <div className="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
                       🧮 CALCULATOR
@@ -636,9 +637,10 @@ export default function HomePage() {
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src="/menu/Homepage-menus/ExtraMostBestest-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                      alt="Little Caesars Secret Menu 2026 - Hidden Items"
+                      src="/menu/Homepage-menus/secret-menu-hacks.png"
+                      alt="Little Caesars Secret Menu 2026 - Hidden Items Revealed"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      loading="lazy"
                     />
                     <div className="absolute top-3 right-3 bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">
                       🤫 SECRET
@@ -665,9 +667,10 @@ export default function HomePage() {
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src="/menu/Homepage-menus/Classic-Pepperoni-Pizza-Little-Caesars-Menu.webp"
-                      alt="Best Pizza at Little Caesars Ranked 2026"
+                      src="/menu/Homepage-menus/pizza-ranking-trophy.png"
+                      alt="Best Pizza at Little Caesars Ranked #1 2026"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      loading="lazy"
                     />
                     <div className="absolute top-3 right-3 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
                       🏆 RANKED
