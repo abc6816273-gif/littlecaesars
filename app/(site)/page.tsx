@@ -607,7 +607,7 @@ export default function HomePage() {
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src="/menu/Homepage-menus/calorie-calculator-tool.png"
+                      src="/menu/Homepage-menus/calorie-calculator-tool.webp"
                       alt="Little Caesars Calorie Calculator - Track Nutrition 2026"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                       loading="lazy"
@@ -637,7 +637,7 @@ export default function HomePage() {
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src="/menu/Homepage-menus/secret-menu-hacks.png"
+                      src="/menu/Homepage-menus/secret-menu-hacks.webp"
                       alt="Little Caesars Secret Menu 2026 - Hidden Items Revealed"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                       loading="lazy"
@@ -667,7 +667,7 @@ export default function HomePage() {
                 >
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src="/menu/Homepage-menus/pizza-ranking-trophy.png"
+                      src="/menu/Homepage-menus/pizza-ranking-trophy.webp"
                       alt="Best Pizza at Little Caesars Ranked #1 2026"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                       loading="lazy"
