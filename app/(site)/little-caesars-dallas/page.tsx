@@ -3,9 +3,8 @@ import Link from 'next/link'
 import { MapPin, Clock, Phone, Navigation } from 'lucide-react'
 
 export const metadata: Metadata = {
-    title: 'Little Caesars Dallas - Locations, Hours &
+    title: 'Little Caesars Dallas - Locations, Hours & Menu Prices 2026',
 
- Menu Prices 2026',
     description: 'Find Little Caesars locations in Dallas, TX. Get hours, menu prices, delivery options, and special deals. Hot-N-Ready pizzas available across Big D!',
     keywords: 'little caesars dallas, pizza dallas, hot n ready dallas tx, pizza delivery dallas texas, cheap pizza fort worth, little caesars dfw',
     openGraph: {
