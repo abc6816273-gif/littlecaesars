@@ -251,6 +251,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly',
       priority: 0.88,
     },
+    {
+      url: `${baseUrl}/little-caesars-atlanta`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+
 
     // 13-15. Menu Item Pages
     {
