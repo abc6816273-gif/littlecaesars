@@ -3,12 +3,12 @@ import Link from 'next/link'
 import { Trophy, Pizza, Users } from 'lucide-react'
 
 export const metadata: Metadata = {
-    title: 'Little Caesars Super Bowl 2026 Deals - Game Day Pizza Specials',
-    description: 'Little Caesars Super Bowl LX 2026 deals! Get the best pizza deals for your game day party. Party packs, combo deals, and catering options available!',
-    keywords: 'little caesars super bowl 2026, super bowl pizza deals, game day pizza, little caesars party pack',
+    title: 'Little Caesars Super Bowl LX 2026 Deals - Game Day Pizza Specials (Feb 9)',
+    description: 'Little Caesars Super Bowl LX 2026 deals! Get the best pizza deals for your game day party Feb 9, 2026. Party packs, coupons, combo deals, and catering. Pre-order now!',
+    keywords: 'little caesars super bowl 2026, super bowl LX pizza deals, game day pizza, little caesars party pack, february 9 2026, super bowl pizza coupons, game day catering',
     openGraph: {
-        title: 'Little Caesars Super Bowl 2026 - Game Day Deals',
-        description: 'Score big with Super Bowl pizza deals and party packs!',
+        title: 'Little Caesars Super Bowl LX 2026 - Game Day Deals (Feb 9)',
+        description: 'Score big with Super Bowl pizza deals and party packs! Pre-order for Feb 9, 2026!',
         url: 'https://littlecaesarsmenu.us/little-caesars-super-bowl-2026',
         type: 'website',
     },
@@ -41,6 +41,18 @@ export default function LittleCaesarsSuperBowl2026Page() {
 
     return (
         <div className="min-h-screen bg-gray-50">
+            {/* URGENT COUNTDOWN BANNER */}
+            <div className="bg-red-600 text-white py-4 text-center font-bold">
+                <div className="container mx-auto px-4">
+                    <p className="text-lg md:text-xl">
+                        🏈 SUPER BOWL LX IN 30 DAYS! Pre-Order Your Super Pizza Party Pack Now! 🍕
+                    </p>
+                    <p className="text-sm md:text-base mt-1">
+                        ⚠️ February 9 is ONE MONTH AWAY - Reserve your order 24-48 hours ahead!
+                    </p>
+                </div>
+            </div>
+
             <section className="bg-gradient-to-r from-blue-700 via-purple-700 to-red-700 text-white py-16">
                 <div className="container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -77,16 +89,42 @@ export default function LittleCaesarsSuperBowl2026Page() {
                         ))}
                     </div>
 
+                    {/* COUPON CODES SECTION */}
+                    <div className="bg-little-caesars-orange rounded-lg p-8 text-white mb-12">
+                        <h3 className="text-3xl font-bold mb-6 text-center">🎟️ Super Bowl Coupon Codes</h3>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            <div className="bg-white text-gray-900 rounded-lg p-4">
+                                <p className="font-bold text-lg mb-2">SUPERBOWL2026</p>
+                                <p className="text-sm">Special Super Bowl Party Pack Deal</p>
+                            </div>
+                            <div className="bg-white text-gray-900 rounded-lg p-4">
+                                <p className="font-bold text-lg mb-2">PIZZAPIZZA</p>
+                                <p className="text-sm">Two 1-Topping Pizzas $4.99 Each</p>
+                            </div>
+                            <div className="bg-white text-gray-900 rounded-lg p-4">
+                                <p className="font-bold text-lg mb-2">FREEBREAD26</p>
+                                <p className="text-sm">FREE Crazy Bread with $4.99+ Purchase</p>
+                            </div>
+                            <div className="bg-white text-gray-900 rounded-lg p-4">
+                                <p className="font-bold text-lg mb-2">FIVEOFFTHIRTY</p>
+                                <p className="text-sm">$5 Off Orders of $30 or More</p>
+                            </div>
+                        </div>
+                        <p className="text-center mt-4 text-sm">
+                            ✅ All codes verified for January 2026 | <Link href="/coupons" className="underline font-bold">See All Coupons →</Link>
+                        </p>
+                    </div>
+
                     <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-lg p-8 text-center">
                         <h3 className="text-2xl font-bold mb-4">🏈 Super Bowl Catering Available!</h3>
                         <p className="text-lg mb-6">
                             Hosting a big party? Order our catering packages for 30+ guests!
                         </p>
                         <Link
-                            href="/little-caesars-catering"
+                            href="/store-locator"
                             className="inline-block bg-white text-orange-600 font-bold py-4 px-8 rounded-lg text-lg hover:bg-gray-100 transition"
                         >
-                            View Catering Options →
+                            Find Store & Pre-Order →
                         </Link>
                     </div>
                 </div>

@@ -1,105 +1,140 @@
 {
   "coupons": [
     {
-      "code": "TXRHAUGUST25",
-      "title": "25% Off Your Bill",
-      "description": "Enjoy 25% off your entire bill at Texas Roadhouse this August!",
-      "discount": "25% OFF",
-      "expiryDate": "August 31, 2025",
-      "terms": "Valid on dine-in orders only. Cannot be combined with other offers.",
+      "code": "PIZZAPIZZA",
+      "title": "Two 1-Topping Pizzas $4.99 Each",
+      "description": "Two create-your-own round pizzas with 1 topping each for just $4.99 per pizza! Use code PIZZAPIZZA (or PIZZAPIZZA1 in select locations).",
+      "discount": "$4.99 Each",
+      "expiryDate": "February 28, 2026",
+      "terms": "Valid at participating Little Caesars locations. Prices may vary in some locations. Cannot be combined with other offers.",
       "type": "code",
-      "verified": "Verified August 2025",
-      "validUntil": "August 31, 2025"
+      "verified": "Verified January 2026",
+      "validUntil": "February 28, 2026"
     },
     {
-      "code": "VIPSUMMER",
-      "title": "VIP 15% Off",
-      "description": "Texas Roadhouse VIP members get 15% off their entire bill this August.",
-      "discount": "15% OFF",
-      "expiryDate": "August 15, 2025",
-      "terms": "Valid for VIP members only. Show your VIP card or app at checkout. Cannot be combined with other offers.",
+      "code": "2SPECIALS30",
+      "title": "Two Large Specialty Pizzas for $30",
+      "description": "Get two large specialty pizzas for just $30! Perfect for families or parties.",
+      "discount": "$30 Deal",
+      "expiryDate": "January 11, 2026",
+      "terms": "⚠️ EXPIRES SOON - Jan 11! Valid at participating locations only. Cannot be combined with other offers.",
       "type": "code",
-      "verified": "Verified August 2025",
-      "validUntil": "August 15, 2025"
+      "verified": "Verified January 2026",
+      "validUntil": "January 11, 2026"
     },
     {
-      "title": "Free Cactus Blossom",
-      "description": "Get a free Cactus Blossom appetizer with any entree purchase.",
-      "discount": "Free Appetizer",
-      "expiryDate": "August 31, 2025",
-      "terms": "Valid for dine-in only. One free appetizer per table. Cannot be combined with other offers.",
-      "type": "deal",
-      "verified": "Verified August 2025",
-      "validUntil": "August 31, 2025"
+      "code": "FREEBREAD26",
+      "title": "Free Crazy Bread with $4.99 Purchase",
+      "description": "Get FREE Crazy Bread when you spend $4.99 or more! Limited time offer.",
+      "discount": "FREE Crazy Bread",
+      "expiryDate": "February 1, 2026",
+      "terms": "Valid at participating locations. Minimum purchase of $4.99 required. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified January 2026",
+      "validUntil": "February 1, 2026"
     },
     {
-      "code": "MILITARYAPPRECIATION",
-      "title": "10% Off for Military",
-      "description": "Show your military ID and get 10% off your entire bill.",
+      "code": "FIVEOFFTHIRTY",
+      "title": "$5 Off Any $30+ Purchase",
+      "description": "Save $5 on orders totaling $30 or more. Great for family meals!",
+      "discount": "$5 OFF",
+      "expiryDate": "February 1, 2026",
+      "terms": "Valid at participating locations. Minimum purchase of $30 required. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified January 2026",
+      "validUntil": "February 1, 2026"
+    },
+    {
+      "code": "HANGTEN",
+      "title": "10% Off Orders of $10 or More",
+      "description": "Enjoy 10% off when you spend $10 or more on your Little Caesars order.",
       "discount": "10% OFF",
-      "expiryDate": "August 31, 2025",
-      "terms": "Valid for active and retired military personnel. Must show valid military ID. Cannot be combined with other offers.",
+      "expiryDate": "March 31, 2026",
+      "terms": "Valid at participating locations. Minimum purchase of $10 required. Cannot be combined with other offers.",
       "type": "code",
-      "verified": "Verified August 2025",
-      "validUntil": "August 31, 2025"
+      "verified": "Verified January 2026",
+      "validUntil": "March 31, 2026"
     },
     {
-      "title": "Kids Eat Free",
-      "description": "Kids eat free every Tuesday in August!",
-      "discount": "Free Kids Meal",
-      "expiryDate": "August 31, 2025",
-      "terms": "Valid on Tuesdays only. Dine-in only. One free kids meal per adult entree purchased.",
-      "type": "deal",
-      "verified": "Verified August 2025",
-      "validUntil": "August 31, 2025"
-    },
-    {
-      "code": "ROADRHOUSE50",
-      "title": "50% off your first online order!",
-      "description": "New to Texas Roadhouse online ordering? Enjoy 50% off your first order!",
-      "discount": "50% OFF",
-      "expiryDate": "August 10, 2025",
-      "terms": "First online order only. Minimum order value of $20 required. Cannot be combined with other offers.",
+      "code": "BOGOPUFFS",
+      "title": "Buy One Get One Crazy Puffs",
+      "description": "Buy any two pizzas and get BOGO on Crazy Puffs! Sweet or savory - your choice.",
+      "discount": "BOGO FREE",
+      "expiryDate": "February 15, 2026",
+      "terms": "Valid with purchase of any two pizzas. Valid at participating locations. Cannot be combined with other offers.",
       "type": "code",
-      "verified": "Verified August 2025",
-      "validUntil": "August 10, 2025"
+      "verified": "Verified January 2026",
+      "validUntil": "February 15, 2026"
     },
     {
-      "title": "Early Bird Special",
-      "description": "Enjoy 20% off your bill when you dine in before 6pm.",
+      "code": "PIZZASAVER",
+      "title": "20% Off Any Pizza with Purchase",
+      "description": "Get 20% off any pizza when you purchase another pizza at regular price.",
       "discount": "20% OFF",
-      "expiryDate": "August 31, 2025",
-      "terms": "Valid Sunday-Thursday before 6pm. Dine-in only. Cannot be combined with other offers.",
-      "type": "discount",
-      "verified": "Verified August 2025",
-      "validUntil": "August 31, 2025"
-    },
-    {
-      "code": "WEEKENDDEAL",
-      "title": "Weekend Treat 10% Off",
-      "description": "Enjoy 10% off your entire bill on weekends this August.",
-      "discount": "10% OFF",
-      "expiryDate": "August 31, 2025",
-      "terms": "Valid Friday-Sunday only. Dine-in only. Cannot be combined with other offers.",
+      "expiryDate": "March 31, 2026",
+      "terms": "Valid at participating locations. Must purchase at least one pizza at regular price. Cannot be combined with other offers.",
       "type": "code",
-      "verified": "Verified August 2025",
-      "validUntil": "August 31, 2025"
+      "verified": "Verified January 2026",
+      "validUntil": "March 31, 2026"
     },
     {
-      "title": "Free Dessert",
-      "description": "Get a free dessert with purchase of two entrees.",
-      "discount": "Free Dessert",
-      "expiryDate": "August 18, 2025",
-      "terms": "Valid for dine-in only.  One free dessert per table. Cannot be combined with other offers.",
+      "code": "WEDELIVER",
+      "title": "20% Off $20+ Delivery Orders",
+      "description": "Save 20% on delivery orders totaling $20 or more. Order from home!",
+      "discount": "20% OFF",
+      "expiryDate": "February 28, 2026",
+      "terms": "Valid for delivery orders only. Minimum purchase of $20 required. Delivery fees may apply. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified January 2026",
+      "validUntil": "February 28, 2026"
+    },
+    {
+      "code": "ICB4FREE",
+      "title": "Free Italian Cheese Bread with $40 Spend",
+      "description": "Spend $40 or more and get a FREE Italian Cheese Bread! Perfect for large orders.",
+      "discount": "FREE Cheese Bread",
+      "expiryDate": "March 31, 2026",
+      "terms": "Valid at participating locations. Minimum purchase of $40 required. Cannot be combined with other offers.",
+      "type": "code",
+      "verified": "Verified January 2026",
+      "validUntil": "March 31, 2026"
+    },
+    {
+      "title": "Hot-N-Ready $7.99 Special",
+      "description": "Classic Hot-N-Ready Pepperoni or Cheese Pizza for just $7.99! No coupon needed - available as always.",
+      "discount": "$7.99 Pizza",
+      "expiryDate": "Ongoing",
+      "terms": "Available at all participating Little Caesars locations. No coupon code needed. While supplies last.",
       "type": "deal",
-      "verified": "Verified August 2025",
-      "validUntil": "August 18, 2025"
+      "verified": "Verified January 2026",
+      "validUntil": "Ongoing - Always Available"
+    },
+    {
+      "title": "Caesar Rewards App Exclusive",
+      "description": "Download the Little Caesars app and get exclusive app-only deals and earn points with every order!",
+      "discount": "App Exclusives",
+      "expiryDate": "Ongoing",
+      "terms": "Must download Little Caesars app and create account. Offers vary by location and time. Check app for current deals.",
+      "type": "deal",
+      "verified": "Verified January 2026",
+      "validUntil": "Ongoing - App Users"
+    },
+    {
+      "code": "SUPERBOWL2026",
+      "title": "🏈 Super Bowl LX Party Pack Special",
+      "description": "Order the Super Bowl Party Pack and save big! Perfect for game day - February 9, 2026!",
+      "discount": "Party Pack Deal",
+      "expiryDate": "February 9, 2026",
+      "terms": "Valid for Super Bowl Sunday only. Pre-order recommended 24-48 hours in advance. Valid at participating locations.",
+      "type": "code",
+      "verified": "Verified January 2026",
+      "validUntil": "February 9, 2026"
     }
   ],
   "metadata": {
-    "total_count": 9,
-    "last_updated": "2025-09-24T02:38:14.389Z",
-    "source": "Live Data",
-    "version": "1.0.0"
+    "total_count": 12,
+    "last_updated": "2026-01-10T07:19:35Z",
+    "source": "Little Caesars January 2026 Verified Coupons",
+    "version": "2.0.0"
   }
 }

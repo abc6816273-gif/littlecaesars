@@ -166,7 +166,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
 
-    // 9-12. Location Pages
+    // 9-22. Location Pages
     {
       url: `${baseUrl}/little-caesars-california`,
       lastModified: currentDate,
@@ -187,6 +187,66 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/little-caesars-new-york`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-los-angeles`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-chicago`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-houston`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-phoenix`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-philadelphia`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-san-diego`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-san-antonio`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-dallas`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-detroit`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.88,
+    },
+    {
+      url: `${baseUrl}/little-caesars-miami`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.88,
